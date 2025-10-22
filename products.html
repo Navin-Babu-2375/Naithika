@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Header Replica (Pure CSS) with Mobile Slide-In</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="static/naithika_style.css">
+</head>
+
+    <header id="header_top_bar">
+        <div class="header_container">
+            
+            <div name="header_promo_message" class="header_promo_message">
+                WORLDWIDE SHIPPING AVAILABLE | FREE SHIPPING WITHIN INDIA ON ORDERS ABOVE RS. 4999
+            </div>
+
+            <div name="header_secondary_links" class="header_secondary_links">
+                <a href="#">
+                    <svg class="header_contact_icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    CONTACT US
+                </a>
+                <a href="#" class="header_faq_link">FAQ</a>
+                <a href="#">TRACK YOUR ORDER</a>
+                <span class="header_divider">|</span>
+                <a href="#" style="font-weight: bold;">LOGIN/SIGNUP</a>
+            </div>
+        </div>
+    </header>
+
+    <div id="header_main_content">
+        <div class="header_container">
+
+            <a href="/">
+                <img id="header_logo_image" 
+                     src="" 
+                     alt="Naithika Logo"
+                >
+            </a>
+
+            <nav id="header_nav">
+                <a href="#" class="nav-link">HOME</a>
+                <a href="#" class="nav-link">OUR STORY</a>
+                <div class="header_dropdown_group">
+                    <a href="#" class="nav-link header_dropdown_toggle">
+                        ORGANIC SHOP
+                        <svg class="header_dropdown_arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </a>
+                    <div class="header_dropdown_menu">
+                        </div>
+                </div>
+                <a href="#" class="nav-link">RECIPES</a>
+                <a href="#" class="nav-link">BLOG</a>
+            </nav>
+
+            <div name="header_search_group" class="header_search_group">
+
+                <div id="header_search">
+                    <input id="header_search_input" type="text" placeholder="Search">
+                    <button id="header_search_button" type="button">
+                        <svg class="header_search_icon" width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    </button>
+                </div>
+            </div>
+            
+            <button name="header_mobile_menu_toggle" class="header_mobile_menu_toggle">
+                <svg class="header_mobile_menu_toggle_icon" width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+            
+        </div>
+    </div>
+    
+    <div name="header_mobile_menu" class="header_mobile_menu">
+        <div class="header_nav_list">
+            <a href="#" class="nav-link">HOME</a>
+            <a href="#" class="nav-link">OUR STORY</a>
+            <a href="#" class="nav-link">ORGANIC SHOP</a>
+            <a href="#" class="nav-link">RECIPES</a>
+            <a href="#" class="nav-link">BLOG</a>
+        </div>
+    </div>
+
+    <div class="product-container">
+        <!-- Category Navigation Circles -->
+        <div class="product-category-nav">
+            <a href="#product-dehydrated-fruits" style="scroll-behavior: smooth !important;" class="product-category-circle">Dehydrated Fruits</a>
+            <a href="#product-dehydrated-vegetables" style="scroll-behavior: smooth !important;" class="product-category-circle">Dehydrated Vegetables</a>
+            <a href="#product-pickles-powders" style="scroll-behavior: smooth !important;" class="product-category-circle">Pickles & Powders</a>
+        </div>
+
+        <!-- DEHYDRATED FRUITS SECTION -->
+        <h2 id="product-dehydrated-fruits" class="product-section-heading">Dehydrated Fruits</h2>
+        <div class="product-grid">
+
+            <!-- Card Template Start -->
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <!-- Front Side - Content filled by JS -->
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="image1.png" alt="Dehydrated Mango Slices" onerror="this.onerror=null; this.src='https://placehold.co/400x200/28a745/ffffff?text=Mango+Dehydrated'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Mango</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹250/100g</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button">Buy Now</button>
+                        </div>
+                    </div>
+                    <!-- Back Side (Full Content) - Source of the description -->
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Mango</h4>
+                            <p>Sun-ripened mangoes picked at peak sweetness from partner orchards. Slices are gently dried using low-heat methods that preserve aroma, color and nutrients. No sugar, no preservatives — only the concentrated, natural mango taste. Perfect for snacking, baking, or as a wholesome addition to muesli and trail mixes. <a href="#" class="product-less-link">...less</a></p>
+                            <p class="product-price-back">Price: ₹250/100g</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Card Template End -->
+
+            <!-- Chikku (Sapota) Card -->
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="image1.png" alt="Dehydrated Chikku Slices" onerror="this.onerror=null; this.src='https://placehold.co/400x200/28a745/ffffff?text=Sapota+Dehydrated'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Chikku (Sapota)</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹250/100g</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Chikku (Sapota)</h4>
+                            <p>Chikku slices offer a caramel-like sweetness, harvested from local orchards. We use gentle dehydration to keep texture soft and flavors rounded. Rich in dietary fiber, these slices are a comforting, natural snack. Ideal with tea, porridge, or straight from the pack. <a href="#" class="product-less-link">...less</a></p>
+                            <p class="product-price-back">Price: ₹250/100g</p>
+                        </div>
+                         
+                    </div>
+                </div>
+            </div>
+
+            <!-- Jamun Card -->
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="image1.png" alt="Dehydrated Jamun Slices" onerror="this.onerror=null; this.src='https://placehold.co/400x200/28a745/ffffff?text=Jamun+Dehydrated'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Jamun</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹280/100g</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Jamun</h4>
+                            <p>Deep-purple jamun slices capture the tangy-sweet character of native trees. Carefully dehydrated to retain antioxidants and the subtle tannic notes. A unique healthy snack known in India for traditional benefits linked to blood-sugar support. Use in smoothies, herbal blends, or as a tangy snack. <a href="#" class="product-less-link">...less</a></p>
+                            <p class="product-price-back">Price: ₹280/100g</p>
+                        </div>
+                         
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pineapple Card -->
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="image1.png" alt="Dehydrated Pineapple Rings" onerror="this.onerror=null; this.src='https://placehold.co/400x200/28a745/ffffff?text=Pineapple+Dehydrated'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Pineapple</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹250/100g</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Pineapple</h4>
+                            <p>Golden pineapple rings made from handpicked, ripe fruit. Our drying process keeps bromelain enzymes intact while concentrating sweetness. They bring bright tropical tang and soft chew suitable for snacking or baking. A clean-label treat — no added sugars or sulfites. <a href="#" class="product-less-link">...less</a></p>
+                            <p class="product-price-back">Price: ₹250/100g</p>
+                        </div>
+                         
+                    </div>
+                </div>
+            </div>
+
+            <!-- Apple Card -->
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="image1.png" alt="Dehydrated Apple Slices" onerror="this.onerror=null; this.src='https://placehold.co/400x200/28a745/ffffff?text=Apple+Dehydrated'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Apple</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹250/100g</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Apple</h4>
+                            <p>Thin, crisp apple slices from seasonal Indian orchards. Dehydrated gently to maintain a light crunch and natural sweetness. No glazing or added sugar — just pure fruit character concentrated. Perfect with tea, in lunchboxes, or added to baked goods. <a href="#" class="product-less-link">...less</a></p>
+                            <p class="product-price-back">Price: ₹250/100g</p>
+                        </div>
+                         
+                    </div>
+                </div>
+            </div>
+
+            <!-- Guava Card -->
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="image1.png" alt="Dehydrated Guava Slices" onerror="this.onerror=null; this.src='https://placehold.co/400x200/28a745/ffffff?text=Guava+Dehydrated'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Guava</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹220/- 100g</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Guava</h4>
+                            <p>Aromatic guava slices that hold high Vitamin C and fiber content. Gently dehydrated to preserve the tropical aroma and flesh texture. Their tangy-sweet profile makes them great for snacking and culinary uses. A wholesome, natural option for healthy families. <a href="#" class="product-less-link">...less</a></p>
+                            <p class="product-price-back">Price: ₹220/- 100g</p>
+                        </div>
+                         
+                    </div>
+                </div>
+            </div>
+
+            <!-- Papaya Card -->
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="image1.png" alt="Dehydrated Papaya Slices" onerror="this.onerror=null; this.src='https://placehold.co/400x200/28a745/ffffff?text=Papaya+Dehydrated'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Papaya</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹220/- 100g</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Papaya</h4>
+                            <p>Soft papaya slices made from fully ripe fruit with natural digestive enzymes. Dehydration concentrates sweetness while keeping a tender bite. A gentle, nutritious snack for all ages, and a natural addition to breakfast bowls. Free from preservatives — simply farm fruit, dried with care. <a href="#" class="product-less-link">...less</a></p>
+                            <p class="product-price-back">Price: ₹220/- 100g</p>
+                        </div>
+                         
+                    </div>
+                </div>
+            </div>
+
+            <!-- Anjeer (Figs) Card -->
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="image1.png" alt="Dehydrated Anjeer (Figs)" onerror="this.onerror=null; this.src='https://placehold.co/400x200/28a745/ffffff?text=Anjeer+Dehydrated'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Anjeer (Figs)</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹300/-100g</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Jackfruit</h4>
+                            <p>Sun-dried figs that offer rich, honeyed sweetness and dense texture. High in natural fiber and minerals, they are an age-old energy food. Our figs are dried slowly to preserve subtle floral notes and chewiness. Perfect for healthy snacking, gifting, or adding to cereal blends. <a href="#" class="product-less-link">...less</a></p>
+                            <p class="product-price-back">Price: ₹300/-100g</p>
+                        </div>
+                         
+                    </div>
+                </div>
+            </div>
+
+            <!-- Jackfruit  Card -->
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="image1.png" alt="Dehydrated Jackfruit (Figs)" onerror="this.onerror=null; this.src='https://placehold.co/400x200/28a745/ffffff?text=Jackfruit+Dehydrated'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Jackfruit</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹300/-100g</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Jackfruit</h4>
+                            <p>Aromatic jackfruit slices that capture the tropical sweetness and unique scent. Lightly dried for a pleasant chew while retaining fiber and natural sugars. An excellent plant-based snack with a bright, local character. Try in desserts, trail mixes, or as a standalone snack. <a href="#" class="product-less-link">...less</a></p>
+                            <p class="product-price-back">Price: ₹250/-100g</p>
+                        </div>
+                         
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pomegranate Arils Card -->
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="image1.png" alt="Dehydrated Anjeer (Figs)" onerror="this.onerror=null; this.src='https://placehold.co/400x200/28a745/ffffff?text=Pomegranate Arils+Dehydrated'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Pomegranate Arils</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹300/-100g</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Pomegranate Arils</h4>
+                            <p>Tangy-sweet pomegranate seeds delicately dried to retain ruby color and antioxidants. They add a bright tart note to breakfasts, salads, and desserts. Our process maintains flavor intensity without adding sugars or colors. A premium, antioxidant-rich fruit snack for daily use. <a href="#" class="product-less-link">...less</a></p>
+                            <p class="product-price-back">Price: ₹250/-100g</p>
+                        </div>
+                         
+                    </div>
+                </div>
+            </div>
+            <!-- Banana Card -->
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="image1.png" alt="Dehydrated Anjeer (Figs)" onerror="this.onerror=null; this.src='https://placehold.co/400x200/28a745/ffffff?text=Banana+Dehydrated'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Banana</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹300/-100g</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Banana</h4>
+                            <p>Made from ripe bananas sliced and dried for a naturally sweet, crisp chip. No oil frying or added sugars — simply dehydrated fruit with full banana flavor. A kid-friendly snack that doubles as an energy-rich addition to mixes. Great for tiffin boxes, travel, and on-the-go munching. <a href="#" class="product-less-link">...less</a></p>
+                            <p class="product-price-back">Price: ₹200/-100g</p>
+                        </div>
+                         
+                    </div>
+                </div>
+            </div>
+            <!-- Black Grapes Card -->
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="image1.png" alt="Dehydrated Anjeer (Figs)" onerror="this.onerror=null; this.src='https://placehold.co/400x200/28a745/ffffff?text=Black Grapes+Dehydrated'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Black Grapes</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹300/-100g</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Black Grapes</h4>
+                            <p>Sun-dried black grapes offering concentrated natural sweetness and rich antioxidants. They have a chewy, jammy texture and deep flavor that pairs well with nuts and cereals. Sourced from regional vineyards using sustainable practices, dried slowly for best color and taste. A premium dried fruit ideal for gifting, snacking, and gourmet use. <a href="#" class="product-less-link">...less</a></p>
+                            <p class="product-price-back">Price: ₹250/100g</p>
+                        </div>
+                         
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- DEHYDRATED VEGETABLES SECTION -->
+        <h2 id="product-dehydrated-vegetables" class="product-section-heading">Dehydrated Vegetables</h2>
+        <div class="product-grid">
+            
+            <!-- Tomato Slices Card -->
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="image1.png" alt="Dehydrated Tomato Slices" onerror="this.onerror=null; this.src='https://placehold.co/400x200/28a745/ffffff?text=Tomato+Slices'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Tomato Slices</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹180 / 100 g</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Tomato Slices</h4>
+                            <p>Naturally tangy and rich in lycopene, our sun-ripened tomato slices capture the full flavour of fresh tomatoes. Low-temperature tray drying locks in antioxidants and deep red colour. Perfect for soups, pasta sauces, instant noodles, or salads. Each slice delivers the essence of farm-fresh tomatoes—without moisture. </p>
+                            <p class="product-price-back">Price: ₹180 / 100 g</p>
+                        </div>
+                         
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tomato Powder Card -->
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="image1.png" alt="Tomato Powder" onerror="this.onerror=null; this.src='https://placehold.co/400x200/28a745/ffffff?text=Tomato+Powder'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Tomato Powder</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹200/100g</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Tomato Powder</h4>
+                            <p>Finely milled from 100% pure dried tomatoes, this bright red powder brings instant colour and flavour to your cooking. Ideal for soups, sauces, marinades, gravies, and spice blends. A spoonful adds the tang and nutrition of ripe tomatoes anytime, anywhere. </p>
+                            <p class="product-price-back">Price: ₹200/100g</p>
+                        </div>
+                         
+                    </div>
+                </div>
+            </div>
+
+            <!-- Beetroot Card -->
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="image1.png" alt="Dehydrated Beetroot Slices" onerror="this.onerror=null; this.src='https://placehold.co/400x200/28a745/ffffff?text=Beetroot+Slices'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Beetroot</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹200/-100g</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Beetroot</h4>
+                            <p>Bright, deep-red beetroot slices packed with natural iron and betalains. Gently dried to keep color, flavor and antioxidant value intact. Adds vivid color and earthiness to soups, salads, and snacks. A nutrient-dense convenience ingredient for modern kitchens. </p>
+                            <p class="product-price-back">Price: ₹200/-100g</p>
+                        </div>
+                         
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Carrot Card -->
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="image1.png" alt="Dehydrated Carrot Slices" onerror="this.onerror=null; this.src='https://placehold.co/400x200/28a745/ffffff?text=Carrot+Slices'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Carrot</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹200/-100g</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Carrot</h4>
+                            <p>Sweet, naturally orange carrot slices rich in beta-carotene. Low-heat drying preserves the vitamin-rich profile and sweet flavor. Perfect for quick soups, stews, or as a crunchy snack. A simple way to add colour and nutrition to everyday meals. </p>
+                            <p class="product-price-back">Price: ₹200/-100g</p>
+                        </div>
+                         
+                    </div>
+                </div>
+            </div>
+
+            <!-- Amla (Indian Gooseberry) Card -->
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="image1.png" alt="Dehydrated Amla Slices" onerror="this.onerror=null; this.src='https://placehold.co/400x200/28a745/ffffff?text=Amla+Slices'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Amla (Indian Gooseberry)</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹240/-100g</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Amla (Indian Gooseberry)</h4>
+                            <p>Amla slices that keep the high Vitamin C and tang of the fresh fruit. Carefully dehydrated to concentrate potency while keeping a pleasant chew. Use in chutneys, health tonics, or as a tangy snack that supports immunity. A traditional Indian superfruit presented in a modern, convenient form. </p>
+                            <p class="product-price-back">Price: ₹240/-100g</p>
+                        </div>
+                         
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ginger Card -->
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="image1.png" alt="Dehydrated Ginger Slices" onerror="this.onerror=null; this.src='https://placehold.co/400x200/28a745/ffffff?text=Ginger+Slices'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Ginger</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹220/- 100g</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Ginger</h4>
+                            <p>Aromatic ginger slices dried to retain warming spice and natural oils. Perfect for making instant ginger tea, spice blends, or cooking use. Our slow-drying method preserves zing and digestive benefits. Hand-processed in small batches to keep flavor fresh. </p>
+                            <p class="product-price-back">Price: ₹220/- 100g</p>
+                        </div>
+                         
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Garlic Powder Card -->
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="image1.png" alt="Garlic Powder" onerror="this.onerror=null; this.src='https://placehold.co/400x200/28a745/ffffff?text=Garlic+Powder'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Garlic Powder</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹150/- (200 g)</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Garlic Powder</h4>
+                            <p>Pure garlic powder made from fresh, chemical-free garlic cloves ground fine. Sun-cured and gently dehydrated to retain aroma and savory depth. Perfect for seasoning, marinades, soups and quick spice mixes. Small-batch processing keeps the flavour bright and true to the field. </p>
+                            <p class="product-price-back">Price: ₹150/- (200 g)</p>
+                        </div>
+                         
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ash Gourd (Petha) Card -->
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="image1.png" alt="Dehydrated Ash Gourd Pieces" onerror="this.onerror=null; this.src='https://placehold.co/400x200/28a745/ffffff?text=Ash+Gourd+Dehydrated'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Ash Gourd (Petha)</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹200/-100g</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Ash Gourd (Petha)</h4>
+                            <p>Mild-flavoured ash gourd pieces ideal for soups, powders, and health blends. Dehydrated to a gentle texture that rehydrates easily in cooking. A cooling vegetable used traditionally in Indian recipes. A pantry staple for health-conscious home cooks. </p>
+                            <p class="product-price-back">Price: ₹200/-100g</p>
+                        </div>
+                         
+                    </div>
+                </div>
+            </div>
+            <!--Pumpkin Card -->
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="image1.png" alt="Dehydrated Ash Gourd Pieces" onerror="this.onerror=null; this.src='https://placehold.co/400x200/28a745/ffffff?text=Pumpkin+Dehydrated'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Pumpkin</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹200/100g</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Pumpkin</h4>
+                            <p>Golden pumpkin flakes with a slightly sweet, nutty flavour. Rich in beta-carotene and fiber, ideal for porridges, soups and baking. Our dehydration locks in nutrients while extending shelf life. A versatile kitchen ingredient for seasonal and modern recipes. </p>
+                            <p class="product-price-back">Price: ₹200/100g</p>
+                        </div>
+                         
+                    </div>
+                </div>
+            </div>
+            <!-- Lemon Card -->
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="image1.png" alt="Dehydrated Ash Gourd Pieces" onerror="this.onerror=null; this.src='https://placehold.co/400x200/28a745/ffffff?text=LemonDehydrated'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Lemon</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹200/-100g</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Lemon</h4>
+                            <p>Zesty lemon slices that carry bright citrus flavor and high Vitamin C. Perfect for teas, spice mixes, marinades or as a garnish. Dried to preserve zest oils and tartness without masks of sugar. A pantry-friendly way to add citrus freshness year-round. </p>
+                            <p class="product-price-back">Price: ₹200/-100g</p>
+                        </div>
+                         
+                    </div>
+                </div>
+            </div>
+            <!-- Moringa (Drumstick Leaves) Card -->
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="image1.png" alt="Dehydrated Ash Gourd Pieces" onerror="this.onerror=null; this.src='https://placehold.co/400x200/28a745/ffffff?text=Ash+Gourd+Dehydrated'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Moringa (Drumstick Leaves)</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹200/-100g</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Moringa (Drumstick Leaves)</h4>
+                            <p>Nutritious moringa leaves dried gently to keep minerals and protein. Rich in iron, calcium and antioxidants — a wholesome green powder source. Use in dals, soups or as a nourishing sprinkle over meals. Cultivated on small farms using responsible practices. </p>
+                            <p class="product-price-back">Price: ₹200/-100g</p>
+                        </div>
+                         
+                    </div>
+                </div>
+            </div>
+            <!-- Curry Leaves Card -->
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="image1.png" alt="Dehydrated Curry Leaves" onerror="this.onerror=null; this.src='https://placehold.co/400x200/28a745/ffffff?text=Curry Leaves+Dehydrated'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Curry Leaves</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹150/-100g</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Curry Leaves</h4>
+                            <p>Fragrant curry leaves preserved for aroma and traditional flavour. Ideal for tempering, chutneys, and aromatic blends when fresh leaves are unavailable. Our controlled drying maintains essential oils and flavor depth. Sourced from South Indian farms with honest practices. </p>
+                            <p class="product-price-back">Price: ₹150/-100g</p>
+                        </div>
+                         
+                    </div>
+                </div>
+            </div>
+            <!-- Mint Leaves Card -->
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="image1.png" alt="Dehydrated Mint Leaves" onerror="this.onerror=null; this.src='https://placehold.co/400x200/28a745/ffffff?text=Mint Leaves+Dehydrated'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Mint Leaves</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹200/-100g</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Mint Leaves</h4>
+                            <p>Fresh mint leaves air-dried to keep cooling aroma and taste. Perfect for teas, raitas, chutneys and spice mixes. Dried quickly to preserve color and volatile oils. A refreshing addition to everyday cooking and home remedies. </p>
+                            <p class="product-price-back">Price: ₹200/-100g</p>
+                        </div>
+                         
+                    </div>
+                </div>
+            </div>
+            <!-- Coriander (Cilantro) Card -->
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="image1.png" alt="Coriander (Cilantro)" onerror="this.onerror=null; this.src='https://placehold.co/400x200/28a745/ffffff?text=Coriander (Cilantro)+Dehydrated'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Coriander (Cilantro)</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹180/- 100g</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Coriander (Cilantro)</h4>
+                            <p>Fragrant coriander leaves dried to retain green notes and herbaceous taste. Useful for instant gravies, spice mixes or as a garnish when fresh herbs are not available. Dehydration is done under low heat to preserve color and aroma. Handpicked and processed in small batches for quality. </p>
+                            <p class="product-price-back">Price: ₹180/- 100g</p>
+                        </div>
+                         
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- PICKLES & POWDERS SECTION -->
+        <h2 id="product-pickles-powders" class="product-section-heading">Pickles & Powders</h2>
+        <div class="product-grid">
+
+            <!-- Mango Pickle Card -->
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="image1.png" alt="Mango Pickle Jar" onerror="this.onerror=null; this.src='https://placehold.co/400x200/28a745/ffffff?text=Mango+Pickle'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Mango Pickle</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹180/- (200 g Jar)</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Mango Pickle</h4>
+                            <p>Traditional raw mango pickle made using sun-dried raw mangoes and cold-pressed oil. Balanced spices and long ageing give it depth and a bright tang. Prepared in small batches for consistent, home-style flavour. Pairs well with rice, rotis, and as a vibrant table condiment. </p>
+                            <p class="product-price-back">Price: ₹180/- (200 g Jar)</p>
+                        </div>
+                         
+                    </div>
+                </div>
+            </div>
+
+            <!-- Amla Pickle Card -->
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="image1.png" alt="Amla Pickle Jar" onerror="this.onerror=null; this.src='https://placehold.co/400x200/28a745/ffffff?text=Amla+Pickle'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Amla Pickle</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹180/- (200 g Jar)</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Amla Pickle</h4>
+                            <p>Tangy-sour amla pickle with a spicy warmth that highlights natural Vitamin C. Made with tender amlas and balanced spices, it adds a nourishing tang to meals. Small-batch preparation retains traditional texture and flavour. Ideal for daily use and seasonal immunity support. </p>
+                            <p class="product-price-back">Price: ₹180/- (200 g Jar)</p>
+                        </div>
+                         
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tomato Pickle Card -->
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="image1.png" alt="Tomato Pickle Jar" onerror="this.onerror=null; this.src='https://placehold.co/400x200/28a745/ffffff?text=Tomato+Pickle'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Tomato Pickle</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹180/- (200 g Jar)</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Tomato Pickle</h4>
+                            <p>Tomato powder made from slow-dried, ripe tomatoes concentrated into a bright, tangy powder. Perfect for seasoning, soups, gravies and instant mixes, offering natural umami. No artificial colors or preservatives — only sun-ripened tomatoes ground fine. A pantry essential for cooks who want pure tomato flavor year-round. </p>
+                            <p class="product-price-back">Price: ₹180/- (200 g Jar)</p>
+                        </div>
+                         
+                    </div>
+                </div>
+            </div>
+
+            <!-- Red Chilli Pickle Card -->
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="image1.png" alt="Red Chilli Pickle" onerror="this.onerror=null; this.src='https://placehold.co/400x200/28a745/ffffff?text=Red+Chilli+Pickle'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Red Chilli Pickle</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹180/- (200 g)</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Red Chilli Pickle</h4>
+                            <p>Fiery red chilli pickle made from freshly harvested chillies and pure sesame or mustard oil. Layered with aromatic spices, its heat is balanced with tang and depth. Hand-pressed and aged for character, it adds a punch to simple meals. Use sparingly to enliven dals, curries or plain rice. </p>
+                            <p class="product-price-back">Price: ₹180/- (200 g)</p>
+                        </div>
+                         
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ginger Pickle Card -->
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="image1.png" alt="Ginger Pickle" onerror="this.onerror=null; this.src='https://placehold.co/400x200/28a745/ffffff?text=Ginger+Pickle'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Ginger Pickle</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹180/- (200 g)</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Ginger Pickle</h4>
+                            <p>Zesty ginger pickle with bright spice and digestive benefits. Prepared in traditional Andhra style, combining fresh ginger, spices and oil. A spicy, tangy accompaniment that lifts the palate. Made carefully in small batches to keep texture and flavour intact. </p>
+                            <p class="product-price-back">Price: ₹180/- (200 g)</p>
+                        </div>
+                         
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lemon Pickle Card -->
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="image1.png" alt="Lemon Pickle" onerror="this.onerror=null; this.src='https://placehold.co/400x200/28a745/ffffff?text=Lemon+Pickle'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Lemon Pickle</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹180 (200 g)</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Lemon Pickle</h4>
+                            <p>Classic lemon pickle made from sun-kissed lemons, sea salt and native spices. Aged naturally to develop a bright, complex tang with minimal additives. A strong accompaniment for rice and Indian breads, delivering citrus punch. Prepared with attention to hygiene and small-batch care. </p>
+                            <p class="product-price-back">Price: ₹180 (200 g)</p>
+                        </div>
+                         
+                    </div>
+                </div>
+            </div>
+
+            <!-- Moringa Podi Card -->
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="image1.png" alt="Moringa Podi Powder" onerror="this.onerror=null; this.src='https://placehold.co/400x200/28a745/ffffff?text=Moringa+Podi'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Moringa Podi</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹150/- (200 g)</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Moringa Podi</h4>
+                            <p>Nutritious moringa powder made from sun-dried leaves ground to a fine, versatile podi. High in iron and calcium, it brightens rice, idli and vegetable dishes. Prepared with minimal processing to keep nutrients intact. A wholesome, traditional superfood in convenient form. </p>
+                            <p class="product-price-back">Price: ₹150/- (200 g)</p>
+                        </div>
+                         
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nuvvula Podi (Sesame Spice) Card -->
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="image1.png" alt="Nuvvula Podi Powder" onerror="this.onerror=null; this.src='https://placehold.co/400x200/28a745/ffffff?text=Nuvvula+Podi'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Nuvvula Podi (Sesame Spice)</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹150/- (200 g)</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Nuvvula Podi (Sesame Spice)</h4>
+                            <p>A nutty, aromatic sesame-based powder blended with lentils and spices. Perfect as a topping for idli, dosa and rice or as a dry chutney. Roasted and stone-ground to preserve aroma and depth. A calcium-rich traditional accompaniment packed in a convenient jar. </p>
+                            <p class="product-price-back">Price: ₹150/- (200 g)</p>
+                        </div>
+                         
+                    </div>
+                </div>
+            </div>
+            <!-- Curry Patta Podi (Curry Leaf Powder) Card -->
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="image1.png" alt="Curry Patta Podi (Curry Leaf Powder)" onerror="this.onerror=null; this.src='https://placehold.co/400x200/28a745/ffffff?text=Curry Patta Podi (Curry Leaf Powder)'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Curry Patta Podi (Curry Leaf Powder)</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹120/- (200 g)</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Curry Patta Podi (Curry Leaf Powder)</h4>
+                            <p>Aromatic curry leaf powder that brings depth and antioxidants to meals. Carefully dried and ground to preserve essential oils and fragrance. Use as a seasoning for dals, vegetables or rice for an instant flavour lift. Produced in small batches to maintain freshness. </p>
+                            <p class="product-price-back">Price: ₹120/- (200 g)</p>
+                        </div>
+                         
+                    </div>
+                </div>
+            </div>
+            <!-- Idli Podi (Milagai Podi) Card -->
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="image1.png" alt="Idli Podi (Milagai Podi)" onerror="this.onerror=null; this.src='https://placehold.co/400x200/28a745/ffffff?text=Idli Podi (Milagai Podi)'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Idli Podi (Milagai Podi)</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹120/- (200 g)</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Idli Podi (Milagai Podi)</h4>
+                            <p>Balanced idli podi made from roasted lentils, spices and sesame for a classic flavour. Protein-rich and aromatic, it pairs perfectly with idli, dosa and steamed rice. Stone-ground to keep texture rustic and flavours robust. An everyday kitchen essential with traditional taste. </p>
+                            <p class="product-price-back">Price: ₹120/- (200 g)</p>
+                        </div>
+                         
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <footer id="footer">
+        <div id="footer_content">
+            
+            <div class="footer_col footer_about">
+                <h3 class="footer_section_title">About Naithika</h3>
+                <p class="footer_about_text">
+                    Naithika is a trusted brand of certified organic food products cultivated and harvested in collaboration with farmers who contribute to the goodness of people and the environment through sustainable farming practices.
+                </p>
+                
+                <img class="footer_fssai_img" 
+                    src="images_naithika/fssai.png" 
+                    alt="FSSAI Logo"
+                >
+
+                <div class="footer_fssai_details">
+                    GSTN: 33AARPD1404NIZE<br>
+                    LIC NO: 10020042004884
+                </div>
+
+                <div class="footer_payment_icons">
+                    <img src="images_naithika/rupay.png" style="width: 50px;" alt="Rupay">
+                    <img src="images_naithika/mastercard.png" style="width: 50px;" alt="Mastercard">
+                </div>
+            </div>
+
+            <div class="footer_col footer_links_1">
+                <h3 class="footer_section_title">Our Story</h3>
+                <div class="footer_link_list">
+                    <a href="#">Our Story</a>
+                    <a href="#">Organic Shop</a>
+                    <a href="#">Login/Signup</a>
+                    <a href="#">Blog</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Recipes</a>
+                </div>
+            </div>
+            
+            <div class="footer_col footer_links_2">
+                <h3 class="footer_section_title">Policies</h3>
+                <div class="footer_link_list">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms and Condition</a>
+                    <a href="#">Returns and Refund</a>
+                    <a href="#">Shipping Policy</a>
+                    <a href="#">Contact Us</a>
+                </div>
+                
+                <h3 class="footer_section_title" style="margin-top: 2rem;">Follow Us</h3>
+                <div class="footer_social_icons">
+                    <a href="#" aria-label="Facebook">
+                        <svg class="footer_social_icon" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15h-2.5v-3H10V9.5c0-2.2 1.3-3.4 3.3-3.4 1.02 0 1.9.08 2.16.12v2.5h-1.5c-1.12 0-1.34.53-1.34 1.34V12h3l-.5 3h-2.5v6.8c4.56-.93 8-4.96 8-9.8z"></path></svg>
+                    </a>
+                    <a href="#" aria-label="Twitter">
+                        <svg class="footer_social_icon" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22 4.02c-.75.38-1.54.63-2.39.75.86-.52 1.5-1.36 1.81-2.34-.8.47-1.68.81-2.61.99-.75-.8-1.8-1.3-2.96-1.3-2.24 0-4.06 1.82-4.06 4.06 0 .32.04.63.11.93-3.37-.17-6.36-1.78-8.36-4.24-.35.6-.55 1.29-.55 2.03 0 1.4.71 2.64 1.8 3.37-.66 0-1.28-.2-1.83-.5v.05c0 1.97 1.4 3.6 3.25 3.97-.34.09-.7.13-1.07.13-.26 0-.5.03-.74-.07.51 1.6 1.99 2.77 3.75 2.81-1.39 1.09-3.15 1.74-5.06 1.74-.33 0-.66-.02-.99-.06 1.8 1.15 3.94 1.82 6.25 1.82 7.5 0 11.64-6.2 11.64-11.64 0-.17-.0-.33-.01-.5.8-.57 1.49-1.28 2.04-2.09z"></path></svg>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <svg class="footer_social_icon" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2c2.71 0 3.03.01 4.1.06 1.06.05 1.78.22 2.42.47.64.25 1.17.6 1.7.1.53.53.88 1.06 1.13 1.7.25.64.42 1.36.47 2.42.05 1.07.06 1.39.06 4.1s-.01 3.03-.06 4.1c-.05 1.06-.22 1.78-.47 2.42-.25.64-.6 1.17-1 1.7-.53.53-1.06.88-1.7 1.13-.64.25-1.36.42-2.42.47-1.07.05-1.39.06-4.1.06s-3.03-.01-4.1-.06c-1.06-.05-1.78-.22-2.42-.47-.64-.25-1.17-.6-1.7-1.0-.53-.53-.88-1.06-1.13-1.7-.25-.64-.42-1.36-.47-2.42-.05-1.07-.06-1.39-.06-4.1s.01-3.03.06-4.1c.05-1.06.22-1.78.47-2.42.25-.64.6-1.17 1-1.7.53-.53 1.06-.88 1.7-1.13.64-.25 1.36-.42 2.42-.47 1.07-.05 1.39-.06 4.1-.06zm0 4.5c2.48 0 4.5 2.02 4.5 4.5s-2.02 4.5-4.5 4.5-4.5-2.02-4.5-4.5 2.02-4.5 4.5-4.5zm0 2c-1.38 0-2.5 1.12-2.5 2.5s1.12 2.5 2.5 2.5 2.5-1.12 2.5-2.5-1.12-2.5-2.5-2.5zm5.5-5.5c-.66 0-1.2.54-1.2 1.2s.54 1.2 1.2 1.2 1.2-.54 1.2-1.2-.54-1.2-1.2-1.2z"></path></svg>
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                        <svg class="footer_social_icon" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2c-5.52 0-10 4.48-10 10s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.3 11.5L9.7 17V7l6.6 4.5 0 2z"></path></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer_col footer_contact">
+                <h3 class="footer_section_title">Visit Us</h3>
+                <div class="footer_contact_info_block">
+                    <span class="footer_contact_label">NAITHIKA ORGANIC</span>
+                    (A Pinnacle Group Company)
+                </div>
+                <div class="footer_contact_info_block">
+                    79/99, Thiruvalluvar Street,<br>
+                    Cotton City Estates, G.N. Mills,<br>
+                    Coimbatore 641029<br>
+                    Tamil Nadu, India
+                </div>
+                <div class="footer_contact_info_block">
+                    <a href="mailto:wecare@naithikaorganic.com">wecare@naithikaorganic.com</a>
+                </div>
+                <div class="footer_contact_info_block">
+                    +91 9143977777<br>
+                    +91 9153977777
+                </div>
+            </div>
+            
+        </div>
+        
+        <div id="footer_copyright">
+            Naithika Copyright &copy; 2024
+        </div>
+    </footer>
+
+
+<script src="static/naithika.js"></script>
+
+</body>
+</html>
