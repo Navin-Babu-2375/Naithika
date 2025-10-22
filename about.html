@@ -7,631 +7,10 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="static/naithika_style.css">
-    <style>
-        /* Header Styles */
-        
-        /* About Page Styles */
-        .aboutus_hero_section {
-            background: linear-gradient(135deg, rgba(221, 178, 124, 0.95), rgba(200, 150, 90, 0.95));
-            padding: 100px 20px;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .aboutus_hero_section::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
-            background-size: 50px 50px;
-            animation: aboutus_pattern_move 20s linear infinite;
-        }
-
-        @keyframes aboutus_pattern_move {
-            0% { transform: translate(0, 0); }
-            100% { transform: translate(50px, 50px); }
-        }
-
-        .aboutus_hero_title {
-            font-family: 'Playfair Display', serif;
-            font-size: 4.5rem;
-            color: white;
-            margin-bottom: 1rem;
-            position: relative;
-            z-index: 2;
-            animation: aboutus_fadeInUp 1s ease-out;
-        }
-
-        .aboutus_hero_subtitle {
-            font-size: 1.3rem;
-            color: white;
-            letter-spacing: 3px;
-            font-weight: 300;
-            position: relative;
-            z-index: 2;
-            animation: aboutus_fadeInUp 1.2s ease-out;
-        }
-
-        @keyframes aboutus_fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Main Story Section */
-        .aboutus_story_container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 80px 20px;
-        }
-
-        .aboutus_intro_grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            align-items: center;
-            margin-bottom: 80px;
-        }
-
-        .aboutus_intro_image_wrapper {
-            position: relative;
-            animation: aboutus_floatAnimation 6s ease-in-out infinite;
-        }
-
-        @keyframes aboutus_floatAnimation {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-20px); }
-        }
-
-        .aboutus_intro_image {
-    width: 100%;
-    height: 450px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 8rem;
-    position: relative;
-    overflow: hidden; /* Essential: Hides image parts outside the rounded border */
-    border-radius: 20px; /* Adjust this value for more or less curve */
-}
-
-.aboutus_intro_image img {
-    /* Ensures the image fills the container */
-    width: 100%;
-    height: 100%;
-    /* Crops and covers the area without distortion */
-    object-fit: cover; 
-}
-
-        .aboutus_intro_image::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-            animation: aboutus_shimmer 3s infinite;
-        }
-
-        @keyframes aboutus_shimmer {
-            0% { left: -100%; }
-            100% { left: 100%; }
-        }
-
-        .aboutus_intro_content h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 3rem;
-            color: #ddb27c;
-            margin-bottom: 1.5rem;
-            line-height: 1.2;
-        }
-
-        .aboutus_intro_content p {
-            font-size: 1.1rem;
-            color: #555;
-            margin-bottom: 1.3rem;
-            line-height: 1.9;
-        }
-
-        /* Featured Section with Background */
-        .aboutus_featured_section {
-            background: linear-gradient(135deg, #ddb27c 0%, #c89650 100%);
-            padding: 100px 20px;
-            margin: 80px 0;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .aboutus_featured_section::before {
-            
-            position: absolute;
-            font-size: 20rem;
-            opacity: 0.1;
-            top: -50px;
-            right: -50px;
-            animation: aboutus_rotate 30s linear infinite;
-        }
-
-        @keyframes aboutus_rotate {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
-
-        .aboutus_featured_content {
-            max-width: 1000px;
-            margin: 0 auto;
-            text-align: center;
-            position: relative;
-            z-index: 2;
-        }
-
-        .aboutus_featured_title {
-            font-family: 'Playfair Display', serif;
-            font-size: 3rem;
-            color: white;
-            margin-bottom: 2rem;
-            animation: aboutus_fadeInUp 1s ease-out;
-        }
-
-        .aboutus_featured_text {
-            font-size: 1.2rem;
-            color: white;
-            line-height: 2;
-            margin-bottom: 1.5rem;
-            opacity: 0.95;
-        }
-
-        /* Values Grid */
-        .aboutus_values_wrapper {
-            max-width: 1200px;
-            margin: 80px auto;
-            padding: 0 20px;
-        }
-
-        .aboutus_section_heading {
-            font-family: 'Playfair Display', serif;
-            font-size: 3rem;
-            color: #ddb27c;
-            text-align: center;
-            margin-bottom: 4rem;
-        }
-
-        .aboutus_values_grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 40px;
-        }
-
-        /* New Container for the Product Image */
-.aboutus_value_image_container {
-    /* Set a fixed size for a consistent look */
-    width: 100px;
-    height: 100px;
-    margin: 0 auto 1.5rem auto; /* Centers the container and adds bottom margin */
-    /* Optional: Make the image container itself circular */
-    border-radius: 50%;
-    overflow: hidden; /* Ensures image is clipped to the border-radius */
-    border: 3px solid #eee; /* Light border for definition */
-    transition: all 0.4s ease;
-}
-.aboutus_value_card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
-}
-.aboutus_value_card:hover .aboutus_value_image {
-    transform: scale(1.08); /* Zooms the image slightly on hover */
-}
-
-/* Styling for the Image inside the container */
-.aboutus_value_image {
-    width: 100%;
-    height: 100%;
-    /* Ensures the image covers the container without stretching */
-    object-fit: cover; 
-    transition: transform 0.4s ease;
-}
-
-        .aboutus_value_card {
-            background: white;
-            padding: 40px 30px;
-            border-radius: 20px;
-            text-align: center;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-            transition: all 0.4s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .aboutus_value_card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 5px;
-            background: linear-gradient(90deg, #ddb27c, #c89650);
-            transform: scaleX(0);
-            transition: transform 0.4s ease;
-        }
-
-        .aboutus_value_card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 50px rgba(221, 178, 124, 0.3);
-        }
-
-        .aboutus_value_card:hover::before {
-            transform: scaleX(1);
-        }
-
-        .aboutus_value_icon {
-            font-size: 4rem;
-            margin-bottom: 1.5rem;
-            display: inline-block;
-            animation: aboutus_bounce 2s ease-in-out infinite;
-        }
-
-        @keyframes aboutus_bounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
-
-        .aboutus_value_card:hover .aboutus_value_icon {
-            animation: aboutus_spin 0.6s ease-in-out;
-        }
-
-        @keyframes aboutus_spin {
-            from { transform: rotate(0deg) scale(1); }
-            50% { transform: rotate(180deg) scale(1.2); }
-            to { transform: rotate(360deg) scale(1); }
-        }
-
-        .aboutus_value_title {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.5rem;
-            color: #333;
-            margin-bottom: 1rem;
-        }
-
-        .aboutus_value_description {
-            color: #666;
-            font-size: 0.95rem;
-            line-height: 1.7;
-        }
-
-        /* Process Section */
-       /* --- BASE STYLES (Keep as is) --- */
-.aboutus_process_section {
-    background: #f9f9f9;
-    padding: 80px 20px;
-    margin: 80px 0;
-}
-
-.aboutus_process_container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.aboutus_process_title {
-    font-family: 'Playfair Display', serif;
-    font-size: 3rem;
-    color: #ddb27c;
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.aboutus_process_subtitle {
-    text-align: center;
-    font-size: 1.3rem;
-    color: #666;
-    margin-bottom: 4rem;
-    font-style: italic;
-}
-
-/* --- CORE TIMELINE STYLES --- */
-
-.aboutus_process_grid {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    /* Add padding to center the timeline steps vertically within the grid */
-    padding-top: 150px; 
-    padding-bottom: 150px; 
-    align-items: flex-start; /* Start steps at the top of the padding area */
-}
-
-/* Central Horizontal Dotted Line */
-.aboutus_process_grid::before {
-    content: '';
-    position: absolute;
-    top: 50%; /* Center the line vertically */
-    transform: translateY(-50%);
-    left: 0;
-    right: 0;
-    height: 2px;
-    /* Use a solid color for the line and use the steps to break it */
-    background: #ddd; 
-    z-index: 1; 
-}
-
-/* --- STEP STYLING --- */
-.aboutus_process_step {
-    flex-basis: 24%; /* Distribute space for 4 items */
-    text-align: center;
-    position: relative;
-    z-index: 2; /* Steps over the line */
-    background: transparent;
-    padding: 0;
-    margin: 0;
-    transition: transform 0.3s ease;
-}
-
-/* Steps 2 and 4 (even children) moved downwards */
-.aboutus_process_step:nth-child(even) {
-    margin-top: 250px; /* Adjust this value to set the gap between steps 1/3 and 2/4 */
-}
-
-/* --- IMAGE STYLING --- */
-
-.aboutus_process_image_box {
-    width: 250px; /* Fixed width for the image container */
-    height: 180px; /* Fixed height for the image container */
-    margin: 0 auto 1.5rem;
-    border-radius: 10px; /* Soft corners for the image box */
-    overflow: hidden;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-}
-
-.aboutus_process_step:hover .aboutus_process_image_box {
-    transform: translateY(-5px); /* Lift the image box on hover */
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-}
-
-.aboutus_process_image_box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-/* --- NUMBER STYLING (The DOTS that cross the line) --- */
-
-.aboutus_process_number {
-    /* Position the number exactly in the vertical center of the grid container */
-    position: absolute;
-    top: 50%; 
-    left: 50%;
-    transform: translate(-50%, -50%); /* Centering trick */
-    
-    width: 40px; 
-    height: 40px;
-    background: #ddb27c; /* Primary color dot */
-    color: white; 
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.1rem;
-    font-weight: 700;
-    box-shadow: 0 0 0 8px #f9f9f9; /* Creates the "cut-out" on the line */
-    border: 2px solid white; /* A small white edge for definition */
-    margin: 0; /* Override any previous margin */
-}
-
-/* --- NAME STYLING (Title below the number/image) --- */
-
-.aboutus_process_name {
-    font-weight: 700;
-    font-size: 1.2rem;
-    color: #333;
-    margin-top: 1.5rem;
-}
-
-/* Adjustment for mobile view (Vertical layout) */
-@media (max-width: 900px) {
-    .aboutus_process_grid {
-        flex-direction: column;
-        padding: 0 0 0 50px; /* Padding for vertical line space */
-        align-items: flex-start;
-    }
-
-    .aboutus_process_grid::before {
-        /* Vertical Line */
-        top: 0;
-        bottom: 0;
-        left: 20px; 
-        width: 2px;
-        height: 100%;
-        transform: none;
-    }
-    
-    .aboutus_process_step {
-        width: 100%;
-        margin-top: 0 !important; /* Remove the vertical offset */
-        padding: 40px 0;
-        text-align: left;
-        display: flex;
-        align-items: center;
-        gap: 20px;
-    }
-    
-    .aboutus_process_image_box {
-        width: 100px;
-        height: 80px;
-        margin: 0;
-    }
-    
-    .aboutus_process_number {
-        /* Reposition number to the left on the vertical line */
-        left: 20px;
-        top: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .aboutus_process_name {
-        margin-top: 0;
-        font-size: 1rem;
-    }
-}
-
-        /* Certification Section */
-        .aboutus_certification_section {
-            max-width: 1200px;
-            margin: 80px auto;
-            padding: 0 20px;
-            text-align: center;
-        }
-
-        .aboutus_certification_title {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
-            color: #ddb27c;
-            margin-bottom: 1rem;
-        }
-
-        .aboutus_certification_subtitle {
-            font-size: 1.2rem;
-            color: #666;
-            margin-bottom: 3rem;
-        }
-
-        .aboutus_certification_grid {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 30px;
-            align-items: center;
-        }
-
-        .aboutus_certification_badge {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-            transition: all 0.3s ease;
-            height: 150px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 3rem;
-        }
-
-        .aboutus_certification_badge:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(221, 178, 124, 0.3);
-        }
-
-        /* Farmers Section */
-        .aboutus_farmers_section {
-            background: linear-gradient(135deg, rgba(221, 178, 124, 0.1), rgba(255, 255, 255, 0.5));
-            padding: 80px 20px;
-        }
-
-        .aboutus_farmers_content {
-            max-width: 1000px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .aboutus_farmers_title {
-            font-family: 'Playfair Display', serif;
-            font-size: 3rem;
-            color: #ddb27c;
-            margin-bottom: 1rem;
-        }
-
-        .aboutus_farmers_subtitle {
-            font-size: 1.3rem;
-            color: #666;
-            font-style: italic;
-            margin-bottom: 2rem;
-        }
-
-        .aboutus_farmers_text {
-            font-size: 1.1rem;
-            color: #555;
-            line-height: 1.9;
-        }
-
-       
-
-        /* Responsive */
-        @media (max-width: 1024px) {
-            .header_promo_message {
-                font-size: 0.65rem;
-            }
-
-            .aboutus_intro_grid {
-                grid-template-columns: 1fr;
-            }
-
-            .aboutus_values_grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .aboutus_process_grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .aboutus_certification_grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-
-            #footer_content {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .header_container {
-                flex-direction: column;
-                gap: 0.5rem;
-                padding: 0.8rem 1rem;
-            }
-
-            .header_secondary_links {
-                font-size: 0.7rem;
-                gap: 0.8rem;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-
-            .aboutus_hero_title {
-                font-size: 2.5rem;
-            }
-
-            .aboutus_hero_subtitle {
-                font-size: 1rem;
-            }
-
-            .aboutus_intro_content h2,
-            .aboutus_featured_title,
-            .aboutus_section_heading,
-            .aboutus_process_title,
-            .aboutus_farmers_title {
-                font-size: 2rem;
-            }
-
-            .aboutus_values_grid,
-            .aboutus_process_grid,
-            .aboutus_certification_grid {
-                grid-template-columns: 1fr;
-            }
-
-            #footer_content {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="static/naithika_about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -708,54 +87,61 @@
         </div>
     </div>
 
-    <!-- Hero Section -->
-    <!-- <section class="aboutus_hero_section">
-        <h1 class="aboutus_hero_title">Our Story</h1>
-        <p class="aboutus_hero_subtitle">BRINGING BACK NATURE'S GOODNESS</p>
-    </section> -->
 
-    <!-- Main Story -->
-    <div class="aboutus_story_container">
-        <div class="aboutus_intro_grid">
-            <div class="aboutus_intro_image_wrapper">
-                <div class="aboutus_intro_image">
-                    <img src="images_naithika/dry.jpg" alt="">
-                </div>
-            </div>
-            <div class="aboutus_intro_content">
-                <h2>Naithika Organic Foods</h2>
-                <p>
-                    We stand at the intersection of natural farming and holistic wellness, making possible a healthy and happy lifestyle that you deserve. Driven by social responsibility to deliver agricultural food products that are chemical-free and nutrient-rich, we partner with farmers across India who practice organic farming and promote environmental sustainability.
-                </p>
-                <p>
-                    Every food product offered by Naithika is authentically cultivated, harvested, and directly procured from certified organic farms, cutting down middlemen. We appreciate and promote sustainable agricultural practices, seeding, and food grading processes, helping farmer communities thrive by working closely with them.
-                </p>
-                <p>
-                    By doing so, we contribute to social wellness while standing by our Indian culture and uplifting the domestic economy.
-                </p>
-            </div>
+    <section class="ancestral_wisdom_section">
+    <div class="ancestral_wisdom_container">
+        
+        <div class="ancestral_wisdom_graphic_box">
+            <img src="images_naithika/bg1.png" alt="Graphic of organic produce and farming tools">
         </div>
+        
+        <div class="ancestral_wisdom_content">
+            
+            <p class="ancestral_wisdom_tagline">Bringing back the ancestral wisdom for</p>
+            <h2 class="ancestral_wisdom_title">A Healthy & Natural Lifestyle</h2>
+            
+            <p class="ancestral_wisdom_text">
+                We stand at the intersection of natural farming and holistic wellness, making possible a healthy and happy lifestyle that you deserve. Driven with the social responsibility to deliver agricultural food products that are chemical-free and nutrient-rich, we partner with farmers across India, who practice organic farming and promote environmental sustainability.
+            </p>
+
+        </div>
+        
     </div>
+</section>
 
-    <!-- Featured Section -->
-    <section class="aboutus_featured_section">
-        <div class="aboutus_featured_content">
-            <h2 class="aboutus_featured_title">What Made Us Get Into This?</h2>
-            <p class="aboutus_featured_text">
-                Naithika was born for a purpose, not for profit. A purpose to transform this generation and those to come into healthier and happier ones. We bring back ancestral farming wisdom to deliver organically grown natural foods that are 100% authentic and pure.
+
+<section class="making_meals_wholesome_section">
+    <div class="making_meals_wholesome_container">
+        
+        <div class="making_meals_wholesome_content">
+            
+            <p class="making_meals_wholesome_tagline">From our fields to your plate</p>
+            <h2 class="making_meals_wholesome_title">Making Your Meals Wholesome</h2>
+            
+            <p class="making_meals_wholesome_text">
+                Every ingredient we offer is nurtured with care, respecting the natural rhythms of the earth. We believe in transparency and traceable origins, so you know exactly where your food comes from. Our commitment extends beyond cultivation to gentle processing methods that preserve the inherent goodness and nutritional value of each product.
             </p>
-            <p class="aboutus_featured_text">
-                We strongly believe that by conserving our ancestors' treasured knowledge of organic farming, we can make foods wholesome and lives holistic by preserving this planet through sustained and eco-friendly farming practices.
+            <p class="making_meals_wholesome_text">
+                We bridge the gap between conscientious farmers and your kitchen, ensuring that only the finest, purest organic produce makes it to your table. Experience the difference of wholesome food – grown with integrity, harvested with love, and delivered with dedication.
             </p>
-            <p class="aboutus_featured_text">
-                With this vision, we commit ourselves to bring more certified organic products for a better, happier, and healthier life.
+            <p class="making_meals_wholesome_text">
+                Join us in embracing a healthier lifestyle, one delicious, organic meal at a time.
             </p>
         </div>
-    </section>
+
+        <div class="making_meals_wholesome_graphic_box">
+            <img src="images_naithika/bg3.png" alt="Image showing wholesome ingredients or a healthy meal">
+        </div>
+        
+    </div>
+</section>
+
+
 
     <!-- Values Section -->
     <div class="aboutus_values_wrapper">
     <h2 class="aboutus_section_heading">Why Choose Naithika</h2>
+    <p class="aboutus_section_subheading">From farm to home, making your meals wholesome</p>
     <div class="aboutus_values_grid">
         <div class="aboutus_value_card">
             <div class="aboutus_value_image_container">
@@ -859,7 +245,7 @@
 </section>
 
     <!-- Certification Section -->
-    <section class="aboutus_certification_section">
+    <!-- <section class="aboutus_certification_section">
         <h2 class="aboutus_certification_title">Our Standard – Always and Only</h2>
         <p class="aboutus_certification_subtitle">Certified Organic</p>
         <div class="aboutus_certification_grid">
@@ -869,18 +255,35 @@
             <div class="aboutus_certification_badge">⚡</div>
             <div class="aboutus_certification_badge">🔒</div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Farmers Section -->
-    <section class="aboutus_farmers_section">
-        <div class="aboutus_farmers_content">
-            <h2 class="aboutus_farmers_title">Our Farmers</h2>
-            <p class="aboutus_farmers_subtitle">In the company of traditional organic farmers</p>
-            <p class="aboutus_farmers_text">
-                Our association with organic farmers who cultivate only native breeds of crops isn't just a contract but a relationship. Together we strive to add value to traditional agricultural practices while helping communities thrive through sustainable farming techniques. We believe in empowering farmers with fair trade practices and modern organic farming knowledge.
-            </p>
+   <section class="aboutus_farmers_section">
+    <div class="aboutus_farmers_content">
+        <h2 class="aboutus_farmers_title">Our Farmers</h2>
+        <p class="aboutus_farmers_subtitle">In the company of traditional organic farmers</p>
+        <p class="aboutus_farmers_text">
+            Our association with organic farmers who cultivate only native breeds of crops isn't just a contract but a relationship. Together we strive to add value to traditional agricultural practices while helping communities thrive through sustainable farming techniques. We believe in empowering farmers with fair trade practices and modern organic farming knowledge.
+        </p>
+    </div>
+    
+    <div class="aboutus_farmers_carousel">
+        <div class="aboutus_farmers_track">
+            <div class="aboutus_farmers_card"><img src="images_naithika/dry.jpg" alt="Organic Farmer 1"></div>
+            <div class="aboutus_farmers_card"><img src="images_naithika/dry.jpg" alt="Organic Farmer 2"></div>
+            <div class="aboutus_farmers_card"><img src="images_naithika/dry1.jpg" alt="Organic Farmer 3"></div>
+            <div class="aboutus_farmers_card"><img src="images_naithika/dry2.jpg" alt="Organic Farmer 4"></div>
+            <div class="aboutus_farmers_card"><img src="images_naithika/dry3.jpg" alt="Organic Farmer 5"></div>
+            <div class="aboutus_farmers_card"><img src="images_naithika/dry.jpg" alt="Organic Farmer 6"></div>
+            <div class="aboutus_farmers_card"><img src="images_naithika/dry2.jpg" alt="Organic Farmer 1"></div>
+            <div class="aboutus_farmers_card"><img src="images_naithika/dry3.jpg" alt="Organic Farmer 2"></div>
+            <div class="aboutus_farmers_card"><img src="images_naithika/dry.jpg" alt="Organic Farmer 3"></div>
+            <div class="aboutus_farmers_card"><img src="images_naithika/dry1.jpg" alt="Organic Farmer 4"></div>
+            <div class="aboutus_farmers_card"><img src="images_naithika/dry3.jpg" alt="Organic Farmer 5"></div>
+            <div class="aboutus_farmers_card"><img src="images_naithika/dry2.jpg" alt="Organic Farmer 6"></div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer id="footer">
