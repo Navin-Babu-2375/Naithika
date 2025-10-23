@@ -35,116 +35,85 @@
 
 // Header end
 
-// Product page start
+
+// Products page start
+
 
 // Function to truncate text for the front face
-    function truncateText(text, wordLimit) {
-        if (!text) return { truncatedText: "", isTruncated: false };
-        const words = text.trim().split(/\s+/);
-        if (words.length > wordLimit) {
-            return { 
-                truncatedText: words.slice(0, wordLimit).join(" "), 
-                isTruncated: true 
-            };
+        function truncateText(text, wordLimit) {
+            // Remove the '...less' link text from the description before truncating
+            let cleanedText = text.replace(/...less/i, '').trim(); 
+            if (!cleanedText) return { truncatedText: "", isTruncated: false };
+
+            const words = cleanedText.split(/\s+/).filter(word => word.length > 0);
+            
+            if (words.length > wordLimit) {
+                return { 
+                    truncatedText: words.slice(0, wordLimit).join(" ") + '...', // Add ellipsis
+                    isTruncated: true 
+                };
+            }
+            return { truncatedText: cleanedText, isTruncated: false };
         }
-        return { truncatedText: text, isTruncated: false };
-    }
 
-    function initProductCards() {
-        const cards = document.querySelectorAll('.product-card');
-        const wordLimit = 15; // Word limit for front face
+        function initProductCards() {
+            const cards = document.querySelectorAll('.product-card');
+            const wordLimit = 15; // Word limit for front face
 
-        cards.forEach(card => {
-            const innerCard = card.querySelector('.product-card-inner');
-            const fullDescriptionElement = card.querySelector('.product-card-back .product-full-content p');
-            const shortDescriptionTextElement = card.querySelector('.product-short-description-text');
-            const moreLink = card.querySelector('.product-more-link');
-            const lessLink = card.querySelector('.product-less-link');
+            cards.forEach(card => {
+                const innerCard = card.querySelector('.product-card-inner');
+                // Get the text from the first paragraph in the back card content (which is the description)
+                const fullDescriptionElement = card.querySelector('.product-card-back .product-full-content p:first-of-type');
+                const shortDescriptionTextElement = card.querySelector('.product-short-description-text');
+                const moreLink = card.querySelector('.product-more-link');
+                const lessLink = card.querySelector('.product-less-link');
 
-            if (fullDescriptionElement && shortDescriptionTextElement && moreLink) {
-                const fullText = fullDescriptionElement.textContent;
+                if (fullDescriptionElement && shortDescriptionTextElement && moreLink) {
+                    const fullText = fullDescriptionElement.textContent;
 
-                // Truncate text
-                const { truncatedText, isTruncated } = truncateText(fullText, wordLimit);
-                shortDescriptionTextElement.textContent = truncatedText;
+                    // Truncate text
+                    const { truncatedText, isTruncated } = truncateText(fullText, wordLimit);
+                    shortDescriptionTextElement.textContent = truncatedText;
 
-                if (isTruncated) {
-                    moreLink.style.display = 'inline'; // Show "...more" link
+                    if (isTruncated) {
+                        moreLink.style.display = 'inline'; // Show "...more" link
 
-                    // Click Event: Flip to the back
-                    moreLink.addEventListener('click', (event) => {
-                        event.preventDefault();
-                        event.stopPropagation();
-                        innerCard.classList.add('is-flipped');
-                    });
-                } else {
-                    moreLink.style.display = 'none'; // Hide if not truncated
+                        // Click Event: Flip to the back
+                        moreLink.addEventListener('click', (event) => {
+                            event.preventDefault();
+                            event.stopPropagation();
+                            innerCard.classList.add('is-flipped');
+                        });
+                    } else {
+                        moreLink.style.display = 'none'; // Hide if not truncated
+                    }
                 }
-            }
 
-            // Function to unflip the card
-            function unflipCard(event) {
-                if (event) event.preventDefault(); // Prevent link navigation
-                innerCard.classList.remove('is-flipped');
-            }
+                // Function to unflip the card
+                function unflipCard(event) {
+                    if (event) event.preventDefault(); // Prevent link navigation
+                    innerCard.classList.remove('is-flipped');
+                }
 
-            // Mouse Leave: Flip back to front
-            card.addEventListener('mouseleave', unflipCard);
+                // Mouse Leave: Flip back to front
+                card.addEventListener('mouseleave', unflipCard);
 
-            // Clicking the less link: Flip back
-            if (lessLink) {
-                lessLink.addEventListener('click', unflipCard);
-            }
+                // Clicking the less link: Flip back
+                if (lessLink) {
+                    lessLink.addEventListener('click', unflipCard);
+                }
 
-            // "Buy Now" button on the front no longer has flip logic attached
-        });
-    }
+            });
+        }
 
-    // Initialize on page load
-    window.onload = function() {
-        initProductCards();
-    };
+        // Initialize on page load
+        window.onload = function() {
+            initProductCards();
+        };
 
 
-<<<<<<< HEAD
+// Products page end
 
-//offer.html
-
-     // Auto slide promo cards every 4 seconds
-  document.addEventListener("DOMContentLoaded", () => {
-    const slider = document.getElementById("promoCardContainer");
-    
-    // Duplicate the cards to create infinite loop effect
-    slider.innerHTML += slider.innerHTML;
-
-    const cards = slider.children;
-    const totalCards = cards.length;
-    
-    // Width to slide per step = width of big card + gap + width of small-card-column + gap
-    // We can compute width dynamically or hardcode approx:
-    const slideWidth = cards[0].offsetWidth + 20 + cards[1].offsetWidth + 20;
-
-    let index = 0;
-
-    function slide() {
-      index++;
-      if (index >= totalCards / 2) {
-        // reset instantly without animation to start
-        slider.style.transition = 'none';
-        slider.style.transform = `translateX(0)`;
-        index = 1;
-        // force reflow to apply the change immediately
-        slider.offsetHeight; 
-        slider.style.transition = 'transform 0.5s ease-in-out';
-      }
-      slider.style.transform = `translateX(-${slideWidth * index}px)`;
-    }
-
-    setInterval(slide, 4000);
-  });
-// Product page end
-=======
-// Product page end
 
 // Contact Us page start
 
@@ -172,4 +141,4 @@
     });
 
 // Contact Us page end
->>>>>>> 9dbcb525a74b47bf5733e8b79e6ece00a4684283
+
