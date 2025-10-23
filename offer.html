@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>E-commerce Header Replica (Pure CSS) with Mobile Slide-In</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="static/naithika_style.css" />
+    
+</head>
+<body>
+
+<header id="header_top_bar">
+    <div class="header_container">
+        
+        <div name="header_promo_message" class="header_promo_message">
+            WORLDWIDE SHIPPING AVAILABLE | FREE SHIPPING WITHIN INDIA ON ORDERS ABOVE RS. 4999
+        </div>
+
+        <div name="header_secondary_links" class="header_secondary_links">
+            <a href="#">
+                <svg class="header_contact_icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                CONTACT US
+            </a>
+            <a href="#" class="header_faq_link">FAQ</a>
+            <a href="#">TRACK YOUR ORDER</a>
+            <span class="header_divider">|</span>
+            <a href="#" style="font-weight: bold;">LOGIN/SIGNUP</a>
+        </div>
+    </div>
+</header>
+
+<div id="header_main_content">
+    <div class="header_container">
+
+        <a href="/">
+            <img id="header_logo_image" 
+                 src="" 
+                 alt="Naithika Logo"
+            >
+        </a>
+
+        <nav id="header_nav">
+            <a href="#" class="nav-link">HOME</a>
+            <a href="#" class="nav-link">OUR STORY</a>
+            <div class="header_dropdown_group">
+                <a href="#" class="nav-link header_dropdown_toggle">
+                    ORGANIC SHOP
+                    <svg class="header_dropdown_arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </a>
+                <div class="header_dropdown_menu">
+                    </div>
+            </div>
+            <a href="offer.html" class="nav-link">OFFERS</a>
+            <a href="#" class="nav-link">BLOG</a>
+        </nav>
+
+        <div name="header_search_group" class="header_search_group">
+
+            <div id="header_search">
+                <input id="header_search_input" type="text" placeholder="Search" />
+                <button id="header_search_button" type="button">
+                    <svg class="header_search_icon" width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                </button>
+            </div>
+        </div>
+        
+        <button name="header_mobile_menu_toggle" class="header_mobile_menu_toggle">
+            <svg class="header_mobile_menu_toggle_icon" width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+        </button>
+        
+    </div>
+</div>
+
+<div name="header_mobile_menu" class="header_mobile_menu">
+    <div class="header_nav_list">
+        <a href="#" class="nav-link">HOME</a>
+        <a href="#" class="nav-link">OUR STORY</a>
+        <a href="#" class="nav-link">ORGANIC SHOP</a>
+        <a href="#" class="nav-link">RECIPES</a>
+        <a href="#" class="nav-link">BLOG</a>
+    </div>
+</div>
+
+<!-- Offer Circles Section -->
+<section class="offer-circles">
+    <div class="circle">
+        <img src="images_naithika/download (1).jpeg" alt="Diwali Delights" />
+        <p>Diwali Delights</p>
+    </div>
+    <div class="circle">
+        <img src="images_naithika/download (1).jpeg" alt="Membership Deals" />
+        <p>Membership Deals</p>
+    </div>
+    <div class="circle">
+        <img src="images_naithika/download (1).jpeg" alt="New Launches" />
+        <p>New Launches</p>
+    </div>
+    <div class="circle">
+        <img src="images_naithika/download (1).jpeg" alt="Under 499" />
+        <p>Under ₹499</p>
+    </div>
+    <div class="circle">
+        <img src="images_naithika/download (1).jpeg" alt="All Products" />
+        <p>All Products</p>
+    </div>
+</section>
+
+<!-- Auto-Sliding Offer Cards (Promo Card Section) -->
+<section class="promo-card-section">
+  <div class="promo-card-container" id="promoCardContainer">
+    
+    <!-- Big Left Card -->
+    <div class="promo-card big-card" style="background-image: url('images_naithika/download (1).jpeg');">
+      <div class="promo-card-text">
+        <h2>10% OFF</h2>
+        <p>Use Code: <strong>TBOF10</strong><br />On Orders Above ₹3000</p>
+      </div>
+    </div>
+
+    <!-- Right Two Small Cards -->
+    <div class="small-card-column">
+      
+      <div class="promo-card small-card" style="background-image: url('images_naithika/download (1).jpeg');">
+        <div class="promo-card-text">
+          <h3>Khapli Atta</h3>
+          <p>High Fibre | Good for Gut | Low Gluten</p>
+        </div>
+      </div>
+
+      <div class="promo-card small-card" style="background-image: url('images_naithika/download (1).jpeg');">
+        <div class="promo-card-text">
+          <h3>GST Price Drop</h3>
+          <p>Flat 12% OFF<br />New Price: ₹3370</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="most-loved">
+  <h2>Most Loved</h2>
+  <div class="product-grid">
+
+    <!-- Product Card 1 -->
+    <div class="product-card">
+      <div class="tag best-seller">Best Seller</div>
+      <img src="images_naithika/download (1).jpeg" alt="Khapli Wheat Atta" />
+      <h3>Khapli Wheat Atta </h3>
+      <p class="desc">Low GI | Stoneground</p>
+      <div class="rating">⭐ 4.9 (2k+ Reviews)</div>
+      <div class="price">
+        ₹2,278 <span class="members-price">₹2,005 (Members)</span>
+      </div>
+      <select>
+        <option>10 kg</option>
+        <option>5 kg</option>
+      </select>
+      <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Khapli%20Wheat%20Atta" target="_blank" class="whatsapp-card-button">
+                       <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp Icon" style="width:20px; height:20px;">
+
+        Chat on WhatsApp
+      </a>
+
+    </div>
+
+    <!-- Product Card 2 -->
+    <div class="product-card">
+      <div class="tag discount">6% GST OFF</div>
+      <img src="images_naithika/download (1).jpeg" alt="A2 Gir Cow Ghee" />
+      <h3> - Cultured Ghee</h3>
+      <p class="desc">Bilona-made | Small batches</p>
+      <div class="rating">⭐ 4.9 (2k+ Reviews)</div>
+      <div class="price">
+        ₹3,370 <span class="members-price">₹2,966 (Members)</span>
+      </div>
+      <select>
+        <option>1000 ml (Glass Bottle)</option>
+        <option>500 ml</option>
+      </select>
+      <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Khapli%20Wheat%20Atta" target="_blank" class="whatsapp-card-button">
+                      <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp Icon" style="width:20px; height:20px;">
+
+        Chat on WhatsApp
+
+      </a>
+    </div>
+
+    <!-- Product Card 3 -->
+    <div class="product-card">
+      <div class="tag trending">Trending</div>
+      <img src="images_naithika/download (1).jpeg" alt="Khapli Multigrain Atta" />
+      <h3>Khapli Multigrain Atta</h3>
+      <p class="desc">50% Khapli | 50% Supergrains</p>
+      <div class="rating">⭐ 4.9 (161 Reviews)</div>
+      <div class="price">
+        ₹1,745 <span class="members-price">₹1,536 (Members)</span>
+      </div>
+      <select>
+        <option>10 kg</option>
+        <option>5 kg</option>
+      </select>
+      <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Khapli%20Wheat%20Atta" target="_blank" class="whatsapp-card-button">
+                       <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp Icon" style="width:20px; height:20px;">
+
+        Chat on WhatsApp
+      </a>
+    </div>
+
+    <!-- Product Card 4 -->
+    <div class="product-card">
+      <div class="tag hot-deals">Hot Deals</div>
+      <img src="images_naithika/download (1).jpeg" alt="Groundnut Oil" />
+      <h3>Groundnut Oil</h3>
+      <p class="desc">Single pressed | GMO-free</p>
+      <div class="rating">⭐ 4.9 (529 Reviews)</div>
+      <div class="price">
+        ₹425 <span class="members-price">₹374 (Members)</span>
+      </div>
+      <select>
+        <option>Plastic Bottle 1L</option>
+        <option>Glass Bottle 1L</option>
+      </select>
+      <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Khapli%20Wheat%20Atta" target="_blank" class="whatsapp-card-button">
+       
+                       <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp Icon" style="width:20px; height:20px;">
+ Chat on WhatsApp
+      </a>
+    </div>
+ 
+  </div>
+</section>
+
+<section class="top-picks">
+  <h2>Top Picks For You</h2>
+
+  <div class="category-filters">
+    <button>Ghee</button>
+    <button>Oil</button>
+    <button>Atta</button>
+    <button>Natural Sweetener</button>
+    <button>Newly Launched</button>
+    <button>Monsoon</button>
+  </div>
+
+  <div class="product-grid">
+
+    <!-- Product 1 -->
+    <div class="product-card">
+      <div class="gst-tag">6% GST OFF</div>
+      <img src="images_naithika/download (1).jpeg" alt="A2 Gir Cow Ghee">
+      <h3>A2 Gir Cow - Cultured Ghee</h3>
+      <p class="desc">Bilona-made | Small batches</p>
+      <div class="rating">⭐ 4.9 (2k+ Reviews)</div>
+      <div class="price">₹3,370</div>
+      <div class="members-price">₹2,966 (Members)</div>
+      <a href="https://wa.me/919999999999?text=Interested%20in%20A2%20Gir%20Cow%20Ghee" class="whatsapp-btn" target="_blank">
+        <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp">
+        Chat on WhatsApp
+      </a>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-card">
+      <div class="gst-tag">6% GST OFF</div>
+      <img src="images_naithika/download (1).jpeg" alt="Buffalo Ghee">
+      <h3>Buffalo Ghee</h3>
+      <p class="desc">Bilona-made | Firewood process</p>
+      <div class="rating">⭐ 4.9 (89 Reviews)</div>
+      <div class="price">₹1,170</div>
+      <div class="members-price">₹1,030 (Members)</div>
+      <a href="https://wa.me/919999999999?text=Interested%20in%20Buffalo%20Ghee" class="whatsapp-btn" target="_blank">
+        <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp">
+        Chat on WhatsApp
+      </a>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product-card">
+      <div class="gst-tag">6% GST OFF</div>
+      <img src="images_naithika/download (1).jpeg" alt="Brahmi Ghee">
+      <h3>Brahmi Ghee</h3>
+      <p class="desc">Brahmi infused | A2 Ghee</p>
+      <div class="rating">⭐ 4.9 (231 Reviews)</div>
+      <div class="price">₹2,255</div>
+      <div class="members-price">₹2,055 (Members)</div>
+      <a href="https://wa.me/919999999999?text=Interested%20in%20Brahmi%20Ghee" class="whatsapp-btn" target="_blank">
+        <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp">
+        Chat on WhatsApp
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<footer id="footer">
+    <div id="footer_content">
+        
+        <div class="footer_col footer_about">
+            <h3 class="footer_section_title">About Naithika</h3>
+            <p class="footer_about_text">
+                Naithika is a trusted brand of certified organic food products cultivated and harvested in collaboration with farmers who contribute to the goodness of people and the environment through sustainable farming practices.
+            </p>
+            
+            <img class="footer_fssai_img" 
+                src="images_naithika/fssai.png" 
+                alt="FSSAI Logo"
+            />
+
+            <div class="footer_fssai_details">
+                GSTN: 33AARPD1404NIZE<br />
+                LIC NO: 10020042004884
+            </div>
+
+            <div class="footer_payment_icons">
+                <img src="images_naithika/rupay.png" style="width: 50px;" alt="Rupay" />
+                <img src="images_naithika/mastercard.png" style="width: 50px;" alt="Mastercard" />
+            </div>
+        </div>
+
+        <div class="footer_col footer_links_1">
+            <h3 class="footer_section_title">Our Story</h3>
+            <div class="footer_link_list">
+                <a href="#">Our Story</a>
+                <a href="#">Organic Shop</a>
+                <a href="#">Login/Signup</a>
+                <a href="#">Blog</a>
+                <a href="#">FAQ</a>
+                <a href="#">Recipes</a>
+            </div>
+        </div>
+        
+        <div class="footer_col footer_links_2">
+            <h3 class="footer_section_title">Policies</h3>
+            <div class="footer_link_list">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Shipping & Returns</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Track Your Order</a>
+            </div>
+        </div>
+
+        <div class="footer_col footer_newsletter">
+            <h3 class="footer_section_title">Sign Up for Email Updates</h3>
+            <form id="footer_newsletter_form">
+                <input id="footer_newsletter_email" type="email" placeholder="Enter your email" />
+                <button type="submit">Subscribe</button>
+            </form>
+            <p>Get the latest offers and updates.</p>
+        </div>
+
+    </div>
+</footer>
+
+<script src="static/naithika.js"></script>
+
+
+
+</body>
+</html>
