@@ -455,7 +455,7 @@
 
 /* Products page */
 
-    html {
+        html {
       scroll-behavior: smooth;
     }
 
@@ -585,14 +585,23 @@
     }
     .product-card-back {
         transform: rotateY(180deg); 
-        /* padding: 10px; */
         display: flex;
         flex-direction: column;
         text-align: left;
     }
-    .product-card-back p, h4 {
+    .product-card-back h4 {
         padding: 10px;
+        margin-top: 0;
+        color: var(--product-primary-color);
+        padding-bottom: 5px;
+        border-bottom: 1px solid #ddd;
     }
+    .product-card-back p {
+        padding: 0 10px;
+        font-size: 0.9em;
+        margin-bottom: 10px;
+    }
+    
     /* --- Front Face Content Styles --- */
     .product-image-container {
         height: 200px;
@@ -637,7 +646,7 @@
         font-weight: 600;
         cursor: pointer;
         text-decoration: none;
-        display: none; /* Hidden by default, shown by JS if text is truncated */
+        display: none; 
         margin-left: 4px;
     }
     .product-more-link:hover {
@@ -707,23 +716,38 @@
         overflow-y: auto; 
         padding-right: 5px; 
     }
-    .product-full-content h4 {
-        color: var(--product-primary-color);
-        margin-top: 0;
-        padding-bottom: 5px;
-        border-bottom: 1px solid #ddd;
+    
+    /* NEW: Styles for Nutritional Content */
+    .product-nutrition-heading {
+        font-size: 1em;
+        font-weight: 700;
+        color: #555;
+        padding: 0 10px;
+        margin: 15px 0 5px;
+        border-bottom: 1px dashed #ddd;
     }
-    .product-full-content p {
-        font-size: 0.9em;
-        margin-bottom: 10px;
+    .product-nutrition-list {
+        list-style: none;
+        padding: 0 10px 10px 15px; 
+        margin: 0;
+        font-size: 0.85em;
+        text-align: left;
+    }
+    .product-nutrition-list li {
+        margin-bottom: 3px;
+        display: list-item; 
+        list-style-type: disc;
+        margin-left: 15px;
+        color: #6c757d;
     }
     .product-price-back {
         font-size: 1.2em;
         font-weight: 700;
         color: var(--product-secondary-color);
         margin: 10px 0 0; 
+        padding: 0 10px; 
     }
-    
+
     
     /* --- Media Queries for Responsiveness --- */
     
@@ -773,7 +797,7 @@
         .product-section-heading {
             font-size: 1.8em;
         }
-<<<<<<< HEAD
+
         
     }
   /* === Offer.html === */
@@ -1132,8 +1156,8 @@ select {
       height: 20px;
     }
  
-=======
-    }
+
+    
 
 /* Contact Us page */
 
@@ -1338,4 +1362,4 @@ select {
                 padding: 25px;
             }
         }
->>>>>>> 9dbcb525a74b47bf5733e8b79e6ece00a4684283
+
