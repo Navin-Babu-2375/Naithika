@@ -106,4 +106,39 @@
     };
 
 
+
+//offer.html
+
+     // Auto slide promo cards every 4 seconds
+  document.addEventListener("DOMContentLoaded", () => {
+    const slider = document.getElementById("promoCardContainer");
+    
+    // Duplicate the cards to create infinite loop effect
+    slider.innerHTML += slider.innerHTML;
+
+    const cards = slider.children;
+    const totalCards = cards.length;
+    
+    // Width to slide per step = width of big card + gap + width of small-card-column + gap
+    // We can compute width dynamically or hardcode approx:
+    const slideWidth = cards[0].offsetWidth + 20 + cards[1].offsetWidth + 20;
+
+    let index = 0;
+
+    function slide() {
+      index++;
+      if (index >= totalCards / 2) {
+        // reset instantly without animation to start
+        slider.style.transition = 'none';
+        slider.style.transform = `translateX(0)`;
+        index = 1;
+        // force reflow to apply the change immediately
+        slider.offsetHeight; 
+        slider.style.transition = 'transform 0.5s ease-in-out';
+      }
+      slider.style.transform = `translateX(-${slideWidth * index}px)`;
+    }
+
+    setInterval(slide, 4000);
+  });
 // Product page end
