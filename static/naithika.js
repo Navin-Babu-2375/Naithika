@@ -106,6 +106,7 @@
     };
 
 
+<<<<<<< HEAD
 
 //offer.html
 
@@ -142,3 +143,33 @@
     setInterval(slide, 4000);
   });
 // Product page end
+=======
+// Product page end
+
+// Contact Us page start
+
+    const contactusForm = document.getElementById('contactusForm');
+    const contactusSuccessMessage = document.getElementById('contactusSuccessMessage');
+    // Function to show the success modal
+    function contactusShowSuccess() {
+        contactusSuccessMessage.classList.remove('contactus-hidden');
+    }
+    // Function to hide the success modal and reset form
+    function contactusHideSuccess(event) {
+        // Prevent button click from closing the modal then closing it again via overlay
+        if(event) event.stopPropagation(); 
+        contactusSuccessMessage.classList.add('contactus-hidden');
+        contactusForm.reset(); // Clear the form fields
+    }
+    // Event listener for form submission
+    contactusForm.addEventListener('submit', function(event) {
+        // Prevent the default form submission behavior (which would reload the page)
+        event.preventDefault();
+        // Simulate form data processing
+        console.log('Form submitted (simulated)');
+        // Show the success message
+        contactusShowSuccess();
+    });
+
+// Contact Us page end
+>>>>>>> 9dbcb525a74b47bf5733e8b79e6ece00a4684283

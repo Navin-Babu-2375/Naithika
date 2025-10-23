@@ -1,0 +1,799 @@
+
+        /* About Page Styles */
+        body{
+            background-color: #ffffff;
+        }
+        
+        .aboutus_hero_section {
+            background: linear-gradient(135deg, rgba(221, 178, 124, 0.95), rgba(200, 150, 90, 0.95));
+            padding: 100px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .aboutus_hero_section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 50px 50px;
+            animation: aboutus_pattern_move 20s linear infinite;
+        }
+
+        @keyframes aboutus_pattern_move {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
+        }
+
+        .aboutus_hero_title {
+            font-family: 'Playfair Display', serif;
+            font-size: 4.5rem;
+            color: white;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 2;
+            animation: aboutus_fadeInUp 1s ease-out;
+        }
+
+        .aboutus_hero_subtitle {
+            font-size: 1.3rem;
+            color: white;
+            letter-spacing: 3px;
+            font-weight: 300;
+            position: relative;
+            z-index: 2;
+            animation: aboutus_fadeInUp 1.2s ease-out;
+        }
+
+        @keyframes aboutus_fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Main Story Section */
+        
+
+        /* Values Grid */
+        .aboutus_values_wrapper {
+            max-width: 1200px;
+            margin: 80px auto;
+            padding: 0 20px;
+        }
+
+        .aboutus_section_heading {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            color: #ddb27c;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .aboutus_values_grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+
+        /* New Container for the Product Image */
+.aboutus_value_image_container {
+    /* Set a fixed size for a consistent look */
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 1.5rem auto; /* Centers the container and adds bottom margin */
+    /* Optional: Make the image container itself circular */
+    border-radius: 50%;
+    overflow: hidden; /* Ensures image is clipped to the border-radius */
+    border: 3px solid #eee; /* Light border for definition */
+    transition: all 0.4s ease;
+}
+.aboutus_value_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+.aboutus_value_card:hover .aboutus_value_image {
+    transform: scale(1.08); /* Zooms the image slightly on hover */
+}
+
+/* Styling for the Image inside the container */
+.aboutus_value_image {
+    width: 100%;
+    height: 100%;
+    /* Ensures the image covers the container without stretching */
+    object-fit: cover; 
+    transition: transform 0.4s ease;
+}
+
+        .aboutus_value_card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .aboutus_value_card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #ddb27c, #c89650);
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+
+        .aboutus_value_card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(221, 178, 124, 0.3);
+        }
+
+        .aboutus_value_card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .aboutus_value_icon {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            display: inline-block;
+            animation: aboutus_bounce 2s ease-in-out infinite;
+        }
+
+        @keyframes aboutus_bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .aboutus_value_card:hover .aboutus_value_icon {
+            animation: aboutus_spin 0.6s ease-in-out;
+        }
+
+        @keyframes aboutus_spin {
+            from { transform: rotate(0deg) scale(1); }
+            50% { transform: rotate(180deg) scale(1.2); }
+            to { transform: rotate(360deg) scale(1); }
+        }
+
+        .aboutus_value_title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .aboutus_value_description {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* Process Section */
+       /* --- BASE STYLES (Keep as is) --- */
+
+.aboutus_process_section {
+    background: #ffffff;
+    /* padding: 80px 20px;
+    margin: 80px 0 30px 0; */
+}
+
+.aboutus_process_container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.aboutus_process_title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #ddb27c;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.aboutus_process_subtitle {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #666;
+    margin-bottom: 4rem;
+    font-family: 'Dancing Script', cursive;
+}
+
+.aboutus_section_subheading{
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.2rem;
+    color: #555; 
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/* --- CORE TIMELINE STYLES --- */
+
+.aboutus_process_grid {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    /* Add padding to center the timeline steps vertically within the grid */
+    /* padding-top: 150px;  */
+    /* padding-bottom: 150px;  */
+    align-items: flex-start; /* Start steps at the top of the padding area */
+}
+
+/* Central Horizontal Dotted Line */
+.aboutus_process_grid::before {
+    content: '';
+    position: absolute;
+    top: 50%; /* Center the line vertically */
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    height: 2px;
+    /* Use a solid color for the line and use the steps to break it */
+    background: #ddd; 
+    z-index: 1; 
+}
+
+/* --- STEP STYLING --- */
+.aboutus_process_step {
+    flex-basis: 24%; /* Distribute space for 4 items */
+    text-align: center;
+    position: relative;
+    z-index: 2; /* Steps over the line */
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    transition: transform 0.3s ease;
+}
+
+/* Steps 2 and 4 (even children) moved downwards */
+.aboutus_process_step:nth-child(even) {
+    margin-top: 250px; /* Adjust this value to set the gap between steps 1/3 and 2/4 */
+}
+
+/* --- IMAGE STYLING --- */
+
+.aboutus_process_image_box {
+    width: 250px; /* Fixed width for the image container */
+    height: 180px; /* Fixed height for the image container */
+    margin: 0 auto 1.5rem;
+    border-radius: 10px; /* Soft corners for the image box */
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.aboutus_process_step:hover .aboutus_process_image_box {
+    transform: translateY(-5px); /* Lift the image box on hover */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.aboutus_process_image_box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* --- NUMBER STYLING (The DOTS that cross the line) --- */
+
+.aboutus_process_number {
+    /* Position the number exactly in the vertical center of the grid container */
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centering trick */
+    
+    width: 40px; 
+    height: 40px;
+    background: #ddb27c; /* Primary color dot */
+    color: white; 
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    font-weight: 700;
+    box-shadow: 0 0 0 8px #f9f9f9; /* Creates the "cut-out" on the line */
+    border: 2px solid white; /* A small white edge for definition */
+    margin: 0; /* Override any previous margin */
+}
+
+/* --- NAME STYLING (Title below the number/image) --- */
+
+.aboutus_process_name {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 1.5rem;
+}
+
+/* Adjustment for mobile view (Vertical layout) */
+/* Adjustment for mobile view (Vertical layout) */
+@media (max-width: 900px) {
+    .aboutus_process_grid {
+        flex-direction: column;
+        padding: 0 0 0 50px; /* Padding for vertical line space */
+        align-items: flex-start;
+        /* Increase padding bottom for better spacing at the end */
+        padding-bottom: 40px; 
+    }
+
+    .aboutus_process_grid::before {
+        /* Vertical Line */
+        top: 0;
+        bottom: 0;
+        left: 20px; 
+        width: 2px;
+        height: 100%;
+        transform: none;
+    }
+    
+    .aboutus_process_step {
+        width: 100%;
+        margin-top: 0 !important; /* Remove the vertical offset */
+        padding: 40px 0;
+        text-align: left;
+        /* REMOVE display: flex and align-items: center for vertical layout */
+        /* display: flex; 
+        align-items: center; */
+        gap: 0; /* No gap needed for vertical alignment */
+        position: relative; /* Ensure proper positioning for inner elements */
+    }
+
+    /* New container to hold image and text/name for better alignment */
+    .aboutus_process_step > div:not(.aboutus_process_number) {
+        /* Position image and name to the right of the vertical line */
+        margin-left: 30px; 
+    }
+    
+    .aboutus_process_image_box {
+        /* Increased size for the image box on mobile */
+        width: 180px; /* Wider image */
+        height: 120px; /* Taller image */
+        margin: 0 0 10px 0; /* Add margin below the image to separate from the text */
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1); /* Lighter shadow for mobile */
+        
+    }
+
+    /* Reset hover effect for mobile to prevent layout shift */
+    .aboutus_process_step:hover .aboutus_process_image_box {
+        transform: none; 
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1); 
+    }
+    
+    .aboutus_process_number {
+        /* Reposition number to the left on the vertical line (same size) */
+        left: 20px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        /* Increase the box-shadow cut-out slightly for better visual on the line */
+        box-shadow: 0 0 0 10px #f9f9f9; 
+    }
+
+    .aboutus_process_name {
+        margin-top: 0; /* Already added margin to image box */
+        font-size: 1.1rem; /* Slightly smaller for mobile */
+        text-align: left; /* Ensure the name is aligned left */
+    }
+}
+
+
+       /* Farmers Section */
+.aboutus_farmers_section {
+    background-color: #f9f9f9;
+    /* REDUCED PADDING for less height */
+    padding: 40px 0 60px 0;
+    overflow: hidden; /* Important for the carousel */
+}
+
+.aboutus_farmers_content {
+    max-width: 1000px; 
+    margin: 0 auto 40px; /* Added margin-bottom to separate content from carousel */
+    padding: 0 20px; /* Added horizontal padding for content on small screens */
+    text-align: center;
+}
+
+.aboutus_farmers_title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #ddb27c;
+    margin-bottom: 1rem;
+}
+
+.aboutus_farmers_subtitle {
+    font-size: 1.3rem;
+    color: #666;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 2rem;
+}
+
+.aboutus_farmers_text {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.9;
+}
+
+/* --- CAROUSEL STYLES --- */
+
+/* Keyframe for Auto-Scrolling */
+@keyframes scroll-carousel {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* Scrolls one full set of images */
+}
+
+.aboutus_farmers_carousel {
+    width: 100%;
+    overflow: hidden; 
+    white-space: nowrap; 
+    padding: 20px 0;
+    
+    /* Hide the scrollbar but keep scrolling functionality on mobile/touch */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.aboutus_farmers_carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.aboutus_farmers_track {
+    display: flex;
+    /* Apply the automatic scroll animation for ALL screens */
+    animation: scroll-carousel 30s linear infinite; 
+    width: fit-content; 
+
+    /* === ENABLE MANUAL SCROLLING/DRAGGING FOR ALL SCREENS === */
+    overflow-x: scroll; /* Allow manual horizontal scroll */
+    -webkit-overflow-scrolling: touch; /* Smoother scrolling on iOS */
+    
+    /* Make the cursor a "grab" icon on desktop to indicate drag-ability */
+    cursor: grab; 
+}
+
+.aboutus_farmers_card {
+    display: inline-block;
+    width: 300px; /* Width of each image card */
+    height: 200px; /* Height of each image card */
+    margin: 0 15px; /* Spacing between cards */
+    flex-shrink: 0; 
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.aboutus_farmers_card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* --- RESPONSIVE ADJUSTMENTS --- */
+@media (max-width: 768px) {
+    .aboutus_farmers_section {
+        padding: 40px 0;
+    }
+    
+    .aboutus_farmers_title {
+        font-size: 2.5rem;
+    }
+
+    .aboutus_farmers_subtitle {
+        font-size: 1.1rem;
+    }
+
+    .aboutus_farmers_card {
+        width: 250px; /* Slightly smaller cards on mobile */
+        height: 160px;
+        /* Scroll snapping is great for touch/manual scrolling */
+        scroll-snap-align: center; 
+    }
+    
+    /* Optional: Slightly faster scroll on smaller screens */
+    .aboutus_farmers_track {
+        animation-duration: 25s; 
+        cursor: grab; /* Keep the grab cursor */
+    }
+}
+       
+        
+
+       
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .header_promo_message {
+                font-size: 0.65rem;
+            }
+
+            .aboutus_intro_grid {
+                grid-template-columns: 1fr;
+            }
+
+            .aboutus_values_grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .aboutus_process_grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .aboutus_certification_grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            #footer_content {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header_container {
+                flex-direction: column;
+                gap: 0.5rem;
+                padding: 0.8rem 1rem;
+            }
+
+            .header_secondary_links {
+                font-size: 0.7rem;
+                gap: 0.8rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .aboutus_hero_title {
+                font-size: 2.5rem;
+            }
+
+            .aboutus_hero_subtitle {
+                font-size: 1rem;
+            }
+
+            .aboutus_intro_content h2,
+            .aboutus_featured_title,
+            .aboutus_section_heading,
+            .aboutus_process_title,
+            .aboutus_farmers_title {
+                font-size: 2rem;
+            }
+
+            .aboutus_values_grid,
+            .aboutus_process_grid,
+            .aboutus_certification_grid {
+                grid-template-columns: 1fr;
+            }
+
+            #footer_content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+
+
+/* --- Ancestral Wisdom Section --- */
+
+.ancestral_wisdom_section {
+    background-color: white; /* Use a clean background */
+    padding: 100px 20px;
+}
+
+.ancestral_wisdom_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 40px; /* Space between the image and text */
+    align-items: center; /* Vertically center the content */
+}
+
+/* --- Left Column: Graphic Box --- */
+
+.ancestral_wisdom_graphic_box {
+    flex-basis: 40%; /* Allocate 40% of the space to the graphic */
+    min-width: 350px; /* Minimum size for the image area */
+    max-width: 500px; 
+    margin: 0 auto;
+}
+
+.ancestral_wisdom_graphic_box img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* --- Right Column: Content --- */
+
+.ancestral_wisdom_content {
+    flex-basis: 60%; /* Allocate 60% of the space to the text */
+}
+
+/* New Heading Style (Replaces Yellow Box) */
+
+.ancestral_wisdom_tagline {
+    font-size: 1.2rem;
+    color: #555; /* Darker gray for contrast */
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    font-family: 'Dancing Script', cursive;
+}
+
+.ancestral_wisdom_title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #ddb27c; /* Your primary brand color */
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #fff8f0; /* Subtle line using your light accent color */
+    display: inline-block; /* Makes the border line only as wide as the text */
+}
+
+.ancestral_wisdom_text {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+/* --- Responsive Adjustments --- */
+
+@media (max-width: 992px) {
+    .ancestral_wisdom_container {
+        flex-direction: column; /* Stack columns vertically on smaller screens */
+        text-align: center;
+        gap: 30px;
+    }
+    
+    .ancestral_wisdom_graphic_box {
+        min-width: unset;
+        max-width: 90%;
+        order: 2; /* Move graphic below the text for better flow on mobile (optional) */
+    }
+
+    .ancestral_wisdom_content {
+        order: 1; /* Move text above the graphic (optional) */
+    }
+    
+    .ancestral_wisdom_title {
+        font-size: 2.5rem;
+        /* Center the inline block title's border */
+        margin-left: auto;
+        margin-right: auto;
+        display: block; 
+    }
+}
+
+@media (max-width: 600px) {
+    .ancestral_wisdom_section {
+        padding: 60px 15px;
+    }
+    
+    .ancestral_wisdom_title {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .ancestral_wisdom_text {
+        font-size: 1rem;
+    }
+}
+
+
+
+/* --- Making Meals Wholesome Section (Mirrored) --- */
+
+.making_meals_wholesome_section {
+    /* background-color: #fcf6ed;  */
+    background-color: white; /* Slightly different background to differentiate */
+    padding: 100px 20px;
+}
+
+.making_meals_wholesome_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 40px; 
+    align-items: center; 
+}
+
+/* --- Left Column: Content (This time it's on the left for desktop) --- */
+
+.making_meals_wholesome_content {
+    flex-basis: 60%; 
+}
+
+.making_meals_wholesome_tagline {
+    font-size: 1.2rem;
+    color: #555; 
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    font-family: 'Dancing Script', cursive;
+}
+
+.making_meals_wholesome_title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #ddb27c; 
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #fff8f0; 
+    display: inline-block; 
+}
+
+.making_meals_wholesome_text {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+/* --- Right Column: Graphic Box (This time it's on the right for desktop) --- */
+
+.making_meals_wholesome_graphic_box {
+    flex-basis: 40%; 
+    min-width: 350px; 
+    max-width: 500px; 
+    margin: 0 auto;
+    /* KEY CHANGE: Set order to 2 to push it to the right on desktop */
+    order: 2; 
+}
+
+.making_meals_wholesome_graphic_box img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* --- Responsive Adjustments --- */
+
+@media (max-width: 992px) {
+    .making_meals_wholesome_container {
+        flex-direction: column; /* Stack columns vertically on smaller screens */
+        text-align: center;
+        gap: 30px;
+    }
+    
+    .making_meals_wholesome_graphic_box {
+        min-width: unset;
+        max-width: 90%;
+        order: 2; /* Ensure graphic is below text on mobile for consistency */
+    }
+
+    .making_meals_wholesome_content {
+        order: 1; /* Ensure text is above graphic on mobile for consistency */
+    }
+    
+    .making_meals_wholesome_title {
+        font-size: 2.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        display: block; 
+    }
+}
+
+@media (max-width: 600px) {
+    .making_meals_wholesome_section {
+        padding: 60px 15px;
+    }
+    
+    .making_meals_wholesome_title {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .making_meals_wholesome_text {
+        font-size: 1rem;
+    }
+}
