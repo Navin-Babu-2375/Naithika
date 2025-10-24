@@ -113,41 +113,80 @@
 <!-- Auto-Sliding Offer Cards (Promo Card Section) -->
 <!-- Include Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
 <section class="promo-card-section">
-     <h1 class="styled-heading">
-      " Celebrate the Season with Exclusive <span>Naithika Offers!"</span> 
-    </h1>
+  <h1 class="styled-heading">
+    Celebrate the Season with Exclusive <span>Naithika Offers!</span>
+  </h1>
 
-  <div class="promo-card-container" id="promoCardContainer">
-    <!-- Beautiful Heading -->
- 
-    <!-- Big Left Card -->
-    <div class="promo-card big-card" style="background-image: url('images_naithika/offer.jpg');">
-      <div class="promo-card-text">
-        <h2>10% OFF</h2>
-        <p>Use Code: <strong>TBOF10</strong><br />On Orders Above ₹3000</p>
-      </div>
-    </div>
+  <div class="slider-wrapper">
+    <div class="promo-card-container" id="promoCardContainer">
 
-    <!-- Right Two Small Cards -->
-    <div class="small-card-column">
-      <div class="promo-card small-card" style="background-image: url('images_naithika/offer3.jpg');">
-        <div class="promo-card-text">
-          <h3>Khapli Atta</h3>
-          <p>High Fibre | Good for Gut | Low Gluten</p>
+      <!-- ====== Slide 1 ====== -->
+      <div class="slide">
+        <div class="promo-card big-card" style="background-image: url('images_naithika/offer.jpg');">
+          <div class="promo-card-text">
+            <h2>10% OFF</h2>
+            <p>Use Code: <strong>TBOF10</strong><br />On Orders Above ₹3000</p>
+          </div>
+        </div>
+        <div class="small-card-column">
+          <div class="promo-card small-card" style="background-image: url('images_naithika/offer3.jpg');">
+            <div class="promo-card-text">
+              <h3>Khapli Atta</h3>
+              <p>High Fibre | Good for Gut | Low Gluten</p>
+            </div>
+          </div>
+          <div class="promo-card small-card" style="background-image: url('images_naithika/offer3.jpg');">
+            <div class="promo-card-text">
+              <h3>GST Price Drop</h3>
+              <p>Flat 12% OFF<br />New Price: ₹3370</p>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="promo-card small-card" style="background-image: url('images_naithika/offer3.jpg');">
-        <div class="promo-card-text">
-          <h3>GST Price Drop</h3>
-          <p>Flat 12% OFF<br />New Price: ₹3370</p>
+      <!-- ====== Slide 2 ====== -->
+      <div class="slide">
+        <div class="promo-card big-card" style="background-image: url('images_naithika/offer.jpg');">
+          <div class="promo-card-text">
+            <h2>Buy 1 Get 1 Free</h2>
+            <p>Valid on Select Naithika Oils</p>
+          </div>
+        </div>
+        <div class="small-card-column">
+          <div class="promo-card small-card" style="background-image: url('images_naithika/offer3.jpg');">
+            <div class="promo-card-text">
+              <h3>Cold Pressed Oil</h3>
+              <p>Pure & Natural | Chemical Free</p>
+            </div>
+          </div>
+          <div class="promo-card small-card" style="background-image: url('images_naithika/offer3.jpg');">
+            <div class="promo-card-text">
+              <h3>Special Combo</h3>
+              <p>Save 20% on Combo Packs</p>
+            </div>
+          </div>
         </div>
       </div>
+
+      <!-- Add more slides if needed (up to 6 total) -->
     </div>
   </div>
 </section>
+
+
+<script>
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
+const totalSlides = slides.length;
+
+setInterval(() => {
+  currentSlide = (currentSlide + 1) % totalSlides;
+  document.getElementById('promoCardContainer').style.transform = `translateX(-${currentSlide * 100}%)`;
+}, 4000); // 4 seconds per slide
+</script>
 
 
 <section class="most-loved">
