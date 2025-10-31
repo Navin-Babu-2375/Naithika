@@ -175,114 +175,384 @@
     </div>
   </div>
 </section>
-
-
-<script>
-let currentSlide = 0;
-const slides = document.querySelectorAll('.slide');
-const totalSlides = slides.length;
-
-setInterval(() => {
-  currentSlide = (currentSlide + 1) % totalSlides;
-  document.getElementById('promoCardContainer').style.transform = `translateX(-${currentSlide * 100}%)`;
-}, 4000); // 4 seconds per slide
-</script>
-
-
 <section class="most-loved">
-  <h1 class="styled-heading">
-       Most Loved
-    </h1>
-  <div class="product-grid">
+  <h1 class="styled-heading">Most Loved – Dehydrated Fruits</h1>
 
-    <!-- Product Card 1 -->
-    <div class="product-card">
-      <div class="tag best-seller">Best Seller</div>
-      <img src="images_naithika/three.png" alt="Khapli Wheat Atta" />
-      <h3>Khapli Wheat Atta </h3>
-      <p class="desc">Low GI | Stoneground</p>
-      <div class="rating">⭐ 4.9 (2k+ Reviews)</div>
-      <div class="price">
-        ₹2,278 <span class="members-price">₹2,005 (Members)</span>
+  <div class="product-slider-container">
+    <!-- Left Button -->
+    <button class="scroll-btn left" onclick="scrollLeft()">&#10094;</button>
+
+    <!-- Product Slider -->
+    <div class="product-slider" id="productSlider">
+
+      <!-- Product 1 -->
+      <div class="product-card">
+        <div class="tag best-seller">Best Seller</div>
+        <img src="images_naithika/mango.jpg" alt="Dehydrated Mango" />
+        <h3>Mango – Dehydrated Fruits</h3>
+        <p class="desc">Sun-ripened slices, low-heat dried to preserve aroma and nutrients. No sugar or preservatives.</p>
+        <div class="rating">⭐ 4.9 (2k+ Reviews)</div>
+        <div class="price">₹250 <span class="members-price">₹220 (Members)</span></div>
+        <select>
+          <option>100 g</option>
+          <option>200 g</option>
+        </select>
+        <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Dehydrated%20Mango" target="_blank" class="whatsapp-card-button">
+          <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" style="width:20px;height:20px;">
+          Chat on WhatsApp
+        </a>
       </div>
-      <select>
-        <option>10 kg</option>
-        <option>5 kg</option>
-      </select>
-      <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Khapli%20Wheat%20Atta" target="_blank" class="whatsapp-card-button">
-                       <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp Icon" style="width:20px; height:20px;">
 
-        Chat on WhatsApp
-      </a>
+      <!-- Product 2 -->
+      <div class="product-card">
+        <div class="tag new">New</div>
+        <img src="images_naithika/chikku.jpg" alt="Dehydrated Chikku" />
+        <h3>Chikku (Sapota) – Dehydrated Fruits</h3>
+        <p class="desc">Soft, caramel-sweet slices rich in fiber. Perfect with tea or porridge.</p>
+        <div class="rating">⭐ 4.8 (1.2k+ Reviews)</div>
+        <div class="price">₹250 <span class="members-price">₹220 (Members)</span></div>
+        <select>
+          <option>100 g</option>
+          <option>200 g</option>
+        </select>
+        <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Dehydrated%20Chikku" target="_blank" class="whatsapp-card-button">
+          <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" style="width:20px;height:20px;">
+          Chat on WhatsApp
+        </a>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card">
+        <div class="tag trending">Trending</div>
+        <img src="images_naithika/jamun.jpg" alt="Dehydrated Jamun" />
+        <h3>Jamun – Dehydrated Fruits</h3>
+        <p class="desc">Tangy-sweet slices with antioxidants. Great for smoothies or as a healthy snack.</p>
+        <div class="rating">⭐ 4.9 (980 Reviews)</div>
+        <div class="price">₹280 <span class="members-price">₹250 (Members)</span></div>
+        <select>
+          <option>100 g</option>
+          <option>200 g</option>
+        </select>
+        <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Dehydrated%20Jamun" target="_blank" class="whatsapp-card-button">
+          <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" style="width:20px;height:20px;">
+          Chat on WhatsApp
+        </a>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product-card">
+        <div class="tag best-seller">Best Seller</div>
+        <img src="images_naithika/pineapple.jpg" alt="Dehydrated Pineapple" />
+        <h3>Pineapple – Dehydrated Fruits</h3>
+        <p class="desc">Golden rings with bright tropical flavor. No added sugar or sulfites.</p>
+        <div class="rating">⭐ 4.9 (1.6k+ Reviews)</div>
+        <div class="price">₹250 <span class="members-price">₹220 (Members)</span></div>
+        <select>
+          <option>100 g</option>
+          <option>200 g</option>
+        </select>
+        <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Dehydrated%20Pineapple" target="_blank" class="whatsapp-card-button">
+          <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" style="width:20px;height:20px;">
+          Chat on WhatsApp
+        </a>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="product-card">
+        <div class="tag hot-deals">Hot Deals</div>
+        <img src="images_naithika/apple.jpg" alt="Dehydrated Apple" />
+        <h3>Apple – Dehydrated Fruits</h3>
+        <p class="desc">Crisp, naturally sweet apple slices with no added sugar.</p>
+        <div class="rating">⭐ 4.8 (1.1k+ Reviews)</div>
+        <div class="price">₹250 <span class="members-price">₹220 (Members)</span></div>
+        <select>
+          <option>100 g</option>
+          <option>200 g</option>
+        </select>
+        <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Dehydrated%20Apple" target="_blank" class="whatsapp-card-button">
+          <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" style="width:20px;height:20px;">
+          Chat on WhatsApp
+        </a>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="product-card">
+        <div class="tag new">New</div>
+        <img src="images_naithika/guava.jpg" alt="Dehydrated Guava" />
+        <h3>Guava – Dehydrated Fruits</h3>
+        <p class="desc">Tangy-sweet guava slices high in Vitamin C and fiber.</p>
+        <div class="rating">⭐ 4.9 (900 Reviews)</div>
+        <div class="price">₹220 <span class="members-price">₹200 (Members)</span></div>
+        <select>
+          <option>100 g</option>
+          <option>200 g</option>
+        </select>
+        <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Dehydrated%20Guava" target="_blank" class="whatsapp-card-button">
+          <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" style="width:20px;height:20px;">
+          Chat on WhatsApp
+        </a>
+      </div>
+
+      <!-- Product 7 -->
+      <div class="product-card">
+        <div class="tag trending">Trending</div>
+        <img src="images_naithika/papaya.jpg" alt="Dehydrated Papaya" />
+        <h3>Papaya – Dehydrated Fruits</h3>
+        <p class="desc">Soft, enzyme-rich papaya slices for natural digestive health.</p>
+        <div class="rating">⭐ 4.8 (1k+ Reviews)</div>
+        <div class="price">₹220 <span class="members-price">₹200 (Members)</span></div>
+        <select>
+          <option>100 g</option>
+          <option>200 g</option>
+        </select>
+        <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Dehydrated%20Papaya" target="_blank" class="whatsapp-card-button">
+          <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" style="width:20px;height:20px;">
+          Chat on WhatsApp
+        </a>
+      </div>
+
+      <!-- Product 8 -->
+      <div class="product-card">
+        <div class="tag best-seller">Best Seller</div>
+        <img src="images_naithika/anjeer.jpg" alt="Dehydrated Anjeer" />
+        <h3>Anjeer (Figs) – Dehydrated Fruits</h3>
+        <p class="desc">Honeyed, fiber-rich figs — perfect for snacking and gifting.</p>
+        <div class="rating">⭐ 4.9 (2k+ Reviews)</div>
+        <div class="price">₹300 <span class="members-price">₹270 (Members)</span></div>
+        <select>
+          <option>100 g</option>
+          <option>200 g</option>
+        </select>
+        <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Dehydrated%20Anjeer" target="_blank" class="whatsapp-card-button">
+          <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" style="width:20px;height:20px;">
+          Chat on WhatsApp
+        </a>
+      </div>
+
+      <!-- Product 9 -->
+      <div class="product-card">
+        <div class="tag hot-deals">Hot Deals</div>
+        <img src="images_naithika/jackfruit.jpg" alt="Dehydrated Jackfruit" />
+        <h3>Jackfruit – Dehydrated Fruits</h3>
+        <p class="desc">Sweet, chewy jackfruit slices rich in fiber and tropical aroma.</p>
+        <div class="rating">⭐ 4.9 (1.3k+ Reviews)</div>
+        <div class="price">₹250 <span class="members-price">₹220 (Members)</span></div>
+        <select>
+          <option>100 g</option>
+          <option>200 g</option>
+        </select>
+        <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Dehydrated%20Jackfruit" target="_blank" class="whatsapp-card-button">
+          <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" style="width:20px;height:20px;">
+          Chat on WhatsApp
+        </a>
+      </div>
+
+      <!-- Product 10 -->
+      <div class="product-card">
+        <div class="tag new">New</div>
+        <img src="images_naithika/pomegranate.jpg" alt="Dehydrated Pomegranate" />
+        <h3>Pomegranate Arils – Dehydrated Fruits</h3>
+        <p class="desc">Tangy-sweet arils rich in antioxidants and Vitamin C.</p>
+        <div class="rating">⭐ 4.9 (1k+ Reviews)</div>
+        <div class="price">₹250 <span class="members-price">₹220 (Members)</span></div>
+        <select>
+          <option>100 g</option>
+          <option>200 g</option>
+        </select>
+        <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Dehydrated%20Pomegranate" target="_blank" class="whatsapp-card-button">
+          <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" style="width:20px;height:20px;">
+          Chat on WhatsApp
+        </a>
+      </div>
+
+      <!-- Product 11 -->
+      <div class="product-card">
+        <div class="tag trending">Trending</div>
+        <img src="images_naithika/banana.jpg" alt="Dehydrated Banana" />
+        <h3>Banana – Dehydrated Fruits</h3>
+        <p class="desc">Naturally sweet, crisp banana chips. No oil or added sugar.</p>
+        <div class="rating">⭐ 4.8 (900 Reviews)</div>
+        <div class="price">₹200 <span class="members-price">₹180 (Members)</span></div>
+        <select>
+          <option>100 g</option>
+          <option>200 g</option>
+        </select>
+        <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Dehydrated%20Banana" target="_blank" class="whatsapp-card-button">
+          <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" style="width:20px;height:20px;">
+          Chat on WhatsApp
+        </a>
+      </div>
+
+      <!-- Product 12 -->
+      <div class="product-card">
+        <div class="tag new">New</div>
+        <img src="images_naithika/blackgrapes.jpg" alt="Dehydrated Black Grapes" />
+        <h3>Black Grapes – Dehydrated Fruits</h3>
+        <p class="desc">Sun-dried grapes with rich antioxidants and deep sweetness.</p>
+        <div class="rating">⭐ 4.9 (1.5k+ Reviews)</div>
+        <div class="price">₹250 <span class="members-price">₹220 (Members)</span></div>
+        <select>
+          <option>100 g</option>
+          <option>200 g</option>
+        </select>
+        <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Dehydrated%20Black%20Grapes" target="_blank" class="whatsapp-card-button">
+          <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" style="width:20px;height:20px;">
+          Chat on WhatsApp
+        </a>
+      </div>
 
     </div>
 
-    <!-- Product Card 2 -->
-    <div class="product-card">
-      <div class="tag discount">6% GST OFF</div>
-      <img src="images_naithika/one.webp" alt="A2 Gir Cow Ghee" />
-      <h3> - Cultured Ghee</h3>
-      <p class="desc">Bilona-made | Small batches</p>
-      <div class="rating">⭐ 4.9 (2k+ Reviews)</div>
-      <div class="price">
-        ₹3,370 <span class="members-price">₹2,966 (Members)</span>
-      </div>
-      <select>
-        <option>1000 ml (Glass Bottle)</option>
-        <option>500 ml</option>
-      </select>
-      <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Khapli%20Wheat%20Atta" target="_blank" class="whatsapp-card-button">
-                      <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp Icon" style="width:20px; height:20px;">
-
-        Chat on WhatsApp
-
-      </a>
-    </div>
-
-    <!-- Product Card 3 -->
-    <div class="product-card">
-      <div class="tag trending">Trending</div>
-      <img src="images_naithika/three.png" alt="Khapli Multigrain Atta" />
-      <h3>Khapli Multigrain Atta</h3>
-      <p class="desc">50% Khapli | 50% Supergrains</p>
-      <div class="rating">⭐ 4.9 (161 Reviews)</div>
-      <div class="price">
-        ₹1,745 <span class="members-price">₹1,536 (Members)</span>
-      </div>
-      <select>
-        <option>10 kg</option>
-        <option>5 kg</option>
-      </select>
-      <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Khapli%20Wheat%20Atta" target="_blank" class="whatsapp-card-button">
-                       <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp Icon" style="width:20px; height:20px;">
-
-        Chat on WhatsApp
-      </a>
-    </div>
-
-    <!-- Product Card 4 -->
-    <div class="product-card">
-      <div class="tag hot-deals">Hot Deals</div>
-      <img src="images_naithika/two.png" alt="Groundnut Oil" />
-      <h3>Groundnut Oil</h3>
-      <p class="desc">Single pressed | GMO-free</p>
-      <div class="rating">⭐ 4.9 (529 Reviews)</div>
-      <div class="price">
-        ₹425 <span class="members-price">₹374 (Members)</span>
-      </div>
-      <select>
-        <option>Plastic Bottle 1L</option>
-        <option>Glass Bottle 1L</option>
-      </select>
-      <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Khapli%20Wheat%20Atta" target="_blank" class="whatsapp-card-button">
-       
-                       <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp Icon" style="width:20px; height:20px;">
- Chat on WhatsApp
-      </a>
-    </div>
- 
+    <!-- Right Button -->
+    <button class="scroll-btn right" onclick="scrollRight()">&#10095;</button>
   </div>
 </section>
+
+
+<style>
+/* === Most Loved Section === */
+.most-loved {
+  padding: 50px 20px;
+  background-color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.styled-heading {
+  font-size: 32px;
+  color: #a72f2f;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* === Product Slider Container === */
+.product-slider-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* === Scroll Buttons === */
+.scroll-btn {
+  background: #a72f2f;
+  border: none;
+  color: #fff;
+  font-size: 28px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 10;
+  transition: background 0.3s ease;
+}
+
+.scroll-btn:hover {
+  background: #8b2525;
+}
+
+.scroll-btn.left {
+  position: absolute;
+  left: 10px;
+}
+
+.scroll-btn.right {
+  position: absolute;
+  right: 10px;
+}
+
+/* === Horizontal Scroll === */
+.product-slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px;
+  scrollbar-width: none; /* Hide scrollbar (Firefox) */
+}
+
+.product-slider::-webkit-scrollbar {
+  display: none; /* Hide scrollbar (Chrome) */
+}
+
+/* === Product Card === */
+.product-card {
+  min-width: 240px;
+  max-width: 250px;
+  background: #fafafa;
+  border-radius: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: center;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 12px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.tag {
+  background-color: #a72f2f;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.price {
+  font-weight: bold;
+  color: #333;
+}
+
+.members-price {
+  color: #a72f2f;
+  font-weight: 500;
+  display: block;
+}
+
+.whatsapp-card-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #e55b40;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.whatsapp-card-button:hover {
+  background-color: #d9743e;
+}
+</style>
+
+<script>
+function scrollLeft() {
+  document.getElementById("productSlider").scrollBy({ left: -400, behavior: "smooth" });
+}
+
+function scrollRight() {
+  document.getElementById("productSlider").scrollBy({ left: 400, behavior: "smooth" });
+}
+
+// Optional Auto-slide every 4 seconds
+setInterval(() => {
+  document.getElementById("productSlider").scrollBy({ left: 400, behavior: "smooth" });
+}, 4000);
+</script>
+
 
 <section class="top-picks">
    <h1 class="styled-heading">
@@ -425,6 +695,16 @@ setInterval(() => {
 <script src="static/naithika.js"></script>
 
 
+<script>
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
+const totalSlides = slides.length;
+
+setInterval(() => {
+  currentSlide = (currentSlide + 1) % totalSlides;
+  document.getElementById('promoCardContainer').style.transform = `translateX(-${currentSlide * 100}%)`;
+}, 4000); // 4 seconds per slide
+</script>
 
 </body>
 </html>
