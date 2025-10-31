@@ -409,227 +409,269 @@
 </section>
 
 
-<style>
-/* === Most Loved Section === */
-.most-loved {
-  padding: 50px 20px;
-  background-color: #fff;
-  text-align: center;
-  position: relative;
-}
-
-.styled-heading {
-  font-size: 32px;
-  color: #a72f2f;
-  margin-bottom: 30px;
-  font-weight: bold;
-}
-
-/* === Product Slider Container === */
-.product-slider-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-}
-
-/* === Scroll Buttons === */
-.scroll-btn {
-  background: #a72f2f;
-  border: none;
-  color: #fff;
-  font-size: 28px;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  z-index: 10;
-  transition: background 0.3s ease;
-}
-
-.scroll-btn:hover {
-  background: #8b2525;
-}
-
-.scroll-btn.left {
-  position: absolute;
-  left: 10px;
-}
-
-.scroll-btn.right {
-  position: absolute;
-  right: 10px;
-}
-
-/* === Horizontal Scroll === */
-.product-slider {
-  display: flex;
-  gap: 20px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  padding: 20px;
-  scrollbar-width: none; /* Hide scrollbar (Firefox) */
-}
-
-.product-slider::-webkit-scrollbar {
-  display: none; /* Hide scrollbar (Chrome) */
-}
-
-/* === Product Card === */
-.product-card {
-  min-width: 240px;
-  max-width: 250px;
-  background: #fafafa;
-  border-radius: 15px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  padding: 15px;
-  text-align: center;
-  flex-shrink: 0;
-  transition: transform 0.3s ease;
-}
-
-.product-card:hover {
-  transform: translateY(-5px);
-}
-
-.product-card img {
-  width: 100%;
-  border-radius: 12px;
-  height: 180px;
-  object-fit: cover;
-}
-
-.tag {
-  background-color: #a72f2f;
-  color: #fff;
-  padding: 4px 10px;
-  border-radius: 12px;
-  font-size: 12px;
-  display: inline-block;
-  margin-bottom: 8px;
-}
-
-.price {
-  font-weight: bold;
-  color: #333;
-}
-
-.members-price {
-  color: #a72f2f;
-  font-weight: 500;
-  display: block;
-}
-
-.whatsapp-card-button {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  background-color: #e55b40;
-  color: #fff;
-  text-decoration: none;
-  padding: 8px 14px;
-  border-radius: 8px;
-  margin-top: 10px;
-  transition: 0.3s;
-}
-
-.whatsapp-card-button:hover {
-  background-color: #d9743e;
-}
-</style>
-
-<script>
-function scrollLeft() {
-  document.getElementById("productSlider").scrollBy({ left: -400, behavior: "smooth" });
-}
-
-function scrollRight() {
-  document.getElementById("productSlider").scrollBy({ left: 400, behavior: "smooth" });
-}
-
-// Optional Auto-slide every 4 seconds
-setInterval(() => {
-  document.getElementById("productSlider").scrollBy({ left: 400, behavior: "smooth" });
-}, 4000);
-</script>
 
 
 <section class="top-picks">
-   <h1 class="styled-heading">
-      Top Picks For You 
-    </h1>
+  <h1 class="styled-heading">Dehydrated Vegetables</h1>
 
-  <div class="category-filters">
-    <button>Ghee</button>
-    <button>Oil</button>
-    <button>Atta</button>
-    <button>Natural Sweetener</button>
-    <button>Newly Launched</button>
-    <button>Monsoon</button>
-  </div>
-
-  <div class="product-grid">
-
-    <!-- Product 1 -->
+  <div class="scroll-container">
+    
+    <!-- Product: Tomato Slices -->
     <div class="product-card">
-      <div class="gst-tag">6% GST OFF</div>
-      <img src="images_naithika/dry.jpg" alt="A2 Gir Cow Ghee">
-      <h3>A2 Gir Cow - Cultured Ghee</h3>
-      <p class="desc">Bilona-made | Small batches</p>
-      <div class="rating">⭐ 4.9 (2k+ Reviews)</div>
-      <div class="price">₹3,370</div>
-      <div class="members-price">₹2,966 (Members)</div>
-      <a href="https://wa.me/919999999999?text=Interested%20in%20A2%20Gir%20Cow%20Ghee" class="whatsapp-btn" target="_blank">
-        <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp">
-        Chat on WhatsApp
-      </a>
+      <img src="images_naithika/tomato_slices.jpg" alt="Tomato Slices">
+      <h3>Tomato Slices</h3>
+      <p class="desc">Sun-ripened | Rich in Lycopene</p>
+      <div class="price">₹180 / 100 g</div>
+      <div class="details">
+        <p>Perfect for soups, sauces, noodles, and salads.</p>
+        <p><strong>Shelf Life:</strong> 12 months</p>
+      </div>
     </div>
 
-    <!-- Product 2 -->
+    <!-- Product: Tomato Powder -->
     <div class="product-card">
-      <div class="gst-tag">6% GST OFF</div>
-      <img src="images_naithika/dry.jpg" alt="Buffalo Ghee">
-      <h3>Buffalo Ghee</h3>
-      <p class="desc">Bilona-made | Firewood process</p>
-      <div class="rating">⭐ 4.9 (89 Reviews)</div>
-      <div class="price">₹1,170</div>
-      <div class="members-price">₹1,030 (Members)</div>
-      <a href="https://wa.me/919999999999?text=Interested%20in%20Buffalo%20Ghee" class="whatsapp-btn" target="_blank">
-        <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp">
-        Chat on WhatsApp
-      </a>
+      <img src="images_naithika/tomato_powder.jpg" alt="Tomato Powder">
+      <h3>Tomato Powder</h3>
+      <p class="desc">Finely milled | 100% Pure Tomatoes</p>
+      <div class="price">₹200 / 100 g</div>
+      <div class="details">
+        <p>Perfect for soups, gravies, and spice mixes.</p>
+        <p><strong>Shelf Life:</strong> 12 months</p>
+      </div>
     </div>
 
-    <!-- Product 3 -->
+    <!-- Product: Beetroot -->
     <div class="product-card">
-      <div class="gst-tag">6% GST OFF</div>
-      <img src="images_naithika/dry1.jpg" alt="Brahmi Ghee">
-      <h3>Brahmi Ghee</h3>
-      <p class="desc">Brahmi infused | A2 Ghee</p>
-      <div class="rating">⭐ 4.9 (231 Reviews)</div>
-      <div class="price">₹2,255</div>
-      <div class="members-price">₹2,055 (Members)</div>
-      <a href="https://wa.me/919999999999?text=Interested%20in%20Brahmi%20Ghee" class="whatsapp-btn" target="_blank">
-        <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp">
-        Chat on WhatsApp
-      </a>
+      <img src="images_naithika/beetroot.jpg" alt="Beetroot">
+      <h3>Beetroot</h3>
+      <p class="desc">Rich in Iron & Betalains</p>
+      <div class="price">₹200 / 100 g</div>
+      <div class="details">
+        <p>Adds color & nutrition to soups, salads, and snacks.</p>
+      </div>
     </div>
-      <div class="product-card">
-      <div class="gst-tag">6% GST OFF</div>
-      <img src="images_naithika/dry1.jpg" alt="Brahmi Ghee">
-      <h3>Brahmi Ghee</h3>
-      <p class="desc">Brahmi infused | A2 Ghee</p>
-      <div class="rating">⭐ 4.9 (231 Reviews)</div>
-      <div class="price">₹2,255</div>
-      <div class="members-price">₹2,055 (Members)</div>
-      <a href="https://wa.me/919999999999?text=Interested%20in%20Brahmi%20Ghee" class="whatsapp-btn" target="_blank">
-        <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp">
-        Chat on WhatsApp
-      </a>
+
+    <!-- Product: Carrot -->
+    <div class="product-card">
+      <img src="images_naithika/carrot.jpg" alt="Carrot">
+      <h3>Carrot</h3>
+      <p class="desc">Sweet & rich in Beta-Carotene</p>
+      <div class="price">₹200 / 100 g</div>
+      <div class="details">
+        <p>Perfect for soups, stews, or crunchy snacks.</p>
+      </div>
+    </div>
+
+    <!-- Product: Amla -->
+    <div class="product-card">
+      <img src="images_naithika/amla.jpg" alt="Amla">
+      <h3>Amla (Indian Gooseberry)</h3>
+      <p class="desc">Tangy & High in Vitamin C</p>
+      <div class="price">₹240 / 100 g</div>
+      <div class="details">
+        <p>Perfect for chutneys, tonics, or immunity snacks.</p>
+      </div>
+    </div>
+
+    <!-- Product: Ginger -->
+    <div class="product-card">
+      <img src="images_naithika/ginger.jpg" alt="Ginger">
+      <h3>Ginger</h3>
+      <p class="desc">Aromatic | Preserves natural oils</p>
+      <div class="price">₹220 / 100 g</div>
+      <div class="details">
+        <p>Ideal for tea, spice blends, or cooking.</p>
+      </div>
+    </div>
+
+    <!-- Product: Garlic Powder -->
+    <div class="product-card">
+      <img src="images_naithika/garlic_powder.jpg" alt="Garlic Powder">
+      <h3>Garlic Powder</h3>
+      <p class="desc">Pure | Fine ground | Savory depth</p>
+      <div class="price">₹150 / 200 g</div>
+      <div class="details">
+        <p>Perfect for seasonings, soups & marinades.</p>
+      </div>
+    </div>
+
+    <!-- Product: Ash Gourd -->
+    <div class="product-card">
+      <img src="images_naithika/ashgourd.jpg" alt="Ash Gourd">
+      <h3>Ash Gourd (Petha)</h3>
+      <p class="desc">Cooling | Rehydrates easily</p>
+      <div class="price">₹200 / 100 g</div>
+      <div class="details">
+        <p>Perfect for soups, powders & health blends.</p>
+      </div>
+    </div>
+
+    <!-- Product: Pumpkin -->
+    <div class="product-card">
+      <img src="images_naithika/pumpkin.jpg" alt="Pumpkin">
+      <h3>Pumpkin</h3>
+      <p class="desc">Golden | Sweet & Nutty</p>
+      <div class="price">₹200 / 100 g</div>
+      <div class="details">
+        <p>Ideal for porridges, soups & baking.</p>
+      </div>
+    </div>
+
+    <!-- Product: Lemon -->
+    <div class="product-card">
+      <img src="images_naithika/lemon.jpg" alt="Lemon">
+      <h3>Lemon</h3>
+      <p class="desc">Zesty | High Vitamin C</p>
+      <div class="price">₹200 / 100 g</div>
+      <div class="details">
+        <p>Perfect for teas, spice mixes, or garnishes.</p>
+      </div>
+    </div>
+
+    <!-- Product: Moringa -->
+    <div class="product-card">
+      <img src="images_naithika/moringa.jpg" alt="Moringa">
+      <h3>Moringa (Drumstick Leaves)</h3>
+      <p class="desc">Rich in Iron & Calcium</p>
+      <div class="price">₹220 / 100 g</div>
+      <div class="details">
+        <p>Ideal for dals, soups & green powders.</p>
+      </div>
+    </div>
+
+    <!-- Product: Curry Leaves -->
+    <div class="product-card">
+      <img src="images_naithika/curry_leaves.jpg" alt="Curry Leaves">
+      <h3>Curry Leaves</h3>
+      <p class="desc">Fragrant | Preserved Aroma</p>
+      <div class="price">₹150 / 100 g</div>
+      <div class="details">
+        <p>Perfect for tempering & chutneys.</p>
+      </div>
+    </div>
+
+    <!-- Product: Mint Leaves -->
+    <div class="product-card">
+      <img src="images_naithika/mint.jpg" alt="Mint Leaves">
+      <h3>Mint Leaves</h3>
+      <p class="desc">Cool Aroma | Air-dried</p>
+      <div class="price">₹200 / 100 g</div>
+      <div class="details">
+        <p>Perfect for teas, chutneys, and raitas.</p>
+      </div>
+    </div>
+
+    <!-- Product: Coriander -->
+    <div class="product-card">
+      <img src="images_naithika/coriander.jpg" alt="Coriander">
+      <h3>Coriander (Cilantro)</h3>
+      <p class="desc">Herbaceous | Low-heat dried</p>
+      <div class="price">₹180 / 100 g</div>
+      <div class="details">
+        <p>Great for spice mixes & instant gravies.</p>
+      </div>
     </div>
 
   </div>
 </section>
+<section class="most-loved">
+  <h1 class="styled-heading">Pickles & Powders</h1>
+
+  <div class="product-grid">
+
+    <!-- Mango Pickle -->
+    <div class="product-card">
+      <img src="images_naithika/mango_pickle.jpg" alt="Mango Pickle" />
+      <h3>Mango Pickle</h3>
+      <p>Traditional raw mango pickle made using sun-dried mangoes and cold-pressed oil. Balanced spices give a bright tang.</p>
+      <p><strong>Price:</strong> ₹180/-</p>
+      <p class="note">Naithika Note: Ethically sourced from smallholder farmers.</p>
+    </div>
+
+    <!-- Amla Pickle -->
+    <div class="product-card">
+      <img src="images_naithika/amla_pickle.jpg" alt="Amla Pickle" />
+      <h3>Amla Pickle</h3>
+      <p>Tangy-sour pickle rich in Vitamin C. Adds a nourishing, spicy warmth to daily meals.</p>
+      <p><strong>Price:</strong> ₹180/-</p>
+      <p class="note">Naithika Note: Ethically sourced from smallholder farmers.</p>
+    </div>
+
+    <!-- Tomato Pickle -->
+    <div class="product-card">
+      <img src="images_naithika/tomato_pickle.jpg" alt="Tomato Pickle" />
+      <h3>Tomato Pickle</h3>
+      <p>Bright, tangy pickle made from sun-ripened tomatoes. Adds natural umami to every dish.</p>
+      <p><strong>Price:</strong> ₹180/-</p>
+      <p class="note">Naithika Note: Ethically sourced from smallholder farmers.</p>
+    </div>
+
+    <!-- Red Chilli Pickle -->
+    <div class="product-card">
+      <img src="images_naithika/red_chilli_pickle.jpg" alt="Red Chilli Pickle" />
+      <h3>Red Chilli Pickle</h3>
+      <p>Fiery red chilli pickle aged in mustard oil with aromatic spices. Perfect heat and tang.</p>
+      <p><strong>Price:</strong> ₹180/-</p>
+      <p class="note">Naithika Note: Ethically sourced from smallholder farmers.</p>
+    </div>
+
+    <!-- Ginger Pickle -->
+    <div class="product-card">
+      <img src="images_naithika/ginger_pickle.jpg" alt="Ginger Pickle" />
+      <h3>Ginger Pickle</h3>
+      <p>Zesty and aromatic, made Andhra-style with fresh ginger and spices for digestive benefits.</p>
+      <p><strong>Price:</strong> ₹180/-</p>
+      <p class="note">Naithika Note: Ethically sourced from smallholder farmers.</p>
+    </div>
+
+    <!-- Lemon Pickle -->
+    <div class="product-card">
+      <img src="images_naithika/lemon_pickle.jpg" alt="Lemon Pickle" />
+      <h3>Lemon Pickle</h3>
+      <p>Classic sun-aged lemon pickle with sea salt and native spices. Bright, citrus tang.</p>
+      <p><strong>Price:</strong> ₹180/-</p>
+      <p class="note">Naithika Note: Ethically sourced from smallholder farmers.</p>
+    </div>
+
+    <!-- Moringa Podi -->
+    <div class="product-card">
+      <img src="images_naithika/moringa_podi.jpg" alt="Moringa Podi" />
+      <h3>Moringa Podi</h3>
+      <p>Nutritious moringa leaf powder rich in iron and calcium. Great for rice or veggies.</p>
+      <p><strong>Price:</strong> ₹150/-</p>
+      <p class="note">Naithika Note: Ethically sourced from smallholder farmers.</p>
+    </div>
+
+    <!-- Nuvvula Podi -->
+    <div class="product-card">
+      <img src="images_naithika/nuvvula_podi.jpg" alt="Nuvvula Podi" />
+      <h3>Nuvvula Podi (Sesame Spice)</h3>
+      <p>Nutty sesame spice powder for idli, dosa or rice. Roasted and stone-ground for aroma.</p>
+      <p><strong>Price:</strong> ₹150/-</p>
+      <p class="note">Naithika Note: Ethically sourced from smallholder farmers.</p>
+    </div>
+
+    <!-- Curry Patta Podi -->
+    <div class="product-card">
+      <img src="images_naithika/curry_patta_podi.jpg" alt="Curry Patta Podi" />
+      <h3>Curry Patta Podi</h3>
+      <p>Aromatic curry leaf powder packed with antioxidants. Perfect for dals and rice.</p>
+      <p><strong>Price:</strong> ₹120/-</p>
+      <p class="note">Naithika Note: Ethically sourced from smallholder farmers.</p>
+    </div>
+
+    <!-- Idli Podi -->
+    <div class="product-card">
+      <img src="images_naithika/idli_podi.jpg" alt="Idli Podi" />
+      <h3>Idli Podi (Milagai Podi)</h3>
+      <p>Classic blend of lentils, sesame, and spices for idlis and dosas. Stone-ground texture.</p>
+      <p><strong>Price:</strong> ₹120/-</p>
+      <p class="note">Naithika Note: Ethically sourced from smallholder farmers.</p>
+    </div>
+
+  </div>
+</section>
+
 
 
 <footer id="footer">
@@ -705,6 +747,19 @@ setInterval(() => {
   document.getElementById('promoCardContainer').style.transform = `translateX(-${currentSlide * 100}%)`;
 }, 4000); // 4 seconds per slide
 </script>
+<script>
+function scrollLeft() {
+  document.getElementById("productSlider").scrollBy({ left: -400, behavior: "smooth" });
+}
 
+function scrollRight() {
+  document.getElementById("productSlider").scrollBy({ left: 400, behavior: "smooth" });
+}
+
+// Optional Auto-slide every 4 seconds
+setInterval(() => {
+  document.getElementById("productSlider").scrollBy({ left: 400, behavior: "smooth" });
+}, 4000);
+</script>
 </body>
 </html>
