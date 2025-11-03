@@ -753,5 +753,29 @@ setInterval(() => {
   document.getElementById("productSlider").scrollBy({ left: 400, behavior: "smooth" });
 }, 4000);
 </script>
+
+<script>
+  function toggleReadMore(button) {
+    const desc = button.previousElementSibling;
+    const fullText = desc.getAttribute("data-full-text");
+
+    if (button.textContent === "Read More") {
+      desc.textContent = fullText;
+      button.textContent = "Read Less";
+    } else {
+      desc.textContent = fullText.split(" ").slice(0, 8).join(" ") + "...";
+      button.textContent = "Read More";
+    }
+  }
+
+  function scrollLeft() {
+    document.getElementById("productSlider").scrollBy({ left: -300, behavior: "smooth" });
+  }
+
+  function scrollRight() {
+    document.getElementById("productSlider").scrollBy({ left: 300, behavior: "smooth" });
+  }
+</script>
+
 </body>
 </html>

@@ -446,6 +446,19 @@ body {
   display: none; /* Hide scrollbar (Chrome) */
 }
 
+.read-more-text {
+  display: block;
+  color: #a72f2f;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.read-more-text:hover {
+  text-decoration: underline;
+}
+
 /* === Product Card === */
 .product-card {
   min-width: 240px;
