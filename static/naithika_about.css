@@ -73,7 +73,7 @@
         .aboutus_section_heading {
             font-family: 'Playfair Display', serif;
             font-size: 3rem;
-            color: #ddb27c;
+            color: #4f381f;
             text-align: center;
             margin-bottom: 1rem;
         }
@@ -131,7 +131,7 @@
             left: 0;
             width: 100%;
             height: 5px;
-            background: linear-gradient(90deg, #ddb27c, #c89650);
+            background: linear-gradient(90deg, #4f381f, #c89650);
             transform: scaleX(0);
             transition: transform 0.4s ease;
         }
@@ -197,7 +197,7 @@
 .aboutus_process_title {
     font-family: 'Playfair Display', serif;
     font-size: 3rem;
-    color: #ddb27c;
+    color: #4f381f;
     text-align: center;
     margin-bottom: 1rem;
 }
@@ -297,7 +297,7 @@
     
     width: 40px; 
     height: 40px;
-    background: #ddb27c; /* Primary color dot */
+    background: #4f381f; /* Primary color dot */
     color: white; 
     border-radius: 50%;
     display: flex;
@@ -408,7 +408,7 @@
 .aboutus_farmers_title {
     font-family: 'Playfair Display', serif;
     font-size: 3rem;
-    color: #ddb27c;
+    color: #4f381f;
     margin-bottom: 1rem;
 }
 
@@ -631,7 +631,7 @@
 .ancestral_wisdom_title {
     font-family: 'Playfair Display', serif;
     font-size: 3rem;
-    color: #ddb27c; /* Your primary brand color */
+    color: #4f381f; /* Your primary brand color */
     line-height: 1.2;
     margin-bottom: 2rem;
     padding-bottom: 0.5rem;
@@ -724,7 +724,7 @@
 .making_meals_wholesome_title {
     font-family: 'Playfair Display', serif;
     font-size: 3rem;
-    color: #ddb27c; 
+    color: #4f381f; 
     line-height: 1.2;
     margin-bottom: 2rem;
     padding-bottom: 0.5rem;
@@ -796,4 +796,58 @@
     .making_meals_wholesome_text {
         font-size: 1rem;
     }
+}
+
+
+
+
+/* Button Style */
+
+/* --- BUTTON BASE STYLES (Existing) --- */
+.view-more-products-btn {
+    display: inline-block; 
+    padding: 15px 30px; 
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 1.1rem; 
+    font-weight: 600; 
+    text-decoration: none; 
+    
+    background-color: #4f381f; 
+    color: white; 
+    
+    border: 2px solid #4f381f; 
+    border-radius: 8px; 
+    
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    cursor: pointer;
+}
+
+.view-more-products-btn:hover {
+    background-color: white; 
+    color: #4f381f; 
+    border-color: #4f381f; 
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
+}
+
+.view-more-products-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* -------------------------------------- */
+/* --- NEW ANIMATION CLASSES --- */
+
+/* 1. Initial State (Hidden) */
+.view-more-products-btn.fade-in-hidden {
+    opacity: 0;
+    transform: translateY(20px); /* Start 20px below its final position */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* Match the duration of the visible state */
+}
+
+/* 2. Visible/Animated State (Triggered by JavaScript) */
+.view-more-products-btn.fade-in-visible {
+    opacity: 1;
+    transform: translateY(0); /* Move back to its original position */
 }
