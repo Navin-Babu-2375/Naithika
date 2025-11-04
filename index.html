@@ -8,9 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@100..900&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="static/naithika_style.css"/>
-
     <link rel="stylesheet" href="static/naithika_about.css"/>
-    <link rel="stylesheet" href="static/naithika_offer.css"/>
 
     
 
@@ -103,7 +101,45 @@
   .carousel-buttons button:hover {
     background-color: rgba(255, 255, 255, 1);
   }
+  /* ===== Index Circles Section ===== */
+.index-circles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 30px 20px;
+  background-color: #fff8f0;
+  flex-wrap: wrap;
+}
+
+.index-circles .circle {
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.index-circles .circle img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.index-circles .circle p {
+  margin-top: 10px;
+  font-weight: 600;
+  color: #a72f2f;
+  font-family: "Poppins", sans-serif;
+}
+
+.index-circles .circle:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
 </style>
+
 </head>
 <body>
 
@@ -137,8 +173,8 @@
                 >
             </a>
 
-            <nav id="header_nav">
-                <a href="index.html" class="nav-link">HOME</a>
+             <nav id="header_nav">
+            <a href="index.html" class="nav-link">HOME</a>
                 <a href="about.html" class="nav-link">ABOUT US</a>
                 <!-- <div class="header_dropdown_group">
                     <a href="#" class="nav-link header_dropdown_toggle">
@@ -150,8 +186,14 @@
                 </div> -->
                 <a href="offer.html" class="nav-link">OFFERS</a>
                 <a href="products.html" class="nav-link">PRODUCTS</a>
+<<<<<<< HEAD
                 <a href="contact.php" class="nav-link">CONTACT US</a>
             </nav>
+=======
+                <a href="contact.html" class="nav-link">CONTACT US</a>
+        </nav>
+
+>>>>>>> 9a6b68dc776319d8d00372295e80457038312ee8
 
             <div name="header_search_group" class="header_search_group">
 
@@ -179,6 +221,8 @@
             <a href="contact.html" class="nav-link">CONTACT US</a>
         </div>
     </div>
+
+
 
 <div class="carousel-container">
   <div class="carousel-slide">
@@ -216,226 +260,111 @@
     <button id="next">&#10095;</button>
   </div>
 </div>
-<section class="most-loved">
-  <h1 class="styled-heading">Most Loved – Dehydrated Fruits</h1>
-
-  <div class="product-slider-container">
-    <!-- Left Button -->
-    <button class="scroll-btn left" onclick="scrollLeft()">&#10094;</button>
-
-    <!-- Product Slider -->
-    <div class="product-slider" id="productSlider">
-
-      <!-- Product 1 -->
-      <div class="product-card">
-        <div class="tag best-seller">Best Seller</div>
-        <img src="images_naithika/mango.jpg" alt="Dehydrated Mango" />
-        <h3>Mango – Dehydrated Fruits</h3>
-        <p class="desc" data-full-text="Sun-ripened slices, low-heat dried to preserve aroma and nutrients. No sugar or preservatives.">
-          Sun-ripened slices, low-heat dried to preserve aroma...
-        </p>
-        <span class="read-more-text" onclick="toggleReadMore(this)">Read More</span>
-        <div class="rating">⭐ 4.9 (2k+ Reviews)</div>
-        <div class="price">₹250 <span class="members-price">₹220 (Members)</span></div>
-        <select><option>100 g</option><option>200 g</option></select>
-        <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Dehydrated%20Mango" target="_blank" class="whatsapp-card-button">
-          <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" style="width:20px;height:20px;"> Book Now
-        </a>
+<section class="index-circles deluxe-circles">
+  <div class="circle-box">
+    <a href="products.html#product-dehydrated-fruits">
+      <div class="circle-img">
+        <img src="images_naithika/fruits.jpg" alt="Dehydrated Fruits">
       </div>
+      <h3>Dehydrated Fruits</h3>
+      <p>Wholesome | Natural | Delicious</p>
+    </a>
+  </div>
 
-      <!-- Product 2 -->
-      <div class="product-card">
-        <div class="tag new">New</div>
-        <img src="images_naithika/chikku.jpg" alt="Dehydrated Chikku" />
-        <h3>Chikku (Sapota) – Dehydrated Fruits</h3>
-        <p class="desc" data-full-text="Soft, caramel-sweet slices rich in fiber. Perfect with tea or porridge.">
-          Soft, caramel-sweet slices rich in fiber...
-        </p>
-        <span class="read-more-text" onclick="toggleReadMore(this)">Read More</span>
-        <div class="rating">⭐ 4.8 (1.2k+ Reviews)</div>
-        <div class="price">₹250 <span class="members-price">₹220 (Members)</span></div>
-        <select><option>100 g</option><option>200 g</option></select>
-        <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Dehydrated%20Chikku" target="_blank" class="whatsapp-card-button">
-          <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" style="width:20px;height:20px;"> Book Now
-        </a>
+  <div class="circle-box">
+    <a href="products.html#product-pickles-powders">
+      <div class="circle-img">
+        <img src="images_naithika/pickles.jpg" alt="Pickles & Powders">
       </div>
+      <h3>Pickles & Powders</h3>
+      <p>Timeless Flavours, Crafted with Love</p>
+    </a>
+  </div>
 
-      <!-- Product 3 -->
-      <div class="product-card">
-        <div class="tag trending">Trending</div>
-        <img src="images_naithika/jamun.jpg" alt="Dehydrated Jamun" />
-        <h3>Jamun – Dehydrated Fruits</h3>
-        <p class="desc" data-full-text="Tangy-sweet slices with antioxidants. Great for smoothies or as a healthy snack.">
-          Tangy-sweet slices with antioxidants...
-        </p>
-        <span class="read-more-text" onclick="toggleReadMore(this)">Read More</span>
-        <div class="rating">⭐ 4.9 (980 Reviews)</div>
-        <div class="price">₹280 <span class="members-price">₹250 (Members)</span></div>
-        <select><option>100 g</option><option>200 g</option></select>
-        <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Dehydrated%20Jamun" target="_blank" class="whatsapp-card-button">
-          <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" style="width:20px;height:20px;"> Book Now
-        </a>
+  <div class="circle-box">
+    <a href="products.html#product-dehydrated-vegetables">
+      <div class="circle-img">
+        <img src="images_naithika/products.png" alt="Dehydrated Vegetables">
       </div>
-
-      <!-- Product 4 -->
-      <div class="product-card">
-        <div class="tag best-seller">Best Seller</div>
-        <img src="images_naithika/pineapple.jpg" alt="Dehydrated Pineapple" />
-        <h3>Pineapple – Dehydrated Fruits</h3>
-        <p class="desc" data-full-text="Golden rings with bright tropical flavor. No added sugar or sulfites.">
-          Golden rings with bright tropical flavor...
-        </p>
-        <span class="read-more-text" onclick="toggleReadMore(this)">Read More</span>
-        <div class="rating">⭐ 4.9 (1.6k+ Reviews)</div>
-        <div class="price">₹250 <span class="members-price">₹220 (Members)</span></div>
-        <select><option>100 g</option><option>200 g</option></select>
-        <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Dehydrated%20Pineapple" target="_blank" class="whatsapp-card-button">
-          <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" style="width:20px;height:20px;"> Book Now
-        </a>
-      </div>
-
-      <!-- Product 5 -->
-      <div class="product-card">
-        <div class="tag hot-deals">Hot Deals</div>
-        <img src="images_naithika/apple.jpg" alt="Dehydrated Apple" />
-        <h3>Apple – Dehydrated Fruits</h3>
-        <p class="desc" data-full-text="Crisp, naturally sweet apple slices with no added sugar.">
-          Crisp, naturally sweet apple slices...
-        </p>
-        <span class="read-more-text" onclick="toggleReadMore(this)">Read More</span>
-        <div class="rating">⭐ 4.8 (1.1k+ Reviews)</div>
-        <div class="price">₹250 <span class="members-price">₹220 (Members)</span></div>
-        <select><option>100 g</option><option>200 g</option></select>
-        <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Dehydrated%20Apple" target="_blank" class="whatsapp-card-button">
-          <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" style="width:20px;height:20px;"> Book Now
-        </a>
-      </div>
-
-      <!-- Product 6 -->
-      <div class="product-card">
-        <div class="tag new">New</div>
-        <img src="images_naithika/guava.jpg" alt="Dehydrated Guava" />
-        <h3>Guava – Dehydrated Fruits</h3>
-        <p class="desc" data-full-text="Tangy-sweet guava slices high in Vitamin C and fiber.">
-          Tangy-sweet guava slices high in Vitamin C...
-        </p>
-        <span class="read-more-text" onclick="toggleReadMore(this)">Read More</span>
-        <div class="rating">⭐ 4.9 (900 Reviews)</div>
-        <div class="price">₹220 <span class="members-price">₹200 (Members)</span></div>
-        <select><option>100 g</option><option>200 g</option></select>
-        <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Dehydrated%20Guava" target="_blank" class="whatsapp-card-button">
-          <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" style="width:20px;height:20px;"> Book Now
-        </a>
-      </div>
-
-      <!-- Product 7 -->
-      <div class="product-card">
-        <div class="tag trending">Trending</div>
-        <img src="images_naithika/papaya.jpg" alt="Dehydrated Papaya" />
-        <h3>Papaya – Dehydrated Fruits</h3>
-        <p class="desc" data-full-text="Soft, enzyme-rich papaya slices for natural digestive health.">
-          Soft, enzyme-rich papaya slices for natural...
-        </p>
-        <span class="read-more-text" onclick="toggleReadMore(this)">Read More</span>
-        <div class="rating">⭐ 4.8 (1k+ Reviews)</div>
-        <div class="price">₹220 <span class="members-price">₹200 (Members)</span></div>
-        <select><option>100 g</option><option>200 g</option></select>
-        <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Dehydrated%20Papaya" target="_blank" class="whatsapp-card-button">
-          <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" style="width:20px;height:20px;"> Book Now
-        </a>
-      </div>
-
-      <!-- Product 8 -->
-      <div class="product-card">
-        <div class="tag best-seller">Best Seller</div>
-        <img src="images_naithika/anjeer.jpg" alt="Dehydrated Anjeer" />
-        <h3>Anjeer (Figs) – Dehydrated Fruits</h3>
-        <p class="desc" data-full-text="Honeyed, fiber-rich figs — perfect for snacking and gifting.">
-          Honeyed, fiber-rich figs — perfect for snacking...
-        </p>
-        <span class="read-more-text" onclick="toggleReadMore(this)">Read More</span>
-        <div class="rating">⭐ 4.9 (2k+ Reviews)</div>
-        <div class="price">₹300 <span class="members-price">₹270 (Members)</span></div>
-        <select><option>100 g</option><option>200 g</option></select>
-        <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Dehydrated%20Anjeer" target="_blank" class="whatsapp-card-button">
-          <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" style="width:20px;height:20px;"> Book Now
-        </a>
-      </div>
-
-      <!-- Product 9 -->
-      <div class="product-card">
-        <div class="tag hot-deals">Hot Deals</div>
-        <img src="images_naithika/jackfruit.jpg" alt="Dehydrated Jackfruit" />
-        <h3>Jackfruit – Dehydrated Fruits</h3>
-        <p class="desc" data-full-text="Sweet, chewy jackfruit slices rich in fiber and tropical aroma.">
-          Sweet, chewy jackfruit slices rich in fiber...
-        </p>
-        <span class="read-more-text" onclick="toggleReadMore(this)">Read More</span>
-        <div class="rating">⭐ 4.9 (1.3k+ Reviews)</div>
-        <div class="price">₹250 <span class="members-price">₹220 (Members)</span></div>
-        <select><option>100 g</option><option>200 g</option></select>
-        <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Dehydrated%20Jackfruit" target="_blank" class="whatsapp-card-button">
-          <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" style="width:20px;height:20px;"> Book Now
-        </a>
-      </div>
-
-      <!-- Product 10 -->
-      <div class="product-card">
-        <div class="tag new">New</div>
-        <img src="images_naithika/pomegranate.jpg" alt="Dehydrated Pomegranate" />
-        <h3>Pomegranate Arils – Dehydrated Fruits</h3>
-        <p class="desc" data-full-text="Tangy-sweet arils rich in antioxidants and Vitamin C.">
-          Tangy-sweet arils rich in antioxidants...
-        </p>
-        <span class="read-more-text" onclick="toggleReadMore(this)">Read More</span>
-        <div class="rating">⭐ 4.9 (1k+ Reviews)</div>
-        <div class="price">₹250 <span class="members-price">₹220 (Members)</span></div>
-        <select><option>100 g</option><option>200 g</option></select>
-        <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Dehydrated%20Pomegranate" target="_blank" class="whatsapp-card-button">
-          <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" style="width:20px;height:20px;"> Book Now
-        </a>
-      </div>
-
-      <!-- Product 11 -->
-      <div class="product-card">
-        <div class="tag trending">Trending</div>
-        <img src="images_naithika/banana.jpg" alt="Dehydrated Banana" />
-        <h3>Banana – Dehydrated Fruits</h3>
-        <p class="desc" data-full-text="Naturally sweet, crisp banana chips. No oil or added sugar.">
-          Naturally sweet, crisp banana chips...
-        </p>
-        <span class="read-more-text" onclick="toggleReadMore(this)">Read More...</span>
-        <div class="rating">⭐ 4.8 (900 Reviews)</div>
-        <div class="price">₹200 <span class="members-price">₹180 (Members)</span></div>
-        <select><option>100 g</option><option>200 g</option></select>
-        <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Dehydrated%20Banana" target="_blank" class="whatsapp-card-button">
-          <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" style="width:20px;height:20px;"> Book Now
-        </a>
-      </div>
-
-      <!-- Product 12 -->
-      <div class="product-card">
-        <div class="tag new">New</div>
-        <img src="images_naithika/blackgrapes.jpg" alt="Dehydrated Black Grapes" />
-        <h3>Black Grapes – Dehydrated Fruits</h3>
-        <p class="desc" data-full-text="Sun-dried grapes with rich antioxidants and deep sweetness.">
-          Sun-dried grapes with rich antioxidants...
-        </p>
-        <span class="read-more-text" onclick="toggleReadMore(this)">Read More...</span>
-        <div class="rating">⭐ 4.9 (1.5k+ Reviews)</div>
-        <div class="price">₹250 <span class="members-price">₹220 (Members)</span></div>
-        <select><option>100 g</option><option>200 g</option></select>
-        <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Dehydrated%20Black%20Grapes" target="_blank" class="whatsapp-card-button">
-          <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" style="width:20px;height:20px;"> Book Now
-        </a>
-      </div>
-
-    </div>
-
-    <!-- Right Button -->
-    <button class="scroll-btn right" onclick="scrollRight()">&#10095;</button>
+      <h3>Dehydrated Vegetables</h3>
+      <p>Freshness Sealed by Nature</p>
+    </a>
   </div>
 </section>
+
+
+
+<section id="offers" class="top-picks">
+  <h1 class="styled-heading">🌸 Exclusive Offers — From Nature, With Love 🌿</h1>
+  <p class="offer-subtitle">✨ Limited-Time Specials Crafted with Care ✨</p>
+
+  <div class="offer-container">
+    <!-- === Dehydrated Fruits === -->
+    <div class="product-cards">
+      <div class="offer-badge">Special Offer</div>
+      <a href="offer.html#fruits" class="offer-link">
+        <div class="image-wrapper">
+          <img src="images_naithika/fruits.jpg" alt="Dehydrated Fruits">
+        </div>
+        <h3>Dehydrated Fruits</h3>
+        <p class="desc">Pure. Natural. Wholesome.</p>
+        <div class="details">
+          <p>Enjoy our sun-dried fruit collection at special prices.</p>
+        </div>
+        <div class="more-offer">See More →</div>
+      </a>
+    </div>
+
+    <!-- === Dehydrated Vegetables === -->
+    <div class="product-cards">
+      <div class="offer-badge">Special Deal</div>
+      <a href="offer.html#vegetables" class="offer-link">
+        <div class="image-wrapper">
+          <img src="images_naithika/veg.jpg" alt="Dehydrated Vegetables">
+        </div>
+        <h3>Dehydrated Vegetables</h3>
+        <p class="desc">Freshness Locked in Every Slice</p>
+        <div class="details">
+          <p>Healthy, convenient, and now more affordable.</p>
+        </div>
+        <div class="more-offer">See More →</div>
+      </a>
+    </div>
+
+    <!-- === Pickles & Powders === -->
+    <div class="product-cards">
+      <div class="offer-badge">Hot Pick 🔥</div>
+      <a href="offer.html#pickles" class="offer-link">
+        <div class="image-wrapper">
+          <img src="images_naithika/pickles.jpg" alt="Pickles and Powders">
+        </div>
+        <h3>Pickles & Powders</h3>
+        <p class="desc">Authentic Taste. Timeless Recipes.</p>
+        <div class="details">
+          <p>Homemade flavors crafted with love and tradition.</p>
+        </div>
+        <div class="more-offer">See More →</div>
+      </a>
+    </div>
+
+    <!-- === All Products === -->
+    <div class="product-cards">
+      <div class="offer-badge">Explore All 🌼</div>
+      <a href="offer.html" class="offer-link">
+        <div class="image-wrapper">
+          <img src="images_naithika/products.png" alt="All Products">
+        </div>
+        <h3>All Products</h3>
+        <p class="desc">Discover Everything Naithika Offers</p>
+        <div class="details">
+          <p>Browse our full range of nature-inspired products.</p>
+        </div>
+        <div class="more-offer">Explore All →</div>
+      </a>
+    </div>
+  </div>
+</section>
+
 
 <script>
   function toggleReadMore(button) {

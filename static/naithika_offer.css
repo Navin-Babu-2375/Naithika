@@ -139,20 +139,20 @@ body {
   justify-content: center;
   gap: 40px;
   flex-wrap: wrap;
-  margin: 40px 0;
+  margin: 10px 0 20px 0; /* ⬅ Reduced top and bottom margin */
   text-align: center;
 }
 
 .offer-circles .circle {
-  width: 150px;
-  height: 150px;
+  width: 160px;
+  height: 160px;
   text-align: center;
 }
 
 .offer-circles img {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  border-radius: 60%;
   object-fit: cover;
   transition: transform 0.3s;
   border: 3px solid #d37c25;
@@ -165,21 +165,20 @@ body {
 .offer-circles p {
   margin-top: 8px;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 400;
   color: #333;
 }
 
 /* === PROMO CARD STYLING === */
 .promo-card-section {
-  max-width: 1350px;
-  margin: 40px auto;
-  padding: 0 20px;
+  max-width: 1900px;
+  margin-top: 5px; /* ⬇ Very little space above promo cards */
+  padding: 0 30px;
   overflow: hidden;
   position: relative;
 }
-
 .styled-heading {
-  font-family: 'Pacifico', cursive;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 2rem;
   text-align: center;
   color: #333;
@@ -223,7 +222,7 @@ body {
 }
 
 .big-card {
-  flex: 0 0 700px;
+  flex: 0 0 1050px;
   min-height: 620px;
 }
 
