@@ -1128,9 +1128,9 @@ h3 {
 .deluxe-circles {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start; /* align tops evenly */
   flex-wrap: wrap;
-  gap: 80px;
+  gap: 70px; /* equal gap between all circles */
   padding: 80px 20px;
   background: radial-gradient(circle at top, #f7fff7, #ffffff);
   font-family: "Poppins", sans-serif;
@@ -1138,15 +1138,24 @@ h3 {
 
 /* === Each Circle Box === */
 .circle-box {
+  width: 240px; /* fixed width for equal layout */
+  min-height: 320px; /* ensures consistent height */
   text-align: center;
   position: relative;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
+/* === Anchor === */
 .circle-box a {
   text-decoration: none;
   color: inherit;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* === Circle Image Wrapper === */
@@ -1160,8 +1169,10 @@ h3 {
   animation: gradientShift 5s ease infinite;
   transition: transform 0.5s ease, box-shadow 0.4s ease;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
 }
 
+/* === Image === */
 .circle-img img {
   width: 100%;
   height: 100%;
@@ -1170,7 +1181,7 @@ h3 {
   transition: transform 0.5s ease, filter 0.4s ease;
 }
 
-/* Hover Glow + Zoom */
+/* === Hover Effects === */
 .circle-box:hover .circle-img {
   transform: scale(1.07);
   box-shadow: 0 15px 45px rgba(82, 63, 46, 0.35);
@@ -1189,13 +1200,16 @@ h3 {
   font-weight: 600;
   letter-spacing: 0.4px;
   transition: color 0.3s ease;
+  min-height: 30px; /* ensures equal title height */
 }
 
 .circle-box p {
   font-size: 0.95rem;
   color: #555;
-  margin-top: 6px;
+  margin-top: 8px;
   line-height: 1.4;
+  max-width: 200px;
+  min-height: 40px; /* ensures equal space for tagline */
 }
 
 .circle-box:hover h3 {
@@ -1207,13 +1221,8 @@ h3 {
 .circle-box {
   animation: floatUp 6s ease-in-out infinite;
 }
-
-.circle-box:nth-child(2) {
-  animation-delay: 1s;
-}
-.circle-box:nth-child(3) {
-  animation-delay: 2s;
-}
+.circle-box:nth-child(2) { animation-delay: 1s; }
+.circle-box:nth-child(3) { animation-delay: 2s; }
 
 /* === Animations === */
 @keyframes gradientShift {
