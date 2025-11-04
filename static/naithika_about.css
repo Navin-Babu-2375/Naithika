@@ -621,9 +621,9 @@
 /* New Heading Style (Replaces Yellow Box) */
 
 .ancestral_wisdom_tagline {
-    font-size: 1.2rem;
-    color: #555; /* Darker gray for contrast */
     margin-bottom: 0.5rem;
+    color: #555; /* Darker gray for contrast */
+    font-size: 1.2rem;
     font-weight: 500;
     font-family: 'Dancing Script', cursive;
 }
