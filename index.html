@@ -13,15 +13,10 @@
     
 
 <style>
-  * {
+    * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-
-  body, html {
-    height: 100%;
-    font-family: Arial, sans-serif;
   }
 
   .carousel-container {
@@ -57,15 +52,15 @@
   }
 
   .carousel-item img.text-image {
-    width: 100%;
+    width: 118%;
     display: block;
   }
 
   .text-content {
     position: absolute;
     top: 37%;
-    left: 10%;
-    color: #000; /* You can adjust for contrast */
+    left: 20%;
+    color: #000;
   }
 
   .text-content h1 {
@@ -101,43 +96,165 @@
   .carousel-buttons button:hover {
     background-color: rgba(255, 255, 255, 1);
   }
+
   /* ===== Index Circles Section ===== */
-.index-circles {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  padding: 30px 20px;
-  background-color: #fff8f0;
-  flex-wrap: wrap;
-}
+  .index-circles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 30px 20px;
+    background-color: #fff8f0;
+    flex-wrap: wrap;
+  }
 
-.index-circles .circle {
-  text-align: center;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+  .index-circles .circle {
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
 
-.index-circles .circle img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
+  .index-circles .circle img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
 
-.index-circles .circle p {
-  margin-top: 10px;
-  font-weight: 600;
-  color: #a72f2f;
-  font-family: "Poppins", sans-serif;
-}
+  .index-circles .circle p {
+    margin-top: 10px;
+    font-weight: 600;
+    color: #a72f2f;
+    font-family: "Poppins", sans-serif;
+  }
 
-.index-circles .circle:hover {
-  transform: scale(1.08);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
-}
+  .index-circles .circle:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  }
 
+  /* ===== RESPONSIVE DESIGN ===== */
+
+  /* Tablets (<=1024px) */
+  @media (max-width: 1024px) {
+    .carousel-container {
+      height: 75vh;
+    }
+
+    .carousel-item .text-container {
+      left: 30px;
+      max-width: 500px;
+    }
+
+    .text-content h1 {
+      font-size: 28px;
+    }
+
+    .text-content p {
+      font-size: 16px;
+    }
+  }
+
+  /* Mobile (<=768px) */
+  @media (max-width: 768px) {
+    .carousel-container {
+      height: 65vh;
+    }
+
+    .carousel-item .text-container {
+      left: 20px;
+      top: 55%;
+      max-width: 90%;
+    }
+
+    .text-content {
+      top: 40%;
+      left: 8%;
+    }
+
+    .text-content h1 {
+      font-size: 22px;
+    }
+
+    .text-content p {
+      font-size: 14px;
+    }
+
+    .carousel-buttons {
+      bottom: 10px;
+      gap: 10px;
+    }
+
+    .carousel-buttons button {
+      padding: 8px 15px;
+      font-size: 16px;
+    }
+
+    .index-circles {
+      gap: 25px;
+      padding: 20px;
+    }
+
+    .index-circles .circle img {
+      width: 80px;
+      height: 80px;
+    }
+
+    .index-circles .circle p {
+      font-size: 14px;
+    }
+  }
+
+  /* Small Mobile (<=480px) */
+  @media (max-width: 480px) {
+    .carousel-container {
+      height: 55vh;
+    }
+
+    .carousel-item .text-container {
+      left: 10px;
+      top: 60%;
+      max-width: 90%;
+    }
+
+    .text-content {
+      top: 35%;
+      left: 5%;
+      margin: 20px;
+    }
+
+    .text-content h1 {
+      font-size: 18px;
+      /* margin: 20px; */
+    }
+
+    .text-content p {
+      font-size: 12px;
+      line-height: 1.4;
+      margin: 20px;
+      
+    }
+
+    .carousel-item img.text-image {
+      width: 118%;
+      display: block;
+    }
+
+    .carousel-buttons button {
+      padding: 6px 12px;
+      font-size: 14px;
+    }
+
+    .index-circles .circle img {
+      width: 70px;
+      height: 70px;
+    }
+
+    .index-circles .circle p {
+      font-size: 12px;
+    }
+  }
 </style>
 
 </head>
@@ -186,14 +303,9 @@
                 </div> -->
                 <a href="offer.html" class="nav-link">OFFERS</a>
                 <a href="products.html" class="nav-link">PRODUCTS</a>
-<<<<<<< HEAD
-                <a href="contact.php" class="nav-link">CONTACT US</a>
-            </nav>
-=======
-                <a href="contact.html" class="nav-link">CONTACT US</a>
-        </nav>
 
->>>>>>> 9a6b68dc776319d8d00372295e80457038312ee8
+                <a href="contact.php" class="nav-link">CONTACT US</a>
+        </nav>
 
             <div name="header_search_group" class="header_search_group">
 
@@ -239,8 +351,8 @@
       <div class="text-container">
         <img class="text-image" src="images_naithika/text_bg_1.png" alt="Text Background">
         <div class="text-content">
-          <h1>Premium Dehydrated Fruits & Vegetables</h1>
-          <p>Experience the natural taste and nutrition preserved in our dehydrated fruits and vegetables. Perfect for healthy snacking and cooking.</p>
+          <h1>Pure, Natural, and Delicious</h1>
+          <p>Our dehydration process locks in nutrients while keeping that irresistible taste intact.</p>
         </div>
       </div>
     </div>
@@ -248,8 +360,8 @@
       <div class="text-container">
         <img class="text-image" src="images_naithika/text_bg_1.png" alt="Text Background">
         <div class="text-content">
-          <h1>Premium Dehydrated Fruits & Vegetables</h1>
-          <p>Experience the natural taste and nutrition preserved in our dehydrated fruits and vegetables. Perfect for healthy snacking and cooking.</p>
+          <h1>Healthy Choices for Modern Living</h1>
+          <p>Enjoy premium quality dehydrated foods crafted for health-conscious individuals.</p>
         </div>
       </div>
     </div>
@@ -260,6 +372,9 @@
     <button id="next">&#10095;</button>
   </div>
 </div>
+
+
+
 <section class="index-circles deluxe-circles">
   <div class="circle-box">
     <a href="products.html#product-dehydrated-fruits">
