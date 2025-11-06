@@ -461,8 +461,9 @@
 
     :root {
         --product-primary-color: #7d4040d2; 
-        --product-secondary-color: #ffc107; 
-        --product-text-color: #333;
+        --product-secondary-color: #4f381f; 
+        --product-text-color: #ffffff;
+        --product-secondary-text-color: #ffffff;
         --product-light-bg: #f8f9fa;
         --product-card-bg: #fff;
     }
@@ -540,7 +541,7 @@
         font-weight: 700;
         color: var(--product-primary-color);
         text-align: center;
-        margin: 80px 0 40px;
+        margin: 20px 0 40px;
         padding-bottom: 10px;
         border-bottom: 2px solid var(--product-secondary-color);
     }
@@ -691,7 +692,7 @@
         width: calc(100% - 30px);
         padding: 10px;
         margin: 0 15px; 
-        background-color: var(--product-secondary-color);
+        background-color: var(--product-primary-color);
         color: var(--product-text-color);
         border: none;
         border-radius: 8px;
@@ -702,7 +703,9 @@
         transition: background-color 0.2s;
     }
     .product-buy-button:hover {
-        background-color: #ffda6a;
+        background-color: #ffffff;
+        color: var(--product-secondary-color);
+        border: #7d4040d2 solid 2px;
     }
     
     /* Buy button on the back side should look like the primary action */
@@ -816,7 +819,8 @@
            BASE STYLES (UPDATED FOR BROWN THEME)
         -------------------------------------- */
         :root {
-            --contactus-primary: #946759; /* Rich Dark Brown (Used for text, titles, info panel background) */
+            /*--contactus-primary: #946759;  Rich Dark Brown (Used for text, titles, info panel background) */
+            --contactus-primary: #b29c74; /* Rich Dark Brown (Used for text, titles, info panel background) */
             --contactus-secondary: #A1887F; /* Muted Caramel/Light Brown (Used for buttons, input focus) */
             --contactus-background: #FAF9F6; /* Very Light Cream/Off-White */
             --contactus-text: #333;
