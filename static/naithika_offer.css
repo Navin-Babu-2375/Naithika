@@ -270,52 +270,55 @@ body {
 
 /* === Product Slider Container === */
 .product-slider-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
+ position: relative;
+ display: flex;
+ align-items: center;
+ overflow: hidden;
 }
 
 /* === Scroll Buttons === */
 .scroll-btn {
-  background: #a72f2f;
-  border: none;
-  color: #fff;
-  font-size: 28px;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  z-index: 10;
-  transition: background 0.3s ease;
+ background: #a72f2f;
+ border: none;
+ color: #fff;
+ font-size: 28px;
+ border-radius: 50%;
+ width: 40px;
+ height: 40px;
+ cursor: pointer;
+ z-index: 10;
+ transition: background 0.3s ease;
 }
 
 .scroll-btn:hover {
-  background: #8b2525;
+ background: #8b2525;
 }
 
 .scroll-btn.left {
-  position: absolute;
-  left: 10px;
+ position: absolute;
+ left: 10px;
 }
 
 .scroll-btn.right {
-  position: absolute;
-  right: 10px;
+ position: absolute;
+ right: 10px;
 }
 
-/* === Horizontal Scroll === */
+/* === Horizontal Scroll (FIXED) === */
 .product-slider {
-  display: flex;
-  gap: 20px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  padding: 20px;
-  scrollbar-width: none; /* Hide scrollbar (Firefox) */
+ display: flex;
+ gap: 20px;
+ overflow-x: auto;
+ scroll-behavior: smooth;
+ padding: 20px;
+ scrollbar-width: none; /* Hide scrollbar (Firefox) */
+    
+    /* FIX: Ensure the slider takes full width to trigger overflow */
+    width: 100%; 
 }
 
 .product-slider::-webkit-scrollbar {
-  display: none; /* Hide scrollbar (Chrome) */
+ display: none; /* Hide scrollbar (Chrome) */
 }
 
 .read-more-text {
@@ -380,7 +383,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  background-color: #e55b40;
+  background-color:  #a72f2f;
   color: #fff;
   text-decoration: none;
   padding: 8px 14px;
@@ -390,7 +393,7 @@ body {
 }
 
 .whatsapp-card-button:hover {
-  background-color: #d9743e;
+  background-color:#8e2525;
 }
 
 
@@ -574,6 +577,12 @@ body {
   width: max-content;
   animation: scrollLeft 60s linear infinite;
 }
+.product-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
 
 /* === Animation Keyframes === */
 @keyframes scrollLeft {
