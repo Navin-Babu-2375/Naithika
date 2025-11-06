@@ -150,897 +150,684 @@
 
 <section id="fruits" class="most-loved">
     <h1 class="styled-heading">Most Loved – Dehydrated Fruits</h1>
-
+    
     <div class="product-slider-container">
-        <button class="scroll-btn left" onclick="scrollLe()">&#10094;</button>
+        <button class="scroll-btn left" onclick="scrollLe_DehydratedFruits()">&#10094;</button>
+        <button class="scroll-btn right" onclick="scrollRight_DehydratedFruits()">&#10095;</button>
 
-        <button class="scroll-btn right" onclick="scrollRight()">&#10095;</button>
+        <div class="product-slider" id="productSlider_DehydratedFruits">
+            <div class="product-card">
+                <div class="tag best-seller">Best Seller</div>
+                <img src="images_naithika/products/mango.jpg" alt="mango" />
+                <h3>Mango </h3>
+                <p class="desc" data-full-text="Sun-ripened mangoes picked at peak sweetness from partner orchards. Slices are gently dried using low-heat methods that preserve aroma, color and nutrients. No sugar, no preservatives — only the concentrated, natural mango taste. Perfect for snacking, baking, or as a wholesome addition to muesli and trail mixes.">
+                    Sun-ripened mangoes picked at peak sweetness from partner orchards....
+                </p>
+                <span class="read-more-text" onclick="toggleReadMore(this)">View More</span>
+                <div class="rating">⭐ 4.9 (800+ Reviews)</div>
+                <div class="price">₹250 /100g</div>
+                <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Mango" target="_blank" class="whatsapp-card-button">
+                    Book Now
+                </a>
+            </div>
+    
+            <div class="product-card">
+                <div class="tag best-seller">Best Seller</div>
+                <img src="images_naithika/products/sapota.png" alt="Chikku (Sapota)" />
+                <h3>Chikku (Sapota) </h3>
+                <p class="desc" data-full-text="Chikku slices offer a caramel-like sweetness, harvested from local orchards. We use gentle dehydration to keep texture soft and flavors rounded. Rich in dietary fiber, these slices are a comforting, natural snack. Ideal with tea, porridge, or straight from the pack.">
+                    Chikku slices offer a caramel-like sweetness, harvested from local orchards....
+                </p>
+                <span class="read-more-text" onclick="toggleReadMore(this)">View More</span>
+                <div class="rating">⭐ 4.9 (1000+ Reviews)</div>
+                <div class="price">₹250 /100g</div>
+                <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Chikku%20(Sapota)" target="_blank" class="whatsapp-card-button">
+                    Book Now
+                </a>
+            </div>
+    
+            <div class="product-card">
+                <div class="tag best-seller">Best Seller</div>
+                <img src="images_naithika/products/Jamun.png" alt="Jamun" />
+                <h3>Jamun</h3>
+                <p class="desc" data-full-text="Deep-purple jamun slices capture the tangy-sweet character of native trees. Carefully dehydrated to retain antioxidants and the subtle tannic notes. A unique healthy snack known in India for traditional benefits linked to blood-sugar support. Use in smoothies, herbal blends, or as a tangy snack.">
+                    Deep-purple jamun slices capture the tangy-sweet character of native trees....
+                </p>
+                <span class="read-more-text" onclick="toggleReadMore(this)">View More</span>
+                <div class="rating">⭐ 4.9 (780+ Reviews)</div>
+                <div class="price">₹280 /100g</div>
+                <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Jamun" target="_blank" class="whatsapp-card-button">
+                    Book Now
+                </a>
+            </div>
+    
+            <div class="product-card">
+                <div class="tag best-seller">Best Seller</div>
+                <img src="images_naithika/products/pineapple.jpg" alt="Pineapple" />
+                <h3>Pineapple </h3>
+                <p class="desc" data-full-text="Golden pineapple rings made from handpicked, ripe fruit. Our drying process keeps bromelain enzymes intact while concentrating sweetness. They bring bright tropical tang and soft chew suitable for snacking or baking. A clean-label treat — no added sugars or sulfites.">
+                    Golden pineapple rings made from handpicked, ripe fruit. Our drying process...
+                </p>
+                <span class="read-more-text" onclick="toggleReadMore(this)">View More</span>
+                <div class="rating">⭐ 4.9 (880+ Reviews)</div>
+                <div class="price">₹250 /100g</div>
+                <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Pineapple" target="_blank" class="whatsapp-card-button">
+                    Book Now
+                </a>
+            </div>
+    
+            <div class="product-card">
+                <div class="tag best-seller">Best Seller</div>
+                <img src="images_naithika/products/apple.jpg" alt="Apple" />
+                <h3>Apple </h3>
+                <p class="desc" data-full-text="Thin, crisp apple slices from seasonal Indian orchards. Dehydrated gently to maintain a light crunch and natural sweetness. No glazing or added sugar — just pure fruit character concentrated. Perfect with tea, in lunchboxes, or added to baked goods.">
+                    Thin, crisp apple slices from seasonal Indian orchards. Dehydrated gently to maintain...
+                </p>
+                <span class="read-more-text" onclick="toggleReadMore(this)">View More</span>
+                <div class="rating">⭐ 4.9 (780+ Reviews)</div>
+                <div class="price">₹250 /100g</div>
+                <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Apple" target="_blank" class="whatsapp-card-button">
+                    Book Now
+                </a>
+            </div>
+    
+            <div class="product-card">
+                <div class="tag best-seller">Best Seller</div>
+                <img src="images_naithika/products/guava.jpg" alt="Guava" />
+                <h3>Guava</h3>
+                <p class="desc" data-full-text="Aromatic guava slices that hold high Vitamin C and fiber content. Gently dehydrated to preserve the tropical aroma and flesh texture. Their tangy-sweet profile makes them great for snacking and culinary uses. A wholesome, natural option for healthy families.">
+                    Aromatic guava slices that hold high Vitamin C and fiber content  Gently dehydrated...
+                </p>
+                <span class="read-more-text" onclick="toggleReadMore(this)">View More</span>
+                <div class="rating">⭐ 4.9 (750+ Reviews)</div>
+                <div class="price">₹220 /100g</div>
+                <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Guava" target="_blank" class="whatsapp-card-button">
+                    Book Now
+                </a>
+            </div>
+    
+            <div class="product-card">
+                <div class="tag best-seller">Best Seller</div>
+                <img src="images_naithika/products/pappaya.jpg" alt="Papaya" />
+                <h3>Papaya </h3>
+                <p class="desc" data-full-text="Soft papaya slices made from fully ripe fruit with natural digestive enzymes. Dehydration concentrates sweetness while keeping a tender bite. A gentle, nutritious snack for all ages, and a natural addition to breakfast bowls. Free from preservatives — simply farm fruit, dried with care.">
+                    Soft papaya slices made from fully ripe fruit with natural digestiveenzymes....
+                </p>
+                <span class="read-more-text" onclick="toggleReadMore(this)">View More</span>
+                <div class="rating">⭐ 4.9 (780+ Reviews)</div>
+                <div class="price">₹220 /100g</div>
+                <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Papaya" target="_blank" class="whatsapp-card-button">
+                    Book Now
+                </a>
+            </div>
+    
+            <div class="product-card">
+                <div class="tag best-seller">Best Seller</div>
+                <img src="images_naithika/products/angeer.png" alt="Anjeer (Figs)" />
+                <h3>Anjeer (Figs) </h3>
+                <p class="desc" data-full-text="Sun-dried figs that offer rich, honeyed sweetness and dense texture. High in natural fiber and minerals, they are an age-old energy food. Our figs are dried slowly to preserve subtle floral notes and chewiness. Perfect for healthy snacking, gifting, or adding to cereal blends.">
+                    Sun-dried figs that offer rich, honeyed sweetness and dense texture....
+                </p>
+                <span class="read-more-text" onclick="toggleReadMore(this)">View More</span>
+                <div class="rating">⭐ 4.9 (830+ Reviews)</div>
+                <div class="price">₹300 /100g</div>
+                <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Anjeer%20(Figs)" target="_blank" class="whatsapp-card-button">
+                    Book Now
+                </a>
+            </div>
+    
+            <div class="product-card">
+                <div class="tag best-seller">Best Seller</div>
+                <img src="images_naithika/products/jackfruit.jpg" alt="Jackfruit" />
+                <h3>Jackfruit </h3>
+                <p class="desc" data-full-text="Aromatic jackfruit slices that capture the tropical sweetness and unique scent. Lightly dried for a pleasant chew while retaining fiber and natural sugars. An excellent plant-based snack with a bright, local character. Try in desserts, trail mixes, or as a standalone snack.">
+                    Aromatic jackfruit slices that capture the tropical sweetness and unique scent...
+                </p>
+                <span class="read-more-text" onclick="toggleReadMore(this)">View More</span>
+                <div class="rating">⭐ 4.9 (840+ Reviews)</div>
+                <div class="price">₹250 /100g</div>
+                <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Jackfruit" target="_blank" class="whatsapp-card-button">
+                    Book Now
+                </a>
+            </div>
+    
+            <div class="product-card">
+                <div class="tag new">New</div>
+                <img src="images_naithika/products/Pomegranate Arils.png" alt="Pomegranate Arils (Dehydrated)" />
+                <h3>Pomegranate Arils </h3>
+                <p class="desc" data-full-text="Tangy-sweet pomegranate seeds delicately dried to retain ruby color and antioxidants. They add a bright tart note to breakfasts, salads, and desserts. Our process maintains flavor intensity without adding sugars or colors. A premium, antioxidant-rich fruit snack for daily use.">
+                    Tangy-sweet pomegranate seeds delicately dried to retain ruby color and...
+                </p>
+                <span class="read-more-text" onclick="toggleReadMore(this)">View More</span>
+                <div class="rating">⭐ 4.9 (980+ Reviews)</div>
+                <div class="price">₹250 /100g</div>
+                <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Pomegranate%20Arils%20(Dehydrated)" target="_blank" class="whatsapp-card-button">
+                    Book Now
+                </a>
+            </div>
+    
+            <div class="product-card">
+                <div class="tag best-seller">Best Seller</div>
+                <img src="images_naithika/products/banana.jpg" alt="Banana" />
+                <h3>Banana </h3>
+                <p class="desc" data-full-text="Made from ripe bananas sliced and dried for a naturally sweet, crisp chip. No oil frying or added sugars — simply dehydrated fruit with full banana flavor. A kid-friendly snack that doubles as an energy-rich addition to mixes. Great for tiffin boxes, travel, and on-the-go munching.">
+                    Made from ripe bananas sliced and dried for a naturally sweet, crisp chip...
+                </p>
+                <span class="read-more-text" onclick="toggleReadMore(this)">View More</span>
+                <div class="rating">⭐ 4.9 (780+ Reviews)</div>
+                <div class="price">₹200 /100g</div>
+                <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Banana" target="_blank" class="whatsapp-card-button">
+                    Book Now
+                </a>
+            </div>
+    
+            <div class="product-card">
+                <div class="tag best-seller">Best Seller</div>
+                <img src="images_naithika/products/Black Grapes.jpg" alt="Black Grapes" />
+                <h3>Black Grapes </h3>
+                <p class="desc" data-full-text="Sun-dried black grapes offering concentrated natural sweetness and rich antioxidants. They have a chewy, jammy texture and deep flavor that pairs well with nuts and cereals. Sourced from regional vineyards using sustainable practices, dried slowly for best color and taste. A premium dried fruit ideal for gifting, snacking, and gourmet use.">
+                    Sun-dried black grapes offering concentrated natural sweetness and rich antioxidants....
+                </p>
+                <span class="read-more-text" onclick="toggleReadMore(this)">View More</span>
+                <div class="rating">⭐ 4.9 (840+ Reviews)</div>
+                <div class="price">₹250 /100g</div>
+                <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Black%20Grapes" target="_blank" class="whatsapp-card-button">
+                    Book Now
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="vegetables" class="top-picks">
+    <h1 class="styled-heading">Dehydrated Vegetables</h1>
+    
+    <div class="product-slider-container">
+        <button class="scroll-btn left" onclick="scrollLe_DehydratedVegetables()">&#10094;</button>
+        <button class="scroll-btn right" onclick="scrollRight_DehydratedVegetables()">&#10095;</button>
 
-        <div class="product-slider" id="productSlider">
+        <div class="product-slider" id="productSlider_DehydratedVegetables">
 
             <div class="product-card">
                 <div class="tag best-seller">Best Seller</div>
-                <img src="images_naithika/mango.jpg" alt="Dehydrated Mango" />
-                <h3>Mango – Dehydrated Fruits</h3>
-                <p class="desc" data-full-text="Sun-ripened slices, low-heat dried to preserve aroma and nutrients. No sugar or preservatives.">
-                    Sun-ripened slices, low-heat dried to preserve aroma...
+                <img src="images_naithika/products/Tomoto.jpg" alt="Tomato Slices" />
+                <h3>Tomato Slices</h3>
+                <p class="desc" data-full-text="Naturally tangy and rich in lycopene, our sun-ripened tomato slices capture the full flavour of fresh tomatoes. Low-temperature tray drying locks in antioxidants and deep red colour. Perfect for soups, pasta sauces, instant noodles, or salads. Each slice delivers the essence of farm-fresh tomatoes—without moisture.">
+                    Naturally tangy and rich in lycopene, our sun-ripened tomato slices  capture the...
                 </p>
-                <span class="read-more-text" onclick="toggleReadMore(this)">More</span>
-                <div class="rating">⭐ 4.9 (2k+ Reviews)</div>
-                <div class="price">₹250 /100 g </div>
-                <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Dehydrated%20Mango" target="_blank" class="whatsapp-card-button">
+                <span class="read-more-text" onclick="toggleReadMore(this)">View More</span>
+                <div class="rating">⭐ 4.9 (880+ Reviews)</div>
+                <div class="price">₹180 /100g</div>
+                <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Tomato%20Slices" target="_blank" class="whatsapp-card-button">
                     Book Now
                 </a>
             </div>
 
-            <div class="product-card">
+            <!-- <div class="product-card">
                 <div class="tag new">New</div>
-                <img src="images_naithika/chikku.jpg" alt="Dehydrated Chikku" />
-                <h3>Chikku (Sapota) – Dehydrated Fruits</h3>
-                <p class="desc" data-full-text="Soft, caramel-sweet slices rich in fiber. Perfect with tea or porridge.">
-                    Soft, caramel-sweet slices rich in fiber...
+                <img src="images_naithika/products/tomato_powder.jpg" alt="Tomato Powder" />
+                <h3>Tomato Powder</h3>
+                <p class="desc" data-full-text="Finely milled from 100% pure dried tomatoes, this bright red powder brings instant colour and flavour to your cooking. Ideal for soups, sauces, marinades, gravies, and spice blends. A spoonful adds the tang and nutrition of ripe tomatoes anytime, anywhere.">
+                    Finely milled from 100% pure dried tomatoes, this bright red powder brings instant...
                 </p>
-                <span class="read-more-text" onclick="toggleReadMore(this)">More</span>
-                <div class="rating">⭐ 4.8 (1.2k+ Reviews)</div>
-                <div class="price">₹250 /100 g</div>
-                <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Dehydrated%20Chikku" target="_blank" class="whatsapp-card-button">
+                <span class="read-more-text" onclick="toggleReadMore(this)">View More</span>
+                <div class="rating">⭐ 4.9 (880+ Reviews)</div>
+                <div class="price">₹200 /100g</div>
+                <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Tomato%20Powder" target="_blank" class="whatsapp-card-button">
                     Book Now
                 </a>
-            </div>
-      <!-- Product 2 -->
-      <div class="product-card">
-        <div class="tag new">New</div>
-        <img src="images_naithika/products/sapota.png" alt="Dehydrated Chikku" />
-        <h3>Chikku (Sapota) – Dehydrated Fruits</h3>
-        <p class="desc" data-full-text="Soft, caramel-sweet slices rich in fiber. Perfect with tea or porridge.">
-          Soft, caramel-sweet slices rich in fiber...
-        </p>
-        <span class="read-more-text" onclick="toggleReadMore(this)">More</span>
-        <div class="rating">⭐ 4.8 (1.2k+ Reviews)</div>
-        <div class="price">₹250 /100 g</div>
-        <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Dehydrated%20Chikku" target="_blank" class="whatsapp-card-button">
-           Book Now
-        </a>
-      </div>
-
-      <!-- Product 3 -->
-      <div class="product-card">
-        <div class="tag trending">Trending</div>
-        <img src="images_naithika/products/jamun.png" alt="Dehydrated Jamun" />
-        <h3>Jamun – Dehydrated Fruits</h3>
-        <p class="desc" data-full-text="Tangy-sweet slices with antioxidants. Great for smoothies or as a healthy snack.">
-          Tangy-sweet slices with antioxidants...
-        </p>
-        <span class="read-more-text" onclick="toggleReadMore(this)">More</span>
-        <div class="rating">⭐ 4.9 (980 Reviews)</div>
-        <div class="price">₹280  /100 g</div>
-        <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Dehydrated%20Jamun" target="_blank" class="whatsapp-card-button">
-         Book Now
-        </a>
-      </div>
+            </div> -->
 
             <div class="product-card">
-                <div class="tag trending">Trending</div>
-                <img src="images_naithika/jamun.jpg" alt="Dehydrated Jamun" />
-                <h3>Jamun – Dehydrated Fruits</h3>
-                <p class="desc" data-full-text="Tangy-sweet slices with antioxidants. Great for smoothies or as a healthy snack.">
-                    Tangy-sweet slices with antioxidants...
+                <div class="tag best-seller">Best Seller</div>
+                <img src="images_naithika/products/Betroot.jpg" alt="Beetroot" />
+                <h3>Beetroot</h3>
+                <p class="desc" data-full-text="Bright, deep-red beetroot slices packed with natural iron and betalains. Gently dried to keep color, flavor and antioxidant value intact. Adds vivid color and earthiness to soups, salads, and snacks. A nutrient-dense convenience ingredient for modern kitchens.">
+                    Bright, deep-red beetroot slices packed with natural iron and betalains....
                 </p>
-                <span class="read-more-text" onclick="toggleReadMore(this)">More</span>
-                <div class="rating">⭐ 4.9 (980 Reviews)</div>
-                <div class="price">₹280  /100 g</div>
-                <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Dehydrated%20Jamun" target="_blank" class="whatsapp-card-button">
+                <span class="read-more-text" onclick="toggleReadMore(this)">View More</span>
+                <div class="rating">⭐ 4.9 (780+ Reviews)</div>
+                <div class="price">₹200 /100g</div>
+                <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Beetroot" target="_blank" class="whatsapp-card-button">
                     Book Now
                 </a>
             </div>
 
             <div class="product-card">
                 <div class="tag best-seller">Best Seller</div>
-                <img src="images_naithika/pineapple.jpg" alt="Dehydrated Pineapple" />
-                <h3>Pineapple – Dehydrated Fruits</h3>
-                <p class="desc" data-full-text="Golden rings with bright tropical flavor. No added sugar or sulfites.">
-                    Golden rings with bright tropical flavor...
+                <img src="images_naithika/products/carrot.jpg" alt="Carrot" />
+                <h3>Carrot</h3>
+                <p class="desc" data-full-text="Sweet, naturally orange carrot slices rich in beta-carotene. Low-heat drying preserves the vitamin-rich profile and sweet flavor. Perfect for quick soups, stews, or as a crunchy snack. A simple way to add colour and nutrition to everyday meals.">
+                    Sweet, naturally orange carrot slices rich in beta-carotene. Low-heat drying...
                 </p>
-                <span class="read-more-text" onclick="toggleReadMore(this)">More</span>
-                <div class="rating">⭐ 4.9 (1.6k+ Reviews)</div>
-                <div class="price">₹250 /100 g </div>
-                <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Dehydrated%20Pineapple" target="_blank" class="whatsapp-card-button">
-                    Book Now
-                </a>
-            </div>
-
-<<<<<<< HEAD
-            <div class="product-card">
-                <div class="tag hot-deals">Hot Deals</div>
-                <img src="images_naithika/apple.jpg" alt="Dehydrated Apple" />
-                <h3>Apple – Dehydrated Fruits</h3>
-                <p class="desc" data-full-text="Crisp, naturally sweet apple slices with no added sugar.">
-                    Crisp, naturally sweet apple slices with ...
-                </p>
-                <span class="read-more-text" onclick="toggleReadMore(this)">More</span>
-                <div class="rating">⭐ 4.8 (1.1k+ Reviews)</div>
-                <div class="price">₹250 /100 g </div>
-                <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Dehydrated%20Apple" target="_blank" class="whatsapp-card-button">
+                <span class="read-more-text" onclick="toggleReadMore(this)">View More</span>
+                <div class="rating">⭐ 4.9 (780+ Reviews)</div>
+                <div class="price">₹200 /100g</div>
+                <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Carrot" target="_blank" class="whatsapp-card-button">
                     Book Now
                 </a>
             </div>
 
             <div class="product-card">
                 <div class="tag new">New</div>
-                <img src="images_naithika/guava.jpg" alt="Dehydrated Guava" />
-                <h3>Guava – Dehydrated Fruits</h3>
-                <p class="desc" data-full-text="Tangy-sweet guava slices high in Vitamin C and fiber.">
-                    Tangy-sweet guava slices high in Vitamin C...
+                <img src="images_naithika/products/amla.jpg" alt="Amla (Indian Gooseberry)" />
+                <h3>Amla (Indian Gooseberry)</h3>
+                <p class="desc" data-full-text="Amla slices that keep the high Vitamin C and tang of the fresh fruit. Carefully dehydrated to concentrate potency while keeping a pleasant chew. Use in chutneys, health tonics, or as a tangy snack that supports immunity. A traditional Indian superfruit presented in a modern, convenient form.">
+                    Amla slices that keep the high Vitamin C and tang of the fresh fruit. Carefully ...
                 </p>
-                <span class="read-more-text" onclick="toggleReadMore(this)">More</span>
-                <div class="rating">⭐ 4.9 (900 Reviews)</div>
-                <div class="price">₹220  /100 g</div>
-                <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Dehydrated%20Guava" target="_blank" class="whatsapp-card-button">
+                <span class="read-more-text" onclick="toggleReadMore(this)">View More</span>
+                <div class="rating">⭐ 4.9 (850+ Reviews)</div>
+                <div class="price">₹240 /100g</div>
+                <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Amla%20(Indian%20Gooseberry)" target="_blank" class="whatsapp-card-button">
                     Book Now
                 </a>
             </div>
 
             <div class="product-card">
-                <div class="tag trending">Trending</div>
-                <img src="images_naithika/papaya.jpg" alt="Dehydrated Papaya" />
-                <h3>Papaya – Dehydrated Fruits</h3>
-                <p class="desc" data-full-text="Soft, enzyme-rich papaya slices for natural digestive health.">
-                    Soft, enzyme-rich papaya slices for natural...
+                <div class="tag new">New</div>
+                <img src="images_naithika/products/Ginger.jpg" alt="Ginger" />
+                <h3>Ginger</h3>
+                <p class="desc" data-full-text="Aromatic ginger slices dried to retain warming spice and natural oils. Perfect for making instant ginger tea, spice blends, or cooking use. Our slow-drying method preserves zing and digestive benefits. Hand-processed in small batches to keep flavor fresh.">
+                    Aromatic ginger slices dried to retain warming spice and natural oils. Perfect for...
                 </p>
-                <span class="read-more-text" onclick="toggleReadMore(this)">More</span>
-                <div class="rating">⭐ 4.8 (1k+ Reviews)</div>
-                <div class="price">₹220 /100 g </div>
-                <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Dehydrated%20Papaya" target="_blank" class="whatsapp-card-button">
+                <span class="read-more-text" onclick="toggleReadMore(this)">View More</span>
+                <div class="rating">⭐ 4.9 (780+ Reviews)</div>
+                <div class="price">₹220 /100g</div>
+                <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Ginger" target="_blank" class="whatsapp-card-button">
+                    Book Now
+                </a>
+            </div>
+
+            <!-- <div class="product-card">
+                <div class="tag new">New</div>
+                <img src="images_naithika/products/garlic powder.png" alt="Garlic Powder" />
+                <h3>Garlic Powder</h3>
+                <p class="desc" data-full-text="Pure garlic powder made from fresh, chemical-free garlic cloves ground fine. Sun-cured and gently dehydrated to retain aroma and savory depth. Perfect for seasoning, marinades, soups and quick spice mixes. Small-batch processing keeps the flavour bright and true to the field.">
+                    Pure garlic powder made from fresh, chemical-free garlic cloves ground fine....
+                </p>
+                <span class="read-more-text" onclick="toggleReadMore(this)">View More</span>
+                <div class="rating">⭐ 4.9 (880+ Reviews)</div>
+                <div class="price">₹150 (200g)</div>
+                <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Garlic%20Powder" target="_blank" class="whatsapp-card-button">
+                    Book Now
+                </a>
+            </div> -->
+
+            <div class="product-card">
+                <div class="tag new">New</div>
+                <img src="images_naithika/products/Ash Gourd.png" alt="Ash Gourd (Petha)" />
+                <h3>Ash Gourd (Petha)</h3>
+                <p class="desc" data-full-text="Mild-flavoured ash gourd pieces ideal for soups, powders, and health blends. Dehydrated to a gentle texture that rehydrates easily in cooking. A cooling vegetable used traditionally in Indian recipes. A pantry staple for health-conscious home cooks.">
+                    Mild-flavoured ash gourd pieces ideal for soups, powders, and health blends....
+                </p>
+                <span class="read-more-text" onclick="toggleReadMore(this)">View More</span>
+                <div class="rating">⭐ 4.9 (780+ Reviews)</div>
+                <div class="price">₹200 /100g</div>
+                <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Ash%20Gourd%20(Petha)" target="_blank" class="whatsapp-card-button">
+                    Book Now
+                </a>
+            </div>
+
+            <div class="product-card">
+                <div class="tag new">New</div>
+                <img src="images_naithika/products/Pumpkin.jpg" alt="Pumpkin" />
+                <h3>Pumpkin</h3>
+                <p class="desc" data-full-text="Golden pumpkin flakes with a slightly sweet, nutty flavour. Rich in beta-carotene and fiber, ideal for porridges, soups and baking. Our dehydration locks in nutrients while extending shelf life. A versatile kitchen ingredient for seasonal and modern recipes.">
+                    Golden pumpkin flakes with a slightly sweet, nutty flavour. Rich in...
+                </p>
+                <span class="read-more-text" onclick="toggleReadMore(this)">View More</span>
+                <div class="rating">⭐ 4.9 (780+ Reviews)</div>
+                <div class="price">₹200 /100g</div>
+                <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Pumpkin" target="_blank" class="whatsapp-card-button">
+                    Book Now
+                </a>
+            </div>
+
+            <div class="product-card">
+                <div class="tag new">New</div>
+                <img src="images_naithika/products/lemon.jpg" alt="Lemon" />
+                <h3>Lemon</h3>
+                <p class="desc" data-full-text="Zesty lemon slices that carry bright citrus flavor and high Vitamin C. Perfect for teas, spice mixes, marinades or as a garnish. Dried to preserve zest oils and tartness without masks of sugar. A pantry-friendly way to add citrus freshness year-round.">
+                    Zesty lemon slices that carry bright citrus flavor and high Vitamin C. Perfect...
+                </p>
+                <span class="read-more-text" onclick="toggleReadMore(this)">View More</span>
+                <div class="rating">⭐ 4.9 (880+ Reviews)</div>
+                <div class="price">₹200 /100g</div>
+                <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Lemon" target="_blank" class="whatsapp-card-button">
                     Book Now
                 </a>
             </div>
 
             <div class="product-card">
                 <div class="tag best-seller">Best Seller</div>
-                <img src="images_naithika/anjeer.jpg" alt="Dehydrated Anjeer" />
-                <h3>Anjeer (Figs) – Dehydrated Fruits</h3>
-                <p class="desc" data-full-text="Honeyed, fiber-rich figs — perfect for snacking and gifting.">
-                    Honeyed, fiber-rich figs — perfect for snacking...
+                <img src="images_naithika/products/Drumstick Leaves.jpg" alt="Moringa (Drumstick Leaves)" />
+                <h3>Moringa Leaves</h3>
+                <p class="desc" data-full-text="Nutritious moringa leaves dried gently to keep minerals and protein. Rich in iron, calcium and antioxidants — a wholesome green powder source. Use in dals, soups or as a nourishing sprinkle over meals. Cultivated on small farms using responsible practices.">
+                    Nutritious moringa leaves dried gently to keep minerals and protein. Rich...
                 </p>
-                <span class="read-more-text" onclick="toggleReadMore(this)">More</span>
-                <div class="rating">⭐ 4.9 (2k+ Reviews)</div>
-                <div class="price">₹300 /100 g </div>
-                <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Dehydrated%20Anjeer" target="_blank" class="whatsapp-card-button">
-                    Book Now
-                </a>
-            </div>
-
-            <div class="product-card">
-                <div class="tag hot-deals">Hot Deals</div>
-                <img src="images_naithika/jackfruit.jpg" alt="Dehydrated Jackfruit" />
-                <h3>Jackfruit – Dehydrated Fruits</h3>
-                <p class="desc" data-full-text="Sweet, chewy jackfruit slices rich in fiber and tropical aroma.">
-                    Sweet, chewy jackfruit slices rich in fiber...
-                </p>
-                <span class="read-more-text" onclick="toggleReadMore(this)">More</span>
-                <div class="rating">⭐ 4.9 (1.3k+ Reviews)</div>
-                <div class="price">₹250 /100 g </div>
-                <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Dehydrated%20Jackfruit" target="_blank" class="whatsapp-card-button">
-                    Book Now
-                </a>
-            </div>
-=======
-      <!-- Product 6 -->
-      <div class="product-card">
-        <div class="tag new">New</div>
-        <img src="images_naithika/products/guava.jpg" alt="Dehydrated Guava" />
-        <h3>Guava – Dehydrated Fruits</h3>
-        <p class="desc" data-full-text="Tangy-sweet guava slices high in Vitamin C and fiber.">
-          Tangy-sweet guava slices high in Vitamin C...
-        </p>
-        <span class="read-more-text" onclick="toggleReadMore(this)">More</span>
-        <div class="rating">⭐ 4.9 (900 Reviews)</div>
-        <div class="price">₹220  /100 g</div>
-        <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Dehydrated%20Guava" target="_blank" class="whatsapp-card-button">
-          Book Now
-        </a>
-      </div>
-
-      <!-- Product 7 -->
-      <div class="product-card">
-        <div class="tag trending">Trending</div>
-        <img src="images_naithika/products/pappaya.jpg" alt="Dehydrated Papaya" />
-        <h3>Papaya – Dehydrated Fruits</h3>
-        <p class="desc" data-full-text="Soft, enzyme-rich papaya slices for natural digestive health.">
-          Soft, enzyme-rich papaya slices for natural...
-        </p>
-        <span class="read-more-text" onclick="toggleReadMore(this)">More</span>
-        <div class="rating">⭐ 4.8 (1k+ Reviews)</div>
-        <div class="price">₹220 /100 g </div>
-        <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Dehydrated%20Papaya" target="_blank" class="whatsapp-card-button">
-     Book Now
-        </a>
-      </div>
-
-      <!-- Product 8 -->
-      <div class="product-card">
-        <div class="tag best-seller">Best Seller</div>
-        <img src="images_naithika/products/angeer.png" alt="Dehydrated Anjeer" />
-        <h3>Anjeer (Figs) – Dehydrated Fruits</h3>
-        <p class="desc" data-full-text="Honeyed, fiber-rich figs — perfect for snacking and gifting.">
-          Honeyed, fiber-rich figs — perfect for snacking...
-        </p>
-        <span class="read-more-text" onclick="toggleReadMore(this)">More</span>
-        <div class="rating">⭐ 4.9 (2k+ Reviews)</div>
-        <div class="price">₹300 /100 g </div>
-        <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Dehydrated%20Anjeer" target="_blank" class="whatsapp-card-button">
-          Book Now
-        </a>
-      </div>
-
-      <!-- Product 9 -->
-      <div class="product-card">
-        <div class="tag hot-deals">Hot Deals</div>
-        <img src="images_naithika/products/jackfruit.jpg" alt="Dehydrated Jackfruit" />
-        <h3>Jackfruit – Dehydrated Fruits</h3>
-        <p class="desc" data-full-text="Sweet, chewy jackfruit slices rich in fiber and tropical aroma.">
-          Sweet, chewy jackfruit slices rich in fiber...
-        </p>
-        <span class="read-more-text" onclick="toggleReadMore(this)">More</span>
-        <div class="rating">⭐ 4.9 (1.3k+ Reviews)</div>
-        <div class="price">₹250 /100 g </div>
-        <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Dehydrated%20Jackfruit" target="_blank" class="whatsapp-card-button">
-      Book Now
-        </a>
-      </div>
-
-      <!-- Product 10 -->
-      <div class="product-card">
-        <div class="tag new">New</div>
-        <img src="images_naithika/products/Pomegranate Arils.png" alt="Dehydrated Pomegranate" />
-        <h3>Pomegranate Arils – Dehydrated Fruits</h3>
-        <p class="desc" data-full-text="Tangy-sweet arils rich in antioxidants and Vitamin C.">
-          Tangy-sweet arils rich in antioxidants...
-        </p>
-        <span class="read-more-text" onclick="toggleReadMore(this)">More</span>
-        <div class="rating">⭐ 4.9 (1k+ Reviews)</div>
-        <div class="price">₹250 /100 g</div>
-        <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Dehydrated%20Pomegranate" target="_blank" class="whatsapp-card-button">
-           Book Now
-        </a>
-      </div>
->>>>>>> 4081b4e4feacd7bc2416016550fcee362a384197
-
-            <div class="product-card">
-                <div class="tag new">New</div>
-                <img src="images_naithika/pomegranate.jpg" alt="Dehydrated Pomegranate" />
-                <h3>Pomegranate Arils – Dehydrated Fruits</h3>
-                <p class="desc" data-full-text="Tangy-sweet arils rich in antioxidants and Vitamin C.">
-                    Tangy-sweet arils rich in antioxidants...
-                </p>
-                <span class="read-more-text" onclick="toggleReadMore(this)">More</span>
-                <div class="rating">⭐ 4.9 (1k+ Reviews)</div>
-                <div class="price">₹250 /100 g</div>
-                <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Dehydrated%20Pomegranate" target="_blank" class="whatsapp-card-button">
-                    Book Now
-                </a>
-            </div>
-
-<<<<<<< HEAD
-            <div class="product-card">
-                <div class="tag trending">Trending</div>
-                <img src="images_naithika/banana.jpg" alt="Dehydrated Banana" />
-                <h3>Banana – Dehydrated Fruits</h3>
-                <p class="desc" data-full-text="Naturally sweet, crisp banana chips. No oil or added sugar.">
-                    Naturally sweet, crisp banana chips...
-                </p>
-                <span class="read-more-text" onclick="toggleReadMore(this)">More...</span>
-                <div class="rating">⭐ 4.8 (900 Reviews)</div>
-                <div class="price">₹200 /100 g </div>
-                <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Dehydrated%20Banana" target="_blank" class="whatsapp-card-button">
+                <span class="read-more-text" onclick="toggleReadMore(this)">View More</span>
+                <div class="rating">⭐ 4.9 (980+ Reviews)</div>
+                <div class="price">₹220 /100g</div>
+                <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Moringa%20(Drumstick%20Leaves)" target="_blank" class="whatsapp-card-button">
                     Book Now
                 </a>
             </div>
 
             <div class="product-card">
                 <div class="tag new">New</div>
-                <img src="images_naithika/blackgrapes.jpg" alt="Dehydrated Black Grapes" />
-                <h3>Black Grapes – Dehydrated Fruits</h3>
-                <p class="desc" data-full-text="Sun-dried grapes with rich antioxidants and deep sweetness.">
-                    Sun-dried grapes with rich antioxidants...
+                <img src="images_naithika/products/Curry Leaves.png" alt="Curry Leaves" />
+                <h3>Curry Leaves</h3>
+                <p class="desc" data-full-text="Fragrant curry leaves preserved for aroma and traditional flavour. Ideal for tempering, chutneys, and aromatic blends when fresh leaves are unavailable. Our controlled drying maintains essential oils and flavor depth. Sourced from South Indian farms with honest practices.">
+                    Fragrant curry leaves preserved for aroma and traditional flavour. Ideal for...
                 </p>
-                <span class="read-more-text" onclick="toggleReadMore(this)">More...</span>
-                <div class="rating">⭐ 4.9 (1.5k+ Reviews)</div>
-                <div class="price">₹250 / 100 g</div>
-                <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Dehydrated%20Black%20Grapes" target="_blank" class="whatsapp-card-button">
+                <span class="read-more-text" onclick="toggleReadMore(this)">View More</span>
+                <div class="rating">⭐ 4.9 (750+ Reviews)</div>
+                <div class="price">₹150 /100g</div>
+                <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Curry%20Leaves" target="_blank" class="whatsapp-card-button">
+                    Book Now
+                </a>
+            </div>
+            
+            <div class="product-card">
+                <div class="tag new">New</div>
+                <img src="images_naithika/products/Mint Leaves.png" alt="Mint Leaves" />
+                <h3>Mint Leaves</h3>
+                <p class="desc" data-full-text="Fresh mint leaves air-dried to keep cooling aroma and taste. Perfect for teas, raitas, chutneys and spice mixes. Dried quickly to preserve color and volatile oils. A refreshing addition to everyday cooking and home remedies.">
+                    Fresh mint leaves air-dried to keep cooling aroma and taste. Perfect for...
+                </p>
+                <span class="read-more-text" onclick="toggleReadMore(this)">View More</span>
+                <div class="rating">⭐ 4.9 (840+ Reviews)</div>
+                <div class="price">₹200 /100g</div>
+                <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Mint%20Leaves" target="_blank" class="whatsapp-card-button">
+                    Book Now
+                </a>
+            </div>
+            
+            <div class="product-card">
+                <div class="tag new">New</div>
+                <img src="images_naithika/products/Coriander.jpg" alt="Coriander (Cilantro)" />
+                <h3>Coriander (Cilantro)</h3>
+                <p class="desc" data-full-text="Fragrant coriander leaves dried to retain green notes and herbaceous taste. Useful for instant gravies, spice mixes or as a garnish when fresh herbs are not available. Dehydration is done under low heat to preserve color and aroma. Handpicked and processed in small batches for quality.">
+                    Fragrant coriander leaves dried to retain green notes and herbaceous taste....
+                </p>
+                <span class="read-more-text" onclick="toggleReadMore(this)">View More</span>
+                <div class="rating">⭐ 4.9 (780+ Reviews)</div>
+                <div class="price">₹180 /100g</div>
+                <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Coriander%20(Cilantro)" target="_blank" class="whatsapp-card-button">
                     Book Now
                 </a>
             </div>
 
         </div>
-=======
-      <!-- Product 12 -->
-      <div class="product-card">
-        <div class="tag new">New</div>
-        <img src="images_naithika/products/Black Grapes.jpg" alt="Dehydrated Black Grapes" />
-        <h3>Black Grapes – Dehydrated Fruits</h3>
-        <p class="desc" data-full-text="Sun-dried grapes with rich antioxidants and deep sweetness.">
-          Sun-dried grapes with rich antioxidants...
-        </p>
-        <span class="read-more-text" onclick="toggleReadMore(this)">More...</span>
-        <div class="rating">⭐ 4.9 (1.5k+ Reviews)</div>
-        <div class="price">₹250 / 100 g</div>
-        <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Dehydrated%20Black%20Grapes" target="_blank" class="whatsapp-card-button">
-         Book Now
-        </a>
-      </div>
->>>>>>> 4081b4e4feacd7bc2416016550fcee362a384197
-
     </div>
 </section>
 
+<section id="pickles" class="pickles">
+    <h1 class="styled-heading">Pickles & Powders</h1>
+    
+    <div class="product-slider-container">
+        <button class="scroll-btn left" onclick="scrollLe_PicklesPowders()">&#10094;</button>
+        <button class="scroll-btn right" onclick="scrollRight_PicklesPowders()">&#10095;</button>
+
+        <div class="product-slider" id="productSlider_PicklesPowders">
+            <div class="product-card">
+                <div class="tag new">New</div>
+                <img src="images_naithika/products/mango pickle.png" alt="Mango Pickle" />
+                <h3>Mango Pickle </h3>
+                <p class="desc" data-full-text="Traditional raw mango pickle made using sun-dried raw mangoes and cold-pressed oil. Balanced spices and long ageing give it depth and a bright tang. Prepared in small batches for consistent, home-style flavour. Pairs well with rice, rotis, and as a vibrant table condiment.">
+                    Traditional raw mango pickle made using sun-dried raw mangoes and cold-pressed oil...
+                </p>
+                <span class="read-more-text" onclick="toggleReadMore(this)">View More</span>
+                <div class="rating">⭐ 4.9 (780+ Reviews)</div>
+                <div class="price">₹180 /200g</div>
+                <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Mango%20Pickle" target="_blank" class="whatsapp-card-button">
+                    Book Now
+                </a>
+            </div>
+    
+            <div class="product-card">
+                <div class="tag new">New</div>
+                <img src="images_naithika/products/Indian gooseberry.png" alt="Amla Pickle" />
+                <h3>Amla Pickle </h3>
+                <p class="desc" data-full-text="Tangy-sour amla pickle with a spicy warmth that highlights natural Vitamin C. Made with tender amlas and balanced spices, it adds a nourishing tang to meals. Small-batch preparation retains traditional texture and flavour. Ideal for daily use and seasonal immunity support.">
+                    Tangy-sour amla pickle with a spicy warmth that highlights natural Vitamin C....
+                </p>
+                <span class="read-more-text" onclick="toggleReadMore(this)">View More</span>
+                <div class="rating">⭐ 4.9 (780+ Reviews)</div>
+                <div class="price">₹180 /200g</div>
+                <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Amla%20Pickle" target="_blank" class="whatsapp-card-button">
+                    Book Now
+                </a>
+            </div>
+               
+          <div class="product-card">
+                <div class="tag new">New</div>
+                <img src="images_naithika/products/Tomato Pickle.png " alt="Mango Pickle" />
+                <h3>Tomato Pickle  </h3>
+                <p class="desc" data-full-text="Tomato powder made from slow-dried, ripe tomatoes concentrated into a bright, tangy powder. Perfect for seasoning, soups, gravies and instant mixes, offering natural umami. No artificial colors or preservatives — only sun-ripened tomatoes ground fine. A pantry essential for cooks who want pure tomato flavor year-round.">
+                    Tomato powder made from slow-dried, ripe tomatoes concentrated into a bright ...
+                </p>
+                <span class="read-more-text" onclick="toggleReadMore(this)">View More</span>
+                <div class="rating">⭐ 4.9 (780+ Reviews)</div>
+                <div class="price">₹180 /200g</div>
+                <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Mango%20Pickle" target="_blank" class="whatsapp-card-button">
+                    Book Now
+                </a>
+            </div>
+            <div class="product-card">
+                <div class="tag new">New</div>
+                <img src="images_naithika/products/Red Chilli Pickle.png" alt="Red Chilli Pickle" />
+                <h3>Red Chilli Pickle </h3>
+                <p class="desc" data-full-text="Fiery red chilli pickle aged in mustard oil with aromatic spices. Perfect heat and tang. Prepared with care in a home-style process.">
+                    Fiery red chilli pickle aged in mustard oil with aromatic spices. Perfect...
+                </p>
+                <span class="read-more-text" onclick="toggleReadMore(this)">View More</span>
+                <div class="rating">⭐ 4.9 (840+ Reviews)</div>
+                <div class="price">₹180 /200g</div>
+                <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Red%20Chilli%20Pickle" target="_blank" class="whatsapp-card-button">
+                    Book Now
+                </a>
+            </div>
+    
+            <div class="product-card">
+                <div class="tag new">New</div>
+                <img src="images_naithika/products/Ginger pickle.png" alt="Ginger Pickle" />
+                <h3>Ginger Pickle </h3>
+                <p class="desc" data-full-text="Zesty ginger pickle with bright spice and digestive benefits. Prepared in traditional Andhra style, combining fresh ginger, spices and oil. A spicy, tangy accompaniment that lifts the palate. Made carefully in small batches to keep texture and flavour intact.">
+                    Zesty ginger pickle with bright spice and digestive benefits. Prepared in traditional Andhra...
+                </p>
+                <span class="read-more-text" onclick="toggleReadMore(this)">View More</span>
+                <div class="rating">⭐ 4.9 (830+ Reviews)</div>
+                <div class="price">₹180 /200g</div>
+                <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Ginger%20Pickle" target="_blank" class="whatsapp-card-button">
+                    Book Now
+                </a>
+            </div>
+    
+            <div class="product-card">
+                <div class="tag new">New</div>
+                <img src="images_naithika/products/Lemon Pickle.png" alt="Lemon Pickle" />
+                <h3>Lemon Pickle </h3>
+                <p class="desc" data-full-text="Classic lemon pickle made from sun-kissed lemons, sea salt and native spices. Aged naturally to develop a bright, complex tang with minimal additives. A strong accompaniment for rice and Indian breads, delivering citrus punch.">
+                    Classic lemon pickle made from sun-kissed lemons, sea salt and native spices. Aged ...
+                </p>
+                <span class="read-more-text" onclick="toggleReadMore(this)">View More</span>
+                <div class="rating">⭐ 4.9 (880+ Reviews)</div>
+                <div class="price">₹180 /200g</div>
+                <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Lemon%20Pickle" target="_blank" class="whatsapp-card-button">
+                    Book Now
+                </a>
+            </div>
+    
+            <div class="product-card">
+                <div class="tag new">New</div>
+                <img src="images_naithika/products/Moringa Podi.png" alt="Moringa Podi" />
+                <h3>Moringa Podi </h3>
+                <p class="desc" data-full-text="Nutritious moringa leaf powder rich in iron and calcium. Use in dals, soups or as a nourishing sprinkle over meals. Cultivated on small farms using responsible practices.">
+                    Nutritious moringa leaf powder rich in iron and calcium. Use in dals, soups...
+                </p>
+                <span class="read-more-text" onclick="toggleReadMore(this)">View More</span>
+                <div class="rating">⭐ 4.9 (780+ Reviews)</div>
+                <div class="price">₹150 /200g</div>
+                <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Moringa%20Podi" target="_blank" class="whatsapp-card-button">
+                    Book Now
+                </a>
+            </div>
+              <div class="product-card">
+                <div class="tag new">New</div>
+                <img src="images_naithika/products/garlic powder.png" alt="Garlic Powder" />
+                <h3>Garlic Powder</h3>
+                <p class="desc" data-full-text="Pure garlic powder made from fresh, chemical-free garlic cloves ground fine. Sun-cured and gently dehydrated to retain aroma and savory depth. Perfect for seasoning, marinades, soups and quick spice mixes. Small-batch processing keeps the flavour bright and true to the field.">
+                    Pure garlic powder made from fresh, chemical-free garlic cloves ground fine....
+                </p>
+                <span class="read-more-text" onclick="toggleReadMore(this)">View More</span>
+                <div class="rating">⭐ 4.9 (880+ Reviews)</div>
+                <div class="price">₹150 (200g)</div>
+                <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Garlic%20Powder" target="_blank" class="whatsapp-card-button">
+                    Book Now
+                </a>
+            </div>
+            <div class="product-card">
+                <div class="tag new">New</div>
+                <img src="images_naithika/products/tomato_powder.jpg" alt="Tomato Powder" />
+                <h3>Tomato Powder</h3>
+                <p class="desc" data-full-text="Finely milled from 100% pure dried tomatoes, this bright red powder brings instant colour and flavour to your cooking. Ideal for soups, sauces, marinades, gravies, and spice blends. A spoonful adds the tang and nutrition of ripe tomatoes anytime, anywhere.">
+                    Finely milled from 100% pure dried tomatoes, this bright red powder brings instant...
+                </p>
+                <span class="read-more-text" onclick="toggleReadMore(this)">View More</span>
+                <div class="rating">⭐ 4.9 (880+ Reviews)</div>
+                <div class="price">₹200 /100g</div>
+                <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Tomato%20Powder" target="_blank" class="whatsapp-card-button">
+                    Book Now
+                </a>
+            </div>
+            <div class="product-card">
+                <div class="tag new">New</div>
+                <img src="images_naithika/products/Nuvvula Podi.png" alt="Nuvvula Podi (Sesame Podi)" />
+                <h3>Nuvvula Podi (Sesame ) </h3>
+                <p class="desc" data-full-text="Nutty sesame spice powder for idli, dosa or rice. Roasted and stone-ground to preserve aroma and depth. A calcium-rich traditional accompaniment packed in a convenient jar.">
+                    Nutty sesame spice powder for idli, dosa or rice. Roasted and stone-ground...
+                </p>
+                <span class="read-more-text" onclick="toggleReadMore(this)">View More</span>
+                <div class="rating">⭐ 4.9 (1030+ Reviews)</div>
+                <div class="price">₹150 /200g</div>
+                <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Nuvvula%20Podi%20(Sesame%20Podi)" target="_blank" class="whatsapp-card-button">
+                    Book Now
+                </a>
+            </div>
+    
+            <div class="product-card">
+                <div class="tag new">New</div>
+                <img src="images_naithika/products/Curry Patta Podi.png" alt="Curry Patta Podi (Curry Leaf Powder)" />
+                <h3>Curry Leaf Powder </h3>
+                <p class="desc" data-full-text="Aromatic curry leaf powder that brings depth and antioxidants to meals. Carefully dried and ground to preserve essential oils and fragrance. Use as a seasoning for dals, vegetables or rice for an instant flavour lift. Produced in small batches to maintain freshness.">
+                    Aromatic curry leaf powder that brings depth and antioxidants to meals....
+                </p>
+                <span class="read-more-text" onclick="toggleReadMore(this)">View More</span>
+                <div class="rating">⭐ 4.9 (1100+ Reviews)</div>
+                <div class="price">₹120 /200g</div>
+                <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Curry%20Patta%20Podi%20(Curry%20Leaf%20Powder)" target="_blank" class="whatsapp-card-button">
+                    Book Now
+                </a>
+            </div>
+    
+            <div class="product-card">
+                <div class="tag new">New</div>
+                <img src="images_naithika/products/Idli Podi.png" alt="Idli Podi (Milagai Podi)" />
+                <h3>Idli Podi (Milagai Podi) </h3>
+                <p class="desc" data-full-text="Balanced idli podi made from roasted lentils, spices and sesame for a classic flavour. Protein-rich and aromatic, it pairs perfectly with idli, dosa and steamed rice. Stone-ground to keep texture rustic and flavours robust. An everyday kitchen essential with traditional taste.">
+                    Balanced idli podi made from roasted lentils, spices and sesame for...
+                </p>
+                <span class="read-more-text" onclick="toggleReadMore(this)">View More</span>
+                <div class="rating">⭐ 4.9 (1080+ Reviews)</div>
+                <div class="price">₹120 /200g</div>
+                <a href="https://wa.me/919999999999?text=I'm%20interested%20in%20Idli%20Podi%20(Milagai%20Podi)" target="_blank" class="whatsapp-card-button">
+                    Book Now
+                </a>
+            </div>
+    
+           
+        </div>
+    </div>
+</section>
 <script>
     function toggleReadMore(button) {
         const desc = button.previousElementSibling;
         const fullText = desc.getAttribute("data-full-text");
-
-        if (button.textContent === "More") {
+        if (button.textContent === "View More") {
             desc.textContent = fullText;
-            button.textContent = "Read Less";
+            button.textContent = "View Less";
         } else {
             // Revert to short text (first 8 words + "...")
-            desc.textContent = fullText.split(" ").slice(0, 8).join(" ") + "...";
-            button.textContent = "More";
+            const shortText = fullText.split(" ").slice(0, 8).join(" ") + "...";
+            desc.textContent = shortText;
+            button.textContent = "View More";
         }
     }
 
-    
-
-    function scrollRight() {
-        const slider = document.getElementById("productSlider");
-        // Scrolls right (Positive value)
-        slider.scrollBy({ 
-            left: 400, 
-            behavior: "smooth" 
-        });
+    // Scroll functions for Dehydrated Fruits
+    function scrollRight_DehydratedFruits() {
+        const slider = document.getElementById("productSlider_DehydratedFruits");
+        slider.scrollBy({ left: 400, behavior: "smooth" });
     }
-    function scrollLe() {
-        const slider = document.getElementById("productSlider");
-        // Scrolls right (Positive value)
-        slider.scrollBy({ 
-            left: -400, 
-            behavior: "smooth" 
-        });
+
+    function scrollLe_DehydratedFruits() {
+        const slider = document.getElementById("productSlider_DehydratedFruits");
+        slider.scrollBy({ left: -400, behavior: "smooth" });
+    }
+
+    // Scroll functions for Dehydrated Vegetables
+    function scrollRight_DehydratedVegetables() {
+        const slider = document.getElementById("productSlider_DehydratedVegetables");
+        slider.scrollBy({ left: 400, behavior: "smooth" });
+    }
+
+    function scrollLe_DehydratedVegetables() {
+        const slider = document.getElementById("productSlider_DehydratedVegetables");
+        slider.scrollBy({ left: -400, behavior: "smooth" });
+    }
+
+    // Scroll functions for Pickles & Powders
+    function scrollRight_PicklesPowders() {
+        const slider = document.getElementById("productSlider_PicklesPowders");
+        slider.scrollBy({ left: 400, behavior: "smooth" });
+    }
+
+    function scrollLe_PicklesPowders() {
+        const slider = document.getElementById("productSlider_PicklesPowders");
+        slider.scrollBy({ left: -400, behavior: "smooth" });
     }
 </script>
 
 
-<section id="vegetables" class="top-picks">
-    <h1 class="styled-heading">Dehydrated Vegetables</h1>
-
-    <div class="scroll-wrapper">
-        <div class="scroll-container">
-            
-            <div class="product-card">
-                <img src="images_naithika/tomato_slices.jpg" alt="Tomato Slices">
-                <h3>Tomato Slices</h3>
-                <p class="desc">Sun-ripened | Rich in Lycopene</p>
-                <div class="price">₹180 / 100 g</div>
-                <div class="details">
-                    <p>Perfect for soups, sauces, noodles, and salads.</p>
-                </div>
-                <button class="book-btn">Book Now</button>
-            </div>
-
-            <div class="product-card">
-                <img src="images_naithika/tomato_powder.jpg" alt="Tomato Powder">
-                <h3>Tomato Powder</h3>
-                <p class="desc">Finely milled | 100% Pure </p>
-                <div class="price">₹200 / 100 g</div>
-                <div class="details">
-                    <p>Perfect for soups, gravies, and spice mixes.</p>
-                </div>
-                <button class="book-btn">Book Now</button>
-            </div>
-
-            <div class="product-card">
-                <img src="images_naithika/beetroot.jpg" alt="Beetroot">
-                <h3>Beetroot</h3>
-                <p class="desc">Rich in Iron & Betalains</p>
-                <div class="price">₹200 / 100 g</div>
-                <div class="details">
-                    <p>Adds color & nutrition to soups, salads, and snacks.</p>
-                </div>
-                <button class="book-btn">Book Now</button>
-            </div>
-
-            <div class="product-card">
-                <img src="images_naithika/carrot.jpg" alt="Carrot">
-                <h3>Carrot</h3>
-                <p class="desc">Sweet & rich in Beta-Carotene</p>
-                <div class="price">₹200 / 100 g</div>
-                <div class="details">
-                    <p>Perfect for soups, stews, or crunchy snacks.</p>
-                </div>
-                <button class="book-btn">Book Now</button>
-            </div>
-
-            <div class="product-card">
-                <img src="images_naithika/amla.jpg" alt="Amla">
-                <h3>Indian Gooseberry</h3>
-                <p class="desc">Tangy & High in Vitamin C</p>
-                <div class="price">₹240 / 100 g</div>
-                <div class="details">
-                    <p>Perfect for chutneys, tonics, or immunity snacks.</p>
-                </div>
-                <button class="book-btn">Book Now</button>
-            </div>
-
-            <div class="product-card">
-                <img src="images_naithika/ginger.jpg" alt="Ginger">
-                <h3>Ginger</h3>
-                <p class="desc">Aromatic | Preserves natural oils</p>
-                <div class="price">₹220 / 100 g</div>
-                <div class="details">
-                    <p>Ideal for tea, spice blends, or cooking.</p>
-                </div>
-                <button class="book-btn">Book Now</button>
-            </div>
-
-            <div class="product-card">
-                <img src="images_naithika/garlic_powder.jpg" alt="Garlic Powder">
-                <h3>Garlic Powder</h3>
-                <p class="desc">Pure | Fine ground | Savory depth</p>
-                <div class="price">₹150 / 200 g</div>
-                <div class="details">
-                    <p>Perfect for seasonings, soups & marinades.</p>
-                </div>
-                <button class="book-btn">Book Now</button>
-            </div>
-
-            <div class="product-card">
-                <img src="images_naithika/ashgourd.jpg" alt="Ash Gourd">
-                <h3>Ash Gourd (Petha)</h3>
-                <p class="desc">Cooling | Rehydrates easily</p>
-                <div class="price">₹200 / 100 g</div>
-                <div class="details">
-                    <p>Perfect for soups, powders & health blends.</p>
-                </div>
-                <button class="book-btn">Book Now</button>
-            </div>
-
-            <div class="product-card">
-                <img src="images_naithika/pumpkin.jpg" alt="Pumpkin">
-                <h3>Pumpkin</h3>
-                <p class="desc">Golden | Sweet & Nutty</p>
-                <div class="price">₹200 / 100 g</div>
-                <div class="details">
-                    <p>Ideal for porridges, soups & baking.</p>
-                </div>
-                <button class="book-btn">Book Now</button>
-            </div>
-
-            <div class="product-card">
-                <img src="images_naithika/lemon.jpg" alt="Lemon">
-                <h3>Lemon</h3>
-                <p class="desc">Zesty | High Vitamin C</p>
-                <div class="price">₹200 / 100 g</div>
-                <div class="details">
-                    <p>Perfect for teas, spice mixes, or garnishes.</p>
-                </div>
-                <button class="book-btn">Book Now</button>
-            </div>
-
-            <div class="product-card">
-                <img src="images_naithika/moringa.jpg" alt="Moringa">
-                <h3>Drumstick Leaves</h3>
-                <p class="desc">Rich in Iron & Calcium</p>
-                <div class="price">₹220 / 100 g</div>
-                <div class="details">
-                    <p>Ideal for dals, soups & green powders.</p>
-                </div>
-                <button class="book-btn">Book Now</button>
-            </div>
-
-            <div class="product-card">
-                <img src="images_naithika/curry_leaves.jpg" alt="Curry Leaves">
-                <h3>Curry Leaves</h3>
-                <p class="desc">Fragrant | Preserved Aroma</p>
-                <div class="price">₹150 / 100 g</div>
-                <div class="details">
-                    <p>Perfect for tempering & chutneys.</p>
-                </div>
-                <button class="book-btn">Book Now</button>
-            </div>
-
-            <div class="product-card">
-                <img src="images_naithika/mint.jpg" alt="Mint Leaves">
-                <h3>Mint Leaves</h3>
-                <p class="desc">Cool Aroma | Air-dried</p>
-                <div class="price">₹200 / 100 g</div>
-                <div class="details">
-                    <p>Perfect for teas, chutneys, and raitas.</p>
-                </div>
-                <button class="book-btn">Book Now</button>
-            </div>
-
-            <div class="product-card">
-                <img src="images_naithika/coriander.jpg" alt="Coriander">
-                <h3>Coriander </h3>
-                <p class="desc">Herbaceous | Low-heat dried</p>
-                <div class="price">₹180 / 100 g</div>
-                <div class="details">
-                    <p>Great for spice mixes & instant gravies.</p>
-                </div>
-                <button class="book-btn">Book Now</button>
-            </div>
-            </div>
-    </div>
-</section>
+<script src="static/naithika.js"></script>
 
 
-<section id="pickles" class="most-loved">
-    <h1 class="styled-heading">Pickles & Powders</h1>
+<script>
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
+const totalSlides = slides.length;
 
-    <div class="product-grid">
-
-<<<<<<< HEAD
-        <div class="product-card">
-            <img src="images_naithika/mango_pickle.jpg" alt="Mango Pickle" />
-            <h3>Mango Pickle</h3>
-            <p>Traditional raw mango pickle made using sun-dried mangoes and cold-pressed oil. Balanced spices give a bright tang.</p>
-            <p><strong>Price:</strong> ₹180/-</p>
-            <p class="note">Naithika Note: Ethically sourced from smallholder farmers.</p>
-            <button class="book-btn">Book Now</button>
-=======
-  <div class="scroll-wrapper">
-    <div class="scroll-container">
-      
-      <!-- === Product Cards Start === -->
-      <div class="product-card">
-        <img src="images_naithika/products/Tomoto.jpg" alt="Tomato Slices">
-        <h3>Tomato Slices</h3>
-        <p class="desc">Sun-ripened | Rich in Lycopene</p>
-        <div class="price">₹180 / 100 g</div>
-        <div class="details">
-          <p>Perfect for soups, sauces, noodles, and salads.</p>
->>>>>>> 4081b4e4feacd7bc2416016550fcee362a384197
-        </div>
-
-<<<<<<< HEAD
-        <div class="product-card">
-            <img src="images_naithika/amla_pickle.jpg" alt="Amla Pickle" />
-            <h3>Amla Pickle</h3>
-            <p>Tangy-sour pickle rich in Vitamin C. Adds a nourishing, spicy warmth to daily meals.</p>
-            <p><strong>Price:</strong> ₹180/-</p>
-            <p class="note">Naithika Note: Ethically sourced from smallholder farmers.</p>
-            <button class="book-btn">Book Now</button>
-=======
-      <div class="product-card">
-        <img src="images_naithika/products/tomato_powder.jpg" alt="Tomato Powder">
-        <h3>Tomato Powder</h3>
-        <p class="desc">Finely milled | 100% Pure Tomatoes</p>
-        <div class="price">₹200 / 100 g</div>
-        <div class="details">
-          <p>Perfect for soups, gravies, and spice mixes.</p>
->>>>>>> 4081b4e4feacd7bc2416016550fcee362a384197
-        </div>
-
-<<<<<<< HEAD
-        <div class="product-card">
-            <img src="images_naithika/tomato_pickle.jpg" alt="Tomato Pickle" />
-            <h3>Tomato Pickle</h3>
-            <p>Bright, tangy pickle made from sun-ripened tomatoes. Adds natural umami to every dish.</p>
-            <p><strong>Price:</strong> ₹180/-</p>
-            <p class="note">Naithika Note: Ethically sourced from smallholder farmers.</p>
-            <button class="book-btn">Book Now</button>
-=======
-      <div class="product-card">
-        <img src="images_naithika/products/Betroot.jpg" alt="Beetroot">
-        <h3>Beetroot</h3>
-        <p class="desc">Rich in Iron & Betalains</p>
-        <div class="price">₹200 / 100 g</div>
-        <div class="details">
-          <p>Adds color & nutrition to soups, salads, and snacks.</p>
->>>>>>> 4081b4e4feacd7bc2416016550fcee362a384197
-        </div>
-
-<<<<<<< HEAD
-        <div class="product-card">
-            <img src="images_naithika/red_chilli_pickle.jpg" alt="Red Chilli Pickle" />
-            <h3>Red Chilli Pickle</h3>
-            <p>Fiery red chilli pickle aged in mustard oil with aromatic spices. Perfect heat and tang.</p>
-            <p><strong>Price:</strong> ₹180/-</p>
-            <p class="note">Naithika Note: Ethically sourced from smallholder farmers.</p>
-            <button class="book-btn">Book Now</button>
-=======
-      <div class="product-card">
-        <img src="images_naithika/products/carrot.jpg" alt="Carrot">
-        <h3>Carrot</h3>
-        <p class="desc">Sweet & rich in Beta-Carotene</p>
-        <div class="price">₹200 / 100 g</div>
-        <div class="details">
-          <p>Perfect for soups, stews, or crunchy snacks.</p>
->>>>>>> 4081b4e4feacd7bc2416016550fcee362a384197
-        </div>
-
-<<<<<<< HEAD
-        <div class="product-card">
-            <img src="images_naithika/ginger_pickle.jpg" alt="Ginger Pickle" />
-            <h3>Ginger Pickle</h3>
-            <p>Zesty and aromatic, made Andhra-style with fresh ginger and spices for digestive benefits.</p>
-            <p><strong>Price:</strong> ₹180/-</p>
-            <p class="note">Naithika Note: Ethically sourced from smallholder farmers.</p>
-            <button class="book-btn">Book Now</button>
-=======
-      <div class="product-card">
-        <img src="images_naithika/products/Indian gooseberry.png" alt="Amla">
-        <h3>Indian Gooseberry</h3>
-        <p class="desc">Tangy & High in Vitamin C</p>
-        <div class="price">₹240 / 100 g</div>
-        <div class="details">
-          <p>Perfect for chutneys, tonics, or immunity snacks.</p>
->>>>>>> 4081b4e4feacd7bc2416016550fcee362a384197
-        </div>
-
-<<<<<<< HEAD
-        <div class="product-card">
-            <img src="images_naithika/lemon_pickle.jpg" alt="Lemon Pickle" />
-            <h3>Lemon Pickle</h3>
-            <p>Classic sun-aged lemon pickle with sea salt and native spices. Bright, citrus tang.</p>
-            <p><strong>Price:</strong> ₹180/-</p>
-            <p class="note">Naithika Note: Ethically sourced from smallholder farmers.</p>
-            <button class="book-btn">Book Now</button>
-=======
-      <div class="product-card">
-        <img src="images_naithika/products/Ginger.jpg" alt="Ginger">
-        <h3>Ginger</h3>
-        <p class="desc">Aromatic | Preserves natural oils</p>
-        <div class="price">₹220 / 100 g</div>
-        <div class="details">
-          <p>Ideal for tea, spice blends, or cooking.</p>
->>>>>>> 4081b4e4feacd7bc2416016550fcee362a384197
-        </div>
-
-<<<<<<< HEAD
-        <div class="product-card">
-            <img src="images_naithika/moringa_podi.jpg" alt="Moringa Podi" />
-            <h3>Moringa Podi</h3>
-            <p>Nutritious moringa leaf powder rich in iron and calcium. Great for rice or veggies.</p>
-            <p><strong>Price:</strong> ₹150/-</p>
-            <p class="note">Naithika Note: Ethically sourced from smallholder farmers.</p>
-            <button class="book-btn">Book Now</button>
-=======
-      <div class="product-card">
-        <img src="images_naithika/products/garlic powder.png" alt="Garlic Powder">
-        <h3>Garlic Powder</h3>
-        <p class="desc">Pure | Fine ground | Savory depth</p>
-        <div class="price">₹150 / 200 g</div>
-        <div class="details">
-          <p>Perfect for seasonings, soups & marinades.</p>
->>>>>>> 4081b4e4feacd7bc2416016550fcee362a384197
-        </div>
-
-<<<<<<< HEAD
-        <div class="product-card">
-            <img src="images_naithika/nuvvula_podi.jpg" alt="Nuvvula Podi" />
-            <h3>Nuvvula Podi </h3>
-            <p>Nutty sesame spice powder for idli, dosa or rice. Roasted and stone-ground for aroma.</p>
-            <p><strong>Price:</strong> ₹150/-</p>
-            <p class="note">Naithika Note: Ethically sourced from smallholder farmers.</p>
-            <button class="book-btn">Book Now</button>
-=======
-      <div class="product-card">
-        <img src="images_naithika/products/Ash Gourd.png" alt="Ash Gourd">
-        <h3>Ash Gourd (Petha)</h3>
-        <p class="desc">Cooling | Rehydrates easily</p>
-        <div class="price">₹200 / 100 g</div>
-        <div class="details">
-          <p>Perfect for soups, powders & health blends.</p>
->>>>>>> 4081b4e4feacd7bc2416016550fcee362a384197
-        </div>
-
-<<<<<<< HEAD
-        <div class="product-card">
-            <img src="images_naithika/curry_patta_podi.jpg" alt="Curry Patta Podi" />
-            <h3>Curry Patta Podi</h3>
-            <p>Aromatic curry leaf powder packed with antioxidants. Perfect for dals and rice.</p>
-            <p><strong>Price:</strong> ₹120/-</p>
-            <p class="note">Naithika Note: Ethically sourced from smallholder farmers.</p>
-            <button class="book-btn">Book Now</button>
-=======
-      <div class="product-card">
-        <img src="images_naithika/products/Pumpkin.jpg" alt="Pumpkin">
-        <h3>Pumpkin</h3>
-        <p class="desc">Golden | Sweet & Nutty</p>
-        <div class="price">₹200 / 100 g</div>
-        <div class="details">
-          <p>Ideal for porridges, soups & baking.</p>
->>>>>>> 4081b4e4feacd7bc2416016550fcee362a384197
-        </div>
-
-<<<<<<< HEAD
-        <div class="product-card">
-            <img src="images_naithika/idli_podi.jpg" alt="Idli Podi" />
-            <h3>Idli Podi </h3>
-            <p>Classic blend of lentils, sesame, and spices for idlis and dosas. Stone-ground texture.</p>
-            <p><strong>Price:</strong> ₹120/-</p>
-            <p class="note">Naithika Note: Ethically sourced from smallholder farmers.</p>
-            <button class="book-btn">Book Now</button>
-        </div>
-
-    </div>
-=======
-      <div class="product-card">
-        <img src="images_naithika/products/lemon.jpg" alt="Lemon">
-        <h3>Lemon</h3>
-        <p class="desc">Zesty | High Vitamin C</p>
-        <div class="price">₹200 / 100 g</div>
-        <div class="details">
-          <p>Perfect for teas, spice mixes, or garnishes.</p>
-        </div>
-        <button class="book-btn">Book Now</button>
-      </div>
-
-      <div class="product-card">
-        <img src="images_naithika/products/Drumstick Leaves.jpg" alt="Moringa">
-        <h3>Drumstick Leaves</h3>
-        <p class="desc">Rich in Iron & Calcium</p>
-        <div class="price">₹220 / 100 g</div>
-        <div class="details">
-          <p>Ideal for dals, soups & green powders.</p>
-        </div>
-        <button class="book-btn">Book Now</button>
-      </div>
-
-      <div class="product-card">
-        <img src="images_naithika/products/Curry Leaves.png" alt="Curry Leaves">
-        <h3>Curry Leaves</h3>
-        <p class="desc">Fragrant | Preserved Aroma</p>
-        <div class="price">₹150 / 100 g</div>
-        <div class="details">
-          <p>Perfect for tempering & chutneys.</p>
-        </div>
-        <button class="book-btn">Book Now</button>
-      </div>
-
-      <div class="product-card">
-        <img src="images_naithika/products/Mint Leaves.png" alt="Mint Leaves">
-        <h3>Mint Leaves</h3>
-        <p class="desc">Cool Aroma | Air-dried</p>
-        <div class="price">₹200 / 100 g</div>
-        <div class="details">
-          <p>Perfect for teas, chutneys, and raitas.</p>
-        </div>
-        <button class="book-btn">Book Now</button>
-      </div>
-
-      <div class="product-card">
-        <img src="images_naithika/products/carrot.jpg" alt="Coriander">
-        <h3>Coriander </h3>
-        <p class="desc">Herbaceous | Low-heat dried</p>
-        <div class="price">₹180 / 100 g</div>
-        <div class="details">
-          <p>Great for spice mixes & instant gravies.</p>
-        </div>
-        <button class="book-btn">Book Now</button>
-      </div>
-      <!-- === Product Cards End === -->
-
-    </div>
-  </div>
-</section>
+setInterval(() => {
+  currentSlide = (currentSlide + 1) % totalSlides;
+  document.getElementById('promoCardContainer').style.transform = `translateX(-${currentSlide * 100}%)`;
+}, 4000); // 4 seconds per slide
+</script>
 
 
+<script>
+  // Smooth scroll for circle clicks
+  document.querySelectorAll(".offer-circles .circle").forEach(circle => {
+    circle.addEventListener("click", () => {
+      const targetId = circle.getAttribute("data-target");
+      if (targetId) {
+        document.getElementById(targetId).scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+</script>
 
-<section id="pickles"  class="most-loved">
-  <h1 class="styled-heading">Pickles & Powders</h1>
-
-  <div class="product-grid">
-
-    <!-- Mango Pickle -->
-    <div class="product-card">
-      <img src="images_naithika/products/mango pickle.png" alt="Mango Pickle" />
-      <h3>Mango Pickle</h3>
-      <p>Traditional raw mango pickle made using sun-dried mangoes and cold-pressed oil. Balanced spices give a bright tang.</p>
-      <p><strong>Price:</strong> ₹180/-</p>
-      <p class="note">Naithika Note: Ethically sourced from smallholder farmers.</p>
-      <button class="book-btn">Book Now</button>
-    </div>
-
-    <!-- Amla Pickle -->
-    <div class="product-card">
-      <img src="images_naithika/products/Indian gooseberry.png" alt="Amla Pickle" />
-      <h3>Amla Pickle</h3>
-      <p>Tangy-sour pickle rich in Vitamin C. Adds a nourishing, spicy warmth to daily meals.</p>
-      <p><strong>Price:</strong> ₹180/-</p>
-      <p class="note">Naithika Note: Ethically sourced from smallholder farmers.</p>
-      <button class="book-btn">Book Now</button>
-    </div>
-
-    <!-- Tomato Pickle -->
-    <div class="product-card">
-      <img src="images_naithika/products/Tomato Pickle.png" alt="Tomato Pickle" />
-      <h3>Tomato Pickle</h3>
-      <p>Bright, tangy pickle made from sun-ripened tomatoes. Adds natural umami to every dish.</p>
-      <p><strong>Price:</strong> ₹180/-</p>
-      <p class="note">Naithika Note: Ethically sourced from smallholder farmers.</p>
-      <button class="book-btn">Book Now</button>
-    </div>
-
-    <!-- Red Chilli Pickle -->
-    <div class="product-card">
-      <img src="images_naithika/products/Red Chilli Pickle.png" alt="Red Chilli Pickle" />
-      <h3>Red Chilli Pickle</h3>
-      <p>Fiery red chilli pickle aged in mustard oil with aromatic spices. Perfect heat and tang.</p>
-      <p><strong>Price:</strong> ₹180/-</p>
-      <p class="note">Naithika Note: Ethically sourced from smallholder farmers.</p>
-      <button class="book-btn">Book Now</button>
-    </div>
-
-    <!-- Ginger Pickle -->
-    <div class="product-card">
-      <img src="images_naithika/products/Ginger pickle.png" alt="Ginger Pickle" />
-      <h3>Ginger Pickle</h3>
-      <p>Zesty and aromatic, made Andhra-style with fresh ginger and spices for digestive benefits.</p>
-      <p><strong>Price:</strong> ₹180/-</p>
-      <p class="note">Naithika Note: Ethically sourced from smallholder farmers.</p>
-      <button class="book-btn">Book Now</button>
-    </div>
-
-    <!-- Lemon Pickle -->
-    <div class="product-card">
-      <img src="images_naithika/products/Lemon Pickle.png" alt="Lemon Pickle" />
-      <h3>Lemon Pickle</h3>
-      <p>Classic sun-aged lemon pickle with sea salt and native spices. Bright, citrus tang.</p>
-      <p><strong>Price:</strong> ₹180/-</p>
-      <p class="note">Naithika Note: Ethically sourced from smallholder farmers.</p>
-      <button class="book-btn">Book Now</button>
-    </div>
-
-    <!-- Moringa Podi -->
-    <div class="product-card">
-      <img src="images_naithika/products/Moringa Podi.png" alt="Moringa Podi" />
-      <h3>Moringa Podi</h3>
-      <p>Nutritious moringa leaf powder rich in iron and calcium. Great for rice or veggies.</p>
-      <p><strong>Price:</strong> ₹150/-</p>
-      <p class="note">Naithika Note: Ethically sourced from smallholder farmers.</p>
-      <button class="book-btn">Book Now</button>
-    </div>
-
-    <!-- Nuvvula Podi -->
-    <div class="product-card">
-      <img src="images_naithika/products/Nuvvula Podi.png" alt="Nuvvula Podi" />
-      <h3>Nuvvula Podi </h3>
-      <p>Nutty sesame spice powder for idli, dosa or rice. Roasted and stone-ground for aroma.</p>
-      <p><strong>Price:</strong> ₹150/-</p>
-      <p class="note">Naithika Note: Ethically sourced from smallholder farmers.</p>
-      <button class="book-btn">Book Now</button>
-    </div>
-
-    <!-- Curry Patta Podi -->
-    <div class="product-card">
-      <img src="images_naithika/products/Curry Patta Podi.png" alt="Curry Patta Podi" />
-      <h3>Curry Patta Podi</h3>
-      <p>Aromatic curry leaf powder packed with antioxidants. Perfect for dals and rice.</p>
-      <p><strong>Price:</strong> ₹120/-</p>
-      <p class="note">Naithika Note: Ethically sourced from smallholder farmers.</p>
-      <button class="book-btn">Book Now</button>
-    </div>
-
-    <!-- Idli Podi -->
-    <div class="product-card">
-      <img src="images_naithika/products/Idli Podi.png" alt="Idli Podi" />
-      <h3>Idli Podi </h3>
-      <p>Classic blend of lentils, sesame, and spices for idlis and dosas. Stone-ground texture.</p>
-      <p><strong>Price:</strong> ₹120/-</p>
-      <p class="note">Naithika Note: Ethically sourced from smallholder farmers.</p>
-      <button class="book-btn">Book Now</button>
-    </div>
-
-  </div>
->>>>>>> 4081b4e4feacd7bc2416016550fcee362a384197
-</section>
-
-
-
-
-    <!-- Footer -->
     <footer id="footer">
         <div id="footer_content">
             
@@ -1134,37 +921,6 @@
     </footer>
 
 
-
-
-<script src="static/naithika.js"></script>
-
-
-<script>
-let currentSlide = 0;
-const slides = document.querySelectorAll('.slide');
-const totalSlides = slides.length;
-
-setInterval(() => {
-  currentSlide = (currentSlide + 1) % totalSlides;
-  document.getElementById('promoCardContainer').style.transform = `translateX(-${currentSlide * 100}%)`;
-}, 4000); // 4 seconds per slide
-</script>
-
-
-
-
-<script>
-  // Smooth scroll for circle clicks
-  document.querySelectorAll(".offer-circles .circle").forEach(circle => {
-    circle.addEventListener("click", () => {
-      const targetId = circle.getAttribute("data-target");
-      const section = document.getElementById(targetId);
-      if (section) {
-        section.scrollIntoView({ behavior: "smooth" });
-      }
-    });
-  });
-</script>
 
 
 </body>
