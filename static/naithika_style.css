@@ -815,208 +815,221 @@
 
 /* Contact Us page */
 
-    /* --------------------------------------
-           BASE STYLES (UPDATED FOR BROWN THEME)
-        -------------------------------------- */
-        :root {
-            /*--contactus-primary: #946759;  Rich Dark Brown (Used for text, titles, info panel background) */
-            --contactus-primary: #916240; /* Rich Dark Brown (Used for text, titles, info panel background) */
-            --contactus-secondary: #A1887F; /* Muted Caramel/Light Brown (Used for buttons, input focus) */
-            --contactus-background: #FAF9F6; /* Very Light Cream/Off-White */
-            --contactus-text: #333;
-            --contactus-shadow: rgba(0, 0, 0, 0.1);
-        }
+/* ------------------------------
+   COLOR PALETTE (Brown Theme)
+------------------------------ */
+:root {
+  --primary-dark: #5c3d2e;   /* Deep earthy brown */
+  --primary: #8b5e3c;        /* Warm coffee brown */
+  --secondary: #c8a27a;      /* Light caramel */
+  --accent: #f4e1c1;         /* Beige accent */
+  --bg-light: #faf8f4;       /* Soft cream background */
+  --text-dark: #2e2b29;      /* Deep text brown */
+  --white: #fff;
+}
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+/* ------------------------------
+   GENERAL STYLES
+------------------------------ */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: var(--contactus-background);
-            color: var(--contactus-text);
-            line-height: 1.6;
-        }
+h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
 
-        /* --------------------------------------
-           MAIN LAYOUT CONTAINER
-        -------------------------------------- */
-        .contactus-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0; /* Remove default padding for full-width banner */
-            overflow: hidden;
-        }
+/* ------------------------------
+   HEADER SECTION
+------------------------------ */
+.contactus-header {
+  background: linear-gradient(rgba(92,61,46,0.7), rgba(139,94,60,0.7)), 
+              url('images_naithika/dry1.jpg') center/cover no-repeat;
+  height: 250px;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
-        /* --------------------------------------
-           TOP IMAGE BANNER (Low Height)
-           Updated gradient colors to brown tones
-        -------------------------------------- */
-        .contactus-header {
-            height: 200px;
-            background: linear-gradient(rgba(109, 76, 65, 0.7), rgba(161, 136, 127, 0.7)), 
-                        url('images_naithika/dry1.jpg') no-repeat center center;
-            background-size: cover;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-align: center;
-            box-shadow: 0 4px 6px -1px var(--contactus-shadow);
-        }
+.contactus-page-title {
+  font-size: 2.8rem;
+  letter-spacing: 1.5px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+}
 
-        .contactus-page-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 3rem;
-            font-weight: 700;
-            letter-spacing: 2px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-        }
-        .contactus-page-paragraph {
-            font-family: Dancing Script, cursive;
-        }
+.contactus-page-paragraph {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.3rem;
+  margin-top: 10px;
+}
 
-        /* --------------------------------------
-           FORM AND INFO SECTION
-        -------------------------------------- */
-        .contactus-content-wrapper {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 40px;
-            padding: 40px 20px;
-        }
+/* ------------------------------
+   CONTACT CONTENT AREA
+------------------------------ */
+.contactus-container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+}
 
-        .contactus-form-area {
-            flex: 2; /* Takes up more space on desktop */
-            min-width: 300px;
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 10px 15px -3px var(--contactus-shadow);
-        }
+.contactus-content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
 
-        .contactus-info {
-            flex: 1; /* Takes up less space on desktop */
-            min-width: 250px;
-            background: var(--contactus-primary); /* Dark Brown Info Panel */
-            color: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 10px 15px -3px var(--contactus-shadow);
-            align-self: flex-start; /* Stick to the top */
-        }
-        
-        .contactus-info-title {
-            font-size: 1.5rem;
-            margin-bottom: 20px;
-            border-bottom: 2px solid white;
-            padding-bottom: 10px;
-        }
+/* FORM SECTION */
+.contactus-form-area {
+  flex: 2;
+  background: var(--white);
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(92,61,46,0.1);
+  transition: all 0.3s ease;
+}
 
-        .contactus-info p {
-            margin-bottom: 15px;
-            font-weight: 300;
-        }
-        
-        .contactus-info strong {
-            display: block;
-            margin-top: 10px;
-            font-weight: 400;
-        }
+.contactus-form-area:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(92,61,46,0.15);
+}
 
-        /* --------------------------------------
-           FORM STYLING
-        -------------------------------------- */
-        .contactus-section-title {
-            font-size: 2rem;
-            color: var(--contactus-primary); /* Dark Brown Title */
-            margin-bottom: 30px;
-            font-weight: 700;
-        }
+.contactus-section-title {
+  color: var(--primary-dark);
+  font-size: 2rem;
+  margin-bottom: 25px;
+  border-left: 5px solid var(--secondary);
+  padding-left: 12px;
+}
 
-        .contactus-form-group {
-            margin-bottom: 20px;
-        }
+.contactus-form-group {
+  margin-bottom: 20px;
+}
 
-        .contactus-label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 700;
-            color: var(--contactus-primary); /* Dark Brown Label Text */
-        }
+.contactus-label {
+  display: block;
+  font-weight: 600;
+  color: var(--primary-dark);
+  margin-bottom: 8px;
+}
 
-        .contactus-input,
-        .contactus-textarea {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            font-size: 1rem;
-            transition: border-color 0.3s, box-shadow 0.3s;
-        }
+.contactus-input, .contactus-textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: 0.3s;
+  background-color: #fffdfb;
+}
 
-        .contactus-input:focus,
-        .contactus-textarea:focus {
-            border-color: var(--contactus-secondary);
-            outline: none;
-            /* Box shadow updated to use the secondary brown color */
-            box-shadow: 0 0 0 3px rgba(161, 136, 127, 0.4); 
-        }
+.contactus-input:focus, .contactus-textarea:focus {
+  border-color: var(--secondary);
+  box-shadow: 0 0 0 3px rgba(200,162,122,0.3);
+  outline: none;
+}
 
-        .contactus-textarea {
-            resize: vertical;
-            min-height: 150px;
-        }
+.contactus-textarea {
+  resize: vertical;
+  min-height: 150px;
+}
 
-        .contactus-button {
-            display: inline-block;
-            padding: 12px 25px;
-            background-color: var(--contactus-secondary); /* Light Brown Button */
-            color: white;
-            border: none;
-            border-radius: 6px;
-            font-size: 1rem;
-            font-weight: 700;
-            cursor: pointer;
-            transition: background-color 0.3s, transform 0.1s;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
+.contactus-button {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 14px 30px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
 
-        .contactus-button:hover {
-            background-color: #8D776C; /* Slightly darker light brown on hover */
-        }
+.contactus-button:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+}
 
-        .contactus-button:active {
-            transform: translateY(1px);
-        }
+/* ------------------------------
+   INFO SECTION
+------------------------------ */
+.contactus-info {
+  flex: 1;
+  background: var(--primary-dark);
+  color: var(--white);
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(92,61,46,0.15);
+}
 
-        /* --------------------------------------
-           RESPONSIVENESS (Mobile First)
-        -------------------------------------- */
-        @media (max-width: 768px) {
-            .contactus-content-wrapper {
-                flex-direction: column;
-                gap: 30px;
-                padding: 20px;
-            }
+.contactus-info-title {
+  font-size: 1.5rem;
+  border-bottom: 2px solid var(--secondary);
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
 
-            .contactus-header {
-                height: 150px;
-            }
+.contactus-info p {
+  margin-bottom: 12px;
+  line-height: 1.6;
+  font-weight: 300;
+}
 
-            .contactus-page-title {
-                font-size: 2rem;
-            }
+.contactus-info strong {
+  color: var(--secondary);
+}
 
-            .contactus-form-area,
-            .contactus-info {
-                width: 100%;
-                min-width: initial;
-                padding: 25px;
-            }
-        }
+/* ------------------------------
+   RESPONSIVENESS
+------------------------------ */
+@media (max-width: 992px) {
+  .contactus-content-wrapper {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .contactus-header {
+    height: 200px;
+  }
+
+  .contactus-page-title {
+    font-size: 2rem;
+  }
+
+  .contactus-form-area, .contactus-info {
+    padding: 25px;
+  }
+
+  .contactus-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactus-page-title {
+    font-size: 1.7rem;
+  }
+
+  .contactus-page-paragraph {
+    font-size: 1.1rem;
+  }
+
+  .contactus-container {
+    padding: 10px;
+  }
+}
+
+
+
 /* === Offer Section Styling === */
 .top-picks {
   background: linear-gradient(135deg, #f9fff9, #fffaf0);
