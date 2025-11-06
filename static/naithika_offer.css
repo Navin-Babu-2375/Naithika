@@ -1,655 +1,468 @@
+/*
+|==========================================================================
+| OFFER PAGE STYLES - CONSOLIDATED AND FONT-UPDATED
+|==========================================================================
+| This file combines all previous Offer page styles and applies
+| the Playfair Display and Montserrat fonts from the About Us page
+| for a unified brand aesthetic.
+*/
 
- /* === OFFER PAGE GLOBAL STYLES === */
+/* === GLOBAL STYLES === */
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #fdfcf7;
-  margin: 0;
-  padding: 0;
-  color: #333;
+    /* Keeping a clean sans-serif as a base */
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fdfcf7;
+    margin: 0;
+    padding: 0;
+    color: #333;
 }
 
-/* === MOST LOVED SECTION === */
-.most-loved {
-  padding: 50px 20px;
-  background-color: #fff;
-  text-align: center;
+/*
+ * NOTE: For Playfair Display, Dancing Script, and Montserrat to work, 
+ * include this in your HTML <head>:
+ * <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+ */
+
+/* === HEADINGS (Most Loved, Top Picks, etc.) === */
+
+.most-loved,
+.top-picks,
+.promo-card-section {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+}
+.styled-heading {
+    /* ... other font styles ... */
+    text-align: center; 
 }
 
-.most-loved h2 {
-  font-size: 32px;
-  color: #a72f2f;
-  margin-bottom: 30px;
+.most-loved:not(.product-grid), /* Excludes the catalogue section, which has its own .product-grid */
+.top-picks,
+.most-loved.catalogue-section { 
+    background-color: #fff;
 }
 
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 25px;
+
+.styled-heading {
+    /* PRIMARY ABOUT US FONT for a sophisticated look */
+    font-family: 'Playfair Display', serif; 
+    font-size: 38px; 
+    color: #a72f2f;
+    margin-bottom: 30px;
+    font-weight: 700;
 }
 
-.product-card {
-  background: #fff;
-  border: 1px solid #e5e5e5;
-  border-radius: 12px;
-  padding: 30px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.product-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
-}
-
-.product-card img {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 12px;
-}
-
-.product-card h3 {
-  font-size: 18px;
-  margin: 6px 0;
-}
-
-.desc {
-  color: #777;
-  font-size: 14px;
-  margin-bottom: 6px;
-}
-
-.rating {
-  font-size: 14px;
-  color: #f39c12;
-  margin-bottom: 8px;
-}
-
-.price {
-  font-size: 16px;
-  font-weight: bold;
-  color: #333;
-}
-
-.members-price {
-  font-size: 13px;
-  color: #267d3f;
-  margin-top: 4px;
-}
-
-/* Product Tag Labels */
-.tag {
-  position: absolute;
-  top: 12px;
-  left: 12px;
-  padding: 4px 10px;
-  font-size: 12px;
-  font-weight: bold;
-  color: white;
-  border-radius: 4px;
-}
-
-.best-seller {
-  background-color: #228b22;
-}
-
-.discount {
-  background-color: #2e8b57;
-}
-
-.trending {
-  background-color: #ff8c00;
-}
-
-.hot-deals {
-  background-color: #ff1493;
-}
-
-/* WhatsApp Button inside card */
-.whatsapp-card-button {
-  margin-top: 12px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  background-color: #d37c25;
-  color: white;
-  padding: 10px 8px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 14px;
-  transition: background 0.3s;
-}
-
-.whatsapp-card-button img {
-  width: 14px;
-  height: 14px;
-}
-
-.whatsapp-card-button:hover {
-  background-color: #e36e38;
+.styled-heading span {
+    color: #e67e22;
 }
 
 /* === OFFER CIRCLES === */
 .offer-circles {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-  margin: 10px 0 20px 0; /* ⬅ Reduced top and bottom margin */
-  text-align: center;
-}
-
-.offer-circles .circle {
-  width: 160px;
-  height: 160px;
-  text-align: center;
-}
-
-.offer-circles img {
-  width: 100px;
-  height: 100px;
-  border-radius: 60%;
-  object-fit: cover;
-  transition: transform 0.3s;
-  border: 3px solid #d37c25;
-}
-
-.offer-circles img:hover {
-  transform: scale(1.1);
-}
-
-.offer-circles p {
-  margin-top: 8px;
-  font-size: 15px;
-  font-weight: 400;
-  color: #333;
-}
-
-/* === PROMO CARD STYLING === */
-.promo-card-section {
-  max-width: 1900px;
-  margin-top: 5px; /* ⬇ Very little space above promo cards */
-  padding: 0 30px;
-  overflow: hidden;
-  position: relative;
-}
-.styled-heading {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 2rem;
-  text-align: center;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-.styled-heading span {
-  color: #e67e22;
-}
-
-.slider-wrapper {
-  overflow: hidden;
-  width: 100%;
-  position: relative;
-}
-
-.promo-card-container {
-  display: flex;
-  transition: transform 0.8s ease-in-out;
-  width: 100%;
-}
-
-.slide {
-  display: flex;
-  gap: 10px;
-  min-width: 100%;
-  justify-content: center;
-}
-
-.promo-card {
-  border-radius: 19px;
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  align-items: flex-end;
-  padding: 20px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-}
-
-.big-card {
-  flex: 0 0 1050px;
-  min-height: 620px;
-}
-
-.small-card-column {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  flex: 0 0 350px;
-}
-
-.small-card {
-  min-height: 320px;
-}
-
-.promo-card-text {
-  background: rgba(0, 0, 0, 0.55);
-  padding: 15px;
-  border-radius: 10px;
-}
-
-.promo-card h2,
-.promo-card h3 {
-  margin-bottom: 8px;
-}
-
- 
-
-
-
-
-/* === Most Loved Section === */
-.most-loved {
-  padding: 50px 20px;
-  background-color: #fff;
-  text-align: center;
-  position: relative;
-}
-
-.styled-heading {
-  font-size: 32px;
-  color: #a72f2f;
-  margin-bottom: 30px;
-  font-weight: bold;
-}
-
-/* === Product Slider Container === */
-.product-slider-container {
- position: relative;
- display: flex;
- align-items: center;
- overflow: hidden;
-}
-
-/* === Scroll Buttons === */
-.scroll-btn {
- background: #a72f2f;
- border: none;
- color: #fff;
- font-size: 28px;
- border-radius: 50%;
- width: 40px;
- height: 40px;
- cursor: pointer;
- z-index: 10;
- transition: background 0.3s ease;
-}
-
-.scroll-btn:hover {
- background: #8b2525;
-}
-
-.scroll-btn.left {
- position: absolute;
- left: 10px;
-}
-
-.scroll-btn.right {
- position: absolute;
- right: 10px;
-}
-
-/* === Horizontal Scroll (FIXED) === */
-.product-slider {
- display: flex;
- gap: 20px;
- overflow-x: auto;
- scroll-behavior: smooth;
- padding: 20px;
- scrollbar-width: none; /* Hide scrollbar (Firefox) */
-    
-    /* FIX: Ensure the slider takes full width to trigger overflow */
-    width: 100%; 
-}
-
-.product-slider::-webkit-scrollbar {
- display: none; /* Hide scrollbar (Chrome) */
-}
-
-.read-more-text {
-  display: block;
-  color: #a72f2f;
-  font-weight: 600;
-  cursor: pointer;
-  margin-bottom: 10px;
-  font-size: 14px;
-}
-
-.read-more-text:hover {
-  text-decoration: underline;
-}
-
-/* === Product Card === */
-.product-card {
-  min-width: 240px;
-  max-width: 250px;
-  background: #fafafa;
-  border-radius: 15px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  padding: 15px;
-  text-align: center;
-  flex-shrink: 0;
-  transition: transform 0.3s ease;
-}
-
-.product-card:hover {
-  transform: translateY(-5px);
-}
-
-.product-card img {
-  width: 100%;
-  border-radius: 12px;
-  height: 180px;
-  object-fit: cover;
-}
-
-.tag {
-  background-color: #a72f2f;
-  color: #fff;
-  padding: 4px 10px;
-  border-radius: 12px;
-  font-size: 12px;
-  display: inline-block;
-  margin-bottom: 8px;
-}
-
-.price {
-  font-weight: bold;
-  color: #333;
-}
-
-.members-price {
-  color: #a72f2f;
-  font-weight: 500;
-  display: block;
-}
-
-.whatsapp-card-button {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  background-color:  #a72f2f;
-  color: #fff;
-  text-decoration: none;
-  padding: 8px 14px;
-  border-radius: 8px;
-  margin-top: 10px;
-  transition: 0.3s;
-}
-
-.whatsapp-card-button:hover {
-  background-color:#8e2525;
-}
-
-
-
-
-
-/* === TOP PICKS Section === */
-
-
-.top-picks {
-  padding: 50px 20px;
-  background-color: #fff;
-  text-align: center;
-}
-
-.styled-heading {
-  font-size: 32px;
-  color: #a72f2f;
-  margin-bottom: 20px;
-  font-weight: 700;
-}
-
-.scroll-container {
-  display: flex;
-  overflow-x: auto;
-  gap: 20px;
-  scroll-behavior: smooth;
-  padding: 40px 0;
-}
-
-.scroll-container::-webkit-scrollbar {
-  height: 10px;
-}
-
-.scroll-container::-webkit-scrollbar-thumb {
-  background-color: #a72f2f;
-  border-radius: 5px;
-}
-
-.product-card {
-  flex: 0 0 250px;
-  background: #f9f9f9;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  text-align: center;
-  padding: 15px;
-  transition: transform 0.3s ease;
-}
-
-.product-card:hover {
-  transform: translateY(-5px);
-}
-
-.product-card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 15px;
-}
-
-.product-card h3 {
-  font-size: 18px;
-  margin: 10px 0 5px;
-  color: #a72f2f;
-}
-
-.product-card .desc {
-  color: #555;
-  font-size: 14px;
-  margin-bottom: 8px;
-}
-
-.product-card .price {
-  font-size: 16px;
-  color: #222;
-  font-weight: 600;
-  margin-bottom: 5px;
-}
-
-.product-card .details {
-  font-size: 13px;
-  color: #666;
-}
-
-
-
-
-
-/* === catalogue Section === */
-.most-loved {
-  padding: 50px 20px;
-  background-color: #fff;
-  text-align: center;
-}
-
-.most-loved .styled-heading {
-  font-size: 32px;
-  color: #a72f2f;
-  margin-bottom: 30px;
-}
-
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 25px;
-  justify-items: center;
-}
-
-.product-card {
-  background: #fffaf5;
-  border: 1px solid #f1d3b3;
-  border-radius: 18px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  padding: 15px;
-  width: 100%;
-  max-width: 280px;
-  text-align: center;
-  transition: all 0.3s ease;
-}
-
-.product-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-}
-
-.product-card img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 14px;
-  margin-bottom: 15px;
-}
-
-.product-card h3 {
-  font-size: 20px;
-  color: #8a2a2a;
-  margin-bottom: 8px;
-}
-
-.product-card p {
-  font-size: 14px;
-  line-height: 1.5;
-  margin-bottom: 8px;
-  color: #333;
-}
-
-.product-card .note {
-  font-size: 12px;
-  color: #777;
-  font-style: italic;
-}
-
-/* === Book Now Button === */
-.book-btn {
-  background: #a72f2f;
-  color: white;
-  border: none;
-  padding: 10px 18px;
-  border-radius: 25px;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: 500;
-  transition: background 0.3s ease, transform 0.3s ease;
-}
-
-.book-btn:hover {
-  background: #8e2525;
-  transform: scale(1.08);
-}
-
-/* == TOP PICKS Section === */
-.top-picks {
-    padding: 50px 20px;
-    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin: 10px 0 20px 0;
     text-align: center;
 }
 
-.styled-heading {
-    font-size: 32px;
-    color: #a72f2f;
-    margin-bottom: 20px;
-    font-weight: 700;
+.offer-circles .circle {
+    width: 160px;
+    height: 160px;
+    text-align: center;
 }
 
-/* === Scroll Wrapper: Used to contain the scrollable content === */
+.offer-circles img {
+    width: 100px;
+    height: 100px;
+    border-radius: 60%;
+    object-fit: cover;
+    transition: transform 0.3s;
+    border: 3px solid #d37c25;
+}
+
+.offer-circles img:hover {
+    transform: scale(1.1);
+}
+
+.offer-circles p {
+    margin-top: 8px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #333;
+}
+
+
+/*
+|==========================================================================
+| PRODUCT CARD STYLES (Used in Catalogue, Most Loved Grid, and Sliders)
+|==========================================================================
+*/
+
+.product-card {
+    /* Base Card Styling - Used in all product contexts */
+    background: #fffaf5; /* Light background for warmth */
+    border: 1px solid #f1d3b3;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    padding: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+    flex-shrink: 0; /* Important for sliders */
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 14px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    /* Font style applied to match brand tone */
+    font-family: 'Playfair Display', serif; 
+    font-size: 20px;
+    color: #8a2a2a;
+    margin-bottom: 8px;
+}
+
+.desc, .product-card p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+.product-card .note {
+    font-size: 12px;
+    color: #777;
+    font-style: italic;
+}
+
+.product-card .price {
+    font-weight: bold;
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.product-card .members-price {
+    color: #a72f2f;
+    font-weight: 500;
+    display: block;
+    font-size: 13px;
+}
+
+.read-more-text {
+    display: block;
+    color: #a72f2f;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.read-more-text:hover {
+    text-decoration: underline;
+}
+
+/* Product Tag Labels */
+.tag {
+    /* Base tag styling */
+    background-color: #a72f2f;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.product-card > .tag {
+    /* For tags positioned absolutely on the card */
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    border-radius: 4px;
+}
+
+.best-seller { background-color: #228b22; }
+.discount { background-color: #2e8b57; }
+.trending { background-color: #ff8c00; }
+.hot-deals { background-color: #ff1493; }
+
+/* === BUTTON STYLES === */
+
+/* WhatsApp Button inside card */
+.whatsapp-card-button {
+    /* Font style applied to match brand tone */
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: #d37c25; /* Original color */
+    color: white;
+    padding: 8px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.whatsapp-card-button:hover {
+    background-color: #e36e38;
+}
+
+/* Book Now Button */
+.book-btn {
+    /* Font style applied to match brand tone */
+    font-family: 'Montserrat', sans-serif;
+    background: #a72f2f;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.book-btn:hover {
+    background: #8e2525;
+    transform: scale(1.08);
+}
+
+
+/* === CATALOGUE GRID SECTION === */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 25px;
+    justify-items: center;
+}
+.most-loved .product-grid .product-card {
+    width: 100%;
+    max-width: 280px;
+}
+
+
+/*
+|==========================================================================
+| PRODUCT SLIDER SECTIONS (Most Loved Slider & Top Picks)
+|==========================================================================
+*/
+
+.product-slider-container {
+    /* Used for Most Loved slider, if scroll buttons are active */
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
 .scroll-wrapper {
-    overflow: hidden; /* Contains the scroll-container */
+    /* Used for Top Picks slider, simple scroll */
+    overflow: hidden; 
     width: 100%;
 }
 
-/* === Scroll Container: Enables horizontal scrolling === */
-.scroll-container {
+.scroll-container,
+.product-slider {
+    /* Main scrollable area */
     display: flex;
-    /* KEY CHANGE: 'overflow-x: auto;' enables the user-controlled scrollbar */
-    overflow-x: auto; 
     gap: 20px;
+    overflow-x: auto;
     scroll-behavior: smooth;
-    padding: 40px 0;
-    
-    /* Removed: 'width: max-content;' and 'animation: scrollLeft 60s linear infinite;' */
+    padding: 20px;
+    scrollbar-width: none;
+    width: 100%; 
 }
 
-/* Styling for the scrollbar itself (Webkit browsers like Chrome/Safari) */
+.scroll-container::-webkit-scrollbar,
+.product-slider::-webkit-scrollbar {
+    height: 10px; /* Adjust height of scrollbar */
+    display: none; /* Hide scrollbar by default for a clean look */
+}
+
+/* Show custom scrollbar styling if needed */
 .scroll-container::-webkit-scrollbar {
-    height: 10px;
+    display: block; 
 }
-
 .scroll-container::-webkit-scrollbar-thumb {
     background-color: #a72f2f;
     border-radius: 5px;
 }
 
-.product-card {
-    /* flex: 0 0 250px; ensures the cards have a fixed width and don't shrink */
-    flex: 0 0 250px; 
-    background: #f9f9f9;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    text-align: center;
-    padding: 10px;
-    transition: transform 0.3s ease;
+/* Scroll Buttons (For Most Loved Slider) */
+.scroll-btn {
+    background: #a72f2f;
+    border: none;
+    color: #fff;
+    font-size: 28px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 10;
+    transition: background 0.3s ease;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-.product-card:hover {
-    transform: translateY(-5px);
+.scroll-btn:hover {
+    background: #8b2525;
 }
 
-.product-card img {
+.scroll-btn.left { left: 10px; }
+.scroll-btn.right { right: 10px; }
+
+
+/*
+|==========================================================================
+| PROMO CARD SLIDER SECTION
+|==========================================================================
+*/
+
+.promo-card-section {
+    max-width: 1900px;
+    margin-top: 5px;
+    padding: 0 30px 50px 30px; /* Adjusted padding bottom */
+    overflow: hidden;
+}
+
+.slider-wrapper {
+    overflow: hidden;
     width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 15px;
+    position: relative;
 }
 
-.product-card h3 {
-    font-size: 18px;
-    margin: 10px 0 5px;
-    color: #a72f2f;
+.promo-card-container {
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+    width: 100%;
 }
 
-.product-card .desc {
-    color: #555;
-    font-size: 14px;
+.slide {
+    display: flex;
+    gap: 10px;
+    min-width: 100%;
+    justify-content: center;
+}
+
+.promo-card {
+    border-radius: 19px;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.big-card {
+    flex: 0 0 1050px;
+    min-height: 620px;
+}
+
+.small-card-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 0 0 350px;
+}
+
+.small-card {
+    min-height: 320px;
+}
+
+.promo-card-text {
+    background: rgba(0, 0, 0, 0.55);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.promo-card h2,
+.promo-card h3 {
+    /* Applied Playfair Display here for visual weight */
+    font-family: 'Playfair Display', serif;
     margin-bottom: 8px;
 }
 
-.product-card .price {
-    font-size: 16px;
-    color: #222;
-    font-weight: 600;
-    margin-bottom: 5px;
+/* === RESPONSIVENESS === */
+
+@media (max-width: 1450px) {
+    /* Adjust big/small card sizes for slightly smaller desktops */
+    .big-card {
+        flex: 0 0 70%; 
+        min-height: 450px;
+    }
+    .small-card-column {
+        flex: 0 0 30%;
+    }
 }
 
-.product-card .details {
-    font-size: 13px;
-    color: #666;
+@media (max-width: 1100px) {
+    /* Promo Cards stack vertically on medium screens */
+    .slide {
+        flex-direction: column;
+        align-items: center;
+    }
+    .big-card, .small-card-column {
+        flex: 0 0 90%; 
+        max-width: 700px; /* Constrain max width for better centering */
+    }
+    .big-card {
+        min-height: 400px;
+    }
+    .small-card-column {
+        flex-direction: row; /* Small cards go back to horizontal */
+        min-height: 200px;
+    }
+    .small-card {
+        flex: 1; /* Small cards share the row space */
+        min-height: 200px;
+    }
 }
 
-/* Removed: All animation keyframes and hover pause styles */
+@media (max-width: 768px) {
+    /* Mobile adjustments */
+    .styled-heading {
+        font-size: 30px;
+    }
+    .big-card, .small-card-column {
+        flex: 0 0 100%;
+    }
+    .small-card-column {
+        flex-direction: column; /* Small cards stack again */
+    }
+    .small-card {
+        min-height: 250px;
+    }
+    .offer-circles {
+        gap: 20px;
+    }
+    .offer-circles .circle {
+        width: 120px;
+        height: 120px;
+    }
+    .offer-circles img {
+        width: 80px;
+        height: 80px;
+    }
+}
