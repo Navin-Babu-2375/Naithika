@@ -44,11 +44,15 @@
     .header_promo_message {
         text-align: center;
         flex-grow: 1;
+        font-family: 'Inter', sans-serif !important;
+        font-size: 12px !important;
     }
     .header_secondary_links {
         display: none; /* Hide secondary links by default on small screens */
         gap: 15px;
         align-items: center;
+        font-family: 'Inter', sans-serif !important;
+        font-size: 12px !important;
     }
     
     .header_secondary_links a {
