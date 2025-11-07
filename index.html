@@ -302,8 +302,8 @@
                     <svg class="header_contact_icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                     CONTACT US
                 </a>
-                <a href="#" class="header_faq_link">FAQ</a>
-                <a href="#">TRACK YOUR ORDER</a>
+                <a href="#" class="header_faq_link">+91 9876543210</a>
+                <a href="offer.html">SPECIAL OFFERS</a>
                 <span class="header_divider">|</span>
             </div>
         </div>
@@ -433,12 +433,34 @@
 
 
 
-<section id="offers" class="top-picks">
+    <section class="ancestral_wisdom_section">
+    <div class="ancestral_wisdom_container">
+        
+        <div class="ancestral_wisdom_graphic_box">
+            <img src="images_naithika/bg1.webp" alt="Graphic of organic produce and farming tools">
+        </div>
+        
+        <div class="ancestral_wisdom_content">
+            
+            <p class="ancestral_wisdom_tagline">Bringing back the ancestral wisdom for</p>
+            <h2 class="ancestral_wisdom_title">A Healthy & Natural Lifestyle</h2>
+            
+            <p class="ancestral_wisdom_text">
+                We stand at the intersection of natural farming and holistic wellness, making possible a healthy and happy lifestyle that you deserve. Driven with the social responsibility to deliver agricultural food products that are chemical-free and nutrient-rich, we partner with farmers across India, who practice organic farming and promote environmental sustainability.
+            </p>
+
+        </div>
+        
+    </div>
+</section>
+
+
+
+<!-- <section id="offers" class="top-picks">
   <h1 class="styled-heading">Exclusive Offers — From Nature, With Love </h1>
   <p class="offer-subtitle">✨ Limited-Time Specials Crafted with Care ✨</p>
 
   <div class="offer-container">
-    <!-- === Dehydrated Fruits === -->
     <div class="product-cards">
       <div class="offer-badge">Special Offer</div>
       <a href="offer.html#fruits" class="offer-link">
@@ -454,7 +476,6 @@
       </a>
     </div>
 
-    <!-- === Dehydrated Vegetables === -->
     <div class="product-cards">
       <div class="offer-badge">Special Deal</div>
       <a href="offer.html#vegetables" class="offer-link">
@@ -470,7 +491,6 @@
       </a>
     </div>
 
-    <!-- === Pickles & Powders === -->
     <div class="product-cards">
       <div class="offer-badge">Hot Pick 🔥</div>
       <a href="offer.html#pickles" class="offer-link">
@@ -486,7 +506,6 @@
       </a>
     </div>
 
-    <!-- === All Products === -->
     <div class="product-cards">
       <div class="offer-badge">Explore All 🌼</div>
       <a href="offer.html" class="offer-link">
@@ -502,7 +521,7 @@
       </a>
     </div>
   </div>
-</section>
+</section> -->
 
 
 <script>
@@ -527,6 +546,7 @@
     document.getElementById("productSlider").scrollBy({ left: 300, behavior: "smooth" });
   }
 </script>
+
 
 
 <div class="aboutus_values_wrapper">
@@ -593,6 +613,53 @@
 <div style="text-align: center; margin: 50px 0;">
     <a href="products.html" class="view-more-products-btn **fade-in-hidden**">View More Products</a>
 </div>
+
+
+<div class="contactus-container">
+  <div class="contactus-content-wrapper">
+
+    <!-- Form Section -->
+    <div class="contactus-form-area">
+      <h2 class="contactus-section-title">Send Us a Message</h2>
+
+      <form class="contactus-form" action="contact.php" method="POST">
+        <div class="contactus-form-group">
+          <label class="contactus-label" for="contactus-name">Full Name</label>
+          <input type="text" id="contactus-name" name="name" class="contactus-input" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="contactus-form-group">
+          <label class="contactus-label" for="contactus-email">Email Address</label>
+          <input type="email" id="contactus-email" name="email" class="contactus-input" placeholder="Enter your email" required>
+        </div>
+
+        <div class="contactus-form-group">
+          <label class="contactus-label" for="contactus-subject">Subject</label>
+          <input type="text" id="contactus-subject" name="subject" class="contactus-input" placeholder="What is this about?" required>
+        </div>
+
+        <div class="contactus-form-group">
+          <label class="contactus-label" for="contactus-message">Your Message</label>
+          <textarea id="contactus-message" name="message" class="contactus-textarea" placeholder="Type your message here..." required></textarea>
+        </div>
+
+        <button type="submit" class="contactus-button">Submit Inquiry</button>
+      </form>
+    </div>
+
+    <!-- Info Section -->
+    <div class="contactus-info">
+      <h3 class="contactus-info-title">Contact Information</h3>
+      <p>We’re here to help and answer any questions you might have.</p>
+      <p><strong>Email:</strong> info@naithikaorganic.com</p>
+      <p><strong>Phone:</strong> +91 91439 77777</p>
+      <p><strong>Office Hours:</strong> Mon - Fri: 9:00 AM - 5:00 PM</p>
+      <p><strong>Address:</strong> 79/99, Thiruvalluvar Street,<br>Cotton City Estates, Coimbatore - 641029</p>
+    </div>
+
+  </div>
+</div>
+
 
 <script>
   const slide = document.querySelector('.carousel-slide');
