@@ -238,6 +238,7 @@
         }
         #header_logo_image {
             height: 55px !important; /* Adjust as needed */
+            width: 55px !important;
             content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50"><text x="5" y="35" style="font-family: Playfair Display, serif; font-size: 30px; fill: #6A0D0D; font-weight: 700;">NAITHIKA</text><rect x="5" y="40" width="120" height="2" style="fill:#D1B48C"/></svg>');
             max-width: 100%;
         }
