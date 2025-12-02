@@ -373,6 +373,64 @@ body.no-scroll {
 }
 
 
+/* DESKTOP DROPDOWN */
+.header_dropdown_group {
+    position: relative;
+}
+
+.header_dropdown_menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 220px;
+    background: #fff;
+    border: 1px solid #eee;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 10px 0;
+    z-index: 600;
+}
+
+.header_dropdown_group:hover .header_dropdown_menu {
+    display: block;
+}
+
+.dropdown-item {
+    display: block;
+    padding: 10px 20px;
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    transition: background 0.2s;
+}
+
+.dropdown-item:hover {
+    background: #f5f5f5;
+    color: var(--brand-primary);
+}
+
+/* MOBILE PRODUCTS HEADING */
+.mobile_category_heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    margin-top: 20px;
+    color: var(--brand-primary);
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+}
+
+.mobile-sub-item {
+    padding-left: 15px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.mobile-sub-item:hover {
+    color: var(--brand-primary);
+}
+
+
+
 /* =================================
  * 3. FOOTER STYLING
  * ================================= */
@@ -497,6 +555,10 @@ body.no-scroll {
 }
 
 
+/* =================================
+ * 4. PRODUCTS PAGE STYLING
+ * (Uses a class to override base body styles)
+ * ================================= */
 /* =================================
  * 4. PRODUCTS PAGE STYLING
  * (Uses a class to override base body styles)
@@ -720,8 +782,8 @@ body.no-scroll {
 }
 
 .product-back-action-container {
-     padding-top: 10px;
-     border-top: 1px solid #eee;
+      padding-top: 10px;
+      border-top: 1px solid #eee;
 }
 .product-buy-button {
     display: block;

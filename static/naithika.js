@@ -1,37 +1,30 @@
 // Header start
 
-// Original JavaScript content (naithika.js) combined here
-    document.addEventListener('DOMContentLoaded', () => {
-        const menuToggle = document.querySelector('.header_mobile_menu_toggle');
-        const mobileMenu = document.querySelector('.header_mobile_menu');
-        // Get the closest <a> tag to the logo image
-        const logoLink = document.getElementById('header_logo_image').closest('a');
+document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.querySelector('.header_mobile_menu_toggle');
+    const mobileMenu = document.querySelector('.header_mobile_menu');
+    const logoLink = document.getElementById('header_logo_image').closest('a');
 
-        // Toggle Menu Function
-        const toggleMobileMenu = () => {
-            // Toggles the 'is-active' class to start/reverse the CSS transition
-            mobileMenu.classList.toggle('is-active'); 
-            // Optional: Toggle a class on the body to prevent background scrolling
-            document.body.classList.toggle('no-scroll');
-        };
+    const toggleMobileMenu = () => {
+        mobileMenu.classList.toggle('is-active');
+        document.body.classList.toggle('no-scroll');
+    };
 
-        // 1. Listen for clicks on the Hamburger Icon
-        menuToggle.addEventListener('click', toggleMobileMenu);
+    menuToggle.addEventListener('click', toggleMobileMenu);
 
-        // 2. Optional: Close the menu when the Logo is clicked (since it navigates home)
-        logoLink.addEventListener('click', () => {
-            if (mobileMenu.classList.contains('is-active')) {
-                mobileMenu.classList.remove('is-active');
-                document.body.classList.remove('no-scroll');
-            }
-        });
-
-        // 3. Close the menu when a link inside the header_nav_list is clicked.
-        const mobileLinks = mobileMenu.querySelectorAll('.nav-link');
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', toggleMobileMenu); // Calls the toggle function to close it
-        });
+    logoLink.addEventListener('click', () => {
+        if (mobileMenu.classList.contains('is-active')) {
+            mobileMenu.classList.remove('is-active');
+            document.body.classList.remove('no-scroll');
+        }
     });
+
+    const mobileLinks = mobileMenu.querySelectorAll('.nav-link, .mobile-sub-item');
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', toggleMobileMenu);
+    });
+});
+
 
 // Header end
 

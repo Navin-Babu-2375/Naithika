@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Dehydrated Vegetables</title>
+    <link rel="icon" type="image/webp" href="images_naithika/logo.webp">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/naithika_style.css">
+    <link rel="stylesheet" href="static/naithika_about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="product-page-body">
+
+    <header id="header_top_bar">
+        <div class="header_container">
+            
+            <div name="header_promo_message" class="header_promo_message">
+                WORLDWIDE SHIPPING AVAILABLE | FREE SHIPPING WITHIN INDIA ON ORDERS ABOVE RS. 4999
+            </div>
+
+            <div name="header_secondary_links" class="header_secondary_links">
+                <a href="#">
+                    <svg class="header_contact_icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    CONTACT US
+                </a>
+                <a href="#" class="header_faq_link">+91 9876543210</a>
+                <a href="offer.html">SPECIAL OFFERS</a>
+                <span class="header_divider">|</span>
+            </div>
+        </div>
+    </header>
+
+    <div id="header_main_content">
+    <div class="header_container">
+
+        <a href="/">
+            <img id="header_logo_image" 
+                 src="images_naithika/Naithika_Logo.webp" 
+                 alt="Naithika Logo"
+                 style="width: 80px; height: auto;">
+        </a>
+
+        <!-- DESKTOP NAVIGATION -->
+        <nav id="header_nav">
+            <a href="index.html" class="nav-link">HOME</a>
+            <a href="about.html" class="nav-link">ABOUT US</a>
+
+            <!-- PRODUCTS DROPDOWN (DESKTOP ONLY) -->
+            <div class="header_dropdown_group">
+                <a href="#" class="nav-link header_dropdown_toggle">
+                    PRODUCTS
+                    <svg class="header_dropdown_arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </a>
+
+                <div class="header_dropdown_menu">
+                    <a href="dehydrated_fruits.html" class="dropdown-item">Fruit Leather</a>
+                    <a href="dehydrated_vegetables.html" class="dropdown-item">Dehydrated Vegetables</a>
+                    <a href="pickles_and_powders.html" class="dropdown-item">Pickles & Powders</a>
+                </div>
+            </div>
+
+            <a href="offer.html" class="nav-link">OFFERS</a>
+            <a href="contact.html" class="nav-link">CONTACT US</a>
+        </nav>
+
+        <!-- MOBILE MENU BUTTON -->
+        <button name="header_mobile_menu_toggle" class="header_mobile_menu_toggle">
+            <svg class="header_mobile_menu_toggle_icon" width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+
+    </div>
+</div>
+
+<!-- MOBILE MENU -->
+<div name="header_mobile_menu" class="header_mobile_menu">
+    <div class="header_nav_list">
+        <a href="index.html" class="nav-link">HOME</a>
+        <a href="about.html" class="nav-link">ABOUT US</a>
+        <a href="offer.html" class="nav-link">OFFERS</a>
+
+        <!-- MOBILE PRODUCTS CATEGORY HEADING -->
+        <span class="mobile_category_heading">PRODUCTS</span>
+        <a href="dehydrated_fruits.html" class="mobile-sub-item">Fruit Leather</a>
+        <a href="dehydrated_vegetables.html" class="mobile-sub-item">Dehydrated Vegetables</a>
+        <a href="pickles_and_powders.html" class="mobile-sub-item">Pickles & Powders</a>
+
+        <a href="contact.html" class="nav-link">CONTACT US</a>
+    </div>
+</div>
+
+    <div class="product-container">
+
+        <h2 id="product-dehydrated-vegetables" class="product-section-heading" style="color: #4f381f;">Dehydrated Vegetables</h2>
+        <div class="product-grid">
+
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="images_naithika/products/Tomoto.webp" alt="Dehydrated Tomato Slices" onerror="this.onerror=null; this.src='https://placehold.co/400x200/a65e5e/ffffff?text=Tomato+Slices'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Tomato Slices</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹180 / 100 g</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button" onclick="redirectToWhatsApp('Tomato Slices')">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Tomato Slices</h4>
+                            <p>Naturally tangy and rich in lycopene, our sun-ripened tomato slices capture the full flavour of fresh tomatoes. Low-temperature tray drying locks in antioxidants and deep red colour. Perfect for soups, pasta sauces, instant noodles, or salads. Each slice delivers the essence of farm-fresh tomatoes—without moisture.</p>
+                            <h5 class="product-nutrition-heading">Nutritional Value (Per 100g)</h5>
+                            <ul class="product-nutrition-list">
+                                <li>Energy: 260 kcal</li>
+                                <li>Carbohydrates: 55 g</li>
+                                <li>Protein: 12 g</li>
+                                <li>Fat: 2 g</li>
+                                <li>Fiber: 12 g</li>
+                                <li>Vitamin C & Lycopene: High</li>
+                            </ul>
+                            <p class="product-price-back">Price: ₹180 / 100 g</p>
+                        </div>
+                        <div class="product-back-action-container">
+                           <a href="#" class="product-less-link">...less</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="images_naithika/products/Tomato Powder.webp" alt="Tomato Powder" onerror="this.onerror=null; this.src='https://placehold.co/400x200/a65e5e/ffffff?text=Tomato+Powder'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Tomato Powder</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹200/100g</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button" onclick="redirectToWhatsApp('Tomato Powder')">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Tomato Powder</h4>
+                            <p>Finely milled from 100% pure dried tomatoes, this bright red powder brings instant colour and flavour to your cooking. Ideal for soups, sauces, marinades, gravies, and spice blends. A spoonful adds the tang and nutrition of ripe tomatoes anytime, anywhere.</p>
+                            <h5 class="product-nutrition-heading">Nutritional Value (Per 100g)</h5>
+                            <ul class="product-nutrition-list">
+                                <li>Energy: 300 kcal</li>
+                                <li>Carbohydrates: 75 g</li>
+                                <li>Protein: 13 g</li>
+                                <li>Fat: 0.4 g</li>
+                                <li>Fiber: 17 g</li>
+                                <li>Vitamin A & C, Potassium: High</li>
+                            </ul>
+                            <p class="product-price-back">Price: ₹200/100g</p>
+                        </div>
+                        <div class="product-back-action-container">
+                           <a href="#" class="product-less-link">...less</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="images_naithika/products/Betroot.webp" alt="Dehydrated Beetroot Slices" onerror="this.onerror=null; this.src='https://placehold.co/400x200/a65e5e/ffffff?text=Beetroot+Slices'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Beetroot</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹200/-100g</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button" onclick="redirectToWhatsApp('Beetroot')">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Beetroot</h4>
+                            <p>Bright, deep-red beetroot slices packed with natural iron and betalains. Gently dried to keep color, flavor and antioxidant value intact. Adds vivid color and earthiness to soups, salads, and snacks. A nutrient-dense convenience ingredient for modern kitchens.</p>
+                            <h5 class="product-nutrition-heading">Nutritional Value (Per 100g)</h5>
+                            <ul class="product-nutrition-list">
+                                <li>Energy: 320 kcal</li>
+                                <li>Protein: 9 g</li>
+                                <li>Fiber: 14 g</li>
+                                <li>Iron: 15 mg</li>
+                            </ul>
+                            <p class="product-price-back">Price: ₹200/-100g</p>
+                        </div>
+                        <div class="product-back-action-container">
+                           <a href="#" class="product-less-link">...less</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="images_naithika/products/carrot.webp" alt="Dehydrated Carrot Slices" onerror="this.onerror=null; this.src='https://placehold.co/400x200/a65e5e/ffffff?text=Carrot+Slices'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Carrot</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹200/-100g</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button" onclick="redirectToWhatsApp('Carrot')">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Carrot</h4>
+                            <p>Sweet, naturally orange carrot slices rich in beta-carotene. Low-heat drying preserves the vitamin-rich profile and sweet flavor. Perfect for quick soups, stews, or as a crunchy snack. A simple way to add colour and nutrition to everyday meals.</p>
+                            <h5 class="product-nutrition-heading">Nutritional Value (Per 100g)</h5>
+                            <ul class="product-nutrition-list">
+                                <li>Energy: 280 kcal</li>
+                                <li>Carbs: 65 g</li>
+                                <li>Fiber: 11 g</li>
+                                <li>Vitamin A: Very High</li>
+                            </ul>
+                            <p class="product-price-back">Price: ₹200/-100g</p>
+                        </div>
+                        <div class="product-back-action-container">
+                           <a href="#" class="product-less-link">...less</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="images_naithika/products/amla.webp" alt="Dehydrated Amla Slices" onerror="this.onerror=null; this.src='https://placehold.co/400x200/a65e5e/ffffff?text=Amla+Slices'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Amla (Indian Gooseberry)</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹240/-100g</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button" onclick="redirectToWhatsApp('>Amla (Indian Gooseberry)')">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Amla (Indian Gooseberry)</h4>
+                            <p>Amla slices that keep the high Vitamin C and tang of the fresh fruit. Carefully dehydrated to concentrate potency while keeping a pleasant chew. Use in chutneys, health tonics, or as a tangy snack that supports immunity. A traditional Indian superfruit presented in a modern, convenient form.</p>
+                            <h5 class="product-nutrition-heading">Nutritional Value (Per 100g)</h5>
+                            <ul class="product-nutrition-list">
+                                <li>Energy: 310 kcal</li>
+                                <li>Vitamin C: Very High</li>
+                                <li>Calcium: 40 mg</li>
+                                <li>Fiber: 8 g</li>
+                            </ul>
+                            <p class="product-price-back">Price: ₹240/-100g</p>
+                        </div>
+                        <div class="product-back-action-container">
+                           <a href="#" class="product-less-link">...less</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="images_naithika/products/Ginger.webp" alt="Dehydrated Ginger Slices" onerror="this.onerror=null; this.src='https://placehold.co/400x200/a65e5e/ffffff?text=Ginger+Slices'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Ginger</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹220/- 100g</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button" onclick="redirectToWhatsApp('Ginger')">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Ginger</h4>
+                            <p>Aromatic ginger slices dried to retain warming spice and natural oils. Perfect for making instant ginger tea, spice blends, or cooking use. Our slow-drying method preserves zing and digestive benefits. Hand-processed in small batches to keep flavor fresh.</p>
+                            <h5 class="product-nutrition-heading">Nutritional Value (Per 100g)</h5>
+                            <ul class="product-nutrition-list">
+                                <li>Energy: 290 kcal</li>
+                                <li>Carbs: 60 g</li>
+                                <li>Fiber: 10 g</li>
+                                <li>Iron: Moderate</li>
+                            </ul>
+                            <p class="product-price-back">Price: ₹220/- 100g</p>
+                        </div>
+                        <div class="product-back-action-container">
+                           <a href="#" class="product-less-link">...less</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="images_naithika/products/garlic powder.webp" alt="Garlic Powder" onerror="this.onerror=null; this.src='https://placehold.co/400x200/a65e5e/ffffff?text=Garlic+Powder'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Garlic Powder</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹150/- (200g)</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button" onclick="redirectToWhatsApp('Garlic Powder')">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Garlic Powder</h4>
+                            <p>Pure garlic powder made from fresh, chemical-free garlic cloves ground fine. Sun-cured and gently dehydrated to retain aroma and savory depth. Perfect for seasoning, marinades, soups and quick spice mixes. Small-batch processing keeps the flavour bright and true to the field.</p>
+                            <h5 class="product-nutrition-heading">Nutritional Value (Per 100g)</h5>
+                            <ul class="product-nutrition-list">
+                                <li>Energy: 331 kcal</li>
+                                <li>Protein: 16.5 g</li>
+                                <li>Carbs: 72.7 g</li>
+                                <li>Dietary Fiber: 9 g</li>
+                                <li>Fat: 0.7 g</li>
+                                <li>Iron: 5.6 mg</li>
+                                <li>Vitamin C: 13 mg</li>
+                            </ul>
+                            <p class="product-price-back">Price: ₹150/- (200g)</p>
+                        </div>
+                        <div class="product-back-action-container">
+                           <a href="#" class="product-less-link">...less</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="images_naithika/products/Ash Gourd.webp" alt="Dehydrated Ash Gourd" onerror="this.onerror=null; this.src='https://placehold.co/400x200/a65e5e/ffffff?text=Ash+Gourd'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Ash Gourd (Petha)</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹200/-100g</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button" onclick="redirectToWhatsApp('Ash Gourd (Petha)')">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Ash Gourd (Petha)</h4>
+                            <p>Mild-flavoured ash gourd pieces ideal for soups, powders, and health blends. Dehydrated to a gentle texture that rehydrates easily in cooking. A cooling vegetable used traditionally in Indian recipes. A pantry staple for health-conscious home cooks.</p>
+                            <h5 class="product-nutrition-heading">Nutritional Value (Per 100g)</h5>
+                            <ul class="product-nutrition-list">
+                                <li>Energy: 250 kcal</li>
+                                <li>Carbs: 58 g</li>
+                                <li>Fiber: 6 g</li>
+                                <li>Vitamin C: Low</li>
+                            </ul>
+                            <p class="product-price-back">Price: ₹200/-100g</p>
+                        </div>
+                        <div class="product-back-action-container">
+                           <a href="#" class="product-less-link">...less</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="images_naithika/products/Pumpkin.webp" alt="Dehydrated Pumpkin" onerror="this.onerror=null; this.src='https://placehold.co/400x200/a65e5e/ffffff?text=Pumpkin+Flakes'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Pumpkin</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹200/100g</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button" onclick="redirectToWhatsApp('Pumpkin')">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Pumpkin</h4>
+                            <p>Golden pumpkin flakes with a slightly sweet, nutty flavour. Rich in beta-carotene and fiber, ideal for porridges, soups and baking. Our dehydration locks in nutrients while extending shelf life. A versatile kitchen ingredient for seasonal and modern recipes.</p>
+                            <h5 class="product-nutrition-heading">Nutritional Value (Per 100g)</h5>
+                            <ul class="product-nutrition-list">
+                                <li>Energy: 280 kcal</li>
+                                <li>Carbs: 65 g</li>
+                                <li>Fiber: 8 g</li>
+                                <li>Vitamin A: High</li>
+                            </ul>
+                            <p class="product-price-back">Price: ₹200/100g</p>
+                        </div>
+                        <div class="product-back-action-container">
+                           <a href="#" class="product-less-link">...less</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="images_naithika/products/lemon.webp" alt="Dehydrated Lemon Slices" onerror="this.onerror=null; this.src='https://placehold.co/400x200/a65e5e/ffffff?text=Lemon+Slices'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Lemon</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹200/-100g</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button" onclick="redirectToWhatsApp('Lemon')">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Lemon</h4>
+                            <p>Zesty lemon slices that carry bright citrus flavor and high Vitamin C. Perfect for teas, spice mixes, marinades or as a garnish. Dried to preserve zest oils and tartness without masks of sugar. A pantry-friendly way to add citrus freshness year-round.</p>
+                            <h5 class="product-nutrition-heading">Nutritional Value (Per 100g)</h5>
+                            <ul class="product-nutrition-list">
+                                <li>Energy: 270 kcal</li>
+                                <li>Vitamin C: Very High</li>
+                                <li>Fiber: 9 g</li>
+                                <li>Calcium: 50 mg</li>
+                            </ul>
+                            <p class="product-price-back">Price: ₹200/-100g</p>
+                        </div>
+                        <div class="product-back-action-container">
+                           <a href="#" class="product-less-link">...less</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="images_naithika/products/Drumstick Leaves.webp" alt="Dehydrated Moringa Leaves" onerror="this.onerror=null; this.src='https://placehold.co/400x200/a65e5e/ffffff?text=Moringa+Leaves'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Moringa (Drumstick Leaves)</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹220/-100g</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button" onclick="redirectToWhatsApp('Moringa (Drumstick Leaves)')">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Moringa (Drumstick Leaves)</h4>
+                            <p>Nutritious moringa leaves dried gently to keep minerals and protein. Rich in iron, calcium and antioxidants — a wholesome green powder source. Use in dals, soups or as a nourishing sprinkle over meals. Cultivated on small farms using responsible practices.</p>
+                            <h5 class="product-nutrition-heading">Nutritional Value (Per 100g)</h5>
+                            <ul class="product-nutrition-list">
+                                <li>Energy: 290 kcal</li>
+                                <li>Protein: 9 g</li>
+                                <li>Iron: High</li>
+                                <li>Calcium: High</li>
+                            </ul>
+                            <p class="product-price-back">Price: ₹220/-100g</p>
+                        </div>
+                        <div class="product-back-action-container">
+                           <a href="#" class="product-less-link">...less</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="images_naithika/products/Curry Leaves.webp" alt="Dehydrated Curry Leaves" onerror="this.onerror=null; this.src='https://placehold.co/400x200/a65e5e/ffffff?text=Curry+Leaves'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Curry Leaves</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹150/-100g</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button" onclick="redirectToWhatsApp('Curry Leaves')">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Curry Leaves</h4>
+                            <p>Fragrant curry leaves preserved for aroma and traditional flavour. Ideal for tempering, chutneys, and aromatic blends when fresh leaves are unavailable. Our controlled drying maintains essential oils and flavor depth. Sourced from South Indian farms with honest practices.</p>
+                            <h5 class="product-nutrition-heading">Nutritional Value (Per 100g)</h5>
+                            <ul class="product-nutrition-list">
+                                <li>Energy: 260 kcal</li>
+                                <li>Fiber: 10 g</li>
+                                <li>Iron: 15 mg</li>
+                                <li>Calcium: 50 mg</li>
+                            </ul>
+                            <p class="product-price-back">Price: ₹150/-100g</p>
+                        </div>
+                        <div class="product-back-action-container">
+                           <a href="#" class="product-less-link">...less</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="images_naithika/products/Mint Leaves.webp" alt="Dehydrated Mint Leaves" onerror="this.onerror=null; this.src='https://placehold.co/400x200/a65e5e/ffffff?text=Mint+Leaves'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Mint Leaves</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹200/-100g</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button" onclick="redirectToWhatsApp('Mint Leaves')">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Mint Leaves</h4>
+                            <p>Fresh mint leaves air-dried to keep cooling aroma and taste. Perfect for teas, raitas, chutneys and spice mixes. Dried quickly to preserve color and volatile oils. A refreshing addition to everyday cooking and home remedies.</p>
+                            <h5 class="product-nutrition-heading">Nutritional Value (Per 100g)</h5>
+                            <ul class="product-nutrition-list">
+                                <li>Energy: 250 kcal</li>
+                                <li>Fiber: 12 g</li>
+                                <li>Vitamin C: Moderate</li>
+                            </ul>
+                            <p class="product-price-back">Price: ₹200/-100g</p>
+                        </div>
+                        <div class="product-back-action-container">
+                           <a href="#" class="product-less-link">...less</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="images_naithika/products/Coriander.webp" alt="Dehydrated Coriander Leaves" onerror="this.onerror=null; this.src='https://placehold.co/400x200/a65e5e/ffffff?text=Coriander+Leaves'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Coriander (Cilantro)</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹180/- 100g</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button" onclick="redirectToWhatsApp('Coriander (Cilantro)')">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Coriander (Cilantro)</h4>
+                            <p>Fragrant coriander leaves dried to retain green notes and herbaceous taste. Useful for instant gravies, spice mixes or as a garnish when fresh herbs are not available. Dehydration is done under low heat to preserve color and aroma. Handpicked and processed in small batches for quality.</p>
+                            <h5 class="product-nutrition-heading">Nutritional Value (Per 100g)</h5>
+                            <ul class="product-nutrition-list">
+                                <li>Energy: 270 kcal</li>
+                                <li>Fiber: 10 g</li>
+                                <li>Vitamin C: High</li>
+                            </ul>
+                            <p class="product-price-back">Price: ₹180/- 100g</p>
+                        </div>
+                        <div class="product-back-action-container">
+                           <a href="#" class="product-less-link">...less</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        // Truncation logic and card flip setup
+        function initProductCards() {
+            const productCards = document.querySelectorAll('.product-card');
+            const maxDescriptionHeight = 40; // Corresponds to min-height: 40px in CSS
+
+            productCards.forEach(card => {
+                const innerCard = card.querySelector('.product-card-inner');
+                const frontContent = card.querySelector('.product-card-front');
+                const backContent = card.querySelector('.product-card-back');
+                const descriptionContainer = card.querySelector('.product-short-description-container');
+                const descriptionText = card.querySelector('.product-short-description-text');
+                const moreLink = card.querySelector('.product-more-link');
+                const lessLink = card.querySelector('.product-less-link');
+                
+                // 1. Truncate Description (if content is available)
+                const fullDescription = backContent.querySelector('.product-full-content p:first-of-type').textContent;
+                descriptionText.textContent = fullDescription;
+
+                if (descriptionContainer.scrollHeight > maxDescriptionHeight) {
+                    // Simple truncation logic: find the point where the text overflows
+                    let truncatedText = fullDescription;
+                    while (descriptionContainer.scrollHeight > maxDescriptionHeight && truncatedText.length > 0) {
+                        truncatedText = truncatedText.substring(0, truncatedText.length - 10); // Reduce by chunks
+                        descriptionText.textContent = truncatedText + '...';
+                    }
+                    moreLink.style.display = 'inline'; // Show the '...more' link
+                } else {
+                    moreLink.style.display = 'none'; // Hide if not truncated
+                }
+
+                // 2. Card Flip Logic
+                
+                // Flip to back on click of 'more' link or on the whole card (except button)
+                const flipToBack = (event) => {
+                     // Check if the click target is the Buy Now button or a link that flips back
+                    if (event.target.classList.contains('product-front-buy-button') || event.target.classList.contains('product-less-link')) {
+                        return; // Do nothing if button or less link is clicked
+                    }
+                    if (event.target.classList.contains('product-more-link')) {
+                         event.preventDefault();
+                         innerCard.classList.add('is-flipped');
+                    }
+                };
+
+                // Add event listeners for flip to back
+                frontContent.addEventListener('click', flipToBack);
+                
+                // Function to unflip the card
+                function unflipCard(event) {
+                    if (event) event.preventDefault(); // Prevent link navigation
+                    innerCard.classList.remove('is-flipped');
+                }
+
+                // Mouse Leave: Flip back to front
+                card.addEventListener('mouseleave', unflipCard);
+
+                // Clicking the less link: Flip back
+                if (lessLink) {
+                    lessLink.addEventListener('click', unflipCard);
+                }
+
+            });
+        }
+
+        // Initialize on page load
+        window.onload = function() {
+            initProductCards();
+        };
+
+        function redirectToWhatsApp(productName) {
+            // Replace with your WhatsApp number (use full international format, no + or spaces)
+            const phoneNumber = "9539717388";
+
+            // The message you want to prefill
+            const message = `Hello, I would like to buy some of your products.\nProduct: ${productName}\nQuantity: `;
+
+            // Create the WhatsApp URL
+            const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+            // Redirect the user
+            window.open(whatsappURL, "_blank");
+        }
+    </script>
+</body>
+</html>

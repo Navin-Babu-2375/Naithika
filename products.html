@@ -37,50 +37,67 @@
     </header>
 
       <div id="header_main_content">
-        <div class="header_container">
+    <div class="header_container">
 
-            <a href="/">
-                <img id="header_logo_image" 
-                     src="images_naithika/Naithika_Logo.webp" 
-                     alt="Naithika Logo"
-                     style="width: 80px; height: auto;"
-                >
-            </a>
+        <a href="/">
+            <img id="header_logo_image" 
+                 src="images_naithika/Naithika_Logo.webp" 
+                 alt="Naithika Logo"
+                 style="width: 80px; height: auto;">
+        </a>
 
-            <nav id="header_nav">
-                <a href="index.html" class="nav-link">HOME</a>
-                <a href="about.html" class="nav-link">ABOUT US</a>
-                <!-- <div class="header_dropdown_group">
-                    <a href="#" class="nav-link header_dropdown_toggle">
-                        ORGANIC SHOP
-                        <svg class="header_dropdown_arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                    </a>
-                    <div class="header_dropdown_menu">
-                        </div>
-                </div> -->
-                <a href="offer.html" class="nav-link">OFFERS</a>
-                <a href="products.html" class="nav-link">PRODUCTS</a>
-                <a href="contact.html" class="nav-link">CONTACT US</a>
-            </nav>
-
-          
-            
-            <button name="header_mobile_menu_toggle" class="header_mobile_menu_toggle">
-                <svg class="header_mobile_menu_toggle_icon" width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
-            </button>
-            
-        </div>
-    </div>
-    
-    <div name="header_mobile_menu" class="header_mobile_menu">
-        <div class="header_nav_list">
+        <!-- DESKTOP NAVIGATION -->
+        <nav id="header_nav">
             <a href="index.html" class="nav-link">HOME</a>
             <a href="about.html" class="nav-link">ABOUT US</a>
+
+            <!-- PRODUCTS DROPDOWN (DESKTOP ONLY) -->
+            <div class="header_dropdown_group">
+                <a href="#" class="nav-link header_dropdown_toggle">
+                    PRODUCTS
+                    <svg class="header_dropdown_arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </a>
+
+                <div class="header_dropdown_menu">
+                    <a href="dehydrated_fruits.html" class="dropdown-item">Fruit Leather</a>
+                    <a href="dehydrated_vegetables.html" class="dropdown-item">Dehydrated Vegetables</a>
+                    <a href="pickles_and_powders.html" class="dropdown-item">Pickles & Powders</a>
+                </div>
+            </div>
+
             <a href="offer.html" class="nav-link">OFFERS</a>
-            <a href="products.html" class="nav-link">PRODUCTS</a>
             <a href="contact.html" class="nav-link">CONTACT US</a>
-        </div>
+        </nav>
+
+        <!-- MOBILE MENU BUTTON -->
+        <button name="header_mobile_menu_toggle" class="header_mobile_menu_toggle">
+            <svg class="header_mobile_menu_toggle_icon" width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+
     </div>
+</div>
+
+<!-- MOBILE MENU -->
+<div name="header_mobile_menu" class="header_mobile_menu">
+    <div class="header_nav_list">
+        <a href="index.html" class="nav-link">HOME</a>
+        <a href="about.html" class="nav-link">ABOUT US</a>
+        <a href="offer.html" class="nav-link">OFFERS</a>
+
+        <!-- MOBILE PRODUCTS CATEGORY HEADING -->
+        <span class="mobile_category_heading">PRODUCTS</span>
+        <a href="dehydrated_fruits.html" class="mobile-sub-item">Fruit Leather</a>
+        <a href="dehydrated_vegetables.html" class="mobile-sub-item">Dehydrated Vegetables</a>
+        <a href="pickles_and_powders.html" class="mobile-sub-item">Pickles & Powders</a>
+
+        <a href="contact.html" class="nav-link">CONTACT US</a>
+    </div>
+</div>
+
 
     <div class="product-container">
         <!-- <div class="product-category-nav">
@@ -93,9 +110,9 @@
             <div class="circle-box">
                 <a href="products.html#product-dehydrated-fruits">
                 <div class="circle-img">
-                    <img src="images_naithika/fruits.webp" alt="Dehydrated Fruits">
+                    <img src="images_naithika/fruits.webp" alt="Fruit Leather">
                 </div>
-                <h3>Dehydrated Fruits</h3>
+                <h3>Fruit Leather</h3>
                 <p>Wholesome | Natural | Delicious</p>
                 </a>
             </div>
@@ -121,7 +138,7 @@
             </div>
         </section>
 
-        <h2 id="product-dehydrated-fruits" class="product-section-heading" style="color: #4f381f;">Dehydrated Fruits</h2>
+        <h2 id="product-dehydrated-fruits" class="product-section-heading" style="color: #4f381f;">Fruit Leather</h2>
         <div class="product-grid">
 
             <div class="product-card">

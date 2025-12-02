@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Pickles & Powders</title>
+    <link rel="icon" type="image/webp" href="images_naithika/logo.webp">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/naithika_style.css">
+    <link rel="stylesheet" href="static/naithika_about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="product-page-body">
+
+    <header id="header_top_bar">
+        <div class="header_container">
+            
+            <div name="header_promo_message" class="header_promo_message">
+                WORLDWIDE SHIPPING AVAILABLE | FREE SHIPPING WITHIN INDIA ON ORDERS ABOVE RS. 4999
+            </div>
+
+            <div name="header_secondary_links" class="header_secondary_links">
+                <a href="#">
+                    <svg class="header_contact_icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    CONTACT US
+                </a>
+                <a href="#" class="header_faq_link">+91 9876543210</a>
+                <a href="offer.html">SPECIAL OFFERS</a>
+                <span class="header_divider">|</span>
+            </div>
+        </div>
+    </header>
+
+    <div id="header_main_content">
+    <div class="header_container">
+
+        <a href="/">
+            <img id="header_logo_image" 
+                 src="images_naithika/Naithika_Logo.webp" 
+                 alt="Naithika Logo"
+                 style="width: 80px; height: auto;">
+        </a>
+
+        <!-- DESKTOP NAVIGATION -->
+        <nav id="header_nav">
+            <a href="index.html" class="nav-link">HOME</a>
+            <a href="about.html" class="nav-link">ABOUT US</a>
+
+            <!-- PRODUCTS DROPDOWN (DESKTOP ONLY) -->
+            <div class="header_dropdown_group">
+                <a href="#" class="nav-link header_dropdown_toggle">
+                    PRODUCTS
+                    <svg class="header_dropdown_arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </a>
+
+                <div class="header_dropdown_menu">
+                    <a href="dehydrated_fruits.html" class="dropdown-item">Fruit Leather</a>
+                    <a href="dehydrated_vegetables.html" class="dropdown-item">Dehydrated Vegetables</a>
+                    <a href="pickles_and_powders.html" class="dropdown-item">Pickles & Powders</a>
+                </div>
+            </div>
+
+            <a href="offer.html" class="nav-link">OFFERS</a>
+            <a href="contact.html" class="nav-link">CONTACT US</a>
+        </nav>
+
+        <!-- MOBILE MENU BUTTON -->
+        <button name="header_mobile_menu_toggle" class="header_mobile_menu_toggle">
+            <svg class="header_mobile_menu_toggle_icon" width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+
+    </div>
+</div>
+
+<!-- MOBILE MENU -->
+<div name="header_mobile_menu" class="header_mobile_menu">
+    <div class="header_nav_list">
+        <a href="index.html" class="nav-link">HOME</a>
+        <a href="about.html" class="nav-link">ABOUT US</a>
+        <a href="offer.html" class="nav-link">OFFERS</a>
+
+        <!-- MOBILE PRODUCTS CATEGORY HEADING -->
+        <span class="mobile_category_heading">PRODUCTS</span>
+        <a href="dehydrated_fruits.html" class="mobile-sub-item">Fruit Leather</a>
+        <a href="dehydrated_vegetables.html" class="mobile-sub-item">Dehydrated Vegetables</a>
+        <a href="pickles_and_powders.html" class="mobile-sub-item">Pickles & Powders</a>
+
+        <a href="contact.html" class="nav-link">CONTACT US</a>
+    </div>
+</div>
+
+    <div class="product-container">
+
+        <h2 id="product-pickles-powders" class="product-section-heading" style="color: #4f381f;">Pickles & Powders</h2>
+        <div class="product-grid">
+
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="images_naithika/products/mango pickle.webp" alt="Mango Pickle" onerror="this.onerror=null; this.src='https://placehold.co/400x200/a65e5e/ffffff?text=Mango+Pickle'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Mango Pickle</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹180/- (200g)</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button" onclick="redirectToWhatsApp('Mango Pickle')">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Mango Pickle</h4>
+                            <p>Traditional raw mango pickle made using sun-dried raw mangoes and cold-pressed oil. Balanced spices and long ageing give it depth and a bright tang. Prepared in small batches for consistent, home-style flavour. Pairs well with rice, rotis, and as a vibrant table condiment.</p>
+                            <h5 class="product-nutrition-heading">Nutritional Value (Per 100g)</h5>
+                            <ul class="product-nutrition-list">
+                                <li>Energy: 210 kcal</li>
+                                <li>Fat: 12 g</li>
+                                <li>Carbs: 18 g</li>
+                                <li>Sodium: 560 mg</li>
+                            </ul>
+                            <p class="product-price-back">Price: ₹180/- (200g)</p>
+                        </div>
+                        <div class="product-back-action-container">
+                           <a href="#" class="product-less-link">...less</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="images_naithika/products/Indian gooseberry.webp" alt="Amla Pickle" onerror="this.onerror=null; this.src='https://placehold.co/400x200/a65e5e/ffffff?text=Amla+Pickle'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Amla Pickle</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹180/- (200g)</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button" onclick="redirectToWhatsApp('Amla Pickle')">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Amla Pickle</h4>
+                            <p>Tangy-sour amla pickle with a spicy warmth that highlights natural Vitamin C. Made with tender amlas and balanced spices, it adds a nourishing tang to meals. Small-batch preparation retains traditional texture and flavour. Ideal for daily use and seasonal immunity support.</p>
+                            <h5 class="product-nutrition-heading">Nutritional Value (Per 100g)</h5>
+                            <ul class="product-nutrition-list">
+                                <li>Energy: 220 kcal</li>
+                                <li>Fat: 11 g</li>
+                                <li>Carbs: 20 g</li>
+                                <li>Sodium: 550 mg</li>
+                            </ul>
+                            <p class="product-price-back">Price: ₹180/- (200g)</p>
+                        </div>
+                        <div class="product-back-action-container">
+                           <a href="#" class="product-less-link">...less</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="images_naithika/products/Tomato Pickle.webp" alt="Tomato Pickle" onerror="this.onerror=null; this.src='https://placehold.co/400x200/a65e5e/ffffff?text=Tomato+Pickle'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Tomato Pickle</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹180/- (200g)</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button" onclick="redirectToWhatsApp('Tomato Pickle')">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Tomato Pickle</h4>
+                            <p>Tomato powder made from slow-dried, ripe tomatoes concentrated into a bright, tangy powder. Perfect for seasoning, soups, gravies and instant mixes, offering natural umami. No artificial colors or preservatives — only sun-ripened tomatoes ground fine. A pantry essential for cooks who want pure tomato flavor year-round.</p>
+                            <h5 class="product-nutrition-heading">Nutritional Value (Per 100g)</h5>
+                            <ul class="product-nutrition-list">
+                                <li>Energy: 200 kcal</li>
+                                <li>Fat: 10 g</li>
+                                <li>Carbs: 22 g</li>
+                                <li>Sodium: 480 mg</li>
+                            </ul>
+                            <p class="product-price-back">Price: ₹180/- (200g)</p>
+                        </div>
+                        <div class="product-back-action-container">
+                           <a href="#" class="product-less-link">...less</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="images_naithika/products/Red Chilli Pickle.webp" alt="Red Chilli Pickle" onerror="this.onerror=null; this.src='https://placehold.co/400x200/a65e5e/ffffff?text=Red+Chilli+Pickle'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Red Chilli Pickle</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹180/- (200g)</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button" onclick="redirectToWhatsApp('Red Chilli Pickle')">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Red Chilli Pickle</h4>
+                            <p>Fiery red chilli pickle made from freshly harvested chillies and pure sesame or mustard oil. Layered with aromatic spices, its heat is balanced with tang and depth. Hand-pressed and aged for character, it adds a punch to simple meals. Use sparingly to enliven dals, curries or plain rice.</p>
+                            <h5 class="product-nutrition-heading">Nutritional Value (Per 100g)</h5>
+                            <ul class="product-nutrition-list">
+                                <li>Energy: 230 kcal</li>
+                                <li>Fat: 15 g</li>
+                                <li>Carbs: 20 g</li>
+                                <li>Sodium: 600 mg</li>
+                            </ul>
+                            <p class="product-price-back">Price: ₹180/- (200g)</p>
+                        </div>
+                        <div class="product-back-action-container">
+                           <a href="#" class="product-less-link">...less</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="images_naithika/products/Ginger pickle.webp" alt="Ginger Pickle" onerror="this.onerror=null; this.src='https://placehold.co/400x200/a65e5e/ffffff?text=Ginger+Pickle'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Ginger Pickle</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹180/- (200g)</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button" onclick="redirectToWhatsApp('Ginger Pickle')">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Ginger Pickle</h4>
+                            <p>Zesty ginger pickle with bright spice and digestive benefits. Prepared in traditional Andhra style, combining fresh ginger, spices and oil. A spicy, tangy accompaniment that lifts the palate. Made carefully in small batches to keep texture and flavour intact.</p>
+                            <h5 class="product-nutrition-heading">Nutritional Value (Per 100g)</h5>
+                            <ul class="product-nutrition-list">
+                                <li>Energy: 200 kcal</li>
+                                <li>Fat: 10 g</li>
+                                <li>Carbs: 22 g</li>
+                                <li>Sodium: 550 mg</li>
+                            </ul>
+                            <p class="product-price-back">Price: ₹180/- (200g)</p>
+                        </div>
+                        <div class="product-back-action-container">
+                           <a href="#" class="product-less-link">...less</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="images_naithika/products/Lemon Pickle.webp" alt="Lemon Pickle" onerror="this.onerror=null; this.src='https://placehold.co/400x200/a65e5e/ffffff?text=Lemon+Pickle'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Lemon Pickle</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹180 (200g)</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button" onclick="redirectToWhatsApp('Lemon Pickle')">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Lemon Pickle</h4>
+                            <p>Classic lemon pickle made from sun-kissed lemons, sea salt and native spices. Aged naturally to develop a bright, complex tang with minimal additives. A strong accompaniment for rice and Indian breads, delivering citrus punch. Prepared with attention to hygiene and small-batch care.</p>
+                            <h5 class="product-nutrition-heading">Nutritional Value (Per 100g)</h5>
+                            <ul class="product-nutrition-list">
+                                <li>Energy: 200 kcal</li>
+                                <li>Fat: 10 g</li>
+                                <li>Carbs: 22 g</li>
+                                <li>Sodium: 550 mg</li>
+                            </ul>
+                            <p class="product-price-back">Price: ₹180 (200g)</p>
+                        </div>
+                        <div class="product-back-action-container">
+                           <a href="#" class="product-less-link">...less</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="images_naithika/products/Moringa Podi.webp" alt="Moringa Podi" onerror="this.onerror=null; this.src='https://placehold.co/400x200/a65e5e/ffffff?text=Moringa+Podi'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Moringa Podi</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹150/- (200g)</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button" onclick="redirectToWhatsApp('Moringa Podi')">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Moringa Podi</h4>
+                            <p>Nutritious moringa powder made from sun-dried leaves ground to a fine, versatile podi. High in iron and calcium, it brightens rice, idli and vegetable dishes. Prepared with minimal processing to keep nutrients intact. A wholesome, traditional superfood in convenient form.</p>
+                            <h5 class="product-nutrition-heading">Nutritional Value (Per 100g)</h5>
+                            <ul class="product-nutrition-list">
+                                <li>Energy: 340 kcal</li>
+                                <li>Protein: 15 g</li>
+                                <li>Iron: High</li>
+                                <li>Calcium: High</li>
+                            </ul>
+                            <p class="product-price-back">Price: ₹150/- (200g)</p>
+                        </div>
+                        <div class="product-back-action-container">
+                           <a href="#" class="product-less-link">...less</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="images_naithika/products/Nuvvula Podi.webp" alt="Nuvvula Podi" onerror="this.onerror=null; this.src='https://placehold.co/400x200/a65e5e/ffffff?text=Nuvvula+Podi'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Nuvvula Podi (Sesame Spice)</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹150/- (200g)</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button" onclick="redirectToWhatsApp('Nuvvula Podi (Sesame Spice)')">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Nuvvula Podi (Sesame Spice)</h4>
+                            <p>A nutty, aromatic sesame-based powder blended with lentils and spices. Perfect as a topping for idli, dosa and rice or as a dry chutney. Roasted and stone-ground to preserve aroma and depth. A calcium-rich traditional accompaniment packed in a convenient jar.</p>
+                            <h5 class="product-nutrition-heading">Nutritional Value (Per 100g)</h5>
+                            <ul class="product-nutrition-list">
+                                <li>Energy: 340 kcal</li>
+                                <li>Protein: 10 g</li>
+                                <li>Calcium: High</li>
+                            </ul>
+                            <p class="product-price-back">Price: ₹150/- (200g)</p>
+                        </div>
+                        <div class="product-back-action-container">
+                           <a href="#" class="product-less-link">...less</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="images_naithika/products/Curry Patta Podi.webp" alt="Curry Patta Podi" onerror="this.onerror=null; this.src='https://placehold.co/400x200/a65e5e/ffffff?text=Curry+Patta+Podi'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Curry Patta Podi (Curry Leaf Powder)</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹120/- (200g)</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button" onclick="redirectToWhatsApp('Curry Patta Podi (Curry Leaf Powder)')">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Curry Patta Podi (Curry Leaf Powder)</h4>
+                            <p>Aromatic curry leaf powder that brings depth and antioxidants to meals. Carefully dried and ground to preserve essential oils and fragrance. Use as a seasoning for dals, vegetables or rice for an instant flavour lift. Produced in small batches to maintain freshness.</p>
+                            <h5 class="product-nutrition-heading">Nutritional Value (Per 100g)</h5>
+                            <ul class="product-nutrition-list">
+                                <li>Energy: 280 kcal</li>
+                                <li>Fiber: 10 g</li>
+                                <li>Iron: 12 mg</li>
+                            </ul>
+                            <p class="product-price-back">Price: ₹120/- (200g)</p>
+                        </div>
+                        <div class="product-back-action-container">
+                           <a href="#" class="product-less-link">...less</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-card-inner">
+                    <div class="product-card-front">
+                        <div class="product-image-container">
+                            <img src="images_naithika/products/Idli Podi.webp" alt="Idli Podi" onerror="this.onerror=null; this.src='https://placehold.co/400x200/a65e5e/ffffff?text=Idli+Podi'">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Idli Podi (Milagai Podi)</h3>
+                            <div class="product-short-description-container">
+                                <span class="product-short-description-text"></span>
+                                <a href="#" class="product-more-link">...more</a>
+                            </div>
+                            <p class="product-price">₹120/- (200g)</p>
+                        </div>
+                        <div class="product-buy-button-container">
+                            <button class="product-buy-button product-front-buy-button" onclick="redirectToWhatsApp('Idli Podi (Milagai Podi)')">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card-back">
+                        <div class="product-full-content">
+                            <h4>Full Details: Idli Podi (Milagai Podi)</h4>
+                            <p>Balanced idli podi made from roasted lentils, spices and sesame for a classic flavour. Protein-rich and aromatic, it pairs perfectly with idli, dosa and steamed rice. Stone-ground to keep texture rustic and flavours robust. An everyday kitchen essential with traditional taste.</p>
+                            <h5 class="product-nutrition-heading">Nutritional Value (Per 100g)</h5>
+                            <ul class="product-nutrition-list">
+                                <li>Energy: 310 kcal</li>
+                                <li>Protein: 15 g</li>
+                                <li>Fiber: 12 g</li>
+                            </ul>
+                            <p class="product-price-back">Price: ₹120/- (200g)</p>
+                        </div>
+                        <div class="product-back-action-container">
+                           <a href="#" class="product-less-link">...less</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script>
+        // Truncation logic and card flip setup
+        function initProductCards() {
+            const productCards = document.querySelectorAll('.product-card');
+            const maxDescriptionHeight = 40; // Corresponds to min-height: 40px in CSS
+
+            productCards.forEach(card => {
+                const innerCard = card.querySelector('.product-card-inner');
+                const frontContent = card.querySelector('.product-card-front');
+                const backContent = card.querySelector('.product-card-back');
+                const descriptionContainer = card.querySelector('.product-short-description-container');
+                const descriptionText = card.querySelector('.product-short-description-text');
+                const moreLink = card.querySelector('.product-more-link');
+                const lessLink = card.querySelector('.product-less-link');
+                
+                // 1. Truncate Description (if content is available)
+                const fullDescription = backContent.querySelector('.product-full-content p:first-of-type').textContent;
+                descriptionText.textContent = fullDescription;
+
+                if (descriptionContainer.scrollHeight > maxDescriptionHeight) {
+                    // Simple truncation logic: find the point where the text overflows
+                    let truncatedText = fullDescription;
+                    while (descriptionContainer.scrollHeight > maxDescriptionHeight && truncatedText.length > 0) {
+                        truncatedText = truncatedText.substring(0, truncatedText.length - 10); // Reduce by chunks
+                        descriptionText.textContent = truncatedText + '...';
+                    }
+                    moreLink.style.display = 'inline'; // Show the '...more' link
+                } else {
+                    moreLink.style.display = 'none'; // Hide if not truncated
+                }
+
+                // 2. Card Flip Logic
+                
+                // Flip to back on click of 'more' link or on the whole card (except button)
+                const flipToBack = (event) => {
+                     // Check if the click target is the Buy Now button or a link that flips back
+                    if (event.target.classList.contains('product-front-buy-button') || event.target.classList.contains('product-less-link')) {
+                        return; // Do nothing if button or less link is clicked
+                    }
+                    if (event.target.classList.contains('product-more-link')) {
+                         event.preventDefault();
+                         innerCard.classList.add('is-flipped');
+                    }
+                };
+
+                // Add event listeners for flip to back
+                frontContent.addEventListener('click', flipToBack);
+                
+                // Function to unflip the card
+                function unflipCard(event) {
+                    if (event) event.preventDefault(); // Prevent link navigation
+                    innerCard.classList.remove('is-flipped');
+                }
+
+                // Mouse Leave: Flip back to front
+                card.addEventListener('mouseleave', unflipCard);
+
+                // Clicking the less link: Flip back
+                if (lessLink) {
+                    lessLink.addEventListener('click', unflipCard);
+                }
+
+            });
+        }
+
+        // Initialize on page load
+        window.onload = function() {
+            initProductCards();
+        };
+
+        function redirectToWhatsApp(productName) {
+            // Replace with your WhatsApp number (use full international format, no + or spaces)
+            const phoneNumber = "9539717388";
+
+            // The message you want to prefill
+            const message = `Hello, I would like to buy some of your products.\nProduct: ${productName}\nQuantity: `;
+
+            // Create the WhatsApp URL
+            const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+            // Redirect the user
+            window.open(whatsappURL, "_blank");
+        }
+    </script>
+</body>
+</html> 
