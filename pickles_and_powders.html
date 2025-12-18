@@ -112,6 +112,7 @@
                             <div class="product-short-description-container">
                                 <span class="product-short-description-text"></span>
                                 <a href="#" class="product-more-link">...more</a>
+                                <a href="#" class="product-less-link-mob">...less</a>
                             </div>
                             <p class="product-price">₹180/- (200g)</p>
                         </div>
@@ -150,6 +151,7 @@
                             <div class="product-short-description-container">
                                 <span class="product-short-description-text"></span>
                                 <a href="#" class="product-more-link">...more</a>
+                                <a href="#" class="product-less-link-mob">...less</a>
                             </div>
                             <p class="product-price">₹180/- (200g)</p>
                         </div>
@@ -188,6 +190,7 @@
                             <div class="product-short-description-container">
                                 <span class="product-short-description-text"></span>
                                 <a href="#" class="product-more-link">...more</a>
+                                <a href="#" class="product-less-link-mob">...less</a>
                             </div>
                             <p class="product-price">₹180/- (200g)</p>
                         </div>
@@ -226,6 +229,7 @@
                             <div class="product-short-description-container">
                                 <span class="product-short-description-text"></span>
                                 <a href="#" class="product-more-link">...more</a>
+                                <a href="#" class="product-less-link-mob">...less</a>
                             </div>
                             <p class="product-price">₹180/- (200g)</p>
                         </div>
@@ -264,6 +268,7 @@
                             <div class="product-short-description-container">
                                 <span class="product-short-description-text"></span>
                                 <a href="#" class="product-more-link">...more</a>
+                                <a href="#" class="product-less-link-mob">...less</a>
                             </div>
                             <p class="product-price">₹180/- (200g)</p>
                         </div>
@@ -302,6 +307,7 @@
                             <div class="product-short-description-container">
                                 <span class="product-short-description-text"></span>
                                 <a href="#" class="product-more-link">...more</a>
+                                <a href="#" class="product-less-link-mob">...less</a>
                             </div>
                             <p class="product-price">₹180 (200g)</p>
                         </div>
@@ -340,6 +346,7 @@
                             <div class="product-short-description-container">
                                 <span class="product-short-description-text"></span>
                                 <a href="#" class="product-more-link">...more</a>
+                                <a href="#" class="product-less-link-mob">...less</a>
                             </div>
                             <p class="product-price">₹150/- (200g)</p>
                         </div>
@@ -378,6 +385,7 @@
                             <div class="product-short-description-container">
                                 <span class="product-short-description-text"></span>
                                 <a href="#" class="product-more-link">...more</a>
+                                <a href="#" class="product-less-link-mob">...less</a>
                             </div>
                             <p class="product-price">₹150/- (200g)</p>
                         </div>
@@ -415,6 +423,7 @@
                             <div class="product-short-description-container">
                                 <span class="product-short-description-text"></span>
                                 <a href="#" class="product-more-link">...more</a>
+                                <a href="#" class="product-less-link-mob">...less</a>
                             </div>
                             <p class="product-price">₹120/- (200g)</p>
                         </div>
@@ -452,6 +461,7 @@
                             <div class="product-short-description-container">
                                 <span class="product-short-description-text"></span>
                                 <a href="#" class="product-more-link">...more</a>
+                                <a href="#" class="product-less-link-mob">...less</a>
                             </div>
                             <p class="product-price">₹120/- (200g)</p>
                         </div>
@@ -480,90 +490,119 @@
             
         </div>
     </div>
+<script>
+    /* ---------- TRUNCATE TEXT ---------- */
+    function truncateText(text, wordLimit) {
+        let cleanedText = text.replace(/\.{3}less/i, '').trim();
+        if (!cleanedText) return { truncatedText: "", isTruncated: false };
 
-    <script>
-        // Truncation logic and card flip setup
-        function initProductCards() {
-            const productCards = document.querySelectorAll('.product-card');
-            const maxDescriptionHeight = 40; // Corresponds to min-height: 40px in CSS
+        const words = cleanedText.split(/\s+/).filter(Boolean);
 
-            productCards.forEach(card => {
-                const innerCard = card.querySelector('.product-card-inner');
-                const frontContent = card.querySelector('.product-card-front');
-                const backContent = card.querySelector('.product-card-back');
-                const descriptionContainer = card.querySelector('.product-short-description-container');
-                const descriptionText = card.querySelector('.product-short-description-text');
-                const moreLink = card.querySelector('.product-more-link');
-                const lessLink = card.querySelector('.product-less-link');
-                
-                // 1. Truncate Description (if content is available)
-                const fullDescription = backContent.querySelector('.product-full-content p:first-of-type').textContent;
-                descriptionText.textContent = fullDescription;
+        if (words.length > wordLimit) {
+            return {
+                truncatedText: words.slice(0, wordLimit).join(" ") + "...",
+                isTruncated: true
+            };
+        }
 
-                if (descriptionContainer.scrollHeight > maxDescriptionHeight) {
-                    // Simple truncation logic: find the point where the text overflows
-                    let truncatedText = fullDescription;
-                    while (descriptionContainer.scrollHeight > maxDescriptionHeight && truncatedText.length > 0) {
-                        truncatedText = truncatedText.substring(0, truncatedText.length - 10); // Reduce by chunks
-                        descriptionText.textContent = truncatedText + '...';
+        return { truncatedText: cleanedText, isTruncated: false };
+    }
+
+    function isMobileView() {
+        return window.innerWidth <= 768;
+    }
+
+    /* ---------- INIT CARDS ---------- */
+    function initProductCards() {
+
+        const cards = document.querySelectorAll('.product-card');
+        const wordLimit = 15;
+
+        cards.forEach(card => {
+
+            const innerCard = card.querySelector('.product-card-inner');
+            const fullDescEl = card.querySelector(
+                '.product-card-back .product-full-content p:first-of-type'
+            );
+            const shortTextEl = card.querySelector('.product-short-description-text');
+
+            const moreLink = card.querySelector('.product-more-link');
+            const lessLink = card.querySelector('.product-less-link');        // desktop
+            const lessLinkMob = card.querySelector('.product-less-link-mob'); // mobile
+
+            if (!innerCard || !fullDescEl || !shortTextEl) return;
+
+            const fullText = fullDescEl.textContent;
+            const { truncatedText, isTruncated } = truncateText(fullText, wordLimit);
+
+            /* ---------- INITIAL STATE ---------- */
+            shortTextEl.textContent = truncatedText;
+
+            if (moreLink) {
+                moreLink.style.display = isTruncated ? 'inline' : 'none';
+            }
+
+            if (lessLinkMob) {
+                lessLinkMob.style.display = 'none'; // 🔑 FIX: hide on load
+            }
+
+            /* ---------- MORE ---------- */
+            if (moreLink && isTruncated) {
+                moreLink.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+
+                    if (isMobileView()) {
+                        // MOBILE → expand text inline
+                        shortTextEl.textContent = fullText;
+                        moreLink.style.display = 'none';
+                        if (lessLinkMob) lessLinkMob.style.display = 'inline';
+                    } else {
+                        // DESKTOP → flip card
+                        innerCard.classList.add('is-flipped');
                     }
-                    moreLink.style.display = 'inline'; // Show the '...more' link
-                } else {
-                    moreLink.style.display = 'none'; // Hide if not truncated
-                }
+                });
+            }
 
-                // 2. Card Flip Logic
-                
-                // Flip to back on click of 'more' link or on the whole card (except button)
-                const flipToBack = (event) => {
-                     // Check if the click target is the Buy Now button or a link that flips back
-                    if (event.target.classList.contains('product-front-buy-button') || event.target.classList.contains('product-less-link')) {
-                        return; // Do nothing if button or less link is clicked
-                    }
-                    if (event.target.classList.contains('product-more-link')) {
-                         event.preventDefault();
-                         innerCard.classList.add('is-flipped');
-                    }
-                };
+            /* ---------- LESS (MOBILE) ---------- */
+            if (lessLinkMob) {
+                lessLinkMob.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
 
-                // Add event listeners for flip to back
-                frontContent.addEventListener('click', flipToBack);
-                
-                // Function to unflip the card
-                function unflipCard(event) {
-                    if (event) event.preventDefault(); // Prevent link navigation
+                    shortTextEl.textContent = truncatedText;
+                    lessLinkMob.style.display = 'none';
+                    if (moreLink && isTruncated) {
+                        moreLink.style.display = 'inline';
+                    }
+                });
+            }
+
+            /* ---------- LESS (DESKTOP) ---------- */
+            if (lessLink) {
+                lessLink.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
                     innerCard.classList.remove('is-flipped');
-                }
+                });
+            }
+        });
+    }
 
-                // Mouse Leave: Flip back to front
-                card.addEventListener('mouseleave', unflipCard);
+    window.addEventListener('DOMContentLoaded', initProductCards);
 
-                // Clicking the less link: Flip back
-                if (lessLink) {
-                    lessLink.addEventListener('click', unflipCard);
-                }
+    /* ---------- WHATSAPP ---------- */
+    function redirectToWhatsApp(productName) {
+        const phoneNumber = "9539717388";
+        const message =
+            `Hello, I would like to buy some of your products.\nProduct: ${productName}\nQuantity: `;
 
-            });
-        }
+        const whatsappURL =
+            `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
-        // Initialize on page load
-        window.onload = function() {
-            initProductCards();
-        };
-
-        function redirectToWhatsApp(productName) {
-            // Replace with your WhatsApp number (use full international format, no + or spaces)
-            const phoneNumber = "9539717388";
-
-            // The message you want to prefill
-            const message = `Hello, I would like to buy some of your products.\nProduct: ${productName}\nQuantity: `;
-
-            // Create the WhatsApp URL
-            const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-
-            // Redirect the user
-            window.open(whatsappURL, "_blank");
-        }
-    </script>
+        window.open(whatsappURL, "_blank");
+    }
+</script>
+    <!-- <script src="static/naithika.js"></script> -->
 </body>
 </html> 

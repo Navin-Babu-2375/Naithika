@@ -100,11 +100,6 @@
 
 
     <div class="product-container">
-        <!-- <div class="product-category-nav">
-            <a href="#product-dehydrated-fruits" style="scroll-behavior: smooth !important;" class="product-category-circle">Dehydrated Fruits</a>
-            <a href="#product-dehydrated-vegetables" style="scroll-behavior: smooth !important;" class="product-category-circle">Dehydrated Vegetables</a>
-            <a href="#product-pickles-powders" style="scroll-behavior: smooth !important;" class="product-category-circle">Pickles & Powders</a>
-        </div> -->
 
         <section class="index-circles deluxe-circles">
             <div class="circle-box">
@@ -1458,6 +1453,7 @@
                             <div class="product-short-description-container">
                                 <span class="product-short-description-text"></span>
                                 <a href="#" class="product-more-link">...more</a>
+                                <a href="#" class="product-less-link" style="display:none;">...less</a>
                             </div>
                             <p class="product-price">₹120/- (200g)</p>
                         </div>
@@ -1755,7 +1751,7 @@
                 }
 
                 // Mouse Leave: Flip back to front
-                card.addEventListener('mouseleave', unflipCard);
+                // card.addEventListener('mouseleave', unflipCard);
 
                 // Clicking the less link: Flip back
                 if (lessLink) {
@@ -1784,5 +1780,49 @@
             window.open(whatsappURL, "_blank");
         }
     </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+    const cards = document.querySelectorAll(".product-card");
+
+    cards.forEach(card => {
+        const shortText = card.querySelector(".product-short-description-text");
+        const moreLink = card.querySelector(".product-more-link");
+        const lessLink = card.querySelector(".product-less-link");
+        const backContent = card.querySelector(".product-card-back");
+
+        if (!shortText || !moreLink || !backContent) return;
+
+        // Get full description from the back side
+        const fullDescription = backContent.querySelector("p").innerText.trim();
+        const shortDescription = fullDescription.substring(0, 60) + "...";
+
+        // Set initial text
+        shortText.innerText = shortDescription;
+        moreLink.style.display = "inline";
+
+        // === MORE ===
+        moreLink.addEventListener("click", function (e) {
+            e.preventDefault();
+            shortText.innerText = fullDescription;
+            moreLink.style.display = "none";
+            lessLink.style.display = "inline";
+        });
+
+        // === LESS ===
+        lessLink.addEventListener("click", function (e) {
+            e.preventDefault();
+            shortText.innerText = shortDescription;
+            lessLink.style.display = "none";
+            moreLink.style.display = "inline";
+        });
+    });
+});
+
+    </script>
+
+
+
 </body>
 </html>
