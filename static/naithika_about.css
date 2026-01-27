@@ -232,18 +232,18 @@
 }
 
 /* Central Horizontal Dotted Line */
-.aboutus_process_grid::before {
+/* .aboutus_process_grid::before {
     content: '';
     position: absolute;
-    top: 50%; /* Center the line vertically */
+    top: 50%; 
     transform: translateY(-50%);
     left: 0;
     right: 0;
     height: 2px;
-    /* Use a solid color for the line and use the steps to break it */
+   
     background: #ddd; 
     z-index: 1; 
-}
+} */
 
 /* --- STEP STYLING --- */
 .aboutus_process_step {
@@ -850,4 +850,27 @@
 .view-more-products-btn.fade-in-visible {
     opacity: 1;
     transform: translateY(0); /* Move back to its original position */
+}
+
+
+
+
+.aboutus_process_desc {
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 5px;
+    line-height: 1.4;
+    max-width: 200px; /* Keeps the text from spreading too wide */
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
+}
+
+/* Adjusting the mobile view to ensure the description aligns with the text */
+@media (max-width: 900px) {
+    .aboutus_process_desc {
+        text-align: left;
+        margin-left: 0;
+        max-width: 100%;
+    }
 }
