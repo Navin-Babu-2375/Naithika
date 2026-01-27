@@ -1411,3 +1411,131 @@ body.no-scroll {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-12px); }
 }
+
+.testimonial-section {
+  padding: 4rem 1.5rem;
+  background: #f9f9f6;
+  text-align: center;
+}
+
+.testimonial-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #2f3e2e;
+}
+
+.testimonial-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.testimonial-track-wrapper {
+  overflow: hidden;
+  max-width: 960px;
+}
+
+.testimonial-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.testimonial-card {
+  min-width: 33.3333%;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  background: #ffffff;
+  margin: 0 0.5rem;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.testimonial-image {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.testimonial-text {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+}
+
+.testimonial-name {
+  font-weight: 600;
+  color: #4f6f52;
+}
+
+.testimonial-btn {
+  background: #4f6f52;
+  border: none;
+  color: white;
+  font-size: 1.4rem;
+  padding: 0.6rem 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.testimonial-btn:hover {
+  background: #3f5d42;
+}
+
+
+/* ===============================
+   Tablet / iPad (≤ 1024px)
+================================ */
+@media (max-width: 1024px) {
+  .testimonial-track-wrapper {
+    max-width: 640px;
+  }
+
+  .testimonial-card {
+    min-width: 50%;
+  }
+}
+
+/* ===============================
+   Mobile (≤ 768px)
+================================ */
+@media (max-width: 768px) {
+  .testimonial-track-wrapper {
+    max-width: 320px;
+  }
+
+  .testimonial-card {
+    min-width: 100%;
+    margin: 0;
+  }
+
+  .testimonial-btn {
+    font-size: 1.2rem;
+    padding: 0.5rem 0.8rem;
+  }
+
+  .testimonial-title {
+    font-size: 1.6rem;
+  }
+}
+
+/* ===============================
+   Small Mobile (≤ 480px)
+================================ */
+@media (max-width: 480px) {
+  .testimonial-section {
+    padding: 3rem 1rem;
+  }
+
+  .testimonial-text {
+    font-size: 0.9rem;
+  }
+
+  .testimonial-image {
+    width: 55px;
+    height: 55px;
+  }
+}

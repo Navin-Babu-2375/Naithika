@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="static/naithika_style.css"/>
     <link rel="stylesheet" href="static/naithika_about.css"/>
+    <link rel="stylesheet" href="static/naithika_offer.css" />
 
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="static/naithika_style.css">
@@ -387,7 +388,7 @@
         <img class="text-image" src="images_naithika/text_bg_1.webp" alt="Text Background">
         <div class="text-content">
           <h1 class="font-main-heading">Ethical Dehydration from Healthy Soil</h1>
-          <p class="font-sub-heading">Naithika Foods preserves pure fruits and vegetables grown with principled farming - delivering year-round nutrition straight from the earth.</p>
+          <p class="font-sub-heading" style="font-size: 1.3rem">Naithika Foods preserves pure fruits and vegetables grown with principled farming - delivering year-round nutrition straight from the earth.</p>
         </div>
       </div>
     </div>
@@ -416,6 +417,179 @@
     <button id="next">&#10095;</button>
   </div>
 </div>
+
+
+
+<section id="fruits" class="most-loved">
+    <h1 class="styled-heading" style="color: #4f381f;">Most Loved – Dehydrated Fruits</h1>
+    <p class="ancestral_wisdom_tagline">Ethically harvested, naturally preserved</p>
+    
+    <div class="product-slider-container">
+        <button class="scroll-btn left" onclick="scrollLe_DehydratedFruits()">&#10094;</button>
+        <button class="scroll-btn right" onclick="scrollRight_DehydratedFruits()">&#10095;</button>
+
+        <div class="product-slider" id="productSlider_DehydratedFruits">
+            <div class="product-card">
+                <div class="tag best-seller">Best Seller</div>
+                <img src="images_naithika/products/mango.webp" alt="mango" />
+                <h3>Mango </h3>
+                <p class="desc" data-full-text="Sun-ripened mangoes from partner orchards, gently dried to preserve natural sweetness and aroma. No added sugars - just concentrated mango goodness. Perfect for snacking, baking, or adding to morning bowls.">
+                    Sun-ripened mangoes picked at peak sweetness from partner orchards....
+                </p>
+                <span class="read-more-text" onclick="toggleReadMore(this)">View More</span>
+                <div class="rating">⭐ 4.9 (800+ Reviews)</div>
+                <div class="price">₹250 /100g</div>
+                <button class="product-buy-button product-front-buy-button" onclick="redirectToWhatsApp('Mango')">Buy Now</button>
+            </div>
+    
+            <div class="product-card">
+                <div class="tag best-seller">Best Seller</div>
+                <img src="images_naithika/products/sapota.webp" alt="Chikku (Sapota)" />
+                <h3>Chikku (Sapota) </h3>
+                <p class="desc" data-full-text="Caramel-like sweetness in every slice. Harvested from local orchards and gently dehydrated to keep texture soft and flavor rounded. A comforting, fiber-rich snack for any time.">
+                    Caramel-like sweetness in every slice. Harvested from local orchards and gently....
+                </p>
+                <span class="read-more-text" onclick="toggleReadMore(this)">View More</span>
+                <div class="rating">⭐ 4.9 (1000+ Reviews)</div>
+                <div class="price">₹250 /100g</div>
+                <button class="product-buy-button product-front-buy-button" onclick="redirectToWhatsApp('Chikku (Sapota)')">Buy Now</button>
+            </div>
+    
+            <div class="product-card">
+                <div class="tag best-seller">Best Seller</div>
+                <img src="images_naithika/products/Jamun.webp" alt="Jamun" />
+                <h3>Jamun</h3>
+                <p class="desc" data-full-text="Deep-purple jamun slices capturing the tangy-sweet character of native trees. Known in India for traditional benefits linked to wellness. Use in smoothies, herbal blends, or as a unique, healthy snack.">
+                    Deep-purple jamun slices capturing the tangy-sweet character of native trees....
+                </p>
+                <span class="read-more-text" onclick="toggleReadMore(this)">View More</span>
+                <div class="rating">⭐ 4.9 (780+ Reviews)</div>
+                <div class="price">₹280 /100g</div>
+                <button class="product-buy-button product-front-buy-button" onclick="redirectToWhatsApp('Jamun')">Buy Now</button>
+            </div>
+    
+            <div class="product-card">
+                <div class="tag best-seller">Best Seller</div>
+                <img src="images_naithika/products/pineapple.webp" alt="Pineapple" />
+                <h3>Pineapple </h3>
+                <p class="desc" data-full-text="Golden rings from handpicked, ripe fruit. Our drying process keeps nutrients intact while concentrating tropical sweetness. Bright tang and soft chew - perfect for snacking or baking.">
+                    Golden pineapple rings made from handpicked, ripe fruit. Our drying process...
+                </p>
+                <span class="read-more-text" onclick="toggleReadMore(this)">View More</span>
+                <div class="rating">⭐ 4.9 (880+ Reviews)</div>
+                <div class="price">₹250 /100g</div>
+                <button class="product-buy-button product-front-buy-button" onclick="redirectToWhatsApp('Pineapple')">Buy Now</button>
+            </div>
+    
+            <div class="product-card">
+                <div class="tag best-seller">Best Seller</div>
+                <img src="images_naithika/products/apple.webp" alt="Apple" />
+                <h3>Apple </h3>
+                <p class="desc" data-full-text="Thin, crisp slices from seasonal Indian orchards. Gently dehydrated to maintain light crunch and natural sweetness. No glazing, no added sugar - just pure fruit character.">
+                    Thin, crisp apple slices from seasonal Indian orchards. Gently dehydrated to maintain...
+                </p>
+                <span class="read-more-text" onclick="toggleReadMore(this)">View More</span>
+                <div class="rating">⭐ 4.9 (780+ Reviews)</div>
+                <div class="price">₹250 /100g</div>
+                <button class="product-buy-button product-front-buy-button" onclick="redirectToWhatsApp('Apple')">Buy Now</button>
+            </div>
+    
+            <div class="product-card">
+                <div class="tag best-seller">Best Seller</div>
+                <img src="images_naithika/products/guava.webp" alt="Guava" />
+                <h3>Guava</h3>
+                <p class="desc" data-full-text="Aromatic slices rich in Vitamin C and fiber. Gently dehydrated to preserve tropical aroma and flesh texture. Tangy-sweet profile makes them perfect for snacking and cooking.">
+                    Aromatic guava slices that hold high Vitamin C and fiber content  Gently dehydrated...
+                </p>
+                <span class="read-more-text" onclick="toggleReadMore(this)">View More</span>
+                <div class="rating">⭐ 4.9 (750+ Reviews)</div>
+                <div class="price">₹220 /100g</div>
+                <button class="product-buy-button product-front-buy-button" onclick="redirectToWhatsApp('Guava')">Buy Now</button>
+            </div>
+    
+            <div class="product-card">
+                <div class="tag best-seller">Best Seller</div>
+                <img src="images_naithika/products/pappaya.webp" alt="Papaya" />
+                <h3>Papaya </h3>
+                <p class="desc" data-full-text="Soft slices from fully ripe fruit with natural digestive enzymes. Dehydration concentrates sweetness while keeping a tender bite. A gentle, nutritious snack for all ages.">
+                    Soft papaya slices made from fully ripe fruit with natural digestiveenzymes....
+                </p>
+                <span class="read-more-text" onclick="toggleReadMore(this)">View More</span>
+                <div class="rating">⭐ 4.9 (780+ Reviews)</div>
+                <div class="price">₹220 /100g</div>
+                <button class="product-buy-button product-front-buy-button" onclick="redirectToWhatsApp('Papaya')">Buy Now</button>
+            </div>
+    
+            <div class="product-card">
+                <div class="tag best-seller">Best Seller</div>
+                <img src="images_naithika/products/angeer.webp" alt="Anjeer (Figs)" />
+                <h3>Anjeer (Figs) </h3>
+                <p class="desc" data-full-text="Sun-dried figs offering rich, honeyed sweetness and dense texture. High in natural fiber and minerals - an age-old energy food. Perfect for healthy snacking or gifting.">
+                    Sun-dried figs that offer rich, honeyed sweetness and dense texture....
+                </p>
+                <span class="read-more-text" onclick="toggleReadMore(this)">View More</span>
+                <div class="rating">⭐ 4.9 (830+ Reviews)</div>
+                <div class="price">₹300 /100g</div>
+                <button class="product-buy-button product-front-buy-button" onclick="redirectToWhatsApp('Anjeer (Figs)')">Buy Now</button>
+            </div>
+    
+            <div class="product-card">
+                <div class="tag best-seller">Best Seller</div>
+                <img src="images_naithika/products/jackfruit.webp" alt="Jackfruit" />
+                <h3>Jackfruit </h3>
+                <p class="desc" data-full-text="Aromatic slices capturing tropical sweetness and unique scent. Lightly dried for a pleasant chew while retaining fiber. Excellent plant-based snack with local character.">
+                    Aromatic jackfruit slices that capture the tropical sweetness and unique scent...
+                </p>
+                <span class="read-more-text" onclick="toggleReadMore(this)">View More</span>
+                <div class="rating">⭐ 4.9 (840+ Reviews)</div>
+                <div class="price">₹250 /100g</div>
+                <button class="product-buy-button product-front-buy-button" onclick="redirectToWhatsApp('Jackfruit')">Buy Now</button>
+            </div>
+    
+            <div class="product-card">
+                <div class="tag new">New</div>
+                <img src="images_naithika/products/Pomegranate Arils.webp" alt="Pomegranate Arils (Dehydrated)" />
+                <h3>Pomegranate Arils </h3>
+                <p class="desc" data-full-text="Tangy-sweet seeds delicately dried to retain ruby color and antioxidants. Adds bright tartness to breakfasts, salads, and desserts. Premium, antioxidant-rich fruit snack.">
+                    Tangy-sweet pomegranate seeds delicately dried to retain ruby color and...
+                </p>
+                <span class="read-more-text" onclick="toggleReadMore(this)">View More</span>
+                <div class="rating">⭐ 4.9 (980+ Reviews)</div>
+                <div class="price">₹250 /100g</div>
+                <button class="product-buy-button product-front-buy-button" onclick="redirectToWhatsApp('Pomegranate Arils (Dehydrated)')">Buy Now</button>
+            </div>
+    
+            <div class="product-card">
+                <div class="tag best-seller">Best Seller</div>
+                <img src="images_naithika/products/banana.webp" alt="Banana" />
+                <h3>Banana </h3>
+                <p class="desc" data-full-text="Ripe bananas sliced and dried for naturally sweet, crisp chips. No oil frying or added sugars - just dehydrated fruit with full banana flavor. Kid-friendly energy snack.">
+                    Ripe bananas sliced and dried for naturally sweet, crisp chips...
+                </p>
+                <span class="read-more-text" onclick="toggleReadMore(this)">View More</span>
+                <div class="rating">⭐ 4.9 (780+ Reviews)</div>
+                <div class="price">₹200 /100g</div>
+                <button class="product-buy-button product-front-buy-button" onclick="redirectToWhatsApp('Banana')">Buy Now</button>
+            </div>
+    
+            <div class="product-card">
+                <div class="tag best-seller">Best Seller</div>
+                <img src="images_naithika/products/Black Grapes.webp" alt="Black Grapes" />
+                <h3>Black Grapes </h3>
+                <p class="desc" data-full-text="Sun-dried grapes offering concentrated natural sweetness and rich antioxidants. Chewy, jammy texture with deep flavor. Premium dried fruit ideal for gifting and snacking.">
+                    Sun-dried black grapes offering concentrated natural sweetness and rich antioxidants....
+                </p>
+                <span class="read-more-text" onclick="toggleReadMore(this)">View More</span>
+                <div class="rating">⭐ 4.9 (840+ Reviews)</div>
+                <div class="price">₹250 /100g</div>
+                <button class="product-buy-button product-front-buy-button" onclick="redirectToWhatsApp('Black Grapes')">Buy Now</button>
+            </div>
+        </div>
+    </div>
+    <div style="text-align: center; margin: 50px 0;">
+        <a href="products.html" class="view-more-products-btn **fade-in-hidden**">Discover Naithika’s Range of Products</a>
+    </div>
+</section>
 
 
 
@@ -454,8 +628,8 @@
       <div class="circle-img">
         <img src="images_naithika/herbal_teas.webp" alt="Dehydrated Vegetables">
       </div>
-      <h3>Herbal Teas</h3>
-      <p>Soil-nurtured freshness, all year round</p>
+      <h3>Naithika Herbal Teas</h3>
+      <p>Gentle blends to nourish from within</p>
     </a>
   </div>
 </section>
@@ -466,17 +640,16 @@
     <div class="ancestral_wisdom_container">
         
         <div class="ancestral_wisdom_graphic_box">
-            <img src="images_naithika/bg1.webp" alt="Graphic of organic produce and farming tools">
+            <img src="images_naithika/ChatGPT Image Jan 27, 2026, 10_44_10 AM.png" alt="Graphic of organic produce and farming tools">
         </div>
         
         <div class="ancestral_wisdom_content">
             
             <p class="ancestral_wisdom_tagline">The promise behind every pack</p>
-            <h2 class="ancestral_wisdom_title">Ethical Food from Restored Soil</h2>
+            <h2 class="ancestral_wisdom_title">Ethical Food from Fertile Hills</h2>
             
             <p class="ancestral_wisdom_text">
-Rooted in ancestral memories, Naithika partners with principled farmers to restore soil vitality. Our dehydrated fruits and vegetables capture this pure bounty - free from chemicals, rich in nutrition, sustaining health and earth for generations ahead.            </p>
-
+Guided by ancestral memory, Naithika collaborates with mindful farmers in the hills, where the land is inherently rich and alive. From this fertile soil comes our dehydrated fruits and vegetables—pure, nutrient-dense, and made to sustain both people and planet for generations.
         </div>
         
     </div>
@@ -600,14 +773,14 @@ Rooted in ancestral memories, Naithika partners with principled farmers to resto
             </p>
         </div>
         <div class="aboutus_value_card">
-            <div class="aboutus_value_image_container">
-                <img src="images_naithika/dry3.webp" alt="Sustainable icon" class="aboutus_value_image">
-            </div>
-            <h3 class="aboutus_value_title">Soil Restoration </h3>
-            <p class="aboutus_value_description">
-                Practices that heal the earth, not harm it.
-            </p>
-        </div>
+          <div class="aboutus_value_image_container">
+              <img src="images_naithika/dry3.webp" alt="Sustainable farming icon" class="aboutus_value_image">
+          </div>
+          <h3 class="aboutus_value_title">Sustainable Farming</h3>
+          <p class="aboutus_value_description">
+              Farming methods that protect biodiversity and natural resources.
+          </p>
+      </div>
         <div class="aboutus_value_card">
             <div class="aboutus_value_image_container">
                 <img src="images_naithika/dry1.webp" alt="Premium Quality icon" class="aboutus_value_image">
@@ -638,9 +811,130 @@ Rooted in ancestral memories, Naithika partners with principled farmers to resto
     </div>
 </div>
 
-<div style="text-align: center; margin: 50px 0;">
-    <a href="products.html" class="view-more-products-btn **fade-in-hidden**">Discover Naithika’s Range of Products</a>
-</div>
+<section class="testimonial-section">
+  <h2 class="testimonial-title">What Customers Are Saying</h2>
+
+  <div class="testimonial-carousel">
+    <button class="testimonial-btn testimonial-prev">&#10094;</button>
+
+    <div class="testimonial-track-wrapper">
+      <div class="testimonial-track">
+
+        <div class="testimonial-card">
+          <img src="https://randomuser.me/api/portraits/women/12.jpg" class="testimonial-image" alt="">
+          <p class="testimonial-text">“Best dried fruits I’ve ever tasted.”</p>
+          <span class="testimonial-name">Sarah L.</span>
+        </div>
+
+        <div class="testimonial-card">
+          <img src="https://randomuser.me/api/portraits/men/22.jpg" class="testimonial-image" alt="">
+          <p class="testimonial-text">“Perfect for hiking and long trips.”</p>
+          <span class="testimonial-name">Mark D.</span>
+        </div>
+
+        <div class="testimonial-card">
+          <img src="https://randomuser.me/api/portraits/women/34.jpg" class="testimonial-image" alt="">
+          <p class="testimonial-text">“Healthy snacks without preservatives.”</p>
+          <span class="testimonial-name">Emily R.</span>
+        </div>
+
+        <div class="testimonial-card">
+          <img src="https://randomuser.me/api/portraits/men/41.jpg" class="testimonial-image" alt="">
+          <p class="testimonial-text">“Vegetables rehydrate beautifully.”</p>
+          <span class="testimonial-name">Jason K.</span>
+        </div>
+
+        <div class="testimonial-card">
+          <img src="https://randomuser.me/api/portraits/women/52.jpg" class="testimonial-image" alt="">
+          <p class="testimonial-text">“Great quality and fast delivery.”</p>
+          <span class="testimonial-name">Olivia M.</span>
+        </div>
+
+        <div class="testimonial-card">
+          <img src="https://randomuser.me/api/portraits/men/63.jpg" class="testimonial-image" alt="">
+          <p class="testimonial-text">“Ideal for meal prep and smoothies.”</p>
+          <span class="testimonial-name">Daniel P.</span>
+        </div>
+
+        <div class="testimonial-card">
+          <img src="https://randomuser.me/api/portraits/women/71.jpg" class="testimonial-image" alt="">
+          <p class="testimonial-text">“My kids love the dried apples.”</p>
+          <span class="testimonial-name">Rachel T.</span>
+        </div>
+
+        <div class="testimonial-card">
+          <img src="https://randomuser.me/api/portraits/men/85.jpg" class="testimonial-image" alt="">
+          <p class="testimonial-text">“Excellent taste and shelf life.”</p>
+          <span class="testimonial-name">Chris B.</span>
+        </div>
+
+        <div class="testimonial-card">
+          <img src="https://randomuser.me/api/portraits/women/90.jpg" class="testimonial-image" alt="">
+          <p class="testimonial-text">“Perfect balance of flavor and nutrition.”</p>
+          <span class="testimonial-name">Nina W.</span>
+        </div>
+
+      </div>
+    </div>
+
+    <button class="testimonial-btn testimonial-next">&#10095;</button>
+  </div>
+</section>
+
+
+<script>
+  const testimonialTrack = document.querySelector('.testimonial-track');
+  const testimonialCards = document.querySelectorAll('.testimonial-card');
+  const testimonialPrev = document.querySelector('.testimonial-prev');
+  const testimonialNext = document.querySelector('.testimonial-next');
+
+  let testimonialIndex = 0;
+
+  function testimonialVisibleCount() {
+    if (window.innerWidth <= 768) return 1;
+    if (window.innerWidth <= 1024) return 2;
+    return 3;
+  }
+
+  function testimonialUpdate() {
+    const cardWidth = testimonialCards[0].offsetWidth;
+    const visible = testimonialVisibleCount();
+    testimonialIndex = Math.min(
+      testimonialIndex,
+      testimonialCards.length - visible
+    );
+    testimonialTrack.style.transform =
+      `translateX(-${testimonialIndex * cardWidth}px)`;
+  }
+
+  testimonialNext.addEventListener('click', () => {
+    const visible = testimonialVisibleCount();
+    if (testimonialIndex < testimonialCards.length - visible) {
+      testimonialIndex++;
+      testimonialUpdate();
+    }
+  });
+
+  testimonialPrev.addEventListener('click', () => {
+    if (testimonialIndex > 0) {
+      testimonialIndex--;
+      testimonialUpdate();
+    }
+  });
+
+  window.addEventListener('resize', testimonialUpdate);
+
+  // Auto slide
+  setInterval(() => {
+    const visible = testimonialVisibleCount();
+    testimonialIndex =
+      testimonialIndex < testimonialCards.length - visible
+        ? testimonialIndex + 1
+        : 0;
+    testimonialUpdate();
+  }, 4500);
+</script>
+
 
 
 <div class="contactus-container">
@@ -727,8 +1021,8 @@ Rooted in ancestral memories, Naithika partners with principled farmers to resto
                 >
 
                 <div class="footer_fssai_details">
-                    GSTN: 33AARPD1404NIZE<br>
-                    LIC NO: 10020042004884
+                    GSTN: 23625032007897<br>
+                    CIN: U56290TS2025PTC204748
                 </div>
 
                 <div class="footer_payment_icons">
@@ -761,20 +1055,28 @@ Rooted in ancestral memories, Naithika partners with principled farmers to resto
                 
                 <h3 class="footer_section_title" style="margin-top: 2rem;">Follow Us</h3>
                 <div class="footer_social_icons">
-                    <a href="#" aria-label="Facebook">
-                        <svg class="footer_social_icon" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15h-2.5v-3H10V9.5c0-2.2 1.3-3.4 3.3-3.4 1.02 0 1.9.08 2.16.12v2.5h-1.5c-1.12 0-1.34.53-1.34 1.34V12h3l-.5 3h-2.5v6.8c4.56-.93 8-4.96 8-9.8z"></path></svg>
+                  <a href="https://www.facebook.com/profile.php?id=61582765700542" aria-label="Facebook" target="_blank">
+                      <svg class="footer_social_icon" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15h-2.5v-3H10V9.5c0-2.2 1.3-3.4 3.3-3.4 1.02 0 1.9.08 2.16.12v2.5h-1.5c-1.12 0-1.34.53-1.34 1.34V12h3l-.5 3h-2.5v6.8c4.56-.93 8-4.96 8-9.8z"/>
+                      </svg>
+                  </a>
+
+                  <a href="https://www.instagram.com/naithikafoods/" target="_blank" aria-label="Instagram">
+                        <svg class="footer_social_icon" fill="currentColor" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 188.1c-40.3 0-73.2-32.9-73.2-73.2s32.9-73.2 73.2-73.2 73.2 32.9 73.2 73.2-32.9 73.2-73.2 73.2zm146.4-194.3c0 14.9-12 26.9-26.9 26.9s-26.9-12-26.9-26.9 12-26.9 26.9-26.9 26.9 12 26.9 26.9zm76.1 27.2c-1.7-35.7-9.9-67.3-36.2-93.5S367.3 9.7 331.6 8C295.2 6.3 152.8 6.3 116.4 8 80.7 9.7 49.1 17.9 22.9 44.2S9.7 80.7 8 116.4C6.3 152.8 6.3 295.2 8 331.6c1.7 35.7 9.9 67.3 36.2 93.5s57.8 34.5 93.5 36.2c36.4 1.7 178.8 1.7 215.2 0 35.7-1.7 67.3-9.9 93.5-36.2s34.5-57.8 36.2-93.5c1.7-36.4 1.7-178.8 0-215.2zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                        </svg>
                     </a>
-                    <a href="#" aria-label="X (formerly Twitter)">
-                      <svg class="footer_social_icon" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2H21.5l-7.6 8.71L22 22h-5.99l-4.66-5.97L6.06 22H2.5l8.1-9.28L2 2h6.08l4.22 5.56L18.244 2zM7.16 3.52h-1.7l10.49 13.63h1.65L7.16 3.52z"/></svg>
-                    </a>
-                    <a href="https://www.instagram.com/naithikafoods/" target="_blank" aria-label="Instagram">
-                        <svg class="footer_social_icon" fill="currentColor" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 188.1c-40.3 0-73.2-32.9-73.2-73.2s32.9-73.2 73.2-73.2 73.2 32.9 73.2 73.2-32.9 73.2-73.2 73.2zm146.4-194.3c0 14.9-12 26.9-26.9 26.9s-26.9-12-26.9-26.9 12-26.9 26.9-26.9 26.9 12 26.9 26.9zm76.1 27.2c-1.7-35.7-9.9-67.3-36.2-93.5S367.3 9.7 331.6 8C295.2 6.3 152.8 6.3 116.4 8 80.7 9.7 49.1 17.9 22.9 44.2S9.7 80.7 8 116.4C6.3 152.8 6.3 295.2 8 331.6c1.7 35.7 9.9 67.3 36.2 93.5s57.8 34.5 93.5 36.2c36.4 1.7 178.8 1.7 215.2 0 35.7-1.7 67.3-9.9 93.5-36.2s34.5-57.8 36.2-93.5c1.7-36.4 1.7-178.8 0-215.2zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
-                    </a>
-                    <!-- <a href="#" aria-label="YouTube">
-                        <svg class="footer_social_icon" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2c-5.52 0-10 4.48-10 10s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.3 11.5L9.7 17V7l6.6 4.5 0 2z"></path></svg>
-                    </a> -->
-                </div>
+
+                  <a href="https://www.youtube.com/@Naithikafoods" target="_blank" aria-label="YouTube">
+                    <svg class="footer_social_icon" viewBox="0 0 576 512" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.321-42.003 24.947-48.284 48.597C16 166.863 16 256 16 256s0 89.137 10.345 131.917c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.781 0 213.371-12.262c23.497-6.321 42.003-24.171 48.284-47.821C560 345.137 560 256 560 256s0-89.137-10.345-131.917zM232 334V178l142 78-142 78z"/>
+                    </svg>
+                  </a>
+              </div>
+
             </div>
+
+            
 
             <div class="footer_col footer_contact">
                 <h3 class="footer_section_title">Visit Us</h3>
@@ -783,7 +1085,7 @@ Rooted in ancestral memories, Naithika partners with principled farmers to resto
                     (A Pinnacle Group Company)
                 </div>
                 <div class="footer_contact_info_block">
-                    Vanesh Eada 402 <br>Suvarna Apartments New Mettuguda <br>SECUNDERABAD TELANGANA 500017
+                    Vanesh Eada 402 <br>Plot No13, Jawahaer Colony <br>Chandanagar 500050
                 </div>
                 <div class="footer_contact_info_block">
                     <a href="mailto:naithikafoods@gmail.com">naithikafoods@gmail.com</a>
