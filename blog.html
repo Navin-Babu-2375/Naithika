@@ -1,125 +1,288 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog | Naithika Foods</title>
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/webp" href="images_naithika/Naithika_Logo.webp">
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&family=Inter:wght@100..900&display=swap" rel="stylesheet">
-
-    <!-- Styles -->
+    <title>Blog</title>
+    <!-- Favicon link -->
+    <link rel="icon" type="image/webp" href="images_naithika/logo.webp">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="static/naithika_style.css">
     <link rel="stylesheet" href="static/naithika_about.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        /* ===== BLOG PAGE ===== */
-        .blog-wrapper {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 60px 20px;
-        }
+/* ===== BLOG PAGE – PREMIUM ===== */
 
-        .blog-header {
-            text-align: center;
-            margin-bottom: 50px;
-        }
+.blog-hero {
+    background: linear-gradient(
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.45)
+    ),
+    url("images_naithika/blog/blog-hero.webp") center/cover no-repeat;
+    padding: 120px 20px;
+    text-align: center;
+    color: #fff;
+}
 
-        .blog-header h1 {
-            margin-bottom: 10px;
-        }
+.blog-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
 
-        .blog-header p {
-            color: #666;
-            max-width: 700px;
-            margin: 0 auto;
-            line-height: 1.7;
-        }
+.blog-hero p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    opacity: 0.95;
+}
 
-        .blog-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-        }
+.blog-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
 
-        .blog-card {
-            background: #fff;
-            border-radius: 10px;
-            padding: 25px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+.featured-blog {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 40px;
+    margin-bottom: 80px;
+    align-items: center;
+}
 
-        .blog-card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 16px 35px rgba(0,0,0,0.12);
-        }
+.featured-blog img {
+    width: 100%;
+    border-radius: 16px;
+}
 
-        .blog-category {
-            font-size: 12px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            color: #a72f2f;
-            font-weight: 600;
-            margin-bottom: 10px;
-        }
+.blog-meta {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 10px;
+}
 
-        .blog-card h3 {
-            font-size: 20px;
-            margin-bottom: 12px;
-            color: #4f381f;
-        }
+.blog-tag {
+    display: inline-block;
+    background: #f3e8df;
+    color: #a72f2f;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
 
-        .blog-card p {
-            font-size: 15px;
-            line-height: 1.6;
-            color: #444;
-            margin-bottom: 15px;
-        }
+.featured-blog h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #4f381f;
+}
 
-        .blog-read-more {
-            text-decoration: none;
-            font-weight: 600;
-            color: #a72f2f;
-            font-size: 14px;
-        }
-    </style>
+.featured-blog p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 35px;
+}
+
+.blog-card {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+
+.blog-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.blog-card-content {
+    padding: 22px;
+}
+
+.blog-card h3 {
+    font-size: 1.2rem;
+    margin: 12px 0;
+    color: #4f381f;
+}
+
+.blog-card p {
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: #444;
+}
+
+.blog-read-more {
+    display: inline-block;
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #a72f2f;
+    text-decoration: none;
+}
+
+.blog-cta {
+    margin-top: 90px;
+    padding: 60px 30px;
+    background: #fff8f0;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.blog-cta h2 {
+    margin-bottom: 15px;
+    color: #4f381f;
+}
+
+.blog-cta p {
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+@media(max-width: 900px){
+    .featured-blog{
+        grid-template-columns: 1fr;
+    }
+    .blog-hero h1{
+        font-size: 2.2rem;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.featured-blog {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 40px;
+}
+
+@media (max-width: 900px) {
+    .featured-blog {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+    /* ===============================
+   NAITHIKA – WHATSAPP FLOAT BUTTON
+   =============================== */
+
+.naithika-whatsapp-float {
+    position: fixed;
+    right: 20px;
+    bottom: 60px;
+
+    width: 56px;
+    height: 56px;
+
+    background-color: #25D366;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    z-index: 9999;
+
+    text-decoration: none;
+}
+
+.naithika-whatsapp-float svg {
+    width: 26px;
+    height: 26px;
+    fill: #ffffff;
+}
+
+/* Hover (desktop only) */
+@media (hover: hover) {
+    .naithika-whatsapp-float:hover {
+        transform: scale(1.06);
+        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+    }
+}
+
+/* Mobile optimization */
+@media (max-width: 600px) {
+    .naithika-whatsapp-float {
+        width: 50px;
+        height: 50px;
+        right: 16px;
+        bottom: 25px;
+    }
+
+    .naithika-whatsapp-float svg {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+
+</style>
 </head>
-
 <body>
 
-<!-- ================= HEADER ================= -->
-<header id="header_top_bar">
-    <div class="header_container">
-        <div class="header_promo_message">
-            WORLDWIDE SHIPPING AVAILABLE | FREE SHIPPING WITHIN INDIA ON ORDERS ABOVE RS. 999
+    <!-- Header -->
+     <header id="header_top_bar">
+        <div class="header_container">
+            
+            <div name="header_promo_message" class="header_promo_message">
+                WORLDWIDE SHIPPING AVAILABLE | FREE SHIPPING WITHIN INDIA ON ORDERS ABOVE RS. 999
+            </div>
+
+            <div name="header_secondary_links" class="header_secondary_links">
+                <a href="contact.html">
+                    <svg class="header_contact_icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    CONTACT US
+                </a>
+                <a href="#" class="header_faq_link">+91 8106025114</a>
+                <a href="offer.html">SPECIAL OFFERS</a>
+                <span class="header_divider">|</span>
+            </div>
         </div>
+    </header>
 
-        <div class="header_secondary_links">
-            <a href="contact.html">CONTACT US</a>
-            <a href="#">+91 8106025114</a>
-            <a href="offer.html">SPECIAL OFFERS</a>
-        </div>
-    </div>
-</header>
-
-<div id="header_main_content">
+    <div id="header_main_content">
     <div class="header_container">
 
-        <a href="index.html">
-            <img id="header_logo_image"
-                 src="images_naithika/Naithika_Logo.webp"
-                 alt="Naithika Logo"
-                 style="width:65px;">
+        <a href="/">
+            <img id="header_logo_image" 
+                src="images_naithika/Naithika_Logo.webp" 
+                alt="Naithika Logo"
+                style="width: 80px; height: auto;">
         </a>
 
+
+        <!-- DESKTOP NAVIGATION -->
         <nav id="header_nav">
             <a href="index.html" class="nav-link">HOME</a>
             <a href="about.html" class="nav-link">ABOUT US</a>
 
+            <!-- PRODUCTS DROPDOWN (DESKTOP ONLY) -->
             <div class="header_dropdown_group">
                 <a href="#" class="nav-link header_dropdown_toggle">
                     PRODUCTS
@@ -127,6 +290,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                     </svg>
                 </a>
+
                 <div class="header_dropdown_menu">
                     <a href="products.html" class="dropdown-item">All Products</a>
                     <a href="dehydrated_fruits.html" class="dropdown-item">Fruit Leather</a>
@@ -136,128 +300,313 @@
                 </div>
             </div>
 
-            <a href="blog.html" class="nav-link">BLOG</a>
+            <a href="offer.html" class="nav-link">OFFERS</a>
             <a href="contact.html" class="nav-link">CONTACT US</a>
         </nav>
+
+        <!-- MOBILE MENU BUTTON -->
+        <button name="header_mobile_menu_toggle" class="header_mobile_menu_toggle">
+            <svg class="header_mobile_menu_toggle_icon" width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+
     </div>
 </div>
+
+<!-- MOBILE MENU -->
+<div name="header_mobile_menu" class="header_mobile_menu">
+    <div class="header_nav_list">
+        <a href="index.html" class="nav-link">HOME</a>
+        <a href="about.html" class="nav-link">ABOUT US</a>
+        <a href="offer.html" class="nav-link">OFFERS</a>
+
+        <!-- MOBILE PRODUCTS CATEGORY HEADING -->
+        <span class="mobile_category_heading">PRODUCTS</span>
+        <a href="products.html" class="mobile-sub-item">All Products</a>
+        <a href="dehydrated_fruits.html" class="mobile-sub-item">Fruit Leather</a>
+        <a href="dehydrated_vegetables.html" class="mobile-sub-item">Dehydrated Vegetables</a>
+        <a href="pickles_and_powders.html" class="mobile-sub-item">Pickles & Powders</a>
+        <a href="herbal_tea.html" class="mobile-sub-item">Herbal Teas</a>
+
+        <a href="contact.html" class="nav-link">CONTACT US</a>
+    </div>
+</div>
+
+<!-- ================= BLOG HERO ================= -->
+<section class="blog-hero" style="
+background:
+linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+url('https://images.unsplash.com/photo-1506806732259-39c2d0268443?auto=format&fit=crop&w=1600&q=80')
+center/cover no-repeat;">
+    <h1>Naithika Journal</h1>
+    <p>
+        Educational insights on ethical food, dehydration,
+        traditional preservation, and mindful eating.
+    </p>
+</section>
 
 <!-- ================= BLOG CONTENT ================= -->
 <div class="blog-wrapper">
 
-    <div class="blog-header">
-        <h1 class="ancestral_wisdom_title">Naithika Journal</h1>
+    <!-- FEATURED BLOG -->
+    <div class="featured-blog">
+    <img src="images_naithika/ChatGPT Image Jan 27, 2026, 10_44_10 AM.png"
+         alt="Dried fruits and fruit leather">
+    <div>
+        <span class="blog-tag">Fruit Leather</span>
+        <div class="blog-meta">5 min read · Food Education</div>
+        <h2>What Is Fruit Leather and Why Is It a Smart Snack?</h2>
         <p>
-            Learn about ethical food, dehydration, traditional preservation,
-            and mindful eating practices rooted in nature and science.
+            Fruit leather is prepared by slowly dehydrating fresh fruit pulp
+            into soft, naturally sweet sheets. This gentle process concentrates
+            flavour while retaining essential fiber and nutrients, without the
+            need for artificial sugars, colours, or preservatives. It offers a
+            convenient, wholesome snack option rooted in traditional food
+            preservation techniques.
         </p>
     </div>
+</div>
 
-    <div class="blog-grid">
 
-        <div class="blog-card">
-            <div class="blog-category">Fruit Leather</div>
-            <h3>What Is Fruit Leather and Why Is It a Smart Snack?</h3>
-            <p>
-                Fruit leather is made by gently dehydrating fruit pulp,
-                preserving natural sugars, fiber, and nutrients without
-                artificial additives.
-            </p>
-            <a href="#" class="blog-read-more">Read More →</a>
-        </div>
 
-        <div class="blog-card">
-            <div class="blog-category">Dehydrated Vegetables</div>
+    <!-- BLOG GRID -->
+    <!-- BLOG GRID -->
+<div class="blog-grid">
+
+    <div class="blog-card">
+        <img src="images_naithika/products_new/tomato.jpg"
+             alt="Dehydrated vegetables">
+        <div class="blog-card-content">
+            <span class="blog-tag">Dehydrated Vegetables</span>
+            <div class="blog-meta">4 min read</div>
             <h3>How Dehydrated Vegetables Retain Nutrition</h3>
             <p>
-                Proper dehydration removes moisture while keeping minerals,
-                fiber, and flavor intact—making vegetables shelf-stable and useful year-round.
+                Dehydrated vegetables are processed at controlled temperatures
+                to remove moisture while preserving essential vitamins, minerals,
+                and fiber. This allows vegetables to stay shelf-stable for months
+                without chemical preservatives, making them ideal for everyday
+                cooking and long-term storage.
             </p>
-            <a href="#" class="blog-read-more">Read More →</a>
         </div>
+    </div>
 
-        <div class="blog-card">
-            <div class="blog-category">Pickles & Powders</div>
+    <div class="blog-card">
+        <img src="images_naithika/products/mango pickle.webp"
+             alt="Traditional pickles and spice powders">
+        <div class="blog-card-content">
+            <span class="blog-tag">Pickles & Powders</span>
+            <div class="blog-meta">6 min read</div>
             <h3>Traditional Pickling: More Than Just Taste</h3>
             <p>
-                Pickling is one of the oldest preservation methods,
-                enhancing flavor while supporting digestion and gut health.
+                Traditional pickling combines natural fermentation, salt,
+                and spices to preserve food while enhancing flavor and digestion.
+                These age-old methods help retain beneficial compounds and
+                reflect regional culinary wisdom passed down through generations.
             </p>
-            <a href="#" class="blog-read-more">Read More →</a>
         </div>
+    </div>
 
-        <div class="blog-card">
-            <div class="blog-category">Herbal Teas</div>
+    <div class="blog-card">
+        <img src="images_naithika/herbal_tea/Moringa.png"
+             alt="Herbal tea ingredients">
+        <div class="blog-card-content">
+            <span class="blog-tag">Herbal Teas</span>
+            <div class="blog-meta">3 min read</div>
             <h3>The Role of Herbal Teas in Daily Wellness</h3>
             <p>
-                Herbal teas use dried leaves, flowers, and roots to gently
-                support hydration, digestion, and relaxation.
+                Herbal teas are prepared from dried leaves, roots, and flowers
+                that naturally support hydration, digestion, and relaxation.
+                When consumed regularly, they form a gentle wellness ritual
+                without caffeine or artificial additives.
             </p>
-            <a href="#" class="blog-read-more">Read More →</a>
         </div>
+    </div>
 
-        <div class="blog-card">
-            <div class="blog-category">Food Education</div>
+    <div class="blog-card">
+        <img src="images_naithika/products_new/mango.webp" alt="Dehydrated fruits">
+        <div class="blog-card-content">
+            <span class="blog-tag">Food Education</span>
+            <div class="blog-meta">5 min read</div>
             <h3>Why Dehydration Is Better Than Chemical Preservation</h3>
             <p>
-                Unlike chemical preservatives, dehydration preserves food
-                naturally without introducing harmful compounds.
+                Dehydration is one of the safest food preservation techniques,
+                as it removes moisture without altering the natural structure
+                of food. Unlike chemical preservatives, it maintains flavor,
+                nutrition, and integrity while extending shelf life naturally.
             </p>
-            <a href="#" class="blog-read-more">Read More →</a>
         </div>
+    </div>
 
-        <div class="blog-card">
-            <div class="blog-category">Sustainability</div>
+    <div class="blog-card">
+        <img src="images_naithika/products_new/ginger.jpeg"
+             alt="Sustainable farming and soil health">
+        <div class="blog-card-content">
+            <span class="blog-tag">Sustainability</span>
+            <div class="blog-meta">4 min read</div>
             <h3>How Ethical Food Choices Protect Soil Health</h3>
             <p>
-                Supporting ethical farming encourages soil regeneration,
-                biodiversity, and long-term food security.
+                Ethical farming focuses on soil regeneration, biodiversity,
+                and responsible cultivation practices. Choosing food grown
+                with these values helps protect ecosystems while ensuring
+                long-term agricultural sustainability.
             </p>
-            <a href="#" class="blog-read-more">Read More →</a>
         </div>
+    </div>
 
+    <!-- ✅ NEW 6th CARD -->
+    <div class="blog-card">
+        <img src="images_naithika/products_new/jackfruit.webp"
+             alt="Seasonal fruits and ethical sourcing">
+        <div class="blog-card-content">
+            <span class="blog-tag">Ethical Sourcing</span>
+            <div class="blog-meta">4 min read</div>
+            <h3>Why Seasonal & Ethical Sourcing Matters</h3>
+            <p>
+                Sourcing fruits and vegetables in season ensures better taste,
+                higher nutritional value, and reduced environmental impact.
+                Ethical sourcing also supports farmers, fair trade practices,
+                and food systems that respect both people and the planet.
+            </p>
+        </div>
     </div>
 
 </div>
 
+
+    <!-- BLOG CTA -->
+    <div class="blog-cta">
+        <h2>Food Knowledge That Lasts</h2>
+        <p>
+            At Naithika Foods, we believe informed choices lead to healthier
+            families and a healthier planet. Our journal exists to share
+            that knowledge — simply and honestly.
+        </p>
+    </div>
+
+</div>
+
+<!-- Naithika WhatsApp Floating Button -->
+<a
+  href="https://wa.me/918125121347"
+  class="naithika-whatsapp-float"
+  target="_blank"
+  rel="noopener"
+  aria-label="Chat with Naithika Foods on WhatsApp"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 32 32"
+    width="26"
+    height="26"
+    aria-hidden="true"
+  >
+    <path
+      fill="#FFFFFF"
+      d="M16 0C7.2 0 0 7.2 0 16c0 2.8.7 5.4 2 7.8L0 32l8.4-2.2C10.7 31.2 13.3 32 16 32c8.8 0 16-7.2 16-16S24.8 0 16 0zm0 29.3c-2.4 0-4.6-.6-6.6-1.8l-.5-.3-5 1.3 1.3-4.9-.3-.5c-1.2-2-1.9-4.3-1.9-6.8C3 8.6 8.6 3 16 3s13 5.6 13 13-5.6 13.3-13 13.3zm7.5-9.9c-.4-.2-2.4-1.2-2.8-1.3-.4-.2-.7-.2-1 .2-.3.4-1.2 1.3-1.5 1.6-.3.3-.6.3-1 .1-2.4-1.2-4-2.2-5.6-5-.4-.7.4-.7 1.1-2.3.1-.4.1-.7 0-.9-.1-.2-1-2.4-1.4-3.3-.4-.9-.8-.8-1-.8h-.9c-.3 0-.9.1-1.3.6-.4.4-1.7 1.7-1.7 4.2s1.8 4.9 2 5.2c.3.3 3.5 5.3 8.4 7.4 1.2.5 2.1.8 2.8 1 .9.3 1.8.3 2.5.2.8-.1 2.4-1 2.8-2 .4-1 .4-1.9.3-2-.1-.2-.4-.3-.8-.5z"
+    />
+  </svg>
+</a>
+
+
 <!-- ================= FOOTER ================= -->
 <footer id="footer">
-    <div id="footer_content">
+        <div id="footer_content">
+            
+            <div class="footer_col footer_about">
+                <h3 class="footer_section_title">About Naithika</h3>
+                <p class="footer_about_text">
+                    Naithika Foods: Ethical dehydration from soil-nurtured farms. FSSAI certified, partnering with principled growers for pure, lasting nutrition.
+                </p>
+                
+                <img class="footer_fssai_img" 
+                    src="images_naithika/fssai.webp" 
+                    alt="FSSAI Logo"
+                >
 
-        <div class="footer_col footer_about">
-            <h3 class="footer_section_title">About Naithika</h3>
-            <p class="footer_about_text">
-                Naithika Foods: Ethical dehydration from soil-nurtured farms.
-                FSSAI certified, partnering with principled growers.
-            </p>
-        </div>
+                <div class="footer_fssai_details">
+                    GSTN: 23625032007897<br>
+                    CIN: U56290TS2025PTC204748
+                </div>
 
-        <div class="footer_col footer_links_2">
-            <h3 class="footer_section_title">Quick Links</h3>
-            <div class="footer_link_list">
-                <a href="blog.html">Blog</a>
-                <a href="privacypolicy.html">Privacy Policy</a>
-                <a href="termsandconditions.html">Terms & Conditions</a>
-                <a href="returnsandrefund.html">Returns & Refund Policy</a>
-                <a href="shippingpolicy.html">Shipping Policy</a>
+                <div class="footer_payment_icons">
+                    <img src="images_naithika/rupay.webp" style="width: 50px;" alt="Rupay">
+                    <img src="images_naithika/mastercard.webp" style="width: 50px;" alt="Mastercard">
+                </div>
             </div>
+
+            <div class="footer_col footer_links_1">
+                <h3 class="footer_section_title">Our Story</h3>
+                <div class="footer_link_list">
+                    <a href="about.html">Our Story</a>
+                    <!-- <a href="#">Chemical free Shop</a> -->
+                    <!-- <a href="#">Login/Signup</a> -->
+                    <a href="blog.html">Blog</a>
+                    <!-- <a href="#">FAQ</a>
+                    <a href="#">Recipes</a> -->
+                </div>
+            </div>
+            
+            <div class="footer_col footer_links_2">
+                <h3 class="footer_section_title">Policies</h3>
+                <div class="footer_link_list">
+                    <a href="privacypolicy.html">Privacy Policy</a>
+                    <a href="termsandconditions.html">Terms and Condition</a>
+                    <a href="returnsandrefund.html">Returns and Refund</a>
+                    <a href="shippingpolicy.html">Shipping Policy</a>
+                    <a href="whychooseus.html">Why Choose US</a>
+                </div>
+                
+                <h3 class="footer_section_title" style="margin-top: 2rem;">Follow Us</h3>
+                <div class="footer_social_icons">
+                  <a href="https://www.facebook.com/profile.php?id=61582765700542" aria-label="Facebook" target="_blank">
+                      <svg class="footer_social_icon" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15h-2.5v-3H10V9.5c0-2.2 1.3-3.4 3.3-3.4 1.02 0 1.9.08 2.16.12v2.5h-1.5c-1.12 0-1.34.53-1.34 1.34V12h3l-.5 3h-2.5v6.8c4.56-.93 8-4.96 8-9.8z"/>
+                      </svg>
+                  </a>
+
+                  <a href="https://www.instagram.com/naithikafoods/" target="_blank" aria-label="Instagram">
+                        <svg class="footer_social_icon" fill="currentColor" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 188.1c-40.3 0-73.2-32.9-73.2-73.2s32.9-73.2 73.2-73.2 73.2 32.9 73.2 73.2-32.9 73.2-73.2 73.2zm146.4-194.3c0 14.9-12 26.9-26.9 26.9s-26.9-12-26.9-26.9 12-26.9 26.9-26.9 26.9 12 26.9 26.9zm76.1 27.2c-1.7-35.7-9.9-67.3-36.2-93.5S367.3 9.7 331.6 8C295.2 6.3 152.8 6.3 116.4 8 80.7 9.7 49.1 17.9 22.9 44.2S9.7 80.7 8 116.4C6.3 152.8 6.3 295.2 8 331.6c1.7 35.7 9.9 67.3 36.2 93.5s57.8 34.5 93.5 36.2c36.4 1.7 178.8 1.7 215.2 0 35.7-1.7 67.3-9.9 93.5-36.2s34.5-57.8 36.2-93.5c1.7-36.4 1.7-178.8 0-215.2zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                        </svg>
+                    </a>
+
+                  <a href="https://www.youtube.com/@Naithikafoods" target="_blank" aria-label="YouTube">
+                    <svg class="footer_social_icon" viewBox="0 0 576 512" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.321-42.003 24.947-48.284 48.597C16 166.863 16 256 16 256s0 89.137 10.345 131.917c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.781 0 213.371-12.262c23.497-6.321 42.003-24.171 48.284-47.821C560 345.137 560 256 560 256s0-89.137-10.345-131.917zM232 334V178l142 78-142 78z"/>
+                    </svg>
+                  </a>
+              </div>
+
+            </div>
+
+            
+
+            <div class="footer_col footer_contact">
+                <h3 class="footer_section_title">Visit Us</h3>
+                <div class="footer_contact_info_block">
+                    <span class="footer_contact_label">NAITHIKA</span>
+                    (A Pinnacle Group Company)
+                </div>
+                <div class="footer_contact_info_block">
+                    Vanesh Eada 402 <br>Plot No13, Jawahaer Colony <br>Chandanagar 500050
+                </div>
+                <div class="footer_contact_info_block">
+                    <a href="mailto:naithikafoods@gmail.com">naithikafoods@gmail.com</a>
+                </div>
+                <div class="footer_contact_info_block">
+                    +91 8106025114<br>
+                    +91 8125121347
+                </div>
+            </div>
+            
         </div>
-
-        <div class="footer_col footer_contact">
-            <h3 class="footer_section_title">Contact</h3>
-            <p>
-                Email:
-                <a href="mailto:naithikafoods@gmail.com">naithikafoods@gmail.com</a><br>
-                Phone: +91 8106025114
-            </p>
+        
+        <div id="footer_copyright">
+            Naithika Copyright &copy; 2024
         </div>
+    </footer>
 
-    </div>
-
-    <div id="footer_copyright">
-        Naithika Copyright © 2024
-    </div>
-</footer>
 
 <script src="static/naithika.js"></script>
 
