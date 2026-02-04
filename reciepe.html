@@ -1,102 +1,121 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms and Conditions</title>
-    <!-- Favicon link -->
-    <link rel="icon" type="image/webp" href="images_naithika/logo.webp">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="static/naithika_style.css">
-    <link rel="stylesheet" href="static/naithika_about.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recipes & Everyday Usage</title>
+
+<link rel="icon" type="image/webp" href="images_naithika/logo.webp">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="static/naithika_style.css">
+<link rel="stylesheet" href="static/naithika_about.css">
+
 <style>
+/* ==================================================
+   RECIPES PAGE – ALIGNMENT ONLY (NO DESIGN CHANGE)
+   ================================================== */
 
-        /* ===== POLICY PAGE LAYOUT ===== */
-        .policy-page-wrapper {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 60px 20px;
-        }
-
-        .policy-page-wrapper h1 {
-            text-align: center;
-            margin-bottom: 10px;
-        }
-
-        .policy-subtitle {
-            text-align: center;
-            color: #777;
-            margin-bottom: 40px;
-        }
-
-        .policy-page-wrapper p {
-            line-height: 1.8;
-            margin-bottom: 18px;
-            color: #333;
-        }
-
-        
-    /* ===============================
-   NAITHIKA – WHATSAPP FLOAT BUTTON
-   =============================== */
-
-.naithika-whatsapp-float {
-    position: fixed;
-    right: 20px;
-    bottom: 60px;
-
-    width: 56px;
-    height: 56px;
-
-    background-color: #25D366;
-    border-radius: 50%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
-    z-index: 9999;
-
-    text-decoration: none;
+.recipes-wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 80px 20px;
 }
 
-.naithika-whatsapp-float svg {
-    width: 26px;
-    height: 26px;
-    fill: #ffffff;
+.recipes-title{
+    text-align: center;
+    margin-bottom: 70px;
 }
 
-/* Hover (desktop only) */
-@media (hover: hover) {
-    .naithika-whatsapp-float:hover {
-        transform: scale(1.06);
-        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+.recipes-title p{
+    max-width: 720px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.recipe-section{
+    max-width: 900px;
+    margin: 0 auto 90px;
+}
+
+.recipe-section h2{
+    margin-bottom: 18px;
+}
+
+.recipe-section p{
+    margin-bottom: 18px;
+}
+
+.recipe-image{
+    width: 100%;
+    margin: 28px auto 36px;
+}
+
+.recipe-image img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 420px;
+    object-fit: cover;
+    display: block;
+    border-radius: 14px;
+}
+
+.recipe-benefits{
+    margin-top: 28px;
+}
+
+.recipe-benefits ul{
+    padding-left: 18px;
+}
+
+/* ===== Mobile spacing only ===== */
+@media(max-width: 600px){
+    .recipes-wrapper{
+        padding: 60px 16px;
+    }
+    .recipe-section{
+        margin-bottom: 70px;
+    }
+    .recipe-image img{
+        max-height: 260px;
     }
 }
 
-/* Mobile optimization */
-@media (max-width: 600px) {
-    .naithika-whatsapp-float {
+/* ===== WhatsApp float (unchanged, single clean copy) ===== */
+
+.naithika-whatsapp-float{
+    position: fixed;
+    right: 20px;
+    bottom: 60px;
+    width: 56px;
+    height: 56px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    z-index: 9999;
+}
+
+.naithika-whatsapp-float svg{
+    width: 26px;
+    height: 26px;
+    fill: #fff;
+}
+
+@media(max-width:600px){
+    .naithika-whatsapp-float{
         width: 50px;
         height: 50px;
         right: 16px;
         bottom: 25px;
     }
-
-    .naithika-whatsapp-float svg {
-        width: 24px;
-        height: 24px;
-    }
 }
-
 </style>
 </head>
+
 <body>
 
     <!-- Header -->
@@ -186,71 +205,89 @@
     </div>
 </div>
 
-<!-- ================= TERMS CONTENT ================= -->
-<div class="policy-page-wrapper">
+<!-- ================= CONTENT ================= -->
+<div class="recipes-wrapper">
 
-    <h1 class="ancestral_wisdom_title">Terms & Conditions Naithika Foods</h1>
-    <p class="policy-subtitle"></p>
+<div class="recipes-title">
+<h1 class="ancestral_wisdom_title">Recipes & Everyday Usage</h1>
+<p>
+Practical, traditional, and modern ways to include Naithika
+Dehydrated Vegetable Powders into everyday meals for improved
+nutrition, immunity, and overall wellness.
+</p>
+</div>
 
-    <p>
-        By accessing or using the Naithika Foods website and services,
-        you agree to comply with and be bound by these Terms and Conditions.
-    </p>
+<section class="recipe-section">
+<h2>Using Naithika Vegetable Powders for Dosa, Idli, Chapati, Idiyappam & Puttu</h2>
+<div class="recipe-image">
+<img src="images_naithika/products/Tomato Powder.webp" alt="">
+</div>
+<p>Traditional Indian breakfasts such as dosa, idli, chapati, idiyappam, and puttu are loved across households.</p>
+<p>Naithika Vegetable Powders provide a simple and natural solution.</p>
+<p>For dosa and idli, adding ½ to 1 teaspoon enhances nutrition.</p>
+<p>Chapatis become more nutritious when vegetable powder is mixed into wheat flour.</p>
+<p>Kerala staples like idiyappam and puttu pair exceptionally well.</p>
 
-    <p>
-        All product details, prices, and availability are displayed in
-        <strong>Indian Rupees (INR)</strong> and are subject to change without
-        prior notice. While we strive for accuracy, minor variations in
-        product appearance or packaging may occur due to natural sourcing
-        or periodic updates.
-    </p>
+<div class="recipe-benefits">
+<h4>Health Benefits in Daily Staples</h4>
+<ul>
+<li>Improves daily vegetable intake effortlessly</li>
+<li>Supports immunity, digestion, and energy levels</li>
+<li>Ideal for kids, elders, and busy professionals</li>
+<li>No artificial colors or preservatives</li>
+</ul>
+</div>
+</section>
 
-    <p>
-        Orders are confirmed only after successful payment.
-        Naithika Foods reserves the right to cancel or refuse any order
-        due to stock unavailability, pricing errors, or suspected misuse.
-        Any approved refunds will be processed in accordance with our
-        Refund & Replacement Policy.
-    </p>
+<section class="recipe-section">
+<h2>Making Nutritious Rice Dishes – Moringa Rice, Spinach Rice & Beetroot Rice</h2>
+<div class="recipe-image">
+<img src="images_naithika/products/Moringa Podi.webp" alt="">
+</div>
+<p>Rice is a staple food across India, but plain rice often lacks essential micronutrients.</p>
+<p>Moringa rice supports immunity, bone strength, and wellness.</p>
+<p>Spinach rice blends seamlessly without overpowering taste.</p>
 
-    <p>
-        Delivery timelines provided are estimates and are governed by
-        our Shipping Policy. Delays caused by courier partners, weather
-        conditions, or other external factors are beyond our control.
-    </p>
+<div class="recipe-benefits">
+<h4>Health Benefits of Vegetable Powder Rice</h4>
+<ul>
+<li>Enhances nutritional value of plain rice</li>
+<li>Supports iron levels and digestion</li>
+<li>Quick preparation with no waste</li>
+<li>Suitable for all age groups</li>
+</ul>
+</div>
+</section>
 
-    <p>
-        Due to the nature of food products, returns or replacements are
-        subject to hygiene and safety standards and are governed by our
-        Refund & Replacement Policy.
-    </p>
+<section class="recipe-section">
+<h2>Making Hot Tea & Soups Using Naithika Dehydrated Powders</h2>
+<div class="recipe-image">
+<img src="images_naithika/herbal_tea/cropped.png" alt="">
+</div>
+<p>Warm beverages and soups play an important role in digestion and immunity.</p>
+<p>Moringa tea supports metabolism and vitality.</p>
+<p>Naithika soups contain no preservatives or artificial additives.</p>
 
-    <p>
-        All content on this website, including logos, text, graphics,
-        images, and design elements, is the intellectual property of
-        Naithika Foods and may not be used, reproduced, or distributed
-        without prior written permission.
-    </p>
-
-    <p>
-        Naithika Foods shall not be liable for any indirect, incidental,
-        or consequential damages. Any liability, if applicable, shall
-        be limited strictly to the value of the product purchased.
-    </p>
-
-    <p>
-        These Terms and Conditions are governed by and interpreted in
-        accordance with the laws of India. Any disputes shall be subject
-        to the exclusive jurisdiction of Indian courts.
-    </p>
-
-    <p>
-        For support or queries, please contact us at
-        <strong>support@naithikafoods.com</strong> or
-        <strong>+91 81252 21347</strong>.
-    </p>
+<div class="recipe-benefits">
+<h4>Health Benefits of Teas & Soups</h4>
+<ul>
+<li>Boosts immunity and digestion</li>
+<li>Light and nutrient-dense</li>
+<li>Ideal for recovery diets</li>
+<li>Natural alternative to packaged soups</li>
+</ul>
+</div>
+</section>
 
 </div>
+
+<!-- WhatsApp -->
+<a href="https://wa.me/918125121347" class="naithika-whatsapp-float" target="_blank">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<path d="M16 0C7.2 0 0 7.2 0 16c0 2.8.7 5.4 2 7.8L0 32l8.4-2.2C10.7 31.2 13.3 32 16 32c8.8 0 16-7.2 16-16S24.8 0 16 0z"/>
+</svg>
+</a>
+
 
 <!-- Naithika WhatsApp Floating Button -->
 <a
@@ -378,3 +415,4 @@
 
 </body>
 </html>
+
