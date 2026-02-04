@@ -25,38 +25,135 @@ body {
 
 /* === HEADINGS (Most Loved, Top Picks, etc.) === */
 
-.most-loved,
-.top-picks,
-.promo-card-section {
+/* ===== MOST LOVED SECTION ===== */
+.most-loved {
     padding: 50px 20px;
     background-color: #fff;
     text-align: center;
     position: relative;
+    overflow: hidden;
 }
+
+/* Heading */
 .styled-heading {
-    /* ... other font styles ... */
-    text-align: center; 
-}
-
-.most-loved:not(.product-grid), /* Excludes the catalogue section, which has its own .product-grid */
-.top-picks,
-.most-loved.catalogue-section { 
-    background-color: #fff;
-}
-
-
-.styled-heading {
-    /* PRIMARY ABOUT US FONT for a sophisticated look */
-    font-family: 'Playfair Display', serif; 
-    font-size: 38px; 
-    color: #a72f2f;
-    margin-bottom: 30px;
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
     font-weight: 700;
+    margin-bottom: 10px;
+    color: #4f381f;
 }
 
-.styled-heading span {
-    color: #e67e22;
+/* Tagline */
+.ancestral_wisdom_tagline {
+    margin-bottom: 30px;
+    font-size: 14px;
+    letter-spacing: 1px;
 }
+
+/* ===== SLIDER WRAPPER ===== */
+.product-slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+/* ===== SLIDER ===== */
+.product-slider {
+    display: flex;
+    gap: 20px;
+    padding: 10px 0;
+
+    /* 🚀 PERFORMANCE MAGIC */
+    will-change: transform;
+    transform: translateZ(0);
+    transition: transform 0.45s ease;
+}
+
+/* ===== PRODUCT CARD ===== */
+.product-card {
+    flex: 0 0 auto;
+    width: 260px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* Product Image */
+.product-card img {
+    width: 100%;
+    height: 180px;              /* 🔥 fixes layout jank */
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+/* Product title */
+.product-card h3 {
+    font-size: 18px;
+    margin: 12px 0 6px;
+}
+
+/* Description */
+.product-card .desc {
+    font-size: 13px;
+    line-height: 1.5;
+    min-height: 60px;
+}
+
+/* Read more */
+.read-more-text {
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    color: #a72f2f;
+}
+
+/* Rating & Price */
+.rating {
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.price {
+    margin: 8px 0;
+    font-weight: 600;
+}
+
+/* Buy button */
+.product-buy-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #4f381f;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Tags */
+.tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #e67e22;
+    color: #fff;
+    font-size: 11px;
+    padding: 4px 8px;
+    border-radius: 6px;
+}
+
+.tag.best-seller {
+    background: #a72f2f;
+}
+
+.tag.new {
+    background: #2ecc71;
+}
+
 
 /* === OFFER CIRCLES === */
 .offer-circles {
