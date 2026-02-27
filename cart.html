@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shopping Cart</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        background-color: #fff;
+        color: #333;
+    }
+
+    .cart-wrapper {
+        max-width: 1000px;
+        margin: 50px auto;
+        padding: 20px;
+    }
+
+    .cart-title {
+        text-align: center;
+        font-size: 24px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+        font-weight: bold;
+    }
+
+    /* Table Structure */
+    .cart-table {
+        width: 100%;
+        border-collapse: collapse;
+        border: 1px solid #eee;
+    }
+
+    .cart-table th {
+        text-transform: uppercase;
+        font-size: 12px;
+        color: #999;
+        text-align: left;
+        padding: 15px;
+        border-bottom: 1px solid #eee;
+        font-weight: 400;
+    }
+
+    .cart-item td {
+        padding: 20px 15px;
+        border-bottom: 1px solid #eee;
+        vertical-align: middle;
+    }
+
+    /* Product Info */
+    .product-cell {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .cart-image {
+        width: 80px;
+        height: auto;
+    }
+
+    .cart-name {
+        font-weight: bold;
+        font-size: 16px;
+        margin-bottom: 4px;
+    }
+
+    .cart-meta {
+        font-size: 12px;
+        color: #888;
+    }
+
+    /* Price & Totals */
+    .price-cell, .total-cell {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    /* Quantity Control */
+    .quantity-controls {
+        display: flex;
+        align-items: center;
+        border: 1px solid #ccc;
+        width: fit-content;
+    }
+
+    .qty-btn {
+        background: none;
+        border: none;
+        padding: 8px 12px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .qty-number {
+        width: 40px;
+        text-align: center;
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        padding: 8px 0;
+        font-size: 14px;
+    }
+
+    /* Remove Button */
+    .remove-btn {
+        background: none;
+        border: none;
+        color: #333;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    /* Footer Section */
+    .cart-footer {
+        margin-top: 30px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .grand-total {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .checkout-btn {
+        background-color: #0d1b2a;
+        color: white;
+        padding: 12px 30px;
+        border: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 1px;
+        cursor: pointer;
+    }
+
+    .checkout-btn {
+        margin-top: 20px;
+        width: 25%;
+        padding: 14px;
+        background-color: #25D366;
+        color: white;
+        border: none;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    .checkout-btn:hover {
+        opacity: 0.9;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+        .cart-table th:nth-child(2), .cart-table td:nth-child(2) { display: none; }
+        .cart-footer { flex-direction: column; align-items: flex-end; }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="cart-wrapper">
+    <div class="cart-title">Shopping Cart</div>
+    
+    <table class="cart-table">
+        <thead>
+            <tr>
+                <th style="width: 45%;">Item</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th style="text-align: center;">Remove</th>
+            </tr>
+        </thead>
+        <tbody id="cart-container">
+            </tbody>
+    </table>
+
+    <div class="cart-footer" id="cart-footer-ui">
+        </div>
+</div>
+
+<script>
+// Mock Data (if localStorage is empty)
+const defaultCart = [
+    { name: "Highball 29", meta: "29\" / HT", price: 500.25, quantity: 1, image: "https://via.placeholder.com/80" },
+    { name: "Superlight Jackail", meta: "26.5\" / 150MM (6\")", price: 600.50, quantity: 1, image: "https://via.placeholder.com/80" }
+];
+
+function getCart() {
+    const cart = JSON.parse(localStorage.getItem("cart"));
+    return (cart && cart.length > 0) ? cart : defaultCart;
+}
+
+function saveCart(cart) {
+    localStorage.setItem("cart", JSON.stringify(cart));
+}
+
+function renderCart() {
+    const container = document.getElementById("cart-container");
+    const footer = document.getElementById("cart-footer-ui");
+    const cart = getCart();
+
+    container.innerHTML = "";
+    let grandTotal = 0;
+
+    if (cart.length === 0) {
+        container.innerHTML = "<tr><td colspan='5' style='text-align:center; padding: 50px;'>Your cart is empty.</td></tr>";
+        footer.innerHTML = "";
+        return;
+    }
+
+    cart.forEach((item, index) => {
+        const itemTotal = item.price * item.quantity;
+        grandTotal += itemTotal;
+
+        container.innerHTML += `
+            <tr class="cart-item">
+                <td>
+                    <div class="product-cell">
+                        <img class="cart-image" src="${item.image}" alt="${item.name}">
+                        <div>
+                            <div class="cart-name">${item.name}</div>
+                            <div class="cart-meta">${item.meta || ''}</div>
+                        </div>
+                    </div>
+                </td>
+                <td class="price-cell">$${item.price.toFixed(2)}</td>
+                <td>
+                    <div class="quantity-controls">
+                        <button class="qty-btn" onclick="updateQty(${index}, -1)">-</button>
+                        <div class="qty-number">${item.quantity}</div>
+                        <button class="qty-btn" onclick="updateQty(${index}, 1)">+</button>
+                    </div>
+                </td>
+                <td class="total-cell">$${itemTotal.toFixed(2)}</td>
+                <td style="text-align: center;">
+                    <button class="remove-btn" onclick="removeItem(${index})">✖</button>
+                </td>
+            </tr>
+        `;
+    });
+
+    footer.innerHTML = `
+        <div class="grand-total">$${grandTotal.toFixed(2)}</div>
+        <button class="checkout-btn" onclick="checkoutWhatsApp()">
+            Checkout
+        </button>
+    `;
+}
+
+function updateQty(index, change) {
+    let cart = getCart();
+    cart[index].quantity += change;
+    if (cart[index].quantity < 1) cart[index].quantity = 1;
+    saveCart(cart);
+    renderCart();
+}
+
+function removeItem(index) {
+    let cart = getCart();
+    cart.splice(index, 1);
+    saveCart(cart);
+    renderCart();
+}
+
+renderCart();
+
+
+function checkoutWhatsApp() {
+    const phoneNumber = "919539717388"; // Use country code (91 for India)
+
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    if (cart.length === 0) {
+        alert("Your cart is empty.");
+        return;
+    }
+
+    let message = "Hello, I would like to place an order:\n\n";
+    let grandTotal = 0;
+
+    cart.forEach((item, index) => {
+        const itemTotal = item.price * item.quantity;
+        grandTotal += itemTotal;
+
+        message += `${index + 1}. ${item.name}\n`;
+        message += `   Quantity: ${item.quantity}\n`;
+        message += `   Price: ₹${item.price}\n`;
+        message += `   Total: ₹${itemTotal}\n\n`;
+    });
+
+    message += `Grand Total: ₹${grandTotal}\n\n`;
+    message += "Please confirm my order.";
+
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+    window.open(whatsappURL, "_blank");
+}
+
+
+</script>
+
+</body>
+</html>

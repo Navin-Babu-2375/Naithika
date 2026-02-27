@@ -178,7 +178,11 @@
                             <p class="product-price" style="color: #e97b06;">₹250/100g</p>
                         </div>
                         <div class="product-buy-button-container" >
-                            <button class="product-buy-button product-front-buy-button" onclick="redirectToWhatsApp('Mango')" style="background-color: #e97b06;">Buy Now</button>
+                            <button class="product-buy-button product-front-buy-button"
+                            onclick="addToCart('Mango', 250, 'images_naithika/products_new/mango.webp')"
+                            style="background-color: #e97b06;">
+                            Buy Now
+                            </button>
                         </div>
                     </div>
                     <div class="product-card-back">
@@ -1981,20 +1985,42 @@
     window.addEventListener('DOMContentLoaded', initProductCards);
 
     /* ---------- WHATSAPP ---------- */
-    function redirectToWhatsApp(productName) {
-        const phoneNumber = "9539717388";
-        const message =
-            `Hello, I would like to buy some of your products.\nProduct: ${productName}\nQuantity: `;
+    // function redirectToWhatsApp(productName) {
+    //     const phoneNumber = "9539717388";
+    //     const message =
+    //         `Hello, I would like to buy some of your products.\nProduct: ${productName}\nQuantity: `;
 
-        const whatsappURL =
-            `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    //     const whatsappURL =
+    //         `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
-        window.open(whatsappURL, "_blank");
-    }
+    //     window.open(whatsappURL, "_blank");
+    // }
+
+    // 
 </script>
 
 
+<script>
+function addToCart(name, price, image) {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
+    let existingProduct = cart.find(item => item.name === name);
+
+    if (existingProduct) {
+        existingProduct.quantity += 1;
+    } else {
+        cart.push({
+            name: name,
+            price: price,
+            image: image,
+            quantity: 1
+        });
+    }
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+    alert(`${name} has been added to your cart.`);
+}
+</script>
 
 
 </body>
